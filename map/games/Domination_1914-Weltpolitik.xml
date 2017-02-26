@@ -12492,7 +12492,7 @@
 				<property name="Neutral Flyover Allowed" value="false" editable="false">
 						<boolean/>
 </property>
-                		<property name="mapName" value="Domination_1914-Weltpolitik" editable="false"/>
+                		<property name="mapName" value="domination_1914-weltpolitik" editable="false"/>
                 			
 				<property name="notes">
 					<string/>

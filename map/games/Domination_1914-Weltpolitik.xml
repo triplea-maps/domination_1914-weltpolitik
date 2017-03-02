@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-        <info name="Domination 1914-Weltpolitik" version="0.2.0"/>
+        <info name="Domination 1914-Weltpolitik" version="1.1.0"/>
 
         <loader javaClass="games.strategy.triplea.TripleA"/>
 
@@ -379,6 +379,10 @@
                 <territory name="Virginia"/>
                 <territory name="Wake Island"/>
                 <territory name="Washington D.C."/>
+				<territory name="Pripet Marshes"/>
+				<territory name="Western Sahara"/>
+				<territory name="Central Sahara"/>
+				<territory name="Eastern Sahara"/>
                 <territory name="Sea Zone 1 Hudson Bay" water="true"/>
                 <territory name="Sea Zone 2 Baffin Bay" water="true"/>
                 <territory name="Sea Zone 3 Denmark Strait" water="true"/>
@@ -803,9 +807,14 @@
                 <connection t1="Burgundy" t2="Paris"/>
                 <connection t1="Cambodia" t2="Siam"/>
                 <connection t1="Cambodia" t2="Cochinchina"/>
+				<connection t1="Central Sahara" t2="Tunisia"/>
+				<connection t1="Central Sahara" t2="Mali"/>
+				<connection t1="Central Sahara" t2="Niger"/>
+				<connection t1="Central Sahara" t2="Agadez"/>
+				<connection t1="Central Sahara" t2="Fezzan"/>
                 <connection t1="Chad" t2="Darfur"/>
-                <connection t1="Chad" t2="Fezzan"/>
                 <connection t1="Chad" t2="Middle Congo"/>
+				<connection t1="Chad" t2="Eastern Sahara"/>
                 <connection t1="Champagne" t2="Paris"/>
                 <connection t1="Champagne" t2="Picardy"/>
                 <connection t1="Champagne" t2="Belgium"/>
@@ -814,14 +823,15 @@
                 <connection t1="Cyrenaica" t2="Tripolitania"/>
                 <connection t1="Cyrenaica" t2="Tobruk"/>
 				<connection t1="Cyrenaica" t2="Kufra"/>
+				<connection t1="Kufra" t2="Eastern Sahara"/>
 				<connection t1="Kufra" t2="Fezzan"/>
-				<connection t1="Kufra" t2="Chad"/>
-				<connection t1="Kufra" t2="Darfur"/>
-				<connection t1="Kufra" t2="Western Sudan"/>
                 <connection t1="Dahome" t2="Niger"/>
                 <connection t1="Dahome" t2="Upper Volta"/>
                 <connection t1="Dahome" t2="Northern Nigeria"/>
 				<connection t1="Dahome" t2="Lagos"/>
+				<connection t1="Eastern Sahara" t2="Darfur"/>
+				<connection t1="Eastern Sahara" t2="Fezzan"/>
+				<connection t1="Eastern Sahara" t2="Western Sudan"/>
                 <connection t1="Franche-Comte" t2="Champagne"/>
                 <connection t1="Franche-Comte" t2="Alsace"/>
                 <connection t1="Franche-Comte" t2="Switzerland"/>
@@ -847,11 +857,9 @@
                 <connection t1="Lower Algeria" t2="Tunisia"/>
                 <connection t1="Lower Algeria" t2="Morocco"/>
 				<connection t1="Lower Algeria" t2="Atlas"/>
-                <connection t1="Lower Algeria" t2="Mauretania"/>
+                <connection t1="Lower Algeria" t2="Western Sahara"/>
                 <connection t1="Lower Algeria" t2="Mali"/>
-                <connection t1="Lower Algeria" t2="Niger"/>
-				<connection t1="Lower Algeria" t2="Agadez"/>
-                <connection t1="Lower Algeria" t2="Fezzan"/>
+				<connection t1="Lower Algeria" t2="Central Sahara"/>
                 <connection t1="Mali" t2="Senegal"/>
                 <connection t1="Mali" t2="Timbuktu"/>
                 <connection t1="Mali" t2="French Guinea"/>
@@ -861,12 +869,13 @@
                 <connection t1="Marseilles" t2="Piedmont"/>
                 <connection t1="Mauretania" t2="Mali"/>
                 <connection t1="Mauretania" t2="Rio de Oro"/>
-                <connection t1="Mauretania" t2="Timbuktu"/>
                 <connection t1="Mauretania" t2="Senegal"/>
+				<connection t1="Mauretania" t2="Western Sahara"/>
 				<connection t1="Niger" t2="Agadez"/>
                 <connection t1="Niger" t2="Northern Nigeria"/>
                 <connection t1="Niger" t2="Upper Volta"/>
                 <connection t1="Niger" t2="Chad"/>
+				<connection t1="Niger" t2="Eastern Sahara"/>
                 <connection t1="Agadez" t2="Fezzan"/>
                 <connection t1="Normandy" t2="Burgundy"/>
                 <connection t1="Normandy" t2="Paris"/>
@@ -931,7 +940,7 @@
                 <connection t1="Galicia" t2="Romania"/>
                 <connection t1="Galicia" t2="Moldavia"/>
                 <connection t1="Galicia" t2="Odessa"/>
-                <connection t1="Galicia" t2="Belarus"/>
+                <connection t1="Galicia" t2="Pripet Marshes"/>
                 <connection t1="Galicia" t2="Eastern Poland"/>
                 <connection t1="Galicia" t2="Western Poland"/>
                 <connection t1="Hungary" t2="Vojvodina"/>
@@ -958,7 +967,7 @@
                 <connection t1="Naples" t2="Rome"/>
                 <connection t1="Piedmont" t2="Milan"/>
                 <connection t1="Piedmont" t2="Switzerland"/>
-                <connection t1="Tripolitania" t2="Lower Algeria"/>
+                <connection t1="Tripolitania" t2="Central Sahara"/>
                 <connection t1="Tripolitania" t2="Tripoli"/>
                 <connection t1="Tripolitania" t2="Tunisia"/>
                 <connection t1="Tripolitania" t2="Fezzan"/>
@@ -1105,6 +1114,7 @@
                 <connection t1="Kuwait" t2="Basra"/>
                 <connection t1="Lower Egypt" t2="Cyrenaica"/>
 				<connection t1="Lower Egypt" t2="Kufra"/>
+				<connection t1="Lower Egypt" t2="Eastern Sahara"/>
                 <connection t1="Lower Egypt" t2="Cairo-Suez"/>
                 <connection t1="Lower Egypt" t2="Western Sudan"/>
                 <connection t1="Madras" t2="Travancore"/>
@@ -1198,6 +1208,9 @@
                 <connection t1="Upper Egypt" t2="Lower Egypt"/>
                 <connection t1="Upper Egypt" t2="Cairo-Suez"/>
                 <connection t1="Upper Egypt" t2="Port Sudan"/>
+				<connection t1="Western Sahara" t2="Mali"/>
+				<connection t1="Western Sahara" t2="Rio de Oro"/>
+				<connection t1="Western Sahara" t2="Timbuktu"/>
                 <connection t1="Western Sudan" t2="Port Sudan"/>
                 <connection t1="Western Sudan" t2="Abyssinia"/>
                 <connection t1="Western Sudan" t2="Uganda"/>
@@ -1217,11 +1230,10 @@
                 <connection t1="Archangelsk" t2="Naryan-Mar"/>
                 <connection t1="Archangelsk" t2="Vologda"/>
                 <connection t1="Azerbaijan" t2="Lurs"/>
-                <connection t1="Belarus" t2="Odessa"/>
-                <connection t1="Belarus" t2="Dnieper"/>
                 <connection t1="Belarus" t2="Don"/>
                 <connection t1="Belarus" t2="Minsk"/>
                 <connection t1="Belarus" t2="Smolensk"/>
+				<connection t1="Belarus" t2="Pripet Marshes"/>
                 <connection t1="Bessarabia" t2="Moldavia"/>
                 <connection t1="Bratsk" t2="Buryatia"/>
                 <connection t1="Bratsk" t2="Irkutsk"/>
@@ -1262,6 +1274,7 @@
                 <connection t1="Eastern Poland" t2="Western Poland"/>
                 <connection t1="Eastern Poland" t2="Warsaw"/>
                 <connection t1="Eastern Poland" t2="Belarus"/>
+				<connection t1="Eastern Poland" t2="Pripet Marshes"/>
                 <connection t1="Evenkia" t2="Bratsk"/>
                 <connection t1="Evenkia" t2="Tiksi"/>
                 <connection t1="Finland" t2="Murmansk"/>
@@ -1327,6 +1340,10 @@
                 <connection t1="Perm" t2="Krasnoyarsk"/>
                 <connection t1="Primorsky" t2="Vladivostok"/>
                 <connection t1="Primorsky" t2="Changchun"/>
+				<connection t1="Pripet Marshes" t2="Odessa"/>
+                <connection t1="Pripet Marshes" t2="Dnieper"/>
+				<connection t1="Pripet Marshes" t2="Don"/>
+				<connection t1="Pripet Marshes" t2="Minsk"/>
                 <connection t1="Pskov" t2="Estonia"/>
                 <connection t1="Pskov" t2="Latvia"/>
                 <connection t1="Pskov" t2="Smolensk"/>
@@ -1704,7 +1721,7 @@
                 <connection t1="Sea Zone 52 Mid Atlantic" t2="Sea Zone 53 Mid Atlantic"/>
                 <connection t1="Sea Zone 52 Mid Atlantic" t2="Canary Islands"/>
                 <connection t1="Sea Zone 53 Mid Atlantic" t2="Sea Zone 54 Alboran Sea"/>
-                <connection t1="Sea Zone 53 Mid Atlantic" t2="Mauretania"/>
+                <connection t1="Sea Zone 53 Mid Atlantic" t2="Western Sahara"/>
                 <connection t1="Sea Zone 53 Mid Atlantic" t2="Morocco"/>
                 <connection t1="Sea Zone 53 Mid Atlantic" t2="Canary Islands"/>
                 <connection t1="Sea Zone 54 Alboran Sea" t2="Sea Zone 55 Western Mediterranean"/>
@@ -2465,14 +2482,14 @@
 				<connection t1="Morelos" t2="Mexico City"/>
                 <connection t1="Morelos" t2="Veracruz"/>
                 <connection t1="Morelos" t2="Oaxaca"/>
-                <connection t1="Morocco" t2="Mauretania"/>
+                <connection t1="Morocco" t2="Western Sahara"/>
                 <connection t1="Morocco" t2="Ceuta"/>
                 <connection t1="Morocco" t2="Malilla"/>
 				<connection t1="Morocco" t2="Atlas"/>
 				<connection t1="Nuevo Leon" t2="Mexico City"/>
                 <connection t1="Nuevo Leon" t2="Morelos"/>
 				<connection t1="Nuevo Leon" t2="Coahuila"/>
-				<connection t1="Atlas" t2="Mauretania"/>
+				<connection t1="Atlas" t2="Western Sahara"/>
                 <connection t1="Natal-Salvador" t2="Central Brazil"/>
                 <connection t1="Natal-Salvador" t2="Brasilia"/>
                 <connection t1="Navarre" t2="Catalonia"/>
@@ -4482,6 +4499,11 @@
                     <attachment name="territoryAttachment" attachTo="Central Brazil" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
                     </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Central Sahara" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+						<option name="isImpassable" value="true"/>
+                    </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Ceuta" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
@@ -4716,6 +4738,11 @@
 
                     <attachment name="territoryAttachment" attachTo="Eastern Poland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
+                    </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Eastern Sahara" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+						<option name="isImpassable" value="true"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Ecuador" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5729,6 +5756,11 @@
                     <attachment name="territoryAttachment" attachTo="Prince Edward Island" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="0"/>
                     </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Pripet Marshes" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+						<option name="isImpassable" value="true"/>
+                    </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Pskov" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
@@ -6282,6 +6314,11 @@
 
                     <attachment name="territoryAttachment" attachTo="Western Poland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
+                    </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Western Sahara" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+						<option name="isImpassable" value="true"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Western Siberian Lowlands" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -12509,7 +12546,7 @@
 <br>by Surtur
 
 <br>
-<br><span style="font-size:120%;000000"colspan="2"><b>Version 0.2.0</b></span>
+<br><span style="font-size:120%;000000"colspan="2"><b>Version 1.1.0</b></span>
 <br><br>
 <i>"Wir wollen niemand in den Schatten stellen, aber wir verlangen auch unseren Platz an der Sonne"</i>
 <br><i>--Bernhard von Bulow, 6 December 1897</i>
@@ -13807,6 +13844,10 @@ Central Powers:
 <br><br>
 
 <div style="text-align: center;">
+<br>==========================================================
+<br><span style="font-size:200%"><b>Changelog 1.1.0</b></span>
+<br>==========================================================
+<br>Created new impassable territories: Pripet Marshes, (Western/Central/Eastern) Sahara
 <br>==========================================================
 <br><span style="font-size:200%"><b>Changelog 0.2.0</b></span>
 <br>==========================================================

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-        <info name="Domination 1914-Weltpolitik" version="0.2.0"/>
+        <info name="Domination 1914-Weltpolitik" version="1.1.0"/>
 
         <loader javaClass="games.strategy.triplea.TripleA"/>
 
@@ -12546,7 +12546,7 @@
 <br>by Surtur
 
 <br>
-<br><span style="font-size:120%;000000"colspan="2"><b>Version 0.2.0</b></span>
+<br><span style="font-size:120%;000000"colspan="2"><b>Version 1.1.0</b></span>
 <br><br>
 <i>"Wir wollen niemand in den Schatten stellen, aber wir verlangen auch unseren Platz an der Sonne"</i>
 <br><i>--Bernhard von Bulow, 6 December 1897</i>
@@ -13844,6 +13844,10 @@ Central Powers:
 <br><br>
 
 <div style="text-align: center;">
+<br>==========================================================
+<br><span style="font-size:200%"><b>Changelog 1.1.0</b></span>
+<br>==========================================================
+<br>Created new impassable territories: Pripet Marshes, (Western/Central/Eastern) Sahara
 <br>==========================================================
 <br><span style="font-size:200%"><b>Changelog 0.2.0</b></span>
 <br>==========================================================

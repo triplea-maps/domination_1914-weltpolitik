@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-        <info name="Domination 1914-Weltpolitik" version="1.1.0"/>
+        <info name="Domination 1914-Weltpolitik" version="1.2.0"/>
 
         <loader javaClass="games.strategy.triplea.TripleA"/>
 
@@ -39,8 +39,7 @@
                 <territory name="Rwanda"/>
                 <territory name="Samoa"/>
                 <territory name="Saxony"/>
-                <territory name="Shanghai 1"/>
-                <territory name="Shanghai 2"/>
+                <territory name="Shanghai"/>
                 <territory name="Silesia"/>
                 <territory name="Solomon Islands"/>
                 <territory name="Togo"/>
@@ -89,7 +88,6 @@
                 <territory name="Reunion"/>
                 <territory name="Rhone"/>
                 <territory name="Senegal"/>
-                <territory name="Shanghai 4"/>
                 <territory name="Tahiti"/>
                 <territory name="Timbuktu"/>
                 <territory name="Tobruk"/>
@@ -260,7 +258,6 @@
                 <territory name="Saskatchewan"/>
                 <territory name="Scotland"/>
                 <territory name="Seychelles"/>
-                <territory name="Shanghai 3"/>
                 <territory name="Sierra Leone"/>
                 <territory name="Sindh"/>
                 <territory name="Singapore"/>
@@ -643,7 +640,8 @@
                 <territory name="Lima"/>
                 <territory name="Lisbon"/>
                 <territory name="Lurs"/>
-                <territory name="Macao"/>
+                <territory name="Kouang-Theou-Wan"/>
+				<territory name="Macao"/>
                 <territory name="Madeira"/>
                 <territory name="Madrid"/>
                 <territory name="Majorca"/>
@@ -668,6 +666,7 @@
                 <territory name="Peking"/>
                 <territory name="Peru"/>
                 <territory name="Port Arthur"/>
+				<territory name="Port Edward"/>
                 <territory name="Portugese Guinea"/>
                 <territory name="Puerto Rico"/>
                 <territory name="Qinghai"/>
@@ -766,11 +765,6 @@
                 <connection t1="Saxony" t2="Berlin"/>
                 <connection t1="Saxony" t2="Brandenburg"/>
                 <connection t1="Saxony" t2="Bohemia"/>
-                <connection t1="Shanghai 1" t2="Shanghai 2"/>
-				<connection t1="Shanghai 1" t2="Shanghai 3"/>
-                <connection t1="Shanghai 1" t2="Shanghai 4"/>
-                <connection t1="Shanghai 2" t2="Shanghai 3"/>
-				<connection t1="Shanghai 2" t2="Shanghai 4"/>
                 <connection t1="Silesia" t2="Bohemia"/>
                 <connection t1="Silesia" t2="Galicia"/>
                 <connection t1="Silesia" t2="Western Poland"/>
@@ -887,15 +881,7 @@
                 <connection t1="Rhone" t2="Piedmont"/>
                 <connection t1="Senegal" t2="French Guinea"/>
                 <connection t1="Senegal" t2="Gambia"/>
-                <connection t1="Shanghai 4" t2="Shanghai 3"/>
-                <connection t1="Shanghai 1" t2="Fukien"/>
-				<connection t1="Shanghai 2" t2="Fukien"/>
-				<connection t1="Shanghai 3" t2="Fukien"/>
-				<connection t1="Shanghai 4" t2="Fukien"/>
-                <connection t1="Shanghai 1" t2="Jiangxi"/>
-				<connection t1="Shanghai 2" t2="Jiangxi"/>
-				<connection t1="Shanghai 3" t2="Jiangxi"/>
-				<connection t1="Shanghai 4" t2="Jiangxi"/>
+                <connection t1="Shanghai" t2="Fukien"/>
                 <connection t1="Tunisia" t2="Algeria"/>
                 <connection t1="Greece" t2="Albania"/>
 				<connection t1="Greece" t2="Epirus"/>
@@ -1496,6 +1482,7 @@
                 <connection t1="Sea Zone 11 Baltic Sea" t2="West Prussia"/>
                 <connection t1="Sea Zone 11 Baltic Sea" t2="Pomerania"/>
                 <connection t1="Sea Zone 12 Baltic Sea" t2="Sea Zone 13 Skagerrak"/>
+				<connection t1="Sea Zone 12 Baltic Sea" t2="Sea Zone 14 Helgoland Bight"/>
                 <connection t1="Sea Zone 12 Baltic Sea" t2="Sweden"/>
                 <connection t1="Sea Zone 12 Baltic Sea" t2="Pomerania"/>
                 <connection t1="Sea Zone 12 Baltic Sea" t2="Mecklenburg"/>
@@ -2145,12 +2132,14 @@
                 <connection t1="Sea Zone 128 Gulf of Tonkin" t2="Annam"/>
                 <connection t1="Sea Zone 128 Gulf of Tonkin" t2="Tonkin"/>
                 <connection t1="Sea Zone 128 Gulf of Tonkin" t2="Canton"/>
-                <connection t1="Sea Zone 128 Gulf of Tonkin" t2="Macao"/>
+                <connection t1="Sea Zone 128 Gulf of Tonkin" t2="Kouang-Theou-Wan"/>
+				<connection t1="Sea Zone 128 Gulf of Tonkin" t2="Macao"/>
                 <connection t1="Sea Zone 128 Gulf of Tonkin" t2="Hong Kong"/>
                 <connection t1="Sea Zone 128 Gulf of Tonkin" t2="Hainan"/>
                 <connection t1="Sea Zone 129 South China Sea" t2="Sea Zone 130 Philippine Sea"/>
                 <connection t1="Sea Zone 129 South China Sea" t2="Sea Zone 136 East China Sea"/>
                 <connection t1="Sea Zone 129 South China Sea" t2="Hong Kong"/>
+				<connection t1="Sea Zone 129 South China Sea" t2="Macao"/>
                 <connection t1="Sea Zone 129 South China Sea" t2="Canton"/>
                 <connection t1="Sea Zone 129 South China Sea" t2="Formosa"/>
                 <connection t1="Sea Zone 130 Philippine Sea" t2="Sea Zone 131 Pacific Ocean"/>
@@ -2184,21 +2173,16 @@
                 <connection t1="Sea Zone 135 Pacific Ocean" t2="Iwo Jima"/>
                 <connection t1="Sea Zone 136 East China Sea" t2="Sea Zone 137 Yellow Sea"/>
                 <connection t1="Sea Zone 136 East China Sea" t2="Fukien"/>
-                <connection t1="Sea Zone 136 East China Sea" t2="Shanghai 4"/>
-                <connection t1="Sea Zone 136 East China Sea" t2="Shanghai 3"/>
-				<connection t1="Sea Zone 136 East China Sea" t2="Shanghai 2"/>
-				<connection t1="Sea Zone 136 East China Sea" t2="Shanghai 1"/>
+                <connection t1="Sea Zone 136 East China Sea" t2="Shanghai"/>
                 <connection t1="Sea Zone 136 East China Sea" t2="Ryuku"/>
                 <connection t1="Sea Zone 136 East China Sea" t2="Kyushu"/>
                 <connection t1="Sea Zone 137 Yellow Sea" t2="Sea Zone 138 Sea of Japan"/>
                 <connection t1="Sea Zone 137 Yellow Sea" t2="Sea Zone 142 Pacific Ocean"/>
-				<connection t1="Sea Zone 137 Yellow Sea" t2="Shanghai 4"/>
-				<connection t1="Sea Zone 137 Yellow Sea" t2="Shanghai 3"/>
-                <connection t1="Sea Zone 137 Yellow Sea" t2="Shanghai 2"/>
-                <connection t1="Sea Zone 137 Yellow Sea" t2="Shanghai 1"/>
+				<connection t1="Sea Zone 137 Yellow Sea" t2="Shanghai"/>
                 <connection t1="Sea Zone 137 Yellow Sea" t2="Jiangsu"/>
                 <connection t1="Sea Zone 137 Yellow Sea" t2="Tsingtao"/>
                 <connection t1="Sea Zone 137 Yellow Sea" t2="Shantung"/>
+				<connection t1="Sea Zone 137 Yellow Sea" t2="Port Edward"/>
                 <connection t1="Sea Zone 137 Yellow Sea" t2="Hebei"/>
                 <connection t1="Sea Zone 137 Yellow Sea" t2="Anshan"/>
                 <connection t1="Sea Zone 137 Yellow Sea" t2="Port Arthur"/>
@@ -2334,7 +2318,8 @@
                 <connection t1="Canton" t2="Hunan"/>
                 <connection t1="Canton" t2="Fukien"/>
                 <connection t1="Canton" t2="Hong Kong"/>
-                <connection t1="Canton" t2="Macao"/>
+				<connection t1="Canton" t2="Macao"/>
+                <connection t1="Canton" t2="Kouang-Theou-Wan"/>
                 <connection t1="Canton" t2="Guizhou"/>
                 <connection t1="Canton" t2="Yunnan"/>
                 <connection t1="Canton" t2="Tonkin"/>
@@ -2362,8 +2347,6 @@
                 <connection t1="Choson" t2="Hanguk"/>
                 <connection t1="Chubu" t2="Tohoku"/>
                 <connection t1="Chubu" t2="Tokyo"/>
-				<connection t1="Chugoku" t2="Shikoku"/>
-				<connection t1="Chugoku" t2="Kyushu"/>
                 <connection t1="Colombia" t2="Ecuador"/>
                 <connection t1="Colombia" t2="Amazon"/>
                 <connection t1="Colombia" t2="Venezuela"/>
@@ -2409,6 +2392,7 @@
                 <connection t1="Holland" t2="Westphalia"/>
                 <connection t1="Honduras" t2="El Salvador"/>
                 <connection t1="Honduras" t2="Nicaragua"/>
+				<connection t1="Hong Kong" t2="Macao"/>
                 <connection t1="Hunan" t2="Henan-Anhui"/>
                 <connection t1="Hunan" t2="Guizhou"/>
                 <connection t1="Hunan" t2="Nanking"/>
@@ -2421,14 +2405,12 @@
                 <connection t1="Jalisco" t2="Morelos"/>
 				<connection t1="Jalisco" t2="Sinaloa"/>
                 <connection t1="Java" t2="East Timor"/>
-                <connection t1="Jiangsu" t2="Shanghai 1"/>
-				<connection t1="Jiangsu" t2="Shanghai 2"/>
-				<connection t1="Jiangsu" t2="Shanghai 3"/>
-				<connection t1="Jiangsu" t2="Shanghai 4"/>
+                <connection t1="Jiangsu" t2="Shanghai"/>
                 <connection t1="Jiangsu" t2="Jiangxi"/>
                 <connection t1="Jiangsu" t2="Nanking"/>
                 <connection t1="Jiangsu" t2="Henan-Anhui"/>
                 <connection t1="Jiangsu" t2="Tsingtao"/>
+				<connection t1="Jiangsu" t2="Fukien"/>
                 <connection t1="Jiangxi" t2="Canton"/>
                 <connection t1="Jiangxi" t2="Fukien"/>
                 <connection t1="Jiangxi" t2="Hunan"/>
@@ -2442,7 +2424,6 @@
                 <connection t1="Khurasan" t2="Afghanistan"/>
                 <connection t1="Kyoto" t2="Chugoku"/>
                 <connection t1="Kyoto" t2="Chubu"/>
-				<connection t1="Kyoto" t2="Shikoku"/>
                 <connection t1="Lake Athabasca" t2="Alberta"/>
                 <connection t1="Lake Athabasca" t2="Saskatchewan"/>
                 <connection t1="Lake Baikal" t2="Irkutsk"/>
@@ -2516,6 +2497,7 @@
                 <connection t1="Peru" t2="Bolivia"/>
                 <connection t1="Peru" t2="La Paz"/>
                 <connection t1="Peru" t2="Chile"/>
+				<connection t1="Port Edward" t2="Tsingtao"/>
                 <connection t1="Qinghai" t2="Sinkiang"/>
                 <connection t1="Qinghai" t2="Kansu"/>
                 <connection t1="Romania" t2="Belgrade"/>
@@ -2533,11 +2515,11 @@
                 <connection t1="Shantung" t2="Jiangsu"/>
                 <connection t1="Shantung" t2="Tsingtao"/>
                 <connection t1="Shantung" t2="Henan-Anhui"/>
+				<connection t1="Shantung" t2="Port Edward"/>
                 <connection t1="Shenyang" t2="Outer Mongolia"/>
                 <connection t1="Shenyang" t2="Harbin"/>
                 <connection t1="Shenyang" t2="Inner Mongolia"/>
                 <connection t1="Shenyang" t2="Hebei"/>
-				<connection t1="Shikoku" t2="Kyushu"/>
                 <connection t1="Siam" t2="Malaya"/>
                 <connection t1="Siam" t2="Burma"/>
                 <connection t1="Sichuan" t2="Yunnan"/>
@@ -2696,7 +2678,9 @@
                 <unit name="fighter"/>
                 <unit name="infantry"/>
                 <unit name="late_fighter"/>
+				<unit name="bomber"/>
                 <unit name="submarine"/>
+				<unit name="naval_mine"/>
                 <unit name="tank"/>
                 <unit name="transport"/>
                 <unit name="zeppelin"/>
@@ -3070,9 +3054,17 @@
                         <cost resource="PUs" quantity="10"/>
                         <result resourceOrUnit="late_fighter" quantity="1"/>
                 </productionRule>
+				<productionRule name="buybomber">
+                        <cost resource="PUs" quantity="14"/>
+                        <result resourceOrUnit="bomber" quantity="1"/>
+                </productionRule>
                 <productionRule name="buysubmarine">
                         <cost resource="PUs" quantity="7"/>
                         <result resourceOrUnit="submarine" quantity="1"/>
+                </productionRule>
+				<productionRule name="buynaval_mine">
+                        <cost resource="PUs" quantity="1"/>
+                        <result resourceOrUnit="naval_mine" quantity="1"/>
                 </productionRule>
                 <productionRule name="buytank">
                         <cost resource="PUs" quantity="6"/>
@@ -3118,6 +3110,33 @@
                         <cost resource="PUs" quantity="20"/>
                         <result resourceOrUnit="factory_upgrade" quantity="1"/>
                 </productionRule>
+				
+				<!-- SHIPYARD PRICES -->
+				<productionRule name="buybattlecruiserShipyards">
+                        <cost resource="PUs" quantity="14"/>
+                        <result resourceOrUnit="battlecruiser" quantity="1"/>
+                </productionRule>
+                <productionRule name="buybattleshipShipyards">
+                        <cost resource="PUs" quantity="19"/>
+                        <result resourceOrUnit="battleship" quantity="1"/>
+                </productionRule>
+				<productionRule name="buycruiserShipyards">
+                        <cost resource="PUs" quantity="9"/>
+                        <result resourceOrUnit="cruiser" quantity="1"/>
+                </productionRule>
+				<productionRule name="buydestroyerShipyards">
+                        <cost resource="PUs" quantity="5"/>
+                        <result resourceOrUnit="destroyer" quantity="1"/>
+                </productionRule>
+				<productionRule name="buysubmarineShipyards">
+                        <cost resource="PUs" quantity="6"/>
+                        <result resourceOrUnit="submarine" quantity="1"/>
+                </productionRule>
+				<productionRule name="buytransportShipyards">
+                        <cost resource="PUs" quantity="6"/>
+                        <result resourceOrUnit="transport" quantity="1"/>
+                </productionRule>
+				
 				<!-- Repair rules -->
 				<repairRule name="repairFactory_Minor">
                         <cost resource="PUs" quantity="1"/>
@@ -3156,209 +3175,220 @@
                         <frontierRules name="buyinfantry"/>
                         <frontierRules name="buyfield_gun"/>
                         <frontierRules name="buycavalry"/>
-                        <frontierRules name="buyfighter"/>
-                        <frontierRules name="buyzeppelin"/>
-                        <frontierRules name="buysubmarine"/>
+						<frontierRules name="buyTrain"/>
+						<frontierRules name="buynaval_mine"/>
                         <frontierRules name="buydestroyer"/>
+						<frontierRules name="buysubmarine"/>
+						<frontierRules name="buytransport"/>
                         <frontierRules name="buycruiser"/>
                         <frontierRules name="buybattlecruiser"/>
                         <frontierRules name="buybattleship"/>
-                        <frontierRules name="buytransport"/>
+						<frontierRules name="buyfighter"/>
+                        <frontierRules name="buyzeppelin"/>
 						<frontierRules name="buyFactory_Minor"/>
 						<frontierRules name="buyFactory_Upgrade"/>
 						<frontierRules name="buyFactory_Major"/>
 						<frontierRules name="buyHarbour"/>
-						<frontierRules name="buyTrain"/>
                 </productionFrontier>
 				
 				<productionFrontier name="productionUSA">
                         <frontierRules name="buyinfantry"/>
                         <frontierRules name="buyfield_gun"/>
                         <frontierRules name="buycavalry"/>
-                        <frontierRules name="buyfighter"/>
-                        <frontierRules name="buyzeppelin"/>
-                        <frontierRules name="buysubmarine"/>
+						<frontierRules name="buyTrain"/>
+						<frontierRules name="buynaval_mine"/>
                         <frontierRules name="buydestroyer"/>
+						<frontierRules name="buysubmarine"/>
+						<frontierRules name="buytransport"/>
                         <frontierRules name="buycruiser"/>
                         <frontierRules name="buybattlecruiser"/>
                         <frontierRules name="buybattleship"/>
-                        <frontierRules name="buytransport"/>
+						<frontierRules name="buyfighter"/>
+                        <frontierRules name="buyzeppelin"/>
 						<frontierRules name="buyFactory_Minor"/>
 						<frontierRules name="buyFactory_Upgrade"/>
 						<frontierRules name="buyFactory_Major"/>
 						<frontierRules name="buyHarbour"/>
-						<frontierRules name="buyTrain"/>
                 </productionFrontier>
 
                 <productionFrontier name="productionGermany">
                         <frontierRules name="buyinfantry"/>
                         <frontierRules name="buyfield_gun"/>
                         <frontierRules name="buycavalry"/>
-                        <frontierRules name="buyfighter"/>
-                        <frontierRules name="buyzeppelin"/>
-                        <frontierRules name="buysubmarine"/>
+						<frontierRules name="buyTrain"/>
+						<frontierRules name="buynaval_mine"/>
                         <frontierRules name="buydestroyer"/>
+						<frontierRules name="buysubmarine"/>
+						<frontierRules name="buytransport"/>
                         <frontierRules name="buycruiser"/>
                         <frontierRules name="buybattlecruiser"/>
                         <frontierRules name="buybattleship"/>
-                        <frontierRules name="buytransport"/>
+						<frontierRules name="buyfighter"/>
+                        <frontierRules name="buyzeppelin"/>
 						<frontierRules name="buyFactory_Minor"/>
 						<frontierRules name="buyFactory_Upgrade"/>
 						<frontierRules name="buyFactory_Major"/>
 						<frontierRules name="buyHarbour"/>
-						<frontierRules name="buyTrain"/>
                 </productionFrontier>
 				
                 <productionFrontier name="productionFrance">
                         <frontierRules name="buyinfantry"/>
                         <frontierRules name="buyfield_gun"/>
                         <frontierRules name="buycavalry"/>
-                        <frontierRules name="buyfighter"/>
-                        <frontierRules name="buyzeppelin"/>
-                        <frontierRules name="buysubmarine"/>
+						<frontierRules name="buyTrain"/>
+						<frontierRules name="buynaval_mine"/>
                         <frontierRules name="buydestroyer"/>
+						<frontierRules name="buysubmarine"/>
+						<frontierRules name="buytransport"/>
                         <frontierRules name="buycruiser"/>
                         <frontierRules name="buybattlecruiser"/>
                         <frontierRules name="buybattleship"/>
-                        <frontierRules name="buytransport"/>
+						<frontierRules name="buyfighter"/>
+                        <frontierRules name="buyzeppelin"/>
 						<frontierRules name="buyFactory_Minor"/>
 						<frontierRules name="buyFactory_Upgrade"/>
 						<frontierRules name="buyFactory_Major"/>
 						<frontierRules name="buyHarbour"/>
-						<frontierRules name="buyTrain"/>
                 </productionFrontier>
 				
 				<productionFrontier name="productionAustria">
                         <frontierRules name="buyinfantry"/>
                         <frontierRules name="buyfield_gun"/>
                         <frontierRules name="buycavalry"/>
-                        <frontierRules name="buyfighter"/>
-                        <frontierRules name="buyzeppelin"/>
-                        <frontierRules name="buysubmarine"/>
+						<frontierRules name="buyTrain"/>
+						<frontierRules name="buynaval_mine"/>
                         <frontierRules name="buydestroyer"/>
+						<frontierRules name="buysubmarine"/>
+						<frontierRules name="buytransport"/>
                         <frontierRules name="buycruiser"/>
                         <frontierRules name="buybattlecruiser"/>
                         <frontierRules name="buybattleship"/>
-                        <frontierRules name="buytransport"/>
+						<frontierRules name="buyfighter"/>
+                        <frontierRules name="buyzeppelin"/>
 						<frontierRules name="buyFactory_Minor"/>
 						<frontierRules name="buyFactory_Upgrade"/>
 						<frontierRules name="buyFactory_Major"/>
 						<frontierRules name="buyHarbour"/>
-						<frontierRules name="buyTrain"/>
                 </productionFrontier>
 				
 				<productionFrontier name="productionItaly">
                         <frontierRules name="buyinfantry"/>
                         <frontierRules name="buyfield_gun"/>
                         <frontierRules name="buycavalry"/>
-                        <frontierRules name="buyfighter"/>
-                        <frontierRules name="buyzeppelin"/>
-                        <frontierRules name="buysubmarine"/>
+						<frontierRules name="buyTrain"/>
+						<frontierRules name="buynaval_mine"/>
                         <frontierRules name="buydestroyer"/>
+						<frontierRules name="buysubmarine"/>
+						<frontierRules name="buytransport"/>
                         <frontierRules name="buycruiser"/>
                         <frontierRules name="buybattlecruiser"/>
                         <frontierRules name="buybattleship"/>
-                        <frontierRules name="buytransport"/>
+						<frontierRules name="buyfighter"/>
+                        <frontierRules name="buyzeppelin"/>
 						<frontierRules name="buyFactory_Minor"/>
 						<frontierRules name="buyFactory_Upgrade"/>
 						<frontierRules name="buyFactory_Major"/>
 						<frontierRules name="buyHarbour"/>
-						<frontierRules name="buyTrain"/>
                 </productionFrontier>
 				
 				<productionFrontier name="productionUK">
                         <frontierRules name="buyinfantry"/>
                         <frontierRules name="buyfield_gun"/>
                         <frontierRules name="buycavalry"/>
-                        <frontierRules name="buyfighter"/>
-                        <frontierRules name="buyzeppelin"/>
-                        <frontierRules name="buysubmarine"/>
+						<frontierRules name="buyTrain"/>
+						<frontierRules name="buynaval_mine"/>
                         <frontierRules name="buydestroyer"/>
+						<frontierRules name="buysubmarine"/>
+						<frontierRules name="buytransport"/>
                         <frontierRules name="buycruiser"/>
                         <frontierRules name="buybattlecruiser"/>
                         <frontierRules name="buybattleship"/>
-                        <frontierRules name="buytransport"/>
+						<frontierRules name="buyfighter"/>
+                        <frontierRules name="buyzeppelin"/>
 						<frontierRules name="buyFactory_Minor"/>
 						<frontierRules name="buyFactory_Upgrade"/>
 						<frontierRules name="buyFactory_Major"/>
 						<frontierRules name="buyHarbour"/>
-						<frontierRules name="buyTrain"/>
                 </productionFrontier>
 				
 				<productionFrontier name="productionRussia">
                         <frontierRules name="buyinfantry"/>
                         <frontierRules name="buyfield_gun"/>
                         <frontierRules name="buycavalry"/>
-                        <frontierRules name="buyfighter"/>
-                        <frontierRules name="buyzeppelin"/>
-                        <frontierRules name="buysubmarine"/>
+						<frontierRules name="buyTrain"/>
+						<frontierRules name="buynaval_mine"/>
                         <frontierRules name="buydestroyer"/>
+						<frontierRules name="buysubmarine"/>
+						<frontierRules name="buytransport"/>
                         <frontierRules name="buycruiser"/>
                         <frontierRules name="buybattlecruiser"/>
                         <frontierRules name="buybattleship"/>
-                        <frontierRules name="buytransport"/>
+						<frontierRules name="buyfighter"/>
+                        <frontierRules name="buyzeppelin"/>
 						<frontierRules name="buyFactory_Minor"/>
 						<frontierRules name="buyFactory_Upgrade"/>
 						<frontierRules name="buyFactory_Major"/>
 						<frontierRules name="buyHarbour"/>
-						<frontierRules name="buyTrain"/>
                 </productionFrontier>
 				
 				<productionFrontier name="productionJapan">
                         <frontierRules name="buyinfantry"/>
                         <frontierRules name="buyfield_gun"/>
                         <frontierRules name="buycavalry"/>
-                        <frontierRules name="buyfighter"/>
-                        <frontierRules name="buyzeppelin"/>
-                        <frontierRules name="buysubmarine"/>
+						<frontierRules name="buyTrain"/>
+						<frontierRules name="buynaval_mine"/>
                         <frontierRules name="buydestroyer"/>
+						<frontierRules name="buysubmarine"/>
+						<frontierRules name="buytransport"/>
                         <frontierRules name="buycruiser"/>
                         <frontierRules name="buybattlecruiser"/>
                         <frontierRules name="buybattleship"/>
-                        <frontierRules name="buytransport"/>
+						<frontierRules name="buyfighter"/>
+                        <frontierRules name="buyzeppelin"/>
 						<frontierRules name="buyFactory_Minor"/>
 						<frontierRules name="buyFactory_Upgrade"/>
 						<frontierRules name="buyFactory_Major"/>
 						<frontierRules name="buyHarbour"/>
-						<frontierRules name="buyTrain"/>
                 </productionFrontier>
 				
 				<productionFrontier name="productionBolshevik">
                         <frontierRules name="buyinfantry"/>
                         <frontierRules name="buyfield_gun"/>
                         <frontierRules name="buycavalry"/>
-                        <frontierRules name="buyfighter"/>
-                        <frontierRules name="buyzeppelin"/>
-                        <frontierRules name="buysubmarine"/>
+						<frontierRules name="buyTrain"/>
+						<frontierRules name="buynaval_mine"/>
                         <frontierRules name="buydestroyer"/>
+						<frontierRules name="buysubmarine"/>
+						<frontierRules name="buytransport"/>
                         <frontierRules name="buycruiser"/>
                         <frontierRules name="buybattlecruiser"/>
                         <frontierRules name="buybattleship"/>
-                        <frontierRules name="buytransport"/>
+						<frontierRules name="buyfighter"/>
+                        <frontierRules name="buyzeppelin"/>
 						<frontierRules name="buyFactory_Minor"/>
 						<frontierRules name="buyFactory_Upgrade"/>
 						<frontierRules name="buyFactory_Major"/>
 						<frontierRules name="buyHarbour"/>
-						<frontierRules name="buyTrain"/>
                 </productionFrontier>
 				
 				<productionFrontier name="productionMinor">
                         <frontierRules name="buyinfantry"/>
                         <frontierRules name="buyfield_gun"/>
                         <frontierRules name="buycavalry"/>
-                        <frontierRules name="buyfighter"/>
-                        <frontierRules name="buyzeppelin"/>
-                        <frontierRules name="buysubmarine"/>
+						<frontierRules name="buyTrain"/>
+						<frontierRules name="buynaval_mine"/>
                         <frontierRules name="buydestroyer"/>
+						<frontierRules name="buysubmarine"/>
+						<frontierRules name="buytransport"/>
                         <frontierRules name="buycruiser"/>
                         <frontierRules name="buybattlecruiser"/>
                         <frontierRules name="buybattleship"/>
-                        <frontierRules name="buytransport"/>
+						<frontierRules name="buyfighter"/>
+                        <frontierRules name="buyzeppelin"/>
 						<frontierRules name="buyFactory_Minor"/>
 						<frontierRules name="buyFactory_Upgrade"/>
 						<frontierRules name="buyFactory_Major"/>
 						<frontierRules name="buyHarbour"/>
-						<frontierRules name="buyTrain"/>
                 </productionFrontier>
 				
                 	<playerProduction player="Ottoman" frontier="productionOttoman"/>
@@ -3420,170 +3450,422 @@
 
 	<technology>
 		<technologies>
+					<techname name="armour"/>
+					<techname name="tracer_rounds"/>
+					<techname name="creeping_barrage" tech="improvedArtillerySupport"/>
+					<techname name="counter_battery_fire"/>
+					<techname name="mobile_warfare"/>
+					<techname name="factory_electrification"/>
 					<techname name="antiSubmarine_warfare"/>
 					<techname name="aircraftCarrier"/>
-					<techname name="armour"/>
-					<techname name="interrupter_gear"/>
-					<techname name="tracer_rounds"/>
+					<techname name="shipyards"/>
+					<techname name="cruiser_bombardment"/>
+					<techname name="oil_powered_ships"/>
+					<techname name="improved_mines"/>
+					<techname name="cantilevered_wing"/>
 					<techname name="airTraffic_control"/>
+					<techname name="synchronization_gear"/>
+					<techname name="air_support"/>
+					<techname name="strategic_bombing"/>
+					<techname name="radio"/>
 					<techname name="mechanizedInfantry"/>
 		</technologies>
 		
 		<playerTech player="Ottoman">
-			<category name="Technology">
+			<category name="Land">
+				<tech name="armour"/>
+				<tech name="tracer_rounds"/>
+				<tech name="creeping_barrage"/>
+				<tech name="counter_battery_fire"/>
+				<tech name="mobile_warfare"/>
+				<tech name="factory_electrification"/>
+			</category>
+			<category name="Sea">
 				<tech name="antiSubmarine_warfare"/>
 				<tech name="aircraftCarrier"/>
-				<tech name="armour"/>
-				<tech name="interrupter_gear"/>
-				<tech name="tracer_rounds"/>
+				<tech name="shipyards"/>
+				<tech name="cruiser_bombardment"/>
+				<tech name="oil_powered_ships"/>
+				<tech name="improved_mines"/>
+			</category>
+			<category name="Air">
+				<tech name="cantilevered_wing"/>
 				<tech name="airTraffic_control"/>
+				<tech name="synchronization_gear"/>
+				<tech name="air_support"/>
+				<tech name="strategic_bombing"/>
+				<tech name="radio"/>
 			</category>
 		</playerTech>
 		
 		<playerTech player="USA">
-			<category name="Technology">
+			<category name="Land">
+				<tech name="armour"/>
+				<tech name="tracer_rounds"/>
+				<tech name="creeping_barrage"/>
+				<tech name="counter_battery_fire"/>
+				<tech name="mobile_warfare"/>
+				<tech name="factory_electrification"/>
+			</category>
+			<category name="Sea">
 				<tech name="antiSubmarine_warfare"/>
 				<tech name="aircraftCarrier"/>
-				<tech name="armour"/>
-				<tech name="interrupter_gear"/>
-				<tech name="tracer_rounds"/>
+				<tech name="shipyards"/>
+				<tech name="cruiser_bombardment"/>
+				<tech name="oil_powered_ships"/>
+				<tech name="improved_mines"/>
+			</category>
+			<category name="Air">
+				<tech name="cantilevered_wing"/>
 				<tech name="airTraffic_control"/>
+				<tech name="synchronization_gear"/>
+				<tech name="air_support"/>
+				<tech name="strategic_bombing"/>
+				<tech name="radio"/>
 			</category>
 		</playerTech>
 
 		<playerTech player="Germany">
-			<category name="Technology">
+			<category name="Land">
+				<tech name="armour"/>
+				<tech name="tracer_rounds"/>
+				<tech name="creeping_barrage"/>
+				<tech name="counter_battery_fire"/>
+				<tech name="mobile_warfare"/>
+				<tech name="factory_electrification"/>
+			</category>
+			<category name="Sea">
 				<tech name="antiSubmarine_warfare"/>
 				<tech name="aircraftCarrier"/>
-				<tech name="armour"/>
-				<tech name="interrupter_gear"/>
-				<tech name="tracer_rounds"/>
+				<tech name="shipyards"/>
+				<tech name="cruiser_bombardment"/>
+				<tech name="oil_powered_ships"/>
+				<tech name="improved_mines"/>
+			</category>
+			<category name="Air">
+				<tech name="cantilevered_wing"/>
 				<tech name="airTraffic_control"/>
+				<tech name="synchronization_gear"/>
+				<tech name="air_support"/>
+				<tech name="strategic_bombing"/>
+				<tech name="radio"/>
 			</category>
 		</playerTech>
 		
 		<playerTech player="France">
-			<category name="Technology">
+			<category name="Land">
+				<tech name="armour"/>
+				<tech name="tracer_rounds"/>
+				<tech name="creeping_barrage"/>
+				<tech name="counter_battery_fire"/>
+				<tech name="mobile_warfare"/>
+				<tech name="factory_electrification"/>
+			</category>
+			<category name="Sea">
 				<tech name="antiSubmarine_warfare"/>
 				<tech name="aircraftCarrier"/>
-				<tech name="armour"/>
-				<tech name="interrupter_gear"/>
-				<tech name="tracer_rounds"/>
+				<tech name="shipyards"/>
+				<tech name="cruiser_bombardment"/>
+				<tech name="oil_powered_ships"/>
+				<tech name="improved_mines"/>
+			</category>
+			<category name="Air">
+				<tech name="cantilevered_wing"/>
 				<tech name="airTraffic_control"/>
+				<tech name="synchronization_gear"/>
+				<tech name="air_support"/>
+				<tech name="strategic_bombing"/>
+				<tech name="radio"/>
 			</category>
 		</playerTech>
 		
 		<playerTech player="Austria">
-			<category name="Technology">
+			<category name="Land">
+				<tech name="armour"/>
+				<tech name="tracer_rounds"/>
+				<tech name="creeping_barrage"/>
+				<tech name="counter_battery_fire"/>
+				<tech name="mobile_warfare"/>
+				<tech name="factory_electrification"/>
+			</category>
+			<category name="Sea">
 				<tech name="antiSubmarine_warfare"/>
 				<tech name="aircraftCarrier"/>
-				<tech name="armour"/>
-				<tech name="interrupter_gear"/>
-				<tech name="tracer_rounds"/>
+				<tech name="shipyards"/>
+				<tech name="cruiser_bombardment"/>
+				<tech name="oil_powered_ships"/>
+				<tech name="improved_mines"/>
+			</category>
+			<category name="Air">
+				<tech name="cantilevered_wing"/>
 				<tech name="airTraffic_control"/>
+				<tech name="synchronization_gear"/>
+				<tech name="air_support"/>
+				<tech name="strategic_bombing"/>
+				<tech name="radio"/>
 			</category>
 		</playerTech>
 		<playerTech player="Hungary">
-			<category name="Technology">
+			<category name="Land">
+				<tech name="armour"/>
+				<tech name="tracer_rounds"/>
+				<tech name="creeping_barrage"/>
+				<tech name="counter_battery_fire"/>
+				<tech name="mobile_warfare"/>
+				<tech name="factory_electrification"/>
+			</category>
+			<category name="Sea">
 				<tech name="antiSubmarine_warfare"/>
 				<tech name="aircraftCarrier"/>
-				<tech name="armour"/>
-				<tech name="interrupter_gear"/>
-				<tech name="tracer_rounds"/>
+				<tech name="shipyards"/>
+				<tech name="cruiser_bombardment"/>
+				<tech name="oil_powered_ships"/>
+				<tech name="improved_mines"/>
+			</category>
+			<category name="Air">
+				<tech name="cantilevered_wing"/>
 				<tech name="airTraffic_control"/>
+				<tech name="synchronization_gear"/>
+				<tech name="air_support"/>
+				<tech name="strategic_bombing"/>
+				<tech name="radio"/>
 			</category>
 		</playerTech>
 		
 		<playerTech player="Italy">
-			<category name="Technology">
+			<category name="Land">
+				<tech name="armour"/>
+				<tech name="tracer_rounds"/>
+				<tech name="creeping_barrage"/>
+				<tech name="counter_battery_fire"/>
+				<tech name="mobile_warfare"/>
+				<tech name="factory_electrification"/>
+			</category>
+			<category name="Sea">
 				<tech name="antiSubmarine_warfare"/>
 				<tech name="aircraftCarrier"/>
-				<tech name="armour"/>
-				<tech name="interrupter_gear"/>
-				<tech name="tracer_rounds"/>
+				<tech name="shipyards"/>
+				<tech name="cruiser_bombardment"/>
+				<tech name="oil_powered_ships"/>
+				<tech name="improved_mines"/>
+			</category>
+			<category name="Air">
+				<tech name="cantilevered_wing"/>
 				<tech name="airTraffic_control"/>
+				<tech name="synchronization_gear"/>
+				<tech name="air_support"/>
+				<tech name="strategic_bombing"/>
+				<tech name="radio"/>
 			</category>
 		</playerTech>
 		
 		<playerTech player="UK">
-			<category name="Technology">
+			<category name="Land">
+				<tech name="armour"/>
+				<tech name="tracer_rounds"/>
+				<tech name="creeping_barrage"/>
+				<tech name="counter_battery_fire"/>
+				<tech name="mobile_warfare"/>
+				<tech name="factory_electrification"/>
+			</category>
+			<category name="Sea">
 				<tech name="antiSubmarine_warfare"/>
 				<tech name="aircraftCarrier"/>
-				<tech name="armour"/>
-				<tech name="interrupter_gear"/>
-				<tech name="tracer_rounds"/>
+				<tech name="shipyards"/>
+				<tech name="cruiser_bombardment"/>
+				<tech name="oil_powered_ships"/>
+				<tech name="improved_mines"/>
+			</category>
+			<category name="Air">
+				<tech name="cantilevered_wing"/>
 				<tech name="airTraffic_control"/>
+				<tech name="synchronization_gear"/>
+				<tech name="air_support"/>
+				<tech name="strategic_bombing"/>
+				<tech name="radio"/>
 			</category>
 		</playerTech>
 		<playerTech player="Canada">
-			<category name="Technology">
+			<category name="Land">
+				<tech name="armour"/>
+				<tech name="tracer_rounds"/>
+				<tech name="creeping_barrage"/>
+				<tech name="counter_battery_fire"/>
+				<tech name="mobile_warfare"/>
+				<tech name="factory_electrification"/>
+			</category>
+			<category name="Sea">
 				<tech name="antiSubmarine_warfare"/>
 				<tech name="aircraftCarrier"/>
-				<tech name="armour"/>
-				<tech name="interrupter_gear"/>
-				<tech name="tracer_rounds"/>
+				<tech name="shipyards"/>
+				<tech name="cruiser_bombardment"/>
+				<tech name="oil_powered_ships"/>
+				<tech name="improved_mines"/>
+			</category>
+			<category name="Air">
+				<tech name="cantilevered_wing"/>
 				<tech name="airTraffic_control"/>
+				<tech name="synchronization_gear"/>
+				<tech name="air_support"/>
+				<tech name="strategic_bombing"/>
+				<tech name="radio"/>
 			</category>
 		</playerTech>
 		<playerTech player="South_Africa">
-			<category name="Technology">
+			<category name="Land">
+				<tech name="armour"/>
+				<tech name="tracer_rounds"/>
+				<tech name="creeping_barrage"/>
+				<tech name="counter_battery_fire"/>
+				<tech name="mobile_warfare"/>
+				<tech name="factory_electrification"/>
+			</category>
+			<category name="Sea">
 				<tech name="antiSubmarine_warfare"/>
 				<tech name="aircraftCarrier"/>
-				<tech name="armour"/>
-				<tech name="interrupter_gear"/>
-				<tech name="tracer_rounds"/>
+				<tech name="shipyards"/>
+				<tech name="cruiser_bombardment"/>
+				<tech name="oil_powered_ships"/>
+				<tech name="improved_mines"/>
+			</category>
+			<category name="Air">
+				<tech name="cantilevered_wing"/>
 				<tech name="airTraffic_control"/>
+				<tech name="synchronization_gear"/>
+				<tech name="air_support"/>
+				<tech name="strategic_bombing"/>
+				<tech name="radio"/>
 			</category>
 		</playerTech>
 		<playerTech player="India">
-			<category name="Technology">
+			<category name="Land">
+				<tech name="armour"/>
+				<tech name="tracer_rounds"/>
+				<tech name="creeping_barrage"/>
+				<tech name="counter_battery_fire"/>
+				<tech name="mobile_warfare"/>
+				<tech name="factory_electrification"/>
+			</category>
+			<category name="Sea">
 				<tech name="antiSubmarine_warfare"/>
 				<tech name="aircraftCarrier"/>
-				<tech name="armour"/>
-				<tech name="interrupter_gear"/>
-				<tech name="tracer_rounds"/>
+				<tech name="shipyards"/>
+				<tech name="cruiser_bombardment"/>
+				<tech name="oil_powered_ships"/>
+				<tech name="improved_mines"/>
+			</category>
+			<category name="Air">
+				<tech name="cantilevered_wing"/>
 				<tech name="airTraffic_control"/>
+				<tech name="synchronization_gear"/>
+				<tech name="air_support"/>
+				<tech name="strategic_bombing"/>
+				<tech name="radio"/>
 			</category>
 		</playerTech>
 		<playerTech player="ANZAC">
-			<category name="Technology">
+			<category name="Land">
+				<tech name="armour"/>
+				<tech name="tracer_rounds"/>
+				<tech name="creeping_barrage"/>
+				<tech name="counter_battery_fire"/>
+				<tech name="mobile_warfare"/>
+				<tech name="factory_electrification"/>
+			</category>
+			<category name="Sea">
 				<tech name="antiSubmarine_warfare"/>
 				<tech name="aircraftCarrier"/>
-				<tech name="armour"/>
-				<tech name="interrupter_gear"/>
-				<tech name="tracer_rounds"/>
+				<tech name="shipyards"/>
+				<tech name="cruiser_bombardment"/>
+				<tech name="oil_powered_ships"/>
+				<tech name="improved_mines"/>
+			</category>
+			<category name="Air">
+				<tech name="cantilevered_wing"/>
 				<tech name="airTraffic_control"/>
+				<tech name="synchronization_gear"/>
+				<tech name="air_support"/>
+				<tech name="strategic_bombing"/>
+				<tech name="radio"/>
 			</category>
 		</playerTech>
 		
 		<playerTech player="Russia">
-			<category name="Technology">
+			<category name="Land">
+				<tech name="armour"/>
+				<tech name="tracer_rounds"/>
+				<tech name="creeping_barrage"/>
+				<tech name="counter_battery_fire"/>
+				<tech name="mobile_warfare"/>
+				<tech name="factory_electrification"/>
+			</category>
+			<category name="Sea">
 				<tech name="antiSubmarine_warfare"/>
 				<tech name="aircraftCarrier"/>
-				<tech name="armour"/>
-				<tech name="interrupter_gear"/>
-				<tech name="tracer_rounds"/>
+				<tech name="shipyards"/>
+				<tech name="cruiser_bombardment"/>
+				<tech name="oil_powered_ships"/>
+				<tech name="improved_mines"/>
+			</category>
+			<category name="Air">
+				<tech name="cantilevered_wing"/>
 				<tech name="airTraffic_control"/>
+				<tech name="synchronization_gear"/>
+				<tech name="air_support"/>
+				<tech name="strategic_bombing"/>
+				<tech name="radio"/>
 			</category>
 		</playerTech>
 		<playerTech player="Japan">
-			<category name="Technology">
+			<category name="Land">
+				<tech name="armour"/>
+				<tech name="tracer_rounds"/>
+				<tech name="creeping_barrage"/>
+				<tech name="counter_battery_fire"/>
+				<tech name="mobile_warfare"/>
+				<tech name="factory_electrification"/>
+			</category>
+			<category name="Sea">
 				<tech name="antiSubmarine_warfare"/>
 				<tech name="aircraftCarrier"/>
-				<tech name="armour"/>
-				<tech name="interrupter_gear"/>
-				<tech name="tracer_rounds"/>
+				<tech name="shipyards"/>
+				<tech name="cruiser_bombardment"/>
+				<tech name="oil_powered_ships"/>
+				<tech name="improved_mines"/>
+			</category>
+			<category name="Air">
+				<tech name="cantilevered_wing"/>
 				<tech name="airTraffic_control"/>
+				<tech name="synchronization_gear"/>
+				<tech name="air_support"/>
+				<tech name="strategic_bombing"/>
+				<tech name="radio"/>
 			</category>
 		</playerTech>
 		<playerTech player="Bolshevik">
-			<category name="Technology">
+			<category name="Land">
+				<tech name="armour"/>
+				<tech name="tracer_rounds"/>
+				<tech name="creeping_barrage"/>
+				<tech name="counter_battery_fire"/>
+				<tech name="mobile_warfare"/>
+				<tech name="factory_electrification"/>
+			</category>
+			<category name="Sea">
 				<tech name="antiSubmarine_warfare"/>
 				<tech name="aircraftCarrier"/>
-				<tech name="armour"/>
-				<tech name="interrupter_gear"/>
-				<tech name="tracer_rounds"/>
+				<tech name="shipyards"/>
+				<tech name="cruiser_bombardment"/>
+				<tech name="oil_powered_ships"/>
+				<tech name="improved_mines"/>
+			</category>
+			<category name="Air">
+				<tech name="cantilevered_wing"/>
 				<tech name="airTraffic_control"/>
+				<tech name="synchronization_gear"/>
+				<tech name="air_support"/>
+				<tech name="strategic_bombing"/>
+				<tech name="radio"/>
 			</category>
 		</playerTech>
 
@@ -3780,7 +4062,7 @@
                          <option name="isSea" value="true"/>
                          <option name="attack" value="4"/>
                          <option name="defense" value="4"/>
-                         <option name="canBombard" value="true"/>
+                         <option name="canBombard" value="false"/>
 						 <option name="blockade" value="1"/>
 						 <option name="requiresUnits" value="factory_minor"/>
 						 <option name="requiresUnits" value="factory_major"/>
@@ -3798,6 +4080,27 @@
                          <option name="requiresUnits" value="factory_upgrade"/>
 						 <option name="blockade" value="1"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="bomber" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="isAir" value="true"/>
+						 <option name="attack" value="3"/>
+                         <option name="defense" value="3"/>
+						 <option name="blockade" value="1"/>
+						 <option name="movement" value="4"/>
+                         <option name="carrierCost" value="1"/>
+                         <option name="airAttack" value="0"/>
+						 <option name="canIntercept" value="true"/>
+						 <option name="canEscort" value="true"/>
+						 <option name="canScramble" value="true"/>
+                         <option name="maxScrambleDistance" value="1"/>
+                         <option name="airDefense" value="0"/>
+						 <option name="requiresUnits" value="factory_minor"/>
+						 <option name="requiresUnits" value="factory_major"/>
+                         <option name="requiresUnits" value="factory_upgrade"/>
+						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
+						 <option name="isStrategicBomber" value="true"/>
+						 <option name="bombingMaxDieSides" value="6"/>
+						 <option name="bombingBonus" value="0"/>
                     </attachment>
                     <attachment name="unitAttachment" attachTo="cavalry" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
                          <option name="movement" value="2"/>
@@ -3903,14 +4206,28 @@
                          <option name="isAir" value="true"/>
                          <option name="attack" value="3"/>
                          <option name="defense" value="4"/>
-                         <option name="movement" value="3"/>
+						 <option name="blockade" value="1"/>
+                         <option name="movement" value="4"/>
                          <option name="carrierCost" value="1"/>
-						 <option name="airAttack" value="1"/>
+						 <option name="airAttack" value="0"/>
 						 <option name="canIntercept" value="true"/>
 						 <option name="canEscort" value="true"/>
 						 <option name="canScramble" value="true"/>
                          <option name="maxScrambleDistance" value="1"/>
-                         <option name="airDefense" value="1"/>
+                         <option name="airDefense" value="0"/>
+						 <option name="requiresUnits" value="factory_minor"/>
+						 <option name="requiresUnits" value="factory_major"/>
+                         <option name="requiresUnits" value="factory_upgrade"/>
+						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="naval_mine" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="movement" value="0"/>
+                         <option name="isSea" value="true"/>
+                         <option name="attack" value="0"/>
+                         <option name="defense" value="1"/>
+						 <option name="blockade" value="0"/>
+						 <option name="isDestroyer" value="true"/>
+						 <option name="isSuicide" value="true"/>
 						 <option name="requiresUnits" value="factory_minor"/>
 						 <option name="requiresUnits" value="factory_major"/>
                          <option name="requiresUnits" value="factory_upgrade"/>
@@ -3957,6 +4274,8 @@
                          <option name="isAir" value="true"/>
                          <option name="attack" value="1"/>
                          <option name="defense" value="1"/>
+						 <option name="airAttack" value="1"/>
+						 <option name="airDefense" value="1"/>
                          <option name="isStrategicBomber" value="true"/>
                          <option name="requiresUnits" value="factory_major"/>
                          <option name="requiresUnits" value="factory_upgrade"/>
@@ -4041,6 +4360,7 @@
                          <option name="movement" value="0"/>
 						 <option name="givesMovement" value="1:fighter"/>
 						 <option name="givesMovement" value="1:late_fighter"/>
+						 <option name="givesMovement" value="1:bomber"/>
 						 <option name="givesMovement" value="1:zeppelin"/>
 						 <option name="isAAforBombingThisUnitOnly" value="false"/>
 						 <option name="isRocket" value="true"/>
@@ -4937,7 +5257,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Hainan" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="0"/>
+                        <option name="production" value="1"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Haiti" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5245,7 +5565,11 @@
                         <option name="production" value="1"/>
                     </attachment>
 
-                    <attachment name="territoryAttachment" attachTo="Macao" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                    <attachment name="territoryAttachment" attachTo="Kouang-Theou-Wan" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+                    </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Macao" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
                     </attachment>
 
@@ -5432,7 +5756,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Nanking" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="2"/>
+                        <option name="production" value="1"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Naples" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5727,6 +6051,10 @@
                         <option name="production" value="1"/>
                     </attachment>
 					
+					<attachment name="territoryAttachment" attachTo="Port Edward" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+                    </attachment>
+					
 					<attachment name="territoryAttachment" attachTo="Port Harcourt" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
                     </attachment>
@@ -5924,20 +6252,8 @@
 						<option name="captureUnitOnEnteringBy" value="Germany:Austria:Ottoman:Bulgaria:KMT:Constitutionalist"/>
                     </attachment>
 
-                    <attachment name="territoryAttachment" attachTo="Shanghai 1" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
-                    </attachment>
-
-                    <attachment name="territoryAttachment" attachTo="Shanghai 2" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
-                    </attachment>
-
-                    <attachment name="territoryAttachment" attachTo="Shanghai 3" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
-                    </attachment>
-
-                    <attachment name="territoryAttachment" attachTo="Shanghai 4" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
+                    <attachment name="territoryAttachment" attachTo="Shanghai" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="2"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Shantung" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -6778,6 +7094,26 @@
 				<option name="landTerritories" value="Cairo-Suez"/>
 			</attachment>
 			
+			<attachment name="canalAttachmentKiel" attachTo="Sea Zone 12 Baltic Sea" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+				<option name="canalName" value="Kiel Canal"/>
+				<option name="landTerritories" value="Holstein"/>
+			</attachment>
+			
+			<attachment name="canalAttachmentKiel" attachTo="Sea Zone 14 Helgoland Bight" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+				<option name="canalName" value="Kiel Canal"/>
+				<option name="landTerritories" value="Holstein"/>
+			</attachment>
+			
+			<attachment name="canalAttachmentDanishStraits" attachTo="Sea Zone 12 Baltic Sea" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+				<option name="canalName" value="Danish Straits"/>
+				<option name="landTerritories" value="Denmark:Sweden"/>
+			</attachment>
+			
+			<attachment name="canalAttachmentDanishStraits" attachTo="Sea Zone 13 Skagerrak" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+				<option name="canalName" value="Danish Straits"/>
+				<option name="landTerritories" value="Denmark:Sweden"/>
+			</attachment>
+			
 			<attachment name="canalAttachmentStLawrenceRiver" attachTo="Sea Zone 21 Gulf of St. Lawrence" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
 				<option name="canalName" value="St. Lawrence River"/>
 				<option name="landTerritories" value="Quebec"/>
@@ -6797,6 +7133,237 @@
 				<option name="canalName" value="Erie Canal"/>
 				<option name="landTerritories" value="Hudson-Delaware"/>
 			</attachment>
+			
+			<!--  National Objectives -->
+				<!-- Conditions -->
+				<attachment name="conditionAttachment_Germany_Not_Yet_At_War_With_Japan" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<option name="relationship" value="Germany:Japan:anyNeutral"/>
+				</attachment>
+				<attachment name="conditionAttachment_USA_At_Peace" attachTo="USA" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<option name="relationship" value="USA:Germany:anyNeutral"/>
+				</attachment>
+				<!-- Italy conditions -->
+				<attachment name="conditionAttachment_Italy_At_Peace" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<option name="relationship" value="Italy:Germany:anyNeutral"/>
+				</attachment>
+				<attachment name="conditionAttachment_Italy_Allies" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<option name="relationship" value="Italy:UK:Allied"/>
+				</attachment>
+				<attachment name="conditionAttachment_Italy_CP" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<option name="relationship" value="Italy:Germany:Allied"/>
+				</attachment>
+			
+				<!-- Chinese Treaty Ports -->
+					<!-- Amoy (Fukien) -->
+					<attachment name="conditionAttachment_Fukien_Not_CP" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="alliedOwnershipTerritories" value="Fukien" count="1"/>
+						<option name="invert" value="true"/>
+					</attachment>
+					<attachment name="conditionAttachment_SZ_136_Not_Interdicted_Allies" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="alliedPresenceTerritories" value="Sea Zone 136 East China Sea" count="1"/>
+						<option name="invert" value="true"/>
+					</attachment>
+					<attachment name="conditionAttachment_SZ_136_Not_Interdicted_CP" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="alliedPresenceTerritories" value="Sea Zone 136 East China Sea" count="1"/>
+						<option name="invert" value="true"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Amoy_UK" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="1"/>
+						<option name="conditions" value="conditionAttachment_Fukien_Not_CP:conditionAttachment_SZ_136_Not_Interdicted_Allies"/>
+					</attachment>
+					
+					<!-- Canton -->
+					<attachment name="conditionAttachment_Canton_Not_CP" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="alliedOwnershipTerritories" value="Canton" count="1"/>
+						<option name="invert" value="true"/>
+					</attachment>
+					<attachment name="conditionAttachment_SZ_129_Not_Interdicted" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="alliedPresenceTerritories" value="Sea Zone 129 South China Sea" count="1"/>
+						<option name="invert" value="true"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Canton_UK" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="2"/>
+						<option name="conditions" value="conditionAttachment_Canton_Not_CP:conditionAttachment_SZ_129_Not_Interdicted"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Canton_France" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="1"/>
+						<option name="conditions" value="conditionAttachment_Canton_Not_CP:conditionAttachment_SZ_129_Not_Interdicted"/>
+					</attachment>
+					
+					<!-- Tientsin (Hebei) -->
+					<!-- Allies -->
+					<attachment name="conditionAttachment_Hebei_Not_CP" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="alliedOwnershipTerritories" value="Hebei" count="1"/>
+						<option name="invert" value="true"/>
+					</attachment>
+					<attachment name="conditionAttachment_SZ_137_Not_Interdicted_Allies" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="alliedPresenceTerritories" value="Sea Zone 137 Yellow Sea" count="1"/>
+						<option name="invert" value="true"/>
+					</attachment>
+					<attachment name="conditionAttachment_Tientsin_Allied_Income" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="conditions" value="conditionAttachment_Hebei_Not_CP:conditionAttachment_SZ_137_Not_Interdicted_Allies"/>
+					</attachment>
+					<attachment name="conditionAttachment_Tientsin_Allied_Italy_Income" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="conditions" value="conditionAttachment_Italy_Allies:conditionAttachment_Tientsin_Allied_Income"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Tientsin_UK" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="1"/>
+						<option name="conditions" value="conditionAttachment_Tientsin_Allied_Income"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Tientsin_France" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="1"/>
+						<option name="conditions" value="conditionAttachment_Tientsin_Allied_Income"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Tientsin_Russia" attachTo="Russia" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="1"/>
+						<option name="conditions" value="conditionAttachment_Tientsin_Allied_Income"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Tientsin_Japan" attachTo="Japan" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="1"/>
+						<option name="conditions" value="conditionAttachment_Tientsin_Allied_Income:conditionAttachment_Germany_Not_Yet_At_War_With_Japan"/>
+						<option name="conditionType" value="OR"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Tientsin_Belgium" attachTo="Belgium" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="1"/>
+						<option name="conditions" value="conditionAttachment_Tientsin_Allied_Income"/>
+					</attachment>
+					<!-- Central Powers -->
+					<attachment name="conditionAttachment_Hebei_Not_Allied" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="alliedOwnershipTerritories" value="Hebei" count="1"/>
+						<option name="invert" value="true"/>
+					</attachment>
+					<attachment name="conditionAttachment_SZ_137_Not_Interdicted_CP" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="alliedPresenceTerritories" value="Sea Zone 137 Yellow Sea" count="1"/>
+						<option name="invert" value="true"/>
+					</attachment>
+					<attachment name="conditionAttachment_Tientsin_CP_Income" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="conditions" value="conditionAttachment_Hebei_Not_Allied:conditionAttachment_SZ_137_Not_Interdicted_CP"/>
+					</attachment>
+					<attachment name="conditionAttachment_Tientsin_CP_Italy_Income" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="conditions" value="conditionAttachment_Italy_CP:conditionAttachment_Tientsin_CP_Income"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Tientsin_Germany" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="3"/>
+						<option name="conditions" value="conditionAttachment_Tientsin_CP_Income"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Tientsin_Austria" attachTo="Austria" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="2"/>
+						<option name="conditions" value="conditionAttachment_Tientsin_CP_Income"/>
+					</attachment>
+					<!-- Italy -->
+					<attachment name="objectiveAttachment_Tientsin_Italy" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="1"/>
+						<option name="conditions" value="conditionAttachment_Tientsin_Allied_Italy_Income:conditionAttachment_Tientsin_CP_Italy_Income:conditionAttachment_Italy_At_Peace"/>
+						<option name="conditionType" value="OR"/>
+					</attachment>
+					
+					<!-- Shanghai -->
+					<attachment name="conditionAttachment_Shanghai_Not_CP" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="alliedOwnershipTerritories" value="Shanghai" count="1"/>
+						<option name="invert" value="true"/>
+					</attachment>
+					<attachment name="conditionAttachment_Shanghai_Not_Interdicted_Allies" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="conditions" value="conditionAttachment_SZ_136_Not_Interdicted_Allies:conditionAttachment_SZ_137_Not_Interdicted_Allies"/>
+						<option name="conditionType" value="OR"/>
+					</attachment>
+					<attachment name="conditionAttachment_Shanghai_Allied_Income" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="conditions" value="conditionAttachment_Shanghai_Not_CP:conditionAttachment_Shanghai_Not_Interdicted_Allies"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Shanghai_UK" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="2"/>
+						<option name="conditions" value="conditionAttachment_Shanghai_Allied_Income"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Shanghai_France" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="2"/>
+						<option name="conditions" value="conditionAttachment_Shanghai_Allied_Income"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Shanghai_USA" attachTo="USA" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="2"/>
+						<option name="conditions" value="conditionAttachment_Shanghai_Allied_Income:conditionAttachment_USA_At_Peace"/>
+						<option name="conditionType" value="OR"/>
+					</attachment>
+					
+					<!-- Hankow (Hubei => Approximating to Henan-Anhui) -->
+					<!-- Allies -->
+					<attachment name="conditionAttachment_Anhui_Not_CP" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="alliedOwnershipTerritories" value="Henan-Anhui" count="1"/>
+						<option name="invert" value="true"/>
+					</attachment>
+					<attachment name="conditionAttachment_Hankow_Allied_Income" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="conditions" value="conditionAttachment_Anhui_Not_CP:conditionAttachment_Shanghai_Not_Interdicted_Allies"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Hankow_UK" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="1"/>
+						<option name="conditions" value="conditionAttachment_Hankow_Allied_Income"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Hankow_France" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="1"/>
+						<option name="conditions" value="conditionAttachment_Hankow_Allied_Income"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Hankow_Russia" attachTo="Russia" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="1"/>
+						<option name="conditions" value="conditionAttachment_Hankow_Allied_Income"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Hankow_Japan" attachTo="Japan" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="1"/>
+						<option name="conditions" value="conditionAttachment_Hankow_Allied_Income:conditionAttachment_Germany_Not_Yet_At_War_With_Japan"/>
+						<option name="conditionType" value="OR"/>
+					</attachment>
+					<!-- Central Powers -->
+					<attachment name="conditionAttachment_Anhui_Not_Allied" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="alliedOwnershipTerritories" value="Henan-Anhui" count="1"/>
+						<option name="invert" value="true"/>
+					</attachment>
+					<attachment name="conditionAttachment_Shanghai_Not_Interdicted_CP" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="conditions" value="conditionAttachment_SZ_136_Not_Interdicted_CP:conditionAttachment_SZ_137_Not_Interdicted_CP"/>
+						<option name="conditionType" value="OR"/>
+					</attachment>
+					<attachment name="objectiveAttachment_Hankow_Germany" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="objectiveValue" value="3"/>
+						<option name="conditions" value="conditionAttachment_Anhui_Not_Allied:conditionAttachment_Shanghai_Not_Interdicted_CP"/>
+					</attachment>
+			
+			<!-- Support Attachments -->
+				<attachment name="supportAttachmentCounterBatteryFire" attachTo="field_gun" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+					<option name="unitType" value="infantry:cavalry"/>
+					<option name="faction" value="allied"/>
+					<option name="side" value="offence:defence"/>
+					<option name="dice" value="strength"/>
+					<option name="bonus" value="1"/>
+					<option name="number" value="1"/>
+					<option name="bonusType" value="CounterBatteryFire"/>
+					<option name="impArtTech" value="true"/>
+				</attachment>
+				<attachment name="supportAttachmentAirSupport1" attachTo="fighter" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+					<option name="unitType" value="infantry:cavalry:tank"/>
+					<option name="faction" value="allied"/>
+					<option name="side" value="offence"/>
+					<option name="dice" value="strength"/>
+					<option name="bonus" value="1"/>
+					<option name="number" value="1"/>
+					<option name="bonusType" value="AirSupport"/>
+					<option name="impArtTech" value="false"/>
+				</attachment>
+				<attachment name="supportAttachmentAirSupport2" attachTo="late_fighter" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+					<option name="unitType" value="infantry:cavalry:tank"/>
+					<option name="faction" value="allied"/>
+					<option name="side" value="offence"/>
+					<option name="dice" value="strength"/>
+					<option name="bonus" value="1"/>
+					<option name="number" value="1"/>
+					<option name="bonusType" value="AirSupport"/>
+					<option name="impArtTech" value="false"/>
+				</attachment>
+				<attachment name="supportAttachmentAirSupport3" attachTo="bomber" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+					<option name="unitType" value="infantry:cavalry:tank"/>
+					<option name="faction" value="allied"/>
+					<option name="side" value="offence"/>
+					<option name="dice" value="strength"/>
+					<option name="bonus" value="1"/>
+					<option name="number" value="1"/>
+					<option name="bonusType" value="AirSupport"/>
+					<option name="impArtTech" value="false"/>
+				</attachment>
 			
 			<!-- Player Attachments -->
 
@@ -7128,28 +7695,11 @@
                 </attachment>
 				
 				<!-- Japan conditions -->
-				<attachment name="conditionAttachment_Germany_Not_Yet_At_War_With_Japan" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-					<option name="relationship" value="Germany:Japan:anyNeutral"/>
-				</attachment>
 				<attachment name="conditionAttachment_Japan_At_War" attachTo="Japan" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 					<option name="relationship" value="Germany:Japan:anyWar"/>
 				</attachment>
 				
-				<!-- Italy conditions -->
-				<attachment name="conditionAttachment_Italy_At_Peace" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-					<option name="relationship" value="Italy:Germany:anyNeutral"/>
-				</attachment>
-				<attachment name="conditionAttachment_Italy_Allies" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-					<option name="relationship" value="Italy:UK:Allied"/>
-				</attachment>
-				<attachment name="conditionAttachment_Italy_CP" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-					<option name="relationship" value="Italy:Germany:Allied"/>
-				</attachment>
-				
 				<!-- USA conditions -->
-				<attachment name="conditionAttachment_USA_At_Peace" attachTo="USA" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-					<option name="relationship" value="USA:Germany:anyNeutral"/>
-				</attachment>
 				<attachment name="conditionAttachment_USA_At_War" attachTo="USA" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 					<option name="relationship" value="USA:Germany:anyWar"/>
 				</attachment>
@@ -9466,6 +10016,52 @@
 				</attachment>
 				
 				<!-- Tech Ability Attachment -->
+				<attachment name="techAbilityAttachment" attachTo="mobile_warfare" javaClass="games.strategy.triplea.attachments.TechAbilityAttachment" type="technology">
+						<option name="movementBonus" value="1:cavalry"/>
+						<option name="movementBonus" value="1:tank"/>
+						<option name="movementBonus" value="2:train"/>
+				</attachment>
+				<attachment name="techAbilityAttachment" attachTo="factory_electrification" javaClass="games.strategy.triplea.attachments.TechAbilityAttachment" type="technology">
+						<option name="productionBonus" value="1:factory_minor"/>
+						<option name="productionBonus" value="3:factory_major"/>
+						<option name="productionBonus" value="3:factory_upgrade"/>
+				</attachment>
+				<attachment name="techAbilityAttachment" attachTo="cruiser_bombardment" javaClass="games.strategy.triplea.attachments.TechAbilityAttachment" type="technology">
+						<option name="unitAbilitiesGained" value="battlecruiser:canBombard"/>
+						<option name="unitAbilitiesGained" value="cruiser:canBombard"/>
+				</attachment>
+				<attachment name="techAbilityAttachment" attachTo="oil_powered_ships" javaClass="games.strategy.triplea.attachments.TechAbilityAttachment" type="technology">
+						<option name="movementBonus" value="1:destroyer"/>
+						<option name="movementBonus" value="1:adv_destroyer"/>
+						<option name="movementBonus" value="1:submarine"/>
+						<option name="movementBonus" value="1:transport"/>
+						<option name="movementBonus" value="1:cruiser"/>
+						<option name="movementBonus" value="1:battlecruiser"/>
+						<option name="movementBonus" value="1:battleship"/>
+						<option name="movementBonus" value="1:carrier"/>
+				</attachment>
+				<attachment name="techAbilityAttachment" attachTo="improved_mines" javaClass="games.strategy.triplea.attachments.TechAbilityAttachment" type="technology">
+						<option name="defenseBonus" value="1:naval_mine"/>
+				</attachment>
+				<attachment name="techAbilityAttachment" attachTo="synchronization_gear" javaClass="games.strategy.triplea.attachments.TechAbilityAttachment" type="technology">
+						<option name="airAttackBonus" value="1:fighter"/>
+						<option name="airDefenseBonus" value="1:fighter"/>
+						<option name="airAttackBonus" value="1:late_fighter"/>
+						<option name="airDefenseBonus" value="1:late_fighter"/>
+						<option name="airAttackBonus" value="1:bomber"/>
+						<option name="airDefenseBonus" value="1:bomber"/>
+				</attachment>
+				<attachment name="techAbilityAttachment" attachTo="strategic_bombing" javaClass="games.strategy.triplea.attachments.TechAbilityAttachment" type="technology">
+						<option name="attackRollsBonus" value="1:zeppelin"/>
+						<option name="attackRollsBonus" value="1:bomber"/>
+				</attachment>
+				<attachment name="techAbilityAttachment" attachTo="radio" javaClass="games.strategy.triplea.attachments.TechAbilityAttachment" type="technology">
+						<option name="airDefenseBonus" value="1:fighter"/>
+						<option name="airDefenseBonus" value="1:late_fighter"/>
+						<option name="airDefenseBonus" value="1:bomber"/>
+						<option name="bombingBonus" value="2:bomber"/>
+						<option name="bombingBonus" value="2:zeppelin"/>
+				</attachment>
 
 		<!-- Conditions -->
 
@@ -9473,7 +10069,7 @@
 						<option name="techs" value="aircraftCarrier" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmentFighterU" attachTo="USA" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="techs" value="interrupter_gear" count="1"/>
+						<option name="techs" value="cantilevered_wing" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmenttankU" attachTo="USA" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="techs" value="armour" count="1"/>
@@ -9488,7 +10084,7 @@
 						<option name="techs" value="aircraftCarrier" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmentFighterR" attachTo="Russia" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="techs" value="interrupter_gear" count="1"/>
+						<option name="techs" value="cantilevered_wing" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmenttankR" attachTo="Russia" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="techs" value="armour" count="1"/>
@@ -9503,7 +10099,7 @@
 						<option name="techs" value="aircraftCarrier" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmentFighterB" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="techs" value="interrupter_gear" count="1"/>
+						<option name="techs" value="cantilevered_wing" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmenttankB" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="techs" value="armour" count="1"/>
@@ -9518,7 +10114,7 @@
 						<option name="techs" value="aircraftCarrier" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmentFighterO" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="techs" value="interrupter_gear" count="1"/>
+						<option name="techs" value="cantilevered_wing" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmenttankO" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="techs" value="armour" count="1"/>
@@ -9533,7 +10129,7 @@
 						<option name="techs" value="aircraftCarrier" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmentFighterI" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="techs" value="interrupter_gear" count="1"/>
+						<option name="techs" value="cantilevered_wing" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmenttankI" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="techs" value="armour" count="1"/>
@@ -9548,7 +10144,7 @@
 						<option name="techs" value="aircraftCarrier" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmentFighterA" attachTo="Austria" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="techs" value="interrupter_gear" count="1"/>
+						<option name="techs" value="cantilevered_wing" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmenttankA" attachTo="Austria" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="techs" value="armour" count="1"/>
@@ -9563,7 +10159,7 @@
 						<option name="techs" value="aircraftCarrier" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmentFighterG" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="techs" value="interrupter_gear" count="1"/>
+						<option name="techs" value="cantilevered_wing" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmenttankG" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="techs" value="armour" count="1"/>
@@ -9578,7 +10174,7 @@
 						<option name="techs" value="aircraftCarrier" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmentFighterF" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="techs" value="interrupter_gear" count="1"/>
+						<option name="techs" value="cantilevered_wing" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmenttankF" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="techs" value="armour" count="1"/>
@@ -9593,7 +10189,7 @@
 						<option name="techs" value="aircraftCarrier" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmentFighterJ" attachTo="Japan" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="techs" value="interrupter_gear" count="1"/>
+						<option name="techs" value="cantilevered_wing" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmenttankJ" attachTo="Japan" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="techs" value="armour" count="1"/>
@@ -9608,7 +10204,7 @@
 						<option name="techs" value="aircraftCarrier" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmentFighterS" attachTo="Bolshevik" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="techs" value="interrupter_gear" count="1"/>
+						<option name="techs" value="cantilevered_wing" count="1"/>
 				</attachment>
 				<attachment name="conditionAttachmenttankS" attachTo="Bolshevik" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="techs" value="armour" count="1"/>
@@ -9651,6 +10247,99 @@
 						<option name="techs" value="antiSubmarine_warfare" count="1"/>
 				</attachment>
 				
+				<attachment name="conditionAttachmentGcounter_battery_fire" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="counter_battery_fire" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentFcounter_battery_fire" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="counter_battery_fire" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentUKcounter_battery_fire" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="counter_battery_fire" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentRcounter_battery_fire" attachTo="Russia" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="counter_battery_fire" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentUSAcounter_battery_fire" attachTo="USA" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="counter_battery_fire" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentJcounter_battery_fire" attachTo="Japan" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="counter_battery_fire" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentAcounter_battery_fire" attachTo="Austria" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="counter_battery_fire" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentOcounter_battery_fire" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="counter_battery_fire" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentIcounter_battery_fire" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="counter_battery_fire" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentScounter_battery_fire" attachTo="Bolshevik" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="counter_battery_fire" count="1"/>
+				</attachment>
+				
+				<attachment name="conditionAttachmentGshipyards" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="shipyards" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentFshipyards" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="shipyards" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentUKshipyards" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="shipyards" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentRshipyards" attachTo="Russia" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="shipyards" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentAshipyards" attachTo="Austria" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="shipyards" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentOshipyards" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="shipyards" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentJshipyards" attachTo="Japan" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="shipyards" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentUSAshipyards" attachTo="USA" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="shipyards" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentIshipyards" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="shipyards" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentSshipyards" attachTo="Bolshevik" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="shipyards" count="1"/>
+				</attachment>
+				
+				<attachment name="conditionAttachmentGair_support" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="air_support" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentFair_support" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="air_support" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentUKair_support" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="air_support" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentRair_support" attachTo="Russia" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="air_support" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentAair_support" attachTo="Austria" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="air_support" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentOair_support" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="air_support" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentJair_support" attachTo="Japan" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="air_support" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentUSAair_support" attachTo="USA" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="air_support" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentIair_support" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="air_support" count="1"/>
+				</attachment>
+				<attachment name="conditionAttachmentSair_support" attachTo="Bolshevik" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+						<option name="techs" value="air_support" count="1"/>
+				</attachment>
+				
 <!-- Triggers -->
 
 		<attachment name="triggerAttachmentGermanyT1" attachTo="Germany" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
@@ -9670,6 +10359,7 @@
 		<attachment name="triggerAttachmentGermanyT3" attachTo="Germany" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
                 	<option name="trigger" value="conditionAttachmentFighterG"/>
 					<option name="productionRule" value="productionGermany:buylate_fighter"/>
+					<option name="productionRule" value="productionGermany:buybomber"/>
 					<option name="uses" value="1"/>
 					<option name="when" value="after:GermanyTechActivation"/>
                 </attachment>
@@ -9705,6 +10395,7 @@
 		<attachment name="triggerAttachmentFranceT3" attachTo="France" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
                 	<option name="trigger" value="conditionAttachmentFighterF"/>
 					<option name="productionRule" value="productionFrance:buylate_fighter"/>
+					<option name="productionRule" value="productionFrance:buybomber"/>
 					<option name="uses" value="1"/>
 					<option name="when" value="after:FranceTechActivation"/>
                 </attachment>
@@ -9740,6 +10431,7 @@
 		<attachment name="triggerAttachmentJapanT3" attachTo="Japan" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
                 	<option name="trigger" value="conditionAttachmentFighterJ"/>
 					<option name="productionRule" value="productionJapan:buylate_fighter"/>
+					<option name="productionRule" value="productionJapan:buybomber"/>
 					<option name="uses" value="1"/>
 					<option name="when" value="after:JapanTechActivation"/>
                 </attachment>
@@ -9775,6 +10467,7 @@
 		<attachment name="triggerAttachmentAustriaT3" attachTo="Austria" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
                 	<option name="trigger" value="conditionAttachmentFighterA"/>
 					<option name="productionRule" value="productionAustria:buylate_fighter"/>
+					<option name="productionRule" value="productionAustria:buybomber"/>
 					<option name="uses" value="1"/>
 					<option name="when" value="after:AustriaTechActivation"/>
                 </attachment>
@@ -9810,6 +10503,7 @@
 		<attachment name="triggerAttachmentItalyT3" attachTo="Italy" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
                 	<option name="trigger" value="conditionAttachmentFighterI"/>
 					<option name="productionRule" value="productionItaly:buylate_fighter"/>
+					<option name="productionRule" value="productionItaly:buybomber"/>
 					<option name="uses" value="1"/>
 					<option name="when" value="after:ItalyTechActivation"/>
                 </attachment>
@@ -9845,6 +10539,7 @@
 		<attachment name="triggerAttachmentTurkeyT3" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
                 	<option name="trigger" value="conditionAttachmentFighterO"/>
 					<option name="productionRule" value="productionOttoman:buylate_fighter"/>
+					<option name="productionRule" value="productionOttoman:buybomber"/>
 					<option name="uses" value="1"/>
 					<option name="when" value="after:ottomanTechActivation"/>
                 </attachment>
@@ -9880,6 +10575,7 @@
 		<attachment name="triggerAttachmentUKT3" attachTo="UK" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
                 	<option name="trigger" value="conditionAttachmentFighterB"/>
 					<option name="productionRule" value="productionUK:buylate_fighter"/>
+					<option name="productionRule" value="productionUK:buybomber"/>
 					<option name="uses" value="1"/>
 					<option name="when" value="after:UKTechActivation"/>
                 </attachment>
@@ -9915,6 +10611,7 @@
 		<attachment name="triggerAttachmentRussiaT3" attachTo="Russia" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
                 	<option name="trigger" value="conditionAttachmentFighterR"/>
 					<option name="productionRule" value="productionRussia:buylate_fighter"/>
+					<option name="productionRule" value="productionRussia:buybomber"/>
 					<option name="uses" value="1"/>
 					<option name="when" value="after:RussiaTechActivation"/>
                 </attachment>
@@ -9950,6 +10647,7 @@
 		<attachment name="triggerAttachmentUSAT3" attachTo="USA" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
                 	<option name="trigger" value="conditionAttachmentFighterU"/>
 					<option name="productionRule" value="productionUSA:buylate_fighter"/>
+					<option name="productionRule" value="productionUSA:buybomber"/>
 					<option name="uses" value="1"/>
 					<option name="when" value="after:USATechActivation"/>
                 </attachment>
@@ -9986,6 +10684,7 @@
 		<attachment name="triggerAttachmentBolshevikT3" attachTo="Bolshevik" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
                 	<option name="trigger" value="conditionAttachmentFighterB"/>
 					<option name="productionRule" value="productionBolshevik:buylate_fighter"/>
+					<option name="productionRule" value="productionBolshevik:buybomber"/>
 					<option name="uses" value="1"/>
 					<option name="when" value="after:BolshevikTechActivation"/>
                 </attachment>
@@ -10022,6 +10721,12 @@
 					<option name="uses" value="1"/>
 					<option name="when" value="after:UKTechActivation"/>
                 </attachment>
+		<attachment name="triggerAttachmentRussiadd" attachTo="Russia" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentRdestroyer"/>
+					<option name="productionRule" value="productionRussia:buyadv_destroyer"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:RussiaTechActivation"/>
+                </attachment>
 		<attachment name="triggerAttachmentAustriadd" attachTo="Austria" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
                 	<option name="trigger" value="conditionAttachmentAdestroyer"/>
 					<option name="productionRule" value="productionAustria:buyadv_destroyer"/>
@@ -10051,11 +10756,303 @@
 					<option name="productionRule" value="productionItaly:buyadv_destroyer"/>
 					<option name="uses" value="1"/>
 					<option name="when" value="after:ItalyTechActivation"/>
-                </attachment>
-				
+                </attachment>		
 		<attachment name="triggerAttachmentBolshevikdd" attachTo="Bolshevik" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
                 	<option name="trigger" value="conditionAttachmentSdestroyer"/>
 					<option name="productionRule" value="productionBolshevik:buyadv_destroyer"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:BolshevikTechActivation"/>
+                </attachment>
+				
+		<attachment name="triggerAttachmentGermanyCBF" attachTo="Germany" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentGcounter_battery_fire"/>
+					<option name="support" value="supportAttachmentCounterBatteryFire"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:GermanyTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentFranceCBF" attachTo="France" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentFcounter_battery_fire"/>
+					<option name="support" value="supportAttachmentCounterBatteryFire"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:FranceTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentUKCBF" attachTo="UK" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentUKcounter_battery_fire"/>
+					<option name="support" value="supportAttachmentCounterBatteryFire"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:UKTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentRussiaCBF" attachTo="Russia" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentRcounter_battery_fire"/>
+					<option name="support" value="supportAttachmentCounterBatteryFire"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:RussiaTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentAustriaCBF" attachTo="Austria" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentAcounter_battery_fire"/>
+					<option name="support" value="supportAttachmentCounterBatteryFire"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:AustriaTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentOttomanCBF" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentOcounter_battery_fire"/>
+					<option name="support" value="supportAttachmentCounterBatteryFire"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:ottomanTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentJapanCBF" attachTo="Japan" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentJcounter_battery_fire"/>
+					<option name="support" value="supportAttachmentCounterBatteryFire"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:JapanTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentUSACBF" attachTo="USA" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentUSAcounter_battery_fire"/>
+					<option name="support" value="supportAttachmentCounterBatteryFire"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:USATechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentItalyCBF" attachTo="Italy" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentIcounter_battery_fire"/>
+					<option name="support" value="supportAttachmentCounterBatteryFire"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:ItalyTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentBolshevikCBF" attachTo="Bolshevik" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentScounter_battery_fire"/>
+					<option name="support" value="supportAttachmentCounterBatteryFire"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:BolshevikTechActivation"/>
+                </attachment>
+				
+		<attachment name="triggerAttachmentGermanyShipyards" attachTo="Germany" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentGshipyards"/>
+					<option name="productionRule" value="productionGermany:-buybattlecruiser"/>
+					<option name="productionRule" value="productionGermany:-buybattleship"/>
+					<option name="productionRule" value="productionGermany:-buycruiser"/>
+					<option name="productionRule" value="productionGermany:-buydestroyer"/>
+					<option name="productionRule" value="productionGermany:-buysubmarine"/>
+					<option name="productionRule" value="productionGermany:-buytransport"/>
+					<option name="productionRule" value="productionGermany:buybattlecruiserShipyards"/>
+					<option name="productionRule" value="productionGermany:buybattleshipShipyards"/>
+					<option name="productionRule" value="productionGermany:buycruiserShipyards"/>
+					<option name="productionRule" value="productionGermany:buydestroyerShipyards"/>
+					<option name="productionRule" value="productionGermany:buysubmarineShipyards"/>
+					<option name="productionRule" value="productionGermany:buytransportShipyards"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:GermanyTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentFranceShipyards" attachTo="France" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentFshipyards"/>
+					<option name="productionRule" value="productionFrance:-buybattlecruiser"/>
+					<option name="productionRule" value="productionFrance:-buybattleship"/>
+					<option name="productionRule" value="productionFrance:-buycruiser"/>
+					<option name="productionRule" value="productionFrance:-buydestroyer"/>
+					<option name="productionRule" value="productionFrance:-buysubmarine"/>
+					<option name="productionRule" value="productionFrance:-buytransport"/>
+					<option name="productionRule" value="productionFrance:buybattlecruiserShipyards"/>
+					<option name="productionRule" value="productionFrance:buybattleshipShipyards"/>
+					<option name="productionRule" value="productionFrance:buycruiserShipyards"/>
+					<option name="productionRule" value="productionFrance:buydestroyerShipyards"/>
+					<option name="productionRule" value="productionFrance:buysubmarineShipyards"/>
+					<option name="productionRule" value="productionFrance:buytransportShipyards"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:FranceTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentUKShipyards" attachTo="UK" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentUKshipyards"/>
+					<option name="productionRule" value="productionUK:-buybattlecruiser"/>
+					<option name="productionRule" value="productionUK:-buybattleship"/>
+					<option name="productionRule" value="productionUK:-buycruiser"/>
+					<option name="productionRule" value="productionUK:-buydestroyer"/>
+					<option name="productionRule" value="productionUK:-buysubmarine"/>
+					<option name="productionRule" value="productionUK:-buytransport"/>
+					<option name="productionRule" value="productionUK:buybattlecruiserShipyards"/>
+					<option name="productionRule" value="productionUK:buybattleshipShipyards"/>
+					<option name="productionRule" value="productionUK:buycruiserShipyards"/>
+					<option name="productionRule" value="productionUK:buydestroyerShipyards"/>
+					<option name="productionRule" value="productionUK:buysubmarineShipyards"/>
+					<option name="productionRule" value="productionUK:buytransportShipyards"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:UKTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentRussiaShipyards" attachTo="Russia" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentRshipyards"/>
+					<option name="productionRule" value="productionRussia:-buybattlecruiser"/>
+					<option name="productionRule" value="productionRussia:-buybattleship"/>
+					<option name="productionRule" value="productionRussia:-buycruiser"/>
+					<option name="productionRule" value="productionRussia:-buydestroyer"/>
+					<option name="productionRule" value="productionRussia:-buysubmarine"/>
+					<option name="productionRule" value="productionRussia:-buytransport"/>
+					<option name="productionRule" value="productionRussia:buybattlecruiserShipyards"/>
+					<option name="productionRule" value="productionRussia:buybattleshipShipyards"/>
+					<option name="productionRule" value="productionRussia:buycruiserShipyards"/>
+					<option name="productionRule" value="productionRussia:buydestroyerShipyards"/>
+					<option name="productionRule" value="productionRussia:buysubmarineShipyards"/>
+					<option name="productionRule" value="productionRussia:buytransportShipyards"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:RussiaTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentAustriaShipyards" attachTo="Austria" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentAshipyards"/>
+					<option name="productionRule" value="productionAustria:-buybattlecruiser"/>
+					<option name="productionRule" value="productionAustria:-buybattleship"/>
+					<option name="productionRule" value="productionAustria:-buycruiser"/>
+					<option name="productionRule" value="productionAustria:-buydestroyer"/>
+					<option name="productionRule" value="productionAustria:-buysubmarine"/>
+					<option name="productionRule" value="productionAustria:-buytransport"/>
+					<option name="productionRule" value="productionAustria:buybattlecruiserShipyards"/>
+					<option name="productionRule" value="productionAustria:buybattleshipShipyards"/>
+					<option name="productionRule" value="productionAustria:buycruiserShipyards"/>
+					<option name="productionRule" value="productionAustria:buydestroyerShipyards"/>
+					<option name="productionRule" value="productionAustria:buysubmarineShipyards"/>
+					<option name="productionRule" value="productionAustria:buytransportShipyards"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:AustriaTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentOttomanShipyards" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentOshipyards"/>
+					<option name="productionRule" value="productionOttoman:-buybattlecruiser"/>
+					<option name="productionRule" value="productionOttoman:-buybattleship"/>
+					<option name="productionRule" value="productionOttoman:-buycruiser"/>
+					<option name="productionRule" value="productionOttoman:-buydestroyer"/>
+					<option name="productionRule" value="productionOttoman:-buysubmarine"/>
+					<option name="productionRule" value="productionOttoman:-buytransport"/>
+					<option name="productionRule" value="productionOttoman:buybattlecruiserShipyards"/>
+					<option name="productionRule" value="productionOttoman:buybattleshipShipyards"/>
+					<option name="productionRule" value="productionOttoman:buycruiserShipyards"/>
+					<option name="productionRule" value="productionOttoman:buydestroyerShipyards"/>
+					<option name="productionRule" value="productionOttoman:buysubmarineShipyards"/>
+					<option name="productionRule" value="productionOttoman:buytransportShipyards"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:ottomanTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentJapanShipyards" attachTo="Japan" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentJshipyards"/>
+					<option name="productionRule" value="productionJapan:-buybattlecruiser"/>
+					<option name="productionRule" value="productionJapan:-buybattleship"/>
+					<option name="productionRule" value="productionJapan:-buycruiser"/>
+					<option name="productionRule" value="productionJapan:-buydestroyer"/>
+					<option name="productionRule" value="productionJapan:-buysubmarine"/>
+					<option name="productionRule" value="productionJapan:-buytransport"/>
+					<option name="productionRule" value="productionJapan:buybattlecruiserShipyards"/>
+					<option name="productionRule" value="productionJapan:buybattleshipShipyards"/>
+					<option name="productionRule" value="productionJapan:buycruiserShipyards"/>
+					<option name="productionRule" value="productionJapan:buydestroyerShipyards"/>
+					<option name="productionRule" value="productionJapan:buysubmarineShipyards"/>
+					<option name="productionRule" value="productionJapan:buytransportShipyards"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:JapanTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentUSAShipyards" attachTo="USA" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentUSAshipyards"/>
+					<option name="productionRule" value="productionUSA:-buybattlecruiser"/>
+					<option name="productionRule" value="productionUSA:-buybattleship"/>
+					<option name="productionRule" value="productionUSA:-buycruiser"/>
+					<option name="productionRule" value="productionUSA:-buydestroyer"/>
+					<option name="productionRule" value="productionUSA:-buysubmarine"/>
+					<option name="productionRule" value="productionUSA:-buytransport"/>
+					<option name="productionRule" value="productionUSA:buybattlecruiserShipyards"/>
+					<option name="productionRule" value="productionUSA:buybattleshipShipyards"/>
+					<option name="productionRule" value="productionUSA:buycruiserShipyards"/>
+					<option name="productionRule" value="productionUSA:buydestroyerShipyards"/>
+					<option name="productionRule" value="productionUSA:buysubmarineShipyards"/>
+					<option name="productionRule" value="productionUSA:buytransportShipyards"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:USATechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentItalyShipyards" attachTo="Italy" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentIshipyards"/>
+					<option name="productionRule" value="productionItaly:-buybattlecruiser"/>
+					<option name="productionRule" value="productionItaly:-buybattleship"/>
+					<option name="productionRule" value="productionItaly:-buycruiser"/>
+					<option name="productionRule" value="productionItaly:-buydestroyer"/>
+					<option name="productionRule" value="productionItaly:-buysubmarine"/>
+					<option name="productionRule" value="productionItaly:-buytransport"/>
+					<option name="productionRule" value="productionItaly:buybattlecruiserShipyards"/>
+					<option name="productionRule" value="productionItaly:buybattleshipShipyards"/>
+					<option name="productionRule" value="productionItaly:buycruiserShipyards"/>
+					<option name="productionRule" value="productionItaly:buydestroyerShipyards"/>
+					<option name="productionRule" value="productionItaly:buysubmarineShipyards"/>
+					<option name="productionRule" value="productionItaly:buytransportShipyards"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:ItalyTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentBolshevikShipyards" attachTo="Bolshevik" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentSshipyards"/>
+					<option name="productionRule" value="productionBolshevik:-buybattlecruiser"/>
+					<option name="productionRule" value="productionBolshevik:-buybattleship"/>
+					<option name="productionRule" value="productionBolshevik:-buycruiser"/>
+					<option name="productionRule" value="productionBolshevik:-buydestroyer"/>
+					<option name="productionRule" value="productionBolshevik:-buysubmarine"/>
+					<option name="productionRule" value="productionBolshevik:-buytransport"/>
+					<option name="productionRule" value="productionBolshevik:buybattlecruiserShipyards"/>
+					<option name="productionRule" value="productionBolshevik:buybattleshipShipyards"/>
+					<option name="productionRule" value="productionBolshevik:buycruiserShipyards"/>
+					<option name="productionRule" value="productionBolshevik:buydestroyerShipyards"/>
+					<option name="productionRule" value="productionBolshevik:buysubmarineShipyards"/>
+					<option name="productionRule" value="productionBolshevik:buytransportShipyards"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:BolshevikTechActivation"/>
+                </attachment>
+				
+		<attachment name="triggerAttachmentGermanyAirSupport" attachTo="Germany" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentGair_support"/>
+					<option name="support" value="supportAttachmentAirSupport1:supportAttachmentAirSupport2:supportAttachmentAirSupport3"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:GermanyTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentFranceAirSupport" attachTo="France" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentFair_support"/>
+					<option name="support" value="supportAttachmentAirSupport1:supportAttachmentAirSupport2:supportAttachmentAirSupport3"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:FranceTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentUKAirSupport" attachTo="UK" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentUKair_support"/>
+					<option name="support" value="supportAttachmentAirSupport1:supportAttachmentAirSupport2:supportAttachmentAirSupport3"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:UKTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentRussiaAirSupport" attachTo="Russia" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentRair_support"/>
+					<option name="support" value="supportAttachmentAirSupport1:supportAttachmentAirSupport2:supportAttachmentAirSupport3"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:RussiaTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentAustriaAirSupport" attachTo="Austria" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentAair_support"/>
+					<option name="support" value="supportAttachmentAirSupport1:supportAttachmentAirSupport2:supportAttachmentAirSupport3"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:AustriaTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentOttomanAirSupport" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentOair_support"/>
+					<option name="support" value="supportAttachmentAirSupport1:supportAttachmentAirSupport2:supportAttachmentAirSupport3"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:ottomanTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentJapanAirSupport" attachTo="Japan" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentJair_support"/>
+					<option name="support" value="supportAttachmentAirSupport1:supportAttachmentAirSupport2:supportAttachmentAirSupport3"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:JapanTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentUSAAirSupport" attachTo="USA" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentUSAair_support"/>
+					<option name="support" value="supportAttachmentAirSupport1:supportAttachmentAirSupport2:supportAttachmentAirSupport3"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:USATechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentItalyAirSupport" attachTo="Italy" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentIair_support"/>
+					<option name="support" value="supportAttachmentAirSupport1:supportAttachmentAirSupport2:supportAttachmentAirSupport3"/>
+					<option name="uses" value="1"/>
+					<option name="when" value="after:ItalyTechActivation"/>
+                </attachment>
+		<attachment name="triggerAttachmentBolshevikAirSupport" attachTo="Bolshevik" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+                	<option name="trigger" value="conditionAttachmentSair_support"/>
+					<option name="support" value="supportAttachmentAirSupport1:supportAttachmentAirSupport2:supportAttachmentAirSupport3"/>
 					<option name="uses" value="1"/>
 					<option name="when" value="after:BolshevikTechActivation"/>
                 </attachment>
@@ -10100,7 +11097,6 @@
             		<territoryOwner territory="Midway Island" owner="USA"/>
             		<territoryOwner territory="Wake Island" owner="USA"/>
             		<territoryOwner territory="Guam" owner="USA"/>
-            		<territoryOwner territory="Shanghai 2" owner="USA"/>
 					<territoryOwner territory="Montana" owner="USA"/>
             		<territoryOwner territory="Puerto Rico" owner="USA"/>
             		<territoryOwner territory="Manila" owner="USA"/>
@@ -10167,7 +11163,7 @@
             		<territoryOwner territory="Malaya" owner="UK"/>
             		<territoryOwner territory="Singapore" owner="UK"/>
             		<territoryOwner territory="Hong Kong" owner="UK"/>
-            		<territoryOwner territory="Shanghai 3" owner="UK"/>
+					<territoryOwner territory="Port Edward" owner="UK"/>
             		<territoryOwner territory="Sarawak" owner="UK"/>
             		<territoryOwner territory="Fiji" owner="UK"/>
             		<territoryOwner territory="Tonga" owner="UK"/>
@@ -10288,7 +11284,7 @@
             		<territoryOwner territory="Cochinchina" owner="France"/>
             		<territoryOwner territory="Annam" owner="France"/>
             		<territoryOwner territory="Tonkin" owner="France"/>
-            		<territoryOwner territory="Shanghai 4" owner="France"/>
+					<territoryOwner territory="Kouang-Theou-Wan" owner="France"/>
             		<territoryOwner territory="New Caledonia" owner="France"/>
             		<territoryOwner territory="New Hebrides" owner="France"/>
             		<territoryOwner territory="Tahiti" owner="France"/>
@@ -10359,7 +11355,6 @@
 					<territoryOwner territory="Rwanda" owner="Germany"/>
             		<territoryOwner territory="Dar es Salaam" owner="Germany"/>
             		<territoryOwner territory="Tsingtao" owner="Germany"/>
-            		<territoryOwner territory="Shanghai 1" owner="Germany"/>
             		<territoryOwner territory="Mariana Islands" owner="Germany"/>
             		<territoryOwner territory="Palau" owner="Germany"/>
             		<territoryOwner territory="Marshall Islands" owner="Germany"/>
@@ -10568,6 +11563,7 @@
             		<territoryOwner territory="Kansu" owner="Beiyang"/>
 					<territoryOwner territory="Nanking" owner="Beiyang"/>
             		<territoryOwner territory="Shaanxi" owner="Beiyang"/>
+					<territoryOwner territory="Shanghai" owner="Beiyang"/>
             		<territoryOwner territory="Shantung" owner="Beiyang"/>
             		<territoryOwner territory="Shanxi" owner="Beiyang"/>
             		<territoryOwner territory="Yunnan" owner="KMT"/>
@@ -10576,7 +11572,7 @@
 					<territoryOwner territory="Shenyang" owner="Beiyang"/>
 					<territoryOwner territory="Sinkiang" owner="Beiyang"/>
 					<territoryOwner territory="Qinghai" owner="Beiyang"/>
-					<territoryOwner territory="Hainan" owner="Beiyang"/>
+					<territoryOwner territory="Hainan" owner="KMT"/>
 			<!-- Spanish Owned Territory -->
             		<territoryOwner territory="Madrid" owner="Neutrals"/>
             		<territoryOwner territory="Leon" owner="Neutrals"/>
@@ -10668,7 +11664,6 @@
 			<unitPlacement unitType="battleship" territory="Sea Zone 145 Pacific Ocean" quantity="1" owner="USA"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 145 Pacific Ocean" quantity="1" owner="USA"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 153 Pacific Ocean" quantity="1" owner="USA"/>
-			<unitPlacement unitType="infantry" territory="Shanghai 2" quantity="1" owner="USA"/>
 			<unitPlacement unitType="harbour" territory="Manila" quantity="1" owner="USA"/>
 			<unitPlacement unitType="infantry" territory="Manila" quantity="1" owner="USA"/>
 			<unitPlacement unitType="harbour" territory="Honolulu" quantity="1" owner="USA"/>
@@ -10840,7 +11835,7 @@
 			<unitPlacement unitType="infantry" territory="Singapore" quantity="1" owner="UK"/>
 			<unitPlacement unitType="harbour" territory="Hong Kong" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Hong Kong" quantity="1" owner="UK"/>
-			<unitPlacement unitType="infantry" territory="Shanghai 3" quantity="1" owner="UK"/>
+			<unitPlacement unitType="infantry" territory="Port Edward" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Bombay" quantity="2" owner="UK"/>
 			<unitPlacement unitType="field_gun" territory="Bombay" quantity="1" owner="UK"/>
 			<unitPlacement unitType="train" territory="Bombay" quantity="1" owner="UK"/>
@@ -10958,7 +11953,6 @@
 			<unitPlacement unitType="factory_major" territory="Champagne" quantity="1" owner="France"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 90 Indian Ocean" quantity="1" owner="France"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 127 Gulf of Thailand" quantity="1" owner="France"/>
-			<unitPlacement unitType="infantry" territory="Shanghai 4" quantity="1" owner="France"/>
 			<unitPlacement unitType="infantry" territory="Chad" quantity="1" owner="France"/>
 			<unitPlacement unitType="infantry" territory="Morocco" quantity="2" owner="France"/>
 			<unitPlacement unitType="field_gun" territory="Morocco" quantity="1" owner="France"/>
@@ -11071,7 +12065,6 @@
 			<unitPlacement unitType="factory_minor" territory="Tsingtao" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Tsingtao" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="harbour" territory="Tsingtao" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="infantry" territory="Shanghai 1" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="battlecruiser" territory="Sea Zone 136 East China Sea" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 136 East China Sea" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="harbour" territory="German New Guinea" quantity="1" owner="Germany"/>
@@ -11340,6 +12333,7 @@
 			<unitPlacement unitType="infantry" territory="Nanking" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="factory_minor" territory="Nanking" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="infantry" territory="Shantung" quantity="1" owner="Beiyang"/>
+			<unitPlacement unitType="factory_minor" territory="Shanghai" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="infantry" territory="Anshan" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="infantry" territory="Changchun" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="infantry" territory="Fushun" quantity="1" owner="Beiyang"/>
@@ -11408,24 +12402,24 @@
 
                 </unitInitialize>
                 <resourceInitialize>
-                        <resourceGiven player="UK" resource="PUs" quantity="45"/>
+                        <resourceGiven player="UK" resource="PUs" quantity="52"/>
 						<resourceGiven player="Canada" resource="PUs" quantity="20"/>
 						<resourceGiven player="South_Africa" resource="PUs" quantity="11"/>
 						<resourceGiven player="India" resource="PUs" quantity="27"/>
 						<resourceGiven player="ANZAC" resource="PUs" quantity="11"/>
-                        <resourceGiven player="France" resource="PUs" quantity="67"/>
-                        <resourceGiven player="Russia" resource="PUs" quantity="67"/>
-                        <resourceGiven player="Italy" resource="PUs" quantity="36"/>
-						<resourceGiven player="Germany" resource="PUs" quantity="111"/>
-						<resourceGiven player="Austria" resource="PUs" quantity="32"/>
+                        <resourceGiven player="France" resource="PUs" quantity="72"/>
+                        <resourceGiven player="Russia" resource="PUs" quantity="69"/>
+                        <resourceGiven player="Italy" resource="PUs" quantity="37"/>
+						<resourceGiven player="Germany" resource="PUs" quantity="116"/>
+						<resourceGiven player="Austria" resource="PUs" quantity="34"/>
 						<resourceGiven player="Hungary" resource="PUs" quantity="19"/>
 						<resourceGiven player="Ottoman" resource="PUs" quantity="52"/>
-                        <resourceGiven player="USA" resource="PUs" quantity="55"/>
-                        <resourceGiven player="Japan" resource="PUs" quantity="17"/>
+                        <resourceGiven player="USA" resource="PUs" quantity="56"/>
+                        <resourceGiven player="Japan" resource="PUs" quantity="19"/>
 						
 						<resourceGiven player="Bolshevik" resource="PUs" quantity="0"/>
 						
-						<resourceGiven player="Belgium" resource="PUs" quantity="1"/>
+						<resourceGiven player="Belgium" resource="PUs" quantity="2"/>
 						<resourceGiven player="Serbia" resource="PUs" quantity="8"/>
 						<resourceGiven player="Bulgaria" resource="PUs" quantity="4"/>
 						<resourceGiven player="Romania" resource="PUs" quantity="4"/>
@@ -11437,8 +12431,8 @@
 						<resourceGiven player="Constitutionalist" resource="PUs" quantity="6"/>
 						<resourceGiven player="Conventionist" resource="PUs" quantity="7"/>
 						
-						<resourceGiven player="Beiyang" resource="PUs" quantity="21"/>
-						<resourceGiven player="KMT" resource="PUs" quantity="11"/>
+						<resourceGiven player="Beiyang" resource="PUs" quantity="22"/>
+						<resourceGiven player="KMT" resource="PUs" quantity="12"/>
                 </resourceInitialize>
 
                 <relationshipInitialize>
@@ -12546,7 +13540,7 @@
 <br>by Surtur
 
 <br>
-<br><span style="font-size:120%;000000"colspan="2"><b>Version 1.1.0</b></span>
+<br><span style="font-size:120%;000000"colspan="2"><b>Version 1.2.0</b></span>
 <br><br>
 <i>"Wir wollen niemand in den Schatten stellen, aber wir verlangen auch unseren Platz an der Sonne"</i>
 <br><i>--Bernhard von Bulow, 6 December 1897</i>
@@ -12556,7 +13550,7 @@
 <br>==========================================================
 <br><span style="font-size:200%"><b>Goals</b></span>
 <br>==========================================================
-<div style="text-align: left;">
+<div style="text-align: center;">
 <br>1. Present a semi-realistic "what-if?" scenario, chronicling what might have happened if all of Germany's diplomatic endeavors succeeded beyond the Kaiser's wildest fantasies
 <br>2. Shine a spotlight on secondary conflicts, including various rebellions, plots, and insurgencies
 <br>3. Put an emphasis on diplomacy, and widening the conflict into new theaters/countries
@@ -12598,7 +13592,194 @@ Central Powers:
 </table>
 <br>Italy can select a side, either by pre-agreed arrangement, or by player choice
 <br>Bolsheviks can spawn through a German action, and are at war with the Allies, and neutral vs. the Central Powers
-<br>
+<br><br>
+<span style="font-size:200%"><b>Canals</b></span>
+<table border="1" bgcolor="ABABAB">
+<tr>
+<th>Canal Name</th>
+<th>Sea Zone 1</th>
+<th>Sea Zone 2</th>
+<th>Land Territories</th>
+</tr>
+
+<tr bgcolor="BDBDBD">
+<td>Panama Canal</td>
+<td>Sea Zone 41 Caribbean Sea</td>
+<td>Sea Zone 108 Pacific Ocean</td>
+<td>Panama</td>
+</tr>
+
+<tr bgcolor="BDBDBD">
+<td>Bosporus</td>
+<td>Sea Zone 67 Black Sea</td>
+<td>Sea Zone 68 Aegean Sea</td>
+<td>Constantinople:Dardanelles</td>
+</tr>
+
+<tr bgcolor="BDBDBD">
+<td>Suez Canal</td>
+<td>Sea Zone 70 Eastern Mediterranean</td>
+<td>Sea Zone 75 Red Sea</td>
+<td>Cairo-Suez</td>
+</tr>
+
+<tr bgcolor="BDBDBD">
+<td>Kiel Canal</td>
+<td>Sea Zone 12 Baltic Sea</td>
+<td>Sea Zone 14 Helgoland Bight</td>
+<td>Holstein</td>
+</tr>
+
+<tr bgcolor="BDBDBD">
+<td>Danish Straits</td>
+<td>Sea Zone 12 Baltic Sea</td>
+<td>Sea Zone 13 Skagerrak</td>
+<td>Denmark:Sweden</td>
+</tr>
+
+<tr bgcolor="BDBDBD">
+<td>St. Lawrence River</td>
+<td>Great Lakes</td>
+<td>Sea Zone 21 Gulf of St. Lawrence</td>
+<td>Quebec</td>
+</tr>
+
+<tr bgcolor="BDBDBD">
+<td>Erie Canal</td>
+<td>Great Lakes</td>
+<td>Sea Zone 29 Mid Atlantic</td>
+<td>Hudson-Delaware</td>
+</tr>
+</table>
+<br><br>
+<span style="font-size:200%"><b>Chinese Treaty Ports</b></span>
+<table border="1" bgcolor="ABABAB">
+<tr>
+<th>Port</th>
+<th>Power</th>
+<th>Income</th>
+<th>Interdiction</th>
+</tr>
+
+<tr bgcolor="BDBDBD">
+<td>Amoy</td>
+<td>UK</td>
+<td>1</td>
+<td>SZ 136</td>
+</tr>
+
+<tr bgcolor="BDBDBD">
+<td>Canton</td>
+<td>UK</td>
+<td>2</td>
+<td>SZ 129</td>
+</tr>
+<tr bgcolor="BDBDBD">
+<td>Canton</td>
+<td>France</td>
+<td>1</td>
+<td>SZ 129</td>
+</tr>
+
+<tr bgcolor="BDBDBD">
+<td>Tientsin</td>
+<td>Germany</td>
+<td>3</td>
+<td>SZ 137</td>
+</tr>
+<tr bgcolor="BDBDBD">
+<td>Tientsin</td>
+<td>Austria</td>
+<td>2</td>
+<td>SZ 137</td>
+</tr>
+<tr bgcolor="BDBDBD">
+<td>Tientsin</td>
+<td>France</td>
+<td>1</td>
+<td>SZ 137</td>
+</tr>
+<tr bgcolor="BDBDBD">
+<td>Tientsin</td>
+<td>UK</td>
+<td>1</td>
+<td>SZ 137</td>
+</tr>
+<tr bgcolor="BDBDBD">
+<td>Tientsin</td>
+<td>Russia</td>
+<td>1</td>
+<td>SZ 137</td>
+</tr>
+<tr bgcolor="BDBDBD">
+<td>Tientsin</td>
+<td>Japan</td>
+<td>1</td>
+<td>SZ 137</td>
+</tr>
+<tr bgcolor="BDBDBD">
+<td>Tientsin</td>
+<td>Italy</td>
+<td>1</td>
+<td>SZ 137</td>
+</tr>
+<tr bgcolor="BDBDBD">
+<td>Tientsin</td>
+<td>Belgium</td>
+<td>1</td>
+<td>SZ 137</td>
+</tr>
+
+<tr bgcolor="BDBDBD">
+<td>Shanghai</td>
+<td>France</td>
+<td>2</td>
+<td>SZ 136:SZ 137</td>
+</tr>
+<tr bgcolor="BDBDBD">
+<td>Shanghai</td>
+<td>UK</td>
+<td>2</td>
+<td>SZ 136:SZ 137</td>
+</tr>
+<tr bgcolor="BDBDBD">
+<td>Shanghai</td>
+<td>USA</td>
+<td>2</td>
+<td>SZ 136:SZ 137</td>
+</tr>
+
+<tr bgcolor="BDBDBD">
+<td>Hankow</td>
+<td>Germany</td>
+<td>3</td>
+<td>SZ 136:SZ 137</td>
+</tr>
+<tr bgcolor="BDBDBD">
+<td>Hankow</td>
+<td>France</td>
+<td>1</td>
+<td>SZ 136:SZ 137</td>
+</tr>
+<tr bgcolor="BDBDBD">
+<td>Hankow</td>
+<td>UK</td>
+<td>1</td>
+<td>SZ 136:SZ 137</td>
+</tr>
+<tr bgcolor="BDBDBD">
+<td>Hankow</td>
+<td>Russia</td>
+<td>1</td>
+<td>SZ 136:SZ 137</td>
+</tr>
+<tr bgcolor="BDBDBD">
+<td>Hankow</td>
+<td>Japan</td>
+<td>1</td>
+<td>SZ 136:SZ 137</td>
+</tr>
+</table>
 <div style="text-align: center;">
 <br>==========================================================
 <br><span style="font-size:200%"><b>Units</b></span>
@@ -12738,7 +13919,7 @@ Central Powers:
 	<td>3</td>
 	<td>2</td>
 	<td>10</td>
-	<td>Cannot be produced with a factory_minor</td>
+	<td></td>
 	</tr>
 	
 	<tr bgcolor="BDBDBD">
@@ -12747,7 +13928,16 @@ Central Powers:
 	<td>4</td>
 	<td>2</td>
 	<td>16</td>
-	<td>Bombard</td>
+	<td></td>
+	</tr>
+	
+	<tr bgcolor="BDBDBD">
+	<td>Naval Mine</td>
+	<td>0</td>
+	<td>1</td>
+	<td>0</td>
+	<td>1</td>
+	<td>Suicide;<br>Anti-submarine warfare</td>
 	</tr>
 	
 	<tr bgcolor="BDBDBD">
@@ -12799,16 +13989,25 @@ Central Powers:
 	<td>1</td>
 	<td>6</td>
 	<td>14</td>
-	<td>Strategic Bomber;<br>Cannot be produced with a factory_minor</td>
+	<td>Strategic Bomber;<br>Air Combat;<br>Cannot be produced with a factory_minor</td>
 	</tr>
 	
 	<tr bgcolor="BDBDBD">
 	<td>Late Fighter</td>
 	<td>3</td>
 	<td>4</td>
-	<td>3</td>
+	<td>4</td>
 	<td>10</td>
-	<td>Aerial Combat;<br>Unlockable by Interrupter Gear tech</td>
+	<td>Unlockable by Cantilevered Wing tech</td>
+	</tr>
+	
+	<tr bgcolor="BDBDBD">
+	<td>Bomber</td>
+	<td>3</td>
+	<td>3</td>
+	<td>4</td>
+	<td>14</td>
+	<td>Strategic Bomber;<br>Unlockable by Cantilevered Wing tech</td>
 	</tr>
 
 </table>
@@ -12893,39 +14092,111 @@ Central Powers:
 	</tr>
 	
 	<tr>
-	<td>Tech</td>
+	<td>Land</td>
+	<td>Armour</td>
+	<td>Unlocks Tanks</td>
+	</tr>
+	
+	<tr>
+	<td>Land</td>
+	<td>Tracer Rounds</td>
+	<td>Unlocks AAGuns</td>
+	</tr>
+	
+	<tr>
+	<td>Land</td>
+	<td>Creeping Barrage</td>
+	<td>Artillery now supports 1 additional attacking unit</td>
+	</tr>
+	
+	<tr>
+	<td>Land</td>
+	<td>Counter-Battery Fire</td>
+	<td>Artillery grants an additional +1 bonus on attack OR defense;<br>Can stack with Creeping Barrage</td>
+	</tr>
+	
+	<tr>
+	<td>Land</td>
+	<td>Mobile Warfare</td>
+	<td>Grants +1 bonus movement to cavalry, tanks;<br>Grants +2 bonus movement to trains</td>
+	</tr>
+	
+	<tr>
+	<td>Land</td>
+	<td>Factory Electrification</td>
+	<td>Grants +1 bonus production to factory_minor;<br>Grants +3 bonus production to factory_major, factory_upgrade</td>
+	</tr>
+	
+	<tr>
+	<td>Sea</td>
 	<td>Anti-Submarine Warfare</td>
 	<td>Unlocks Advanced Destroyers</td>
 	</tr>
 	
 	<tr>
-	<td>Tech</td>
+	<td>Sea</td>
 	<td>Aircraft Carrier</td>
 	<td>Unlocks Aircraft Carriers</td>
-	</tr>	
-
+	</tr>
+	
 	<tr>
-	<td>Tech</td>
-	<td>Armour</td>
-	<td>Unlocks Tanks</td>
+	<td>Sea</td>
+	<td>Shipyards</td>
+	<td>Discounted basic naval units (non-unlocked only)</td>
+	</tr>
+	
+	<tr>
+	<td>Sea</td>
+	<td>Cruiser Bombardment</td>
+	<td>Cruisers, Battlecruisers can now bombard</td>
+	</tr>
+	
+	<tr>
+	<td>Sea</td>
+	<td>Oil Fueled Ships</td>
+	<td>Grants +1 base movement to all mobile naval units</td>
+	</tr>
+	
+	<tr>
+	<td>Sea</td>
+	<td>Improved Mines</td>
+	<td>Grants +1 defense to Naval Mines</td>
 	</tr>
 
 	<tr>
-	<td>Tech</td>
-	<td>Interrupter Gear</td>
-	<td>Unlocks Late Fighters</td>
+	<td>Air</td>
+	<td>Cantilevered Wing</td>
+	<td>Unlocks Late Fighters, Bombers</td>
 	</tr>
 
 	<tr>
-	<td>Tech</td>
-	<td>Tracer Rounds</td>
-	<td>Unlocks AAGuns</td>
-	</tr>
-
-	<tr>
-	<td>Tech</td>
+	<td>Air</td>
 	<td>Air Traffic Control</td>
 	<td>Unlocks Airfields</td>
+	</tr>
+	
+	<tr>
+	<td>Air</td>
+	<td>Synchronization Gear</td>
+	<td>Grants +1 airAttack, +1 airDefense to fighter, late_fighter, bomber;<br>Can stack with Radio</td>
+	</tr>
+	
+	<tr>
+	<td>Air</td>
+	<td>Air Support</td>
+	<td>Fighters, Late Fighters, and Bombers grant an additional +1 attack to infantry, cavalry, and tanks</td>
+	</tr>
+	
+	<tr>
+	<td>Air</td>
+	<td>Strategic Bombing</td>
+	<td>Grants +1 extra die for zeppelin, bomber bombing runs;<br>Can stack with Radio</td>
+	</tr>
+	
+	<tr>
+	<td>Air</td>
+	<td>Radio</td>
+	<td>Grants +1 airDefense to fighter, late_fighter, bomber;<br>Grants +2 bombing bonus to zeppelin, bomber;<br>Can stack with Synchronization Gear, Strategic Bombing</td>
 	</tr>
 </table>
 <br>
@@ -13845,6 +15116,40 @@ Central Powers:
 
 <div style="text-align: center;">
 <br>==========================================================
+<br><span style="font-size:200%"><b>Changelog 1.2.0</b></span>
+<br>==========================================================
+<br><b>Map changes</b>
+<br>Severed the following Japan connections:
+<table border="1"bgcolor="ABABAB">
+<tr><td>Kyushu</td><td>Chugoku</td></tr>
+<tr><td>Kyushu</td><td>Shikoku</td></tr>
+<tr><td>Shikoku</td><td>Chugoku</td></tr>
+<tr><td>Shikoku</td><td>Kyoto</td></tr>
+</table>
+<br>New Port Edward territory split from Shantung
+<br>Shanghai collapsed to a single territory (2 PUs)
+<br>Hong Kong split into Hong Kong and Macao
+<br>(Old) Macao replaced by Kouang-Theou-Wan
+<br>Decreased Nanking from 2 to 1
+<br>Increased Hainan from 0 to 1
+<br>Changed ownership of Hainan from Beiyang to KMT
+<br>Added Kiel Canal
+<br>Added Danish Straits (Canal)
+<br><b>Added Chinese Treaty Ports</b>
+<br><b>Unit changes</b>
+<br>New bomber unit (roughly corresponds to tactical bomber from WW2V3, except can also bomb ICs)
+<br>New naval mine unit (cheap stationary suicide defensive naval unit, with anti-submarine capability)
+<br>Remove bombard from battlecruiser by default (to be unlocked by new Cruiser Bombardment tech)
+<br>Late fighter +1 movement (from 3 -> 4)
+<br>Late fighter and bomber get +1 blockade (have to be on aircraft carrier)
+<br>Remove airAttack/airDefense from late_fighter by default (to be unlocked by new Synchronization Gear tech)
+<br>Grant airAttack/airDefense to zeppelin by default
+<br><b>Technology changes</b>
+<br>(Bugfix) Fix Russia anti-Submarine warfare activation
+<br>Re-organize technologies into 3 categories (Land, Sea, Air)
+<br>Fill out new techs (from 6 -> 18)
+<br>Changed name of "Interrupter Gear" tech to "Cantilevered Wing"
+<br>==========================================================
 <br><span style="font-size:200%"><b>Changelog 1.1.0</b></span>
 <br>==========================================================
 <br>Created new impassable territories: Pripet Marshes, (Western/Central/Eastern) Sahara
@@ -13938,50 +15243,7 @@ Central Powers:
 <br>reworked techs
 <br>added train units (used artwork from Civil War)
 <br>added new flags (original artwork)
-<br>Modified Canals:
-<table border="1" bgcolor="ABABAB">
-<tr>
-<th>Canal Name</th>
-<th>Sea Zone 1</th>
-<th>Sea Zone 2</th>
-<th>Land Territories</th>
-</tr>
-
-<tr bgcolor="BDBDBD">
-<td>Panama Canal</td>
-<td>Sea Zone 41 Caribbean Sea</td>
-<td>Sea Zone 108 Pacific Ocean</td>
-<td>Panama</td>
-</tr>
-
-<tr bgcolor="BDBDBD">
-<td>Bosporus</td>
-<td>Sea Zone 67 Black Sea</td>
-<td>Sea Zone 68 Aegean Sea</td>
-<td>Constantinople:Dardanelles</td>
-</tr>
-
-<tr bgcolor="BDBDBD">
-<td>Suez Canal</td>
-<td>Sea Zone 70 Eastern Mediterranean</td>
-<td>Sea Zone 75 Red Sea</td>
-<td>Cairo-Suez</td>
-</tr>
-
-<tr bgcolor="BDBDBD">
-<td>St. Lawrence River</td>
-<td>Great Lakes</td>
-<td>Sea Zone 21 Gulf of St. Lawrence</td>
-<td>Quebec</td>
-</tr>
-
-<tr bgcolor="BDBDBD">
-<td>Erie Canal</td>
-<td>Great Lakes</td>
-<td>Sea Zone 29 Mid Atlantic</td>
-<td>Hudson-Delaware</td>
-</tr>
-</table>
+<br>modified canals
 
 <br>==========================================================
 <br><b>Credits:</b>

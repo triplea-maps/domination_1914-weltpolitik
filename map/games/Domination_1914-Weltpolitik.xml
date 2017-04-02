@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-        <info name="Domination 1914-Weltpolitik" version="1.3.0"/>
+        <info name="Domination 1914-Weltpolitik" version="1.3.1"/>
 
         <loader javaClass="games.strategy.triplea.TripleA"/>
 
@@ -88,7 +88,9 @@
                 <territory name="Reunion"/>
                 <territory name="Rhone"/>
                 <territory name="Senegal"/>
+				<territory name="Tademait"/>
                 <territory name="Tahiti"/>
+				<territory name="Tanezrouft"/>
                 <territory name="Timbuktu"/>
                 <territory name="Tobruk"/>
                 <territory name="Tonkin"/>
@@ -218,7 +220,7 @@
 				<territory name="Lagos"/>
                 <territory name="Line Islands"/>
                 <territory name="London"/>
-                <territory name="Lower Egypt"/>
+                <territory name="Western Desert"/>
                 <territory name="Madras"/>
                 <territory name="Madura"/>
                 <territory name="Malaya"/>
@@ -270,12 +272,12 @@
                 <territory name="Transvaal"/>
                 <territory name="Travancore"/>
                 <territory name="Uganda"/>
-                <territory name="Upper Egypt"/>
+                <territory name="Eastern Desert"/>
                 <territory name="Vancouver Island"/>
                 <territory name="Victoria"/>
                 <territory name="Wales"/>
                 <territory name="Western Australia"/>
-                <territory name="Western Sudan"/>
+                <territory name="Kordofan"/>
                 <territory name="Yukon"/>
                 <territory name="Aldan"/>
                 <territory name="Amur"/>
@@ -377,9 +379,12 @@
                 <territory name="Wake Island"/>
                 <territory name="Washington D.C."/>
 				<territory name="Pripet Marshes"/>
-				<territory name="Western Sahara"/>
-				<territory name="Central Sahara"/>
-				<territory name="Eastern Sahara"/>
+				<territory name="El Djouf"/>
+				<territory name="Erg of Bilma"/>
+				<territory name="Grand Erg Occidental"/>
+				<territory name="Grand Erg Oriental"/>
+				<territory name="Great Sand Sea"/>
+				<territory name="Tibesti"/>
                 <territory name="Sea Zone 1 Hudson Bay" water="true"/>
                 <territory name="Sea Zone 2 Baffin Bay" water="true"/>
                 <territory name="Sea Zone 3 Denmark Strait" water="true"/>
@@ -609,6 +614,7 @@
                 <territory name="Honduras"/>
                 <territory name="Hunan"/>
                 <territory name="Iceland"/>
+				<territory name="Ifni"/>
 				<territory name="Inhambane"/>
                 <territory name="Inner Mongolia"/>
                 <territory name="Iwo Jima"/>
@@ -783,6 +789,7 @@
                 <connection t1="Wurttemburg" t2="Bavaria"/>
                 <connection t1="Algeria" t2="Morocco"/>
                 <connection t1="Algeria" t2="Algiers"/>
+				<connection t1="Algeria" t2="Atlas"/>
                 <connection t1="Annam" t2="Cambodia"/>
                 <connection t1="Annam" t2="Tonkin"/>
                 <connection t1="Annam" t2="Cochinchina"/>
@@ -802,14 +809,24 @@
                 <connection t1="Burgundy" t2="Paris"/>
                 <connection t1="Cambodia" t2="Siam"/>
                 <connection t1="Cambodia" t2="Cochinchina"/>
-				<connection t1="Central Sahara" t2="Tunisia"/>
-				<connection t1="Central Sahara" t2="Mali"/>
-				<connection t1="Central Sahara" t2="Niger"/>
-				<connection t1="Central Sahara" t2="Agadez"/>
-				<connection t1="Central Sahara" t2="Fezzan"/>
+				<connection t1="Grand Erg Occidental" t2="Atlas"/>
+				<connection t1="Grand Erg Occidental" t2="Algeria"/>
+				<connection t1="Grand Erg Occidental" t2="El Djouf"/>
+				<connection t1="Grand Erg Occidental" t2="Ifni"/>
+				<connection t1="Grand Erg Occidental" t2="Tademait"/>
+				<connection t1="Grand Erg Occidental" t2="Tanezrouft"/>
+				<connection t1="Grand Erg Occidental" t2="Mali"/>
+				<connection t1="Grand Erg Oriental" t2="Algeria"/>
+				<connection t1="Grand Erg Oriental" t2="Tunisia"/>
+				<connection t1="Grand Erg Oriental" t2="Mali"/>
+				<connection t1="Grand Erg Oriental" t2="Niger"/>
+				<connection t1="Grand Erg Oriental" t2="Agadez"/>
+				<connection t1="Grand Erg Oriental" t2="Fezzan"/>
+				<connection t1="Grand Erg Oriental" t2="Tanezrouft"/>
+				<connection t1="Grand Erg Oriental" t2="Tademait"/>
                 <connection t1="Chad" t2="Darfur"/>
                 <connection t1="Chad" t2="Middle Congo"/>
-				<connection t1="Chad" t2="Eastern Sahara"/>
+				<connection t1="Chad" t2="Tibesti"/>
                 <connection t1="Champagne" t2="Paris"/>
                 <connection t1="Champagne" t2="Picardy"/>
                 <connection t1="Champagne" t2="Belgium"/>
@@ -817,16 +834,18 @@
                 <connection t1="Champagne" t2="Alsace"/>
                 <connection t1="Cyrenaica" t2="Tripolitania"/>
                 <connection t1="Cyrenaica" t2="Tobruk"/>
-				<connection t1="Cyrenaica" t2="Kufra"/>
-				<connection t1="Kufra" t2="Eastern Sahara"/>
+				<connection t1="Cyrenaica" t2="Great Sand Sea"/>
+				<connection t1="Kufra" t2="Tibesti"/>
 				<connection t1="Kufra" t2="Fezzan"/>
+				<connection t1="Kufra" t2="Great Sand Sea"/>
                 <connection t1="Dahome" t2="Niger"/>
                 <connection t1="Dahome" t2="Upper Volta"/>
                 <connection t1="Dahome" t2="Northern Nigeria"/>
 				<connection t1="Dahome" t2="Lagos"/>
-				<connection t1="Eastern Sahara" t2="Darfur"/>
-				<connection t1="Eastern Sahara" t2="Fezzan"/>
-				<connection t1="Eastern Sahara" t2="Western Sudan"/>
+				<connection t1="Tibesti" t2="Darfur"/>
+				<connection t1="Tibesti" t2="Fezzan"/>
+				<connection t1="Tibesti" t2="Kordofan"/>
+				<connection t1="Fezzan" t2="Great Sand Sea"/>
                 <connection t1="Franche-Comte" t2="Champagne"/>
                 <connection t1="Franche-Comte" t2="Alsace"/>
                 <connection t1="Franche-Comte" t2="Switzerland"/>
@@ -838,6 +857,7 @@
                 <connection t1="French Somaliland" t2="Abyssinia"/>
                 <connection t1="Gabon" t2="Middle Congo"/>
                 <connection t1="Gabon" t2="Rio Muni"/>
+				<connection t1="Ifni" t2="Rio de Oro"/>
                 <connection t1="Ivory Coast" t2="Gold Coast"/>
                 <connection t1="Ivory Coast" t2="Upper Volta"/>
                 <connection t1="Languedoc" t2="Toulouse"/>
@@ -849,11 +869,9 @@
                 <connection t1="Laos" t2="Siam"/>
                 <connection t1="Laos" t2="Burma"/>
                 <connection t1="Lower Algeria" t2="Algeria"/>
-                <connection t1="Lower Algeria" t2="Tunisia"/>
-				<connection t1="Lower Algeria" t2="Atlas"/>
-                <connection t1="Lower Algeria" t2="Western Sahara"/>
-                <connection t1="Lower Algeria" t2="Mali"/>
-				<connection t1="Lower Algeria" t2="Central Sahara"/>
+				<connection t1="Lower Algeria" t2="Tademait"/>
+				<connection t1="Lower Algeria" t2="Grand Erg Occidental"/>
+				<connection t1="Lower Algeria" t2="Grand Erg Oriental"/>
                 <connection t1="Mali" t2="Senegal"/>
                 <connection t1="Mali" t2="Timbuktu"/>
                 <connection t1="Mali" t2="French Guinea"/>
@@ -864,13 +882,15 @@
                 <connection t1="Mauretania" t2="Mali"/>
                 <connection t1="Mauretania" t2="Rio de Oro"/>
                 <connection t1="Mauretania" t2="Senegal"/>
-				<connection t1="Mauretania" t2="Western Sahara"/>
+				<connection t1="Mauretania" t2="El Djouf"/>
 				<connection t1="Niger" t2="Agadez"/>
                 <connection t1="Niger" t2="Northern Nigeria"/>
                 <connection t1="Niger" t2="Upper Volta"/>
-                <connection t1="Niger" t2="Chad"/>
-				<connection t1="Niger" t2="Eastern Sahara"/>
+				<connection t1="Niger" t2="Erg of Bilma"/>
                 <connection t1="Agadez" t2="Fezzan"/>
+				<connection t1="Agadez" t2="Erg of Bilma"/>
+				<connection t1="Erg of Bilma" t2="Tibesti"/>
+				<connection t1="Erg of Bilma" t2="Chad"/>
                 <connection t1="Normandy" t2="Burgundy"/>
                 <connection t1="Normandy" t2="Paris"/>
                 <connection t1="Normandy" t2="Picardy"/>
@@ -882,6 +902,8 @@
                 <connection t1="Senegal" t2="French Guinea"/>
                 <connection t1="Senegal" t2="Gambia"/>
                 <connection t1="Shanghai" t2="Fukien"/>
+				<connection t1="Tanezrouft" t2="Mali"/>
+				<connection t1="Tanezrouft" t2="Tademait"/>
                 <connection t1="Tunisia" t2="Algeria"/>
                 <connection t1="Greece" t2="Albania"/>
 				<connection t1="Greece" t2="Epirus"/>
@@ -953,7 +975,8 @@
                 <connection t1="Naples" t2="Rome"/>
                 <connection t1="Piedmont" t2="Milan"/>
                 <connection t1="Piedmont" t2="Switzerland"/>
-                <connection t1="Tripolitania" t2="Central Sahara"/>
+                <connection t1="Tripolitania" t2="Grand Erg Oriental"/>
+				<connection t1="Tripolitania" t2="Great Sand Sea"/>
                 <connection t1="Tripolitania" t2="Tripoli"/>
                 <connection t1="Tripolitania" t2="Tunisia"/>
                 <connection t1="Tripolitania" t2="Fezzan"/>
@@ -1098,11 +1121,12 @@
 				<connection t1="Connaught" t2="Munster"/>
                 <connection t1="Kuwait" t2="Al-Dammam"/>
                 <connection t1="Kuwait" t2="Basra"/>
-                <connection t1="Lower Egypt" t2="Cyrenaica"/>
-				<connection t1="Lower Egypt" t2="Kufra"/>
-				<connection t1="Lower Egypt" t2="Eastern Sahara"/>
-                <connection t1="Lower Egypt" t2="Cairo-Suez"/>
-                <connection t1="Lower Egypt" t2="Western Sudan"/>
+                <connection t1="Western Desert" t2="Cyrenaica"/>
+				<connection t1="Western Desert" t2="Kufra"/>
+				<connection t1="Western Desert" t2="Great Sand Sea"/>
+				<connection t1="Western Desert" t2="Tibesti"/>
+                <connection t1="Western Desert" t2="Cairo-Suez"/>
+                <connection t1="Western Desert" t2="Kordofan"/>
                 <connection t1="Madras" t2="Travancore"/>
                 <connection t1="Madras" t2="Madura"/>
                 <connection t1="Madras" t2="Goa"/>
@@ -1191,18 +1215,19 @@
                 <connection t1="Uganda" t2="Abyssinia"/>
                 <connection t1="Uganda" t2="Rwanda"/>
                 <connection t1="Uganda" t2="German East Africa"/>
-                <connection t1="Upper Egypt" t2="Lower Egypt"/>
-                <connection t1="Upper Egypt" t2="Cairo-Suez"/>
-                <connection t1="Upper Egypt" t2="Port Sudan"/>
-				<connection t1="Western Sahara" t2="Mali"/>
-				<connection t1="Western Sahara" t2="Rio de Oro"/>
-				<connection t1="Western Sahara" t2="Timbuktu"/>
-                <connection t1="Western Sudan" t2="Port Sudan"/>
-                <connection t1="Western Sudan" t2="Abyssinia"/>
-                <connection t1="Western Sudan" t2="Uganda"/>
-                <connection t1="Western Sudan" t2="Congo"/>
-                <connection t1="Western Sudan" t2="Middle Congo"/>
-				<connection t1="Western Sudan" t2="Darfur"/>
+                <connection t1="Eastern Desert" t2="Western Desert"/>
+                <connection t1="Eastern Desert" t2="Cairo-Suez"/>
+                <connection t1="Eastern Desert" t2="Port Sudan"/>
+				<connection t1="El Djouf" t2="Mali"/>
+				<connection t1="El Djouf" t2="Rio de Oro"/>
+				<connection t1="El Djouf" t2="Timbuktu"/>
+				<connection t1="El Djouf" t2="Ifni"/>
+                <connection t1="Kordofan" t2="Port Sudan"/>
+                <connection t1="Kordofan" t2="Abyssinia"/>
+                <connection t1="Kordofan" t2="Uganda"/>
+                <connection t1="Kordofan" t2="Congo"/>
+                <connection t1="Kordofan" t2="Middle Congo"/>
+				<connection t1="Kordofan" t2="Darfur"/>
 				<connection t1="Darfur" t2="Middle Congo"/>
                 <connection t1="Yukon" t2="Northwest Territories"/>
                 <connection t1="Manitoba" t2="Northwest Territories"/>
@@ -1708,7 +1733,7 @@
                 <connection t1="Sea Zone 52 Mid Atlantic" t2="Sea Zone 53 Mid Atlantic"/>
                 <connection t1="Sea Zone 52 Mid Atlantic" t2="Canary Islands"/>
                 <connection t1="Sea Zone 53 Mid Atlantic" t2="Sea Zone 54 Alboran Sea"/>
-                <connection t1="Sea Zone 53 Mid Atlantic" t2="Western Sahara"/>
+                <connection t1="Sea Zone 53 Mid Atlantic" t2="Ifni"/>
                 <connection t1="Sea Zone 53 Mid Atlantic" t2="Morocco"/>
                 <connection t1="Sea Zone 53 Mid Atlantic" t2="Canary Islands"/>
                 <connection t1="Sea Zone 54 Alboran Sea" t2="Sea Zone 55 Western Mediterranean"/>
@@ -1820,7 +1845,7 @@
                 <connection t1="Sea Zone 70 Eastern Mediterranean" t2="Sea Zone 75 Red Sea"/>
                 <connection t1="Sea Zone 70 Eastern Mediterranean" t2="Tobruk"/>
                 <connection t1="Sea Zone 70 Eastern Mediterranean" t2="Cyrenaica"/>
-                <connection t1="Sea Zone 70 Eastern Mediterranean" t2="Lower Egypt"/>
+                <connection t1="Sea Zone 70 Eastern Mediterranean" t2="Western Desert"/>
                 <connection t1="Sea Zone 70 Eastern Mediterranean" t2="Cairo-Suez"/>
                 <connection t1="Sea Zone 70 Eastern Mediterranean" t2="Sinai"/>
                 <connection t1="Sea Zone 70 Eastern Mediterranean" t2="Crete"/>
@@ -1865,7 +1890,7 @@
 				<connection t1="Sea Zone 75 Red Sea" t2="Asir"/>
                 <connection t1="Sea Zone 75 Red Sea" t2="Sinai"/>
                 <connection t1="Sea Zone 75 Red Sea" t2="Cairo-Suez"/>
-                <connection t1="Sea Zone 75 Red Sea" t2="Upper Egypt"/>
+                <connection t1="Sea Zone 75 Red Sea" t2="Eastern Desert"/>
                 <connection t1="Sea Zone 75 Red Sea" t2="Port Sudan"/>
                 <connection t1="Sea Zone 75 Red Sea" t2="Eritrea"/>
                 <connection t1="Sea Zone 75 Red Sea" t2="French Somaliland"/>
@@ -2438,6 +2463,7 @@
                 <connection t1="Lake Chad" t2="Kamerun"/>
                 <connection t1="Lake Chad" t2="Northern Nigeria"/>
                 <connection t1="Lake Chad" t2="Niger"/>
+				<connection t1="Lake Chad" t2="Erg of Bilma"/>
                 <connection t1="Lake Edward" t2="Congo"/>
                 <connection t1="Lake Edward" t2="Rwanda"/>
                 <connection t1="Lake Ladoga" t2="Karelia"/>
@@ -2465,14 +2491,14 @@
 				<connection t1="Morelos" t2="Mexico City"/>
                 <connection t1="Morelos" t2="Veracruz"/>
                 <connection t1="Morelos" t2="Oaxaca"/>
-                <connection t1="Morocco" t2="Western Sahara"/>
+                <connection t1="Morocco" t2="Ifni"/>
                 <connection t1="Morocco" t2="Ceuta"/>
                 <connection t1="Morocco" t2="Malilla"/>
 				<connection t1="Morocco" t2="Atlas"/>
 				<connection t1="Nuevo Leon" t2="Mexico City"/>
                 <connection t1="Nuevo Leon" t2="Morelos"/>
 				<connection t1="Nuevo Leon" t2="Coahuila"/>
-				<connection t1="Atlas" t2="Western Sahara"/>
+				<connection t1="Atlas" t2="Ifni"/>
                 <connection t1="Natal-Salvador" t2="Central Brazil"/>
                 <connection t1="Natal-Salvador" t2="Brasilia"/>
                 <connection t1="Navarre" t2="Catalonia"/>
@@ -2687,9 +2713,9 @@
                 <unit name="transport"/>
                 <unit name="zeppelin"/>
                 <unit name="carrier"/>
-				<unit name="factory_basic"/>
-                <unit name="factory_minor"/>
-				<unit name="factory_major"/>
+				<unit name="factory1"/>
+                <unit name="factory2"/>
+				<unit name="factory3"/>
 				<unit name="harbour"/>
 				<unit name="airfield"/>
 				<unit name="train"/>
@@ -3098,19 +3124,19 @@
                         <result resourceOrUnit="airfield" quantity="1"/>
                 </productionRule>
 				
-				<productionRule name="buyFactory_Basic">
+				<productionRule name="buyFactory1">
                         <cost resource="PUs" quantity="8"/>
-                        <result resourceOrUnit="factory_basic" quantity="1"/>
+                        <result resourceOrUnit="factory1" quantity="1"/>
                 </productionRule>
                 
-                <productionRule name="buyFactory_Minor">
+                <productionRule name="buyFactory2">
                         <cost resource="PUs" quantity="6"/>
-                        <result resourceOrUnit="factory_minor" quantity="1"/>
+                        <result resourceOrUnit="factory2" quantity="1"/>
                 </productionRule>
                 
-                <productionRule name="buyFactory_Major">
+                <productionRule name="buyFactory3">
                         <cost resource="PUs" quantity="4"/>
-                        <result resourceOrUnit="factory_major" quantity="1"/>
+                        <result resourceOrUnit="factory3" quantity="1"/>
                 </productionRule>
 				
 				<!-- SHIPYARD PRICES -->
@@ -3140,19 +3166,19 @@
                 </productionRule>
 				
 				<!-- Repair rules -->
-				<repairRule name="repairFactory_Basic">
+				<repairRule name="repairFactory1">
                         <cost resource="PUs" quantity="1"/>
-                        <result resourceOrUnit="factory_basic" quantity="1"/>
+                        <result resourceOrUnit="factory1" quantity="1"/>
                 </repairRule>
 				
-				<repairRule name="repairFactory_Minor">
+				<repairRule name="repairFactory2">
                         <cost resource="PUs" quantity="1"/>
-                        <result resourceOrUnit="factory_minor" quantity="1"/>
+                        <result resourceOrUnit="factory2" quantity="1"/>
                 </repairRule>
                 
-                <repairRule name="repairFactory_Major">
+                <repairRule name="repairFactory3">
                         <cost resource="PUs" quantity="1"/>
-                        <result resourceOrUnit="factory_major" quantity="1"/>
+                        <result resourceOrUnit="factory3" quantity="1"/>
                 </repairRule>
                 
 				<repairRule name="repairAirfield">
@@ -3167,9 +3193,9 @@
                 
 				
 				<repairFrontier name="repair">
-					<repairRules name="repairFactory_Basic"/>
-                	<repairRules name="repairFactory_Minor"/>
-					<repairRules name="repairFactory_Major"/>
+					<repairRules name="repairFactory1"/>
+                	<repairRules name="repairFactory2"/>
+					<repairRules name="repairFactory3"/>
 					<repairRules name="repairAirfield"/>
 					<repairRules name="repairHarbour"/>
                 </repairFrontier>
@@ -3188,9 +3214,9 @@
                         <frontierRules name="buybattleship"/>
 						<frontierRules name="buyfighter"/>
                         <frontierRules name="buyzeppelin"/>
-						<frontierRules name="buyFactory_Basic"/>
-						<frontierRules name="buyFactory_Minor"/>
-						<frontierRules name="buyFactory_Major"/>
+						<frontierRules name="buyFactory1"/>
+						<frontierRules name="buyFactory2"/>
+						<frontierRules name="buyFactory3"/>
 						<frontierRules name="buyHarbour"/>
                 </productionFrontier>
 				
@@ -3208,9 +3234,9 @@
                         <frontierRules name="buybattleship"/>
 						<frontierRules name="buyfighter"/>
                         <frontierRules name="buyzeppelin"/>
-						<frontierRules name="buyFactory_Basic"/>
-						<frontierRules name="buyFactory_Minor"/>
-						<frontierRules name="buyFactory_Major"/>
+						<frontierRules name="buyFactory1"/>
+						<frontierRules name="buyFactory2"/>
+						<frontierRules name="buyFactory3"/>
 						<frontierRules name="buyHarbour"/>
                 </productionFrontier>
 
@@ -3228,9 +3254,9 @@
                         <frontierRules name="buybattleship"/>
 						<frontierRules name="buyfighter"/>
                         <frontierRules name="buyzeppelin"/>
-						<frontierRules name="buyFactory_Basic"/>
-						<frontierRules name="buyFactory_Minor"/>
-						<frontierRules name="buyFactory_Major"/>
+						<frontierRules name="buyFactory1"/>
+						<frontierRules name="buyFactory2"/>
+						<frontierRules name="buyFactory3"/>
 						<frontierRules name="buyHarbour"/>
                 </productionFrontier>
 				
@@ -3248,9 +3274,9 @@
                         <frontierRules name="buybattleship"/>
 						<frontierRules name="buyfighter"/>
                         <frontierRules name="buyzeppelin"/>
-						<frontierRules name="buyFactory_Basic"/>
-						<frontierRules name="buyFactory_Minor"/>
-						<frontierRules name="buyFactory_Major"/>
+						<frontierRules name="buyFactory1"/>
+						<frontierRules name="buyFactory2"/>
+						<frontierRules name="buyFactory3"/>
 						<frontierRules name="buyHarbour"/>
                 </productionFrontier>
 				
@@ -3268,9 +3294,9 @@
                         <frontierRules name="buybattleship"/>
 						<frontierRules name="buyfighter"/>
                         <frontierRules name="buyzeppelin"/>
-						<frontierRules name="buyFactory_Basic"/>
-						<frontierRules name="buyFactory_Minor"/>
-						<frontierRules name="buyFactory_Major"/>
+						<frontierRules name="buyFactory1"/>
+						<frontierRules name="buyFactory2"/>
+						<frontierRules name="buyFactory3"/>
 						<frontierRules name="buyHarbour"/>
                 </productionFrontier>
 				
@@ -3288,9 +3314,9 @@
                         <frontierRules name="buybattleship"/>
 						<frontierRules name="buyfighter"/>
                         <frontierRules name="buyzeppelin"/>
-						<frontierRules name="buyFactory_Basic"/>
-						<frontierRules name="buyFactory_Minor"/>
-						<frontierRules name="buyFactory_Major"/>
+						<frontierRules name="buyFactory1"/>
+						<frontierRules name="buyFactory2"/>
+						<frontierRules name="buyFactory3"/>
 						<frontierRules name="buyHarbour"/>
                 </productionFrontier>
 				
@@ -3308,9 +3334,9 @@
                         <frontierRules name="buybattleship"/>
 						<frontierRules name="buyfighter"/>
                         <frontierRules name="buyzeppelin"/>
-						<frontierRules name="buyFactory_Basic"/>
-						<frontierRules name="buyFactory_Minor"/>
-						<frontierRules name="buyFactory_Major"/>
+						<frontierRules name="buyFactory1"/>
+						<frontierRules name="buyFactory2"/>
+						<frontierRules name="buyFactory3"/>
 						<frontierRules name="buyHarbour"/>
                 </productionFrontier>
 				
@@ -3328,9 +3354,9 @@
                         <frontierRules name="buybattleship"/>
 						<frontierRules name="buyfighter"/>
                         <frontierRules name="buyzeppelin"/>
-						<frontierRules name="buyFactory_Basic"/>
-						<frontierRules name="buyFactory_Minor"/>
-						<frontierRules name="buyFactory_Major"/>
+						<frontierRules name="buyFactory1"/>
+						<frontierRules name="buyFactory2"/>
+						<frontierRules name="buyFactory3"/>
 						<frontierRules name="buyHarbour"/>
                 </productionFrontier>
 				
@@ -3348,9 +3374,9 @@
                         <frontierRules name="buybattleship"/>
 						<frontierRules name="buyfighter"/>
                         <frontierRules name="buyzeppelin"/>
-						<frontierRules name="buyFactory_Basic"/>
-						<frontierRules name="buyFactory_Minor"/>
-						<frontierRules name="buyFactory_Major"/>
+						<frontierRules name="buyFactory1"/>
+						<frontierRules name="buyFactory2"/>
+						<frontierRules name="buyFactory3"/>
 						<frontierRules name="buyHarbour"/>
                 </productionFrontier>
 				
@@ -3368,9 +3394,9 @@
                         <frontierRules name="buybattleship"/>
 						<frontierRules name="buyfighter"/>
                         <frontierRules name="buyzeppelin"/>
-						<frontierRules name="buyFactory_Basic"/>
-						<frontierRules name="buyFactory_Minor"/>
-						<frontierRules name="buyFactory_Major"/>
+						<frontierRules name="buyFactory1"/>
+						<frontierRules name="buyFactory2"/>
+						<frontierRules name="buyFactory3"/>
 						<frontierRules name="buyHarbour"/>
                 </productionFrontier>
 				
@@ -3388,9 +3414,9 @@
                         <frontierRules name="buybattleship"/>
 						<frontierRules name="buyfighter"/>
                         <frontierRules name="buyzeppelin"/>
-						<frontierRules name="buyFactory_Basic"/>
-						<frontierRules name="buyFactory_Minor"/>
-						<frontierRules name="buyFactory_Major"/>
+						<frontierRules name="buyFactory1"/>
+						<frontierRules name="buyFactory2"/>
+						<frontierRules name="buyFactory3"/>
 						<frontierRules name="buyHarbour"/>
                 </productionFrontier>
 				
@@ -4055,7 +4081,7 @@
                          <option name="transportCost" value="3"/>
                          <option name="movement" value="1"/>
 						 <option name="isInfantry" value="true"/>
-						 <option name="requiresUnits" value="factory_major"/>
+						 <option name="requiresUnits" value="factory3"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
                     <attachment name="unitAttachment" attachTo="battlecruiser" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4065,8 +4091,8 @@
                          <option name="defense" value="4"/>
                          <option name="canBombard" value="false"/>
 						 <option name="blockade" value="1"/>
-						 <option name="requiresUnits" value="factory_minor"/>
-						 <option name="requiresUnits" value="factory_major"/>
+						 <option name="requiresUnits" value="factory2:harbour"/>
+						 <option name="requiresUnits" value="factory3:harbour"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
                     <attachment name="unitAttachment" attachTo="battleship" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4076,7 +4102,7 @@
                          <option name="defense" value="4"/>
                          <option name="canBombard" value="true"/>
                          <option name="hitPoints" value="2"/>
-                         <option name="requiresUnits" value="factory_major"/>
+                         <option name="requiresUnits" value="factory3:harbour"/>
 						 <option name="blockade" value="1"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
@@ -4093,7 +4119,7 @@
 						 <option name="canScramble" value="true"/>
                          <option name="maxScrambleDistance" value="1"/>
                          <option name="airDefense" value="0"/>
-						 <option name="requiresUnits" value="factory_major"/>
+						 <option name="requiresUnits" value="factory3"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
 						 <option name="isStrategicBomber" value="true"/>
 						 <option name="bombingMaxDieSides" value="6"/>
@@ -4107,9 +4133,9 @@
                          <option name="defense" value="2"/>
 						 <option name="isInfantry" value="true"/>
                          <option name="artillerySupportable" value="true"/>
-						 <option name="requiresUnits" value="factory_basic"/>
-						 <option name="requiresUnits" value="factory_minor"/>
-						 <option name="requiresUnits" value="factory_major"/>
+						 <option name="requiresUnits" value="factory1"/>
+						 <option name="requiresUnits" value="factory2"/>
+						 <option name="requiresUnits" value="factory3"/>
                          <option name="canBeCapturedOnEnteringBy" value="Germany:France:Russia:Austria:Ottoman:UK:Japan:USA:Italy:Belgium:Serbia:Bulgaria:Greece:Beiyang:KMT:Brazil:Portugal:Arabia:Romania:Conventionist:Constitutionalist"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
@@ -4119,8 +4145,8 @@
                          <option name="attack" value="3"/>
                          <option name="defense" value="3"/>
 						 <option name="blockade" value="1"/>
-						 <option name="requiresUnits" value="factory_minor"/>
-						 <option name="requiresUnits" value="factory_major"/>
+						 <option name="requiresUnits" value="factory2:harbour"/>
+						 <option name="requiresUnits" value="factory3:harbour"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
                     <attachment name="unitAttachment" attachTo="destroyer" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4130,8 +4156,8 @@
                          <option name="defense" value="2"/>
                          <option name="isDestroyer" value="false"/>
 						 <option name="blockade" value="1"/>
-						 <option name="requiresUnits" value="factory_minor"/>
-						 <option name="requiresUnits" value="factory_major"/>
+						 <option name="requiresUnits" value="factory2"/>
+						 <option name="requiresUnits" value="factory3"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
                     <attachment name="unitAttachment" attachTo="adv_destroyer" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4141,7 +4167,7 @@
                          <option name="defense" value="2"/>
                          <option name="isDestroyer" value="true"/>
 						 <option name="blockade" value="1"/>
-						 <option name="requiresUnits" value="factory_major"/>
+						 <option name="requiresUnits" value="factory3"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
                     <attachment name="unitAttachment" attachTo="carrier" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4153,7 +4179,7 @@
                          <option name="hitPoints" value="2"/>
 						 <option name="whenCombatDamaged" value="unitsMayNotLandOnCarrier" count="1:2"/>
 						 <option name="whenCombatDamaged" value="unitsMayNotLeaveAlliedCarrier" count="1:2"/>
-						 <option name="requiresUnits" value="factory_major"/>
+						 <option name="requiresUnits" value="factory3:harbour"/>
 						 <option name="blockade" value="0"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
@@ -4164,8 +4190,8 @@
                          <option name="transportCost" value="3"/>
                          <option name="artillery" value="true"/>
 						 <option name="isInfantry" value="true"/>
-						 <option name="requiresUnits" value="factory_minor"/>
-						 <option name="requiresUnits" value="factory_major"/>
+						 <option name="requiresUnits" value="factory2"/>
+						 <option name="requiresUnits" value="factory3"/>
                          <option name="canBeCapturedOnEnteringBy" value="Germany:France:Russia:Austria:Ottoman:UK:Japan:USA:Italy:Belgium:Serbia:Bulgaria:Greece:Beiyang:KMT:Brazil:Portugal:Arabia:Romania:Conventionist:Constitutionalist"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
@@ -4181,8 +4207,8 @@
 						 <option name="canScramble" value="true"/>
                          <option name="maxScrambleDistance" value="1"/>
                          <option name="airDefense" value="0"/>
-						 <option name="requiresUnits" value="factory_minor"/>
-						 <option name="requiresUnits" value="factory_major"/>
+						 <option name="requiresUnits" value="factory2"/>
+						 <option name="requiresUnits" value="factory3"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
                     <attachment name="unitAttachment" attachTo="infantry" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4192,9 +4218,9 @@
                          <option name="defense" value="2"/>
                          <option name="artillerySupportable" value="true"/>
 						 <option name="isInfantry" value="true"/>
-						 <option name="requiresUnits" value="factory_basic"/>
-						 <option name="requiresUnits" value="factory_minor"/>
-						 <option name="requiresUnits" value="factory_major"/>
+						 <option name="requiresUnits" value="factory1"/>
+						 <option name="requiresUnits" value="factory2"/>
+						 <option name="requiresUnits" value="factory3"/>
                          <option name="canBeCapturedOnEnteringBy" value="Germany:France:Russia:Austria:Ottoman:UK:Japan:USA:Italy:Belgium:Serbia:Bulgaria:Greece:Beiyang:KMT:Brazil:Portugal:Arabia:Romania:Conventionist:Constitutionalist"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
@@ -4211,7 +4237,7 @@
 						 <option name="canScramble" value="true"/>
                          <option name="maxScrambleDistance" value="1"/>
                          <option name="airDefense" value="0"/>
-						 <option name="requiresUnits" value="factory_major"/>
+						 <option name="requiresUnits" value="factory3"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
 					<attachment name="unitAttachment" attachTo="naval_mine" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4222,8 +4248,8 @@
 						 <option name="blockade" value="0"/>
 						 <option name="isDestroyer" value="true"/>
 						 <option name="isSuicide" value="true"/>
-						 <option name="requiresUnits" value="factory_minor"/>
-						 <option name="requiresUnits" value="factory_major"/>
+						 <option name="requiresUnits" value="factory2"/>
+						 <option name="requiresUnits" value="factory3"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
                     <attachment name="unitAttachment" attachTo="submarine" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4233,8 +4259,8 @@
                          <option name="attack" value="2"/>
                          <option name="defense" value="1"/>
 						 <option name="blockade" value="2"/>
-						 <option name="requiresUnits" value="factory_minor"/>
-						 <option name="requiresUnits" value="factory_major"/>
+						 <option name="requiresUnits" value="factory2"/>
+						 <option name="requiresUnits" value="factory3"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
                     <attachment name="unitAttachment" attachTo="tank" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4244,7 +4270,7 @@
                          <option name="attack" value="3"/>
                          <option name="defense" value="3"/>
 						 <option name="isInfantry" value="true"/>
-						 <option name="requiresUnits" value="factory_major"/>
+						 <option name="requiresUnits" value="factory3"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
                     <attachment name="unitAttachment" attachTo="transport" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4254,8 +4280,8 @@
                          <option name="attack" value="0"/>
                          <option name="defense" value="0"/>
 						 <option name="blockade" value="0"/>
-						 <option name="requiresUnits" value="factory_minor"/>
-						 <option name="requiresUnits" value="factory_major"/>
+						 <option name="requiresUnits" value="factory2"/>
+						 <option name="requiresUnits" value="factory3"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
                     <attachment name="unitAttachment" attachTo="zeppelin" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4266,8 +4292,8 @@
 						 <option name="airAttack" value="1"/>
 						 <option name="airDefense" value="1"/>
                          <option name="isStrategicBomber" value="true"/>
-                         <option name="requiresUnits" value="factory_minor"/>
-						 <option name="requiresUnits" value="factory_major"/>
+                         <option name="requiresUnits" value="factory2"/>
+						 <option name="requiresUnits" value="factory3"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
 					<attachment name="unitAttachment" attachTo="train" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4275,38 +4301,38 @@
                          <option name="isLandTransport" value="true"/>
                          <option name="attack" value="0"/>
                          <option name="defense" value="0"/>
-						 <option name="requiresUnits" value="factory_minor"/>
-						 <option name="requiresUnits" value="factory_major"/>
+						 <option name="requiresUnits" value="factory2"/>
+						 <option name="requiresUnits" value="factory3"/>
 						 <option name="isInfrastructure" value="true"/>
 						 <option name="destroyedWhenCapturedFrom" value="Germany:France:Russia:Austria:Ottoman:UK:Japan:USA:Italy:Belgium:Serbia:Bulgaria:Greece:Beiyang:KMT:Brazil:Portugal:Arabia:Romania:Conventionist:Constitutionalist"/>
 						 <option name="canNotMoveDuringCombatMove" value="true"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
 					
-					<attachment name="unitAttachment" attachTo="factory_basic" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+					<attachment name="unitAttachment" attachTo="factory1" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
                          <option name="isFactory" value="true"/>
 						 <option name="canOnlyBePlacedInTerritoryValuedAtX" value="1"/>
 						 <option name="isAAforBombingThisUnitOnly" value="false"/>
 						 <option name="canProduceXUnits" value="1"/>
 						 <option name="maxDamage" value="2"/>
 					</attachment>
-					<attachment name="unitAttachment" attachTo="factory_minor" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+					<attachment name="unitAttachment" attachTo="factory2" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
                          <option name="isFactory" value="true"/>
 						 <option name="canOnlyBePlacedInTerritoryValuedAtX" value="2"/>
 						 <option name="isAAforBombingThisUnitOnly" value="false"/>
 						 <option name="canProduceXUnits" value="2"/>
 						 <option name="maxDamage" value="4"/>
-						 <option name="consumesUnits" value="1:factory_basic"/>
-						 <option name="whenCapturedChangesInto" value="any:any:true:factory_basic:1"/>
+						 <option name="consumesUnits" value="1:factory1"/>
+						 <option name="whenCapturedChangesInto" value="any:any:true:factory1:1"/>
 					</attachment>
-					<attachment name="unitAttachment" attachTo="factory_major" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+					<attachment name="unitAttachment" attachTo="factory3" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
                          <option name="isFactory" value="true"/>
 						 <option name="canOnlyBePlacedInTerritoryValuedAtX" value="3"/>
 						 <option name="isAAforBombingThisUnitOnly" value="false"/>
 						 <option name="canProduceXUnits" value="3"/>
 						 <option name="maxDamage" value="6"/>
-						 <option name="consumesUnits" value="1:factory_minor"/>
-						 <option name="whenCapturedChangesInto" value="any:any:true:factory_minor:1"/>
+						 <option name="consumesUnits" value="1:factory2"/>
+						 <option name="whenCapturedChangesInto" value="any:any:true:factory2:1"/>
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="harbour" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4805,11 +4831,6 @@
                     <attachment name="territoryAttachment" attachTo="Central Brazil" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
                     </attachment>
-					
-					<attachment name="territoryAttachment" attachTo="Central Sahara" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="0"/>
-						<option name="isImpassable" value="true"/>
-                    </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Ceuta" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
@@ -5041,19 +5062,23 @@
                     <attachment name="territoryAttachment" attachTo="Eastern Cuba" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="0"/>
                     </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Eastern Desert" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                    </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Eastern Poland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
-                    </attachment>
-					
-					<attachment name="territoryAttachment" attachTo="Eastern Sahara" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="0"/>
-						<option name="isImpassable" value="true"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Ecuador" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
 						<option name="captureUnitOnEnteringBy" value="France:Russia:UK:Japan:USA:Belgium:Greece:Beiyang:Brazil:Serbia:Portugal:Arabia:Conventionist"/>
+                    </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="El Djouf" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+						<option name="isImpassable" value="true"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="El Salvador" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5067,6 +5092,11 @@
 					
 					<attachment name="territoryAttachment" attachTo="Epirus" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
+                    </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Erg of Bilma" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+						<option name="isImpassable" value="true"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Eritrea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5194,9 +5224,24 @@
                     <attachment name="territoryAttachment" attachTo="Gough Island" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="0"/>
                     </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Grand Erg Occidental" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+						<option name="isImpassable" value="true"/>
+                    </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Grand Erg Oriental" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+						<option name="isImpassable" value="true"/>
+                    </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Great Plains" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
+                    </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Great Sand Sea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+						<option name="isImpassable" value="true"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Greece" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5252,6 +5297,10 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Hanguk" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+                    </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Hankow" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
                     </attachment>
 
@@ -5329,6 +5378,10 @@
 						<option name="captureUnitOnEnteringBy" value="Germany:Austria:Ottoman:Bulgaria:KMT:Constitutionalist"/>
                     </attachment>
 					
+					<attachment name="territoryAttachment" attachTo="Ifni" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                    </attachment>
+					
 					<attachment name="territoryAttachment" attachTo="Inhambane" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
                     </attachment>
@@ -5342,7 +5395,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Italian Somaliland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
+                        <option name="production" value="0"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Ivory Coast" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5430,6 +5483,10 @@
 
                     <attachment name="territoryAttachment" attachTo="Kiev" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="2"/>
+                    </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Kordofan" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Koryak" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5536,10 +5593,6 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Lower Algeria" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="0"/>
-                    </attachment>
-
-                    <attachment name="territoryAttachment" attachTo="Lower Egypt" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="0"/>
                     </attachment>
 
@@ -5739,10 +5792,6 @@
 					<attachment name="territoryAttachment" attachTo="Najd" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
 						<option name="capital" value="Arabia"/>
-                    </attachment>
-
-                    <attachment name="territoryAttachment" attachTo="Hankow" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Naples" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -6376,9 +6425,17 @@
                     <attachment name="territoryAttachment" attachTo="Syria" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="2"/>
                     </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Tademait" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                    </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Tahiti" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
+                    </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Tanezrouft" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Tehran" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -6387,6 +6444,11 @@
 
                     <attachment name="territoryAttachment" attachTo="Texas" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="2"/>
+                    </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Tibesti" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+						<option name="isImpassable" value="true"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Tibet" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -6503,10 +6565,6 @@
                         <option name="production" value="0"/>
                     </attachment>
 
-                    <attachment name="territoryAttachment" attachTo="Upper Egypt" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="0"/>
-                    </attachment>
-
                     <attachment name="territoryAttachment" attachTo="Upper Volta" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
 						<option name="captureUnitOnEnteringBy" value="Germany:Austria:Ottoman:Bulgaria:KMT:Constitutionalist"/>
@@ -6613,21 +6671,16 @@
                     <attachment name="territoryAttachment" attachTo="Western Cuba" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="0"/>
                     </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Western Desert" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                    </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Western Poland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
                     </attachment>
-					
-					<attachment name="territoryAttachment" attachTo="Western Sahara" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="0"/>
-						<option name="isImpassable" value="true"/>
-                    </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Western Siberian Lowlands" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="0"/>
-                    </attachment>
-
-                    <attachment name="territoryAttachment" attachTo="Western Sudan" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="0"/>
                     </attachment>
 
@@ -7102,12 +7155,26 @@
 			
 			<attachment name="canalAttachmentDanishStraits" attachTo="Sea Zone 12 Baltic Sea" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
 				<option name="canalName" value="Danish Straits"/>
-				<option name="landTerritories" value="Denmark:Sweden"/>
+				<option name="landTerritories" value="Denmark"/>
+				<option name="excludedUnits" value="submarine:fighter:zeppelin:late_fighter:bomber"/>
 			</attachment>
 			
 			<attachment name="canalAttachmentDanishStraits" attachTo="Sea Zone 13 Skagerrak" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
 				<option name="canalName" value="Danish Straits"/>
-				<option name="landTerritories" value="Denmark:Sweden"/>
+				<option name="landTerritories" value="Denmark"/>
+				<option name="excludedUnits" value="submarine:fighter:zeppelin:late_fighter:bomber"/>
+			</attachment>
+			
+			<attachment name="canalAttachmentOresund" attachTo="Sea Zone 12 Baltic Sea" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+				<option name="canalName" value="Oresund"/>
+				<option name="landTerritories" value="Sweden"/>
+				<option name="excludedUnits" value="submarine:fighter:zeppelin:late_fighter:bomber"/>
+			</attachment>
+			
+			<attachment name="canalAttachmentOresund" attachTo="Sea Zone 13 Skagerrak" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+				<option name="canalName" value="Oresund"/>
+				<option name="landTerritories" value="Sweden"/>
+				<option name="excludedUnits" value="submarine:fighter:zeppelin:late_fighter:bomber"/>
 			</attachment>
 			
 			<attachment name="canalAttachmentStLawrenceRiver" attachTo="Sea Zone 21 Gulf of St. Lawrence" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
@@ -7676,9 +7743,6 @@
 				<attachment name="conditionAttachment_Allies_Control_Vladivostok" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">					
 					<option name="alliedOwnershipTerritories" value="Vladivostok" count="1"/>
 				</attachment>
-				<attachment name="conditionAttachment_France_Control_Vladivostok" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">					
-					<option name="directOwnershipTerritories" value="Vladivostok" count="1"/>
-				</attachment>
 				<attachment name="conditionAttachment_Allies_Control_Upper_Volta" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">					
 					<option name="alliedOwnershipTerritories" value="Upper Volta" count="1"/>
 				</attachment>
@@ -7687,6 +7751,9 @@
 				</attachment>
 				
 				<attachment name="conditionAttachment_Plan_H_Switch" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+                	<option name="switch" value="false"/>
+                </attachment>
+				<attachment name="conditionAttachment_Czechoslovak_Revolt_Switch" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
                 	<option name="switch" value="false"/>
                 </attachment>
 				
@@ -7758,12 +7825,6 @@
                 </attachment>
 				
 				<!-- UK conditions -->
-				<attachment name="conditionAttachment_Allies_Control_Senussi" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-                	<option name="alliedOwnershipTerritories" value="Fezzan:Kufra" count="1"/>
-                </attachment>
-				<attachment name="conditionAttachment_UK_Control_Estonia" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">					
-					<option name="directOwnershipTerritories" value="Estonia" count="1"/>
-				</attachment>
 				<attachment name="conditionAttachment_Allies_Control_Lagos" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">					
 					<option name="alliedOwnershipTerritories" value="Lagos" count="1"/>
 				</attachment>
@@ -7793,14 +7854,6 @@
                 </attachment>
 				<attachment name="conditionAttachment_Russia_Controls_St_Petersburg" attachTo="Russia" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 					<option name="directOwnershipTerritories" value="St. Petersburg"/>
-				</attachment>
-				<attachment name="conditionAttachment_Russia_Vladivostok_Factory" attachTo="Russia" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-					<option name="directPresenceTerritories" value="Vladivostok" count="1"/>
-					<option name="unitPresence" value="factory_minor:factory_major" count="1"/>
-				</attachment>
-				<attachment name="conditionAttachment_Russia_Estonia_Factory" attachTo="Russia" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-					<option name="directPresenceTerritories" value="Estonia" count="1"/>
-					<option name="unitPresence" value="factory_minor:factory_major" count="1"/>
 				</attachment>
 				
 				<!-- Belgium conditions -->
@@ -8217,14 +8270,14 @@
 					<option name="conditions" value="conditionAttachment_Bolsheviks_Control_Capital:conditionAttachment_Allies_Control_Vladivostok"/>
 					<option name="when" value="after:GermanyUserActions"/>
 					<option name="placement" value="Vladivostok:infantry:infantry:infantry:infantry:infantry:infantry:infantry:infantry:infantry:infantry:train:train:train:train:train:train:train:train:train:train"/>
-					<option name="territories" value="Vladivostok"/>
-					<option name="territoryAttachmentName" value="TerritoryAttachment" count="territoryAttachment"/>
-					<option name="territoryProperty" value="originalOwner" count="France"/>
+					<option name="players" value="France"/>
+                	<option name="playerAttachmentName" value="RulesAttachment" count="conditionAttachment_Czechoslovak_Revolt_Switch"/>
+                	<option name="playerProperty" value="switch" count="true"/>
 					<option name="uses" value="1"/>
 					<option name="notification" value="Czechoslovak_Revolt"/>
 				</attachment>
-				<attachment name="triggerAttachment_France_Vladivostok_Factory" attachTo="France" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-					<option name="placement" value="Vladivostok:factory_minor"/>
+				<attachment name="triggerAttachment_Czechoslovak_Aid" attachTo="France" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="placement" value="Vladivostok:infantry"/>
 				</attachment>
 				<attachment name="triggerAttachment_OberstenAffare_Notification_Germany" attachTo="Germany" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="notification" value="OberstenAffare"/>
@@ -8436,9 +8489,6 @@
 					<option name="uses" value="1"/>
 					<option name="notification" value="Estonia_Independence"/>
 				</attachment>
-				<attachment name="triggerAttachment_UK_Estonia_Factory" attachTo="UK" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-					<option name="placement" value="Estonia:factory_minor"/>
-				</attachment>
 				<attachment name="triggerAttachment_Armenia_Independence" attachTo="UK" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Bolsheviks_Control_Capital:conditionAttachment_Ottoman_At_War"/>
 					<option name="when" value="before:GermanyUserActions"/>
@@ -8572,20 +8622,6 @@
 					<option name="activateTrigger" value="triggerAttachment_Basmachi_Revolt_Bolshevik:1:false:false:false:false"/>
 					<option name="uses" value="1"/>
 					<option name="notification" value="Basmachi_Revolt"/>
-				</attachment>
-				<attachment name="triggerAttachment_Russia_Vladivostok_Factory" attachTo="Russia" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-					<option name="when" value="before:GermanyTech"/>
-					<option name="conditions" value="conditionAttachment_France_Control_Vladivostok:conditionAttachment_Russia_Vladivostok_Factory"/>
-					<option name="removeUnits" value="Vladivostok:factory_minor"/>
-					<option name="removeUnits" value="Vladivostok:factory_major"/>
-					<option name="activateTrigger" value="triggerAttachment_France_Vladivostok_Factory:1:false:false:false:false"/>
-				</attachment>
-				<attachment name="triggerAttachment_Russia_Estonia_Factory" attachTo="Russia" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-					<option name="when" value="before:GermanyTech"/>
-					<option name="conditions" value="conditionAttachment_UK_Control_Estonia:conditionAttachment_Russia_Estonia_Factory"/>
-					<option name="removeUnits" value="Estonia:factory_minor"/>
-					<option name="removeUnits" value="Estonia:factory_major"/>
-					<option name="activateTrigger" value="triggerAttachment_UK_Estonia_Factory:1:false:false:false:false"/>
 				</attachment>
 				
 				<!-- Belgium triggers -->
@@ -9209,6 +9245,12 @@
 					<option name="activateTrigger" value="triggerAttachment_Switzerland_CP:1:false:false:false:false"/>
 					<option name="text" value="Plan_H"/>
 				</attachment>
+				<attachment name="userActionAttachment_Czechoslovak_Aid" attachTo="France" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
+					<option name="conditions" value="conditionAttachment_Bolsheviks_Control_Capital:conditionAttachment_Allies_Control_Vladivostok:conditionAttachment_Czechoslovak_Revolt_Switch"/>
+	     			<option name="attemptsPerTurn" value="3"/>
+					<option name="activateTrigger" value="triggerAttachment_Czechoslovak_Aid:1:false:false:false:false"/>
+					<option name="text" value="Czechoslovak_Aid"/>
+				</attachment>
 				<attachment name="userActionAttachment_Dutch_Seizure_France" attachTo="France" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachmentTurn9:conditionAttachment_Netherlands_Neutral"/>
 					<option name="costPU" value="10"/>
@@ -9448,7 +9490,7 @@
 					<option name="text" value="Darfur_Revolt"/>
 				</attachment>
 				<attachment name="userActionAttachment_Senussi_Revolt" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
-					<option name="conditions" value="conditionAttachment_Senussi_Switch:conditionAttachmentTurn4:conditionAttachment_Ottoman_At_War:conditionAttachment_Allies_Control_Senussi"/>
+					<option name="conditions" value="conditionAttachment_Senussi_Switch:conditionAttachmentTurn4:conditionAttachment_Ottoman_At_War"/>
 					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Senussi_Revolt:1:false:false:false:false"/>
@@ -10031,9 +10073,9 @@
 						<option name="movementBonus" value="2:train"/>
 				</attachment>
 				<attachment name="techAbilityAttachment" attachTo="factory_electrification" javaClass="games.strategy.triplea.attachments.TechAbilityAttachment" type="technology">
-						<option name="productionBonus" value="1:factory_basic"/>
-						<option name="productionBonus" value="1:factory_minor"/>
-						<option name="productionBonus" value="1:factory_major"/>
+						<option name="productionBonus" value="1:factory1"/>
+						<option name="productionBonus" value="1:factory2"/>
+						<option name="productionBonus" value="1:factory3"/>
 				</attachment>
 				<attachment name="techAbilityAttachment" attachTo="cruiser_bombardment" javaClass="games.strategy.triplea.attachments.TechAbilityAttachment" type="technology">
 						<option name="unitAbilitiesGained" value="battlecruiser:canBombard"/>
@@ -11151,7 +11193,7 @@
 					<territoryOwner territory="Port Harcourt" owner="UK"/>
 					<territoryOwner territory="Lagos" owner="UK"/>
             		<territoryOwner territory="Port Sudan" owner="UK"/>
-            		<territoryOwner territory="Western Sudan" owner="UK"/>
+            		<territoryOwner territory="Kordofan" owner="UK"/>
 					<territoryOwner territory="Darfur" owner="UK"/>
             		<territoryOwner territory="Aden" owner="UK"/>
 					<territoryOwner territory="Hadramut" owner="UK"/>
@@ -11184,8 +11226,8 @@
             		<territoryOwner territory="Pitcairn Island" owner="UK"/>
             		<territoryOwner territory="Easter Island" owner="UK"/>
 					<territoryOwner territory="Cairo-Suez" owner="UK"/>
-					<territoryOwner territory="Lower Egypt" owner="UK"/>
-					<territoryOwner territory="Upper Egypt" owner="UK"/>
+					<territoryOwner territory="Western Desert" owner="UK"/>
+					<territoryOwner territory="Eastern Desert" owner="UK"/>
             		<territoryOwner territory="Sinai" owner="UK"/>
 					<territoryOwner territory="Andaman Islands" owner="UK"/>
 			<!-- Canada Owned Territory -->
@@ -11267,9 +11309,12 @@
             		<territoryOwner territory="French Guiana" owner="France"/>
             		<territoryOwner territory="Tunisia" owner="France"/>
 					<territoryOwner territory="Morocco" owner="France"/>
+					<territoryOwner territory="Ifni" owner="France"/>
             		<territoryOwner territory="Algeria" owner="France"/>
             		<territoryOwner territory="Algiers" owner="France"/>
             		<territoryOwner territory="Lower Algeria" owner="France"/>
+					<territoryOwner territory="Tademait" owner="France"/>
+					<territoryOwner territory="Tanezrouft" owner="France"/>
             		<territoryOwner territory="Mauretania" owner="France"/>
             		<territoryOwner territory="Timbuktu" owner="France"/>
             		<territoryOwner territory="Mali" owner="France"/>
@@ -11646,25 +11691,25 @@
                         <!-- American  Unit Placements -->
 			<unitPlacement unitType="infantry" territory="Washington D.C." quantity="1" owner="USA"/>
 			<unitPlacement unitType="field_gun" territory="Washington D.C." quantity="1" owner="USA"/>
-            <unitPlacement unitType="factory_major" territory="Washington D.C." quantity="1" owner="USA"/>
+            <unitPlacement unitType="factory3" territory="Washington D.C." quantity="1" owner="USA"/>
 			<unitPlacement unitType="train" territory="Washington D.C." quantity="1" owner="USA"/>
 			<unitPlacement unitType="cavalry" territory="Texas" quantity="2" owner="USA"/>
-			<unitPlacement unitType="factory_major" territory="San Francisco" quantity="1" owner="USA"/>
+			<unitPlacement unitType="factory3" territory="San Francisco" quantity="1" owner="USA"/>
 			<unitPlacement unitType="harbour" territory="San Francisco" quantity="1" owner="USA"/>
 			<unitPlacement unitType="infantry" territory="San Francisco" quantity="1" owner="USA"/>
 			<unitPlacement unitType="field_gun" territory="San Francisco" quantity="1" owner="USA"/>
 			<unitPlacement unitType="train" territory="San Francisco" quantity="1" owner="USA"/>
-			<unitPlacement unitType="factory_major" territory="New York" quantity="1" owner="USA"/>
+			<unitPlacement unitType="factory3" territory="New York" quantity="1" owner="USA"/>
 			<unitPlacement unitType="harbour" territory="New York" quantity="1" owner="USA"/>
 			<unitPlacement unitType="infantry" territory="New York" quantity="2" owner="USA"/>
 			<unitPlacement unitType="field_gun" territory="New York" quantity="1" owner="USA"/>
 			<unitPlacement unitType="train" territory="New York" quantity="1" owner="USA"/>
-			<unitPlacement unitType="factory_major" territory="Chicago" quantity="1" owner="USA"/>
+			<unitPlacement unitType="factory3" territory="Chicago" quantity="1" owner="USA"/>
 			<unitPlacement unitType="infantry" territory="Chicago" quantity="1" owner="USA"/>
 			<unitPlacement unitType="train" territory="Chicago" quantity="1" owner="USA"/>
-			<unitPlacement unitType="factory_minor" territory="Charleston" quantity="1" owner="USA"/>
+			<unitPlacement unitType="factory2" territory="Charleston" quantity="1" owner="USA"/>
 			<unitPlacement unitType="train" territory="Charleston" quantity="1" owner="USA"/>
-			<unitPlacement unitType="factory_minor" territory="New Orleans" quantity="1" owner="USA"/>
+			<unitPlacement unitType="factory2" territory="New Orleans" quantity="1" owner="USA"/>
 			<unitPlacement unitType="train" territory="New Orleans" quantity="1" owner="USA"/>
 			<unitPlacement unitType="infantry" territory="Puerto Rico" quantity="1" owner="USA"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 135 Pacific Ocean" quantity="1" owner="USA"/>
@@ -11693,7 +11738,7 @@
                         <!-- Japanese Unit Placements -->
 			<unitPlacement unitType="infantry" territory="Tokyo" quantity="1" owner="Japan"/>
 			<unitPlacement unitType="field_gun" territory="Tokyo" quantity="1" owner="Japan"/>
-			<unitPlacement unitType="factory_major" territory="Tokyo" quantity="1" owner="Japan"/>
+			<unitPlacement unitType="factory3" territory="Tokyo" quantity="1" owner="Japan"/>
 			<unitPlacement unitType="harbour" territory="Tokyo" quantity="1" owner="Japan"/>
 			<unitPlacement unitType="train" territory="Tokyo" quantity="1" owner="Japan"/>
 			<unitPlacement unitType="infantry" territory="Port Arthur" quantity="1" owner="Japan"/>
@@ -11704,7 +11749,7 @@
 			<unitPlacement unitType="transport" territory="Sea Zone 142 Pacific Ocean" quantity="2" owner="Japan"/>
 
                         <!-- Austrian Unit Placements -->
-			<unitPlacement unitType="factory_major" territory="Vienna" quantity="1" owner="Austria"/>
+			<unitPlacement unitType="factory3" territory="Vienna" quantity="1" owner="Austria"/>
 			<unitPlacement unitType="infantry" territory="Vienna" quantity="6" owner="Austria"/>
 			<unitPlacement unitType="field_gun" territory="Vienna" quantity="2" owner="Austria"/>
 			<unitPlacement unitType="cavalry" territory="Vienna" quantity="1" owner="Austria"/>
@@ -11713,7 +11758,7 @@
 			<unitPlacement unitType="infantry" territory="Tyrol" quantity="2" owner="Austria"/>
 			<unitPlacement unitType="field_gun" territory="Tyrol" quantity="1" owner="Austria"/>
 			<unitPlacement unitType="infantry" territory="Carinthia" quantity="2" owner="Austria"/>
-			<unitPlacement unitType="factory_major" territory="Trieste" quantity="1" owner="Austria"/>
+			<unitPlacement unitType="factory3" territory="Trieste" quantity="1" owner="Austria"/>
 			<unitPlacement unitType="infantry" territory="Trieste" quantity="2" owner="Austria"/>
 			<unitPlacement unitType="harbour" territory="Trieste" quantity="1" owner="Austria"/>
 			<unitPlacement unitType="field_gun" territory="Trieste" quantity="1" owner="Austria"/>
@@ -11738,41 +11783,47 @@
 			<unitPlacement unitType="train" territory="Hungary" quantity="1" owner="Austria"/>
 			<unitPlacement unitType="infantry" territory="Austria" quantity="4" owner="Austria"/>
 			<unitPlacement unitType="cavalry" territory="Austria" quantity="1" owner="Austria"/>
-			<unitPlacement unitType="factory_minor" territory="Austria" quantity="1" owner="Austria"/>
+			<unitPlacement unitType="factory2" territory="Austria" quantity="1" owner="Austria"/>
 			<unitPlacement unitType="infantry" territory="Bohemia" quantity="2" owner="Austria"/>
 			<unitPlacement unitType="field_gun" territory="Bohemia" quantity="1" owner="Austria"/>
 			<unitPlacement unitType="cavalry" territory="Bohemia" quantity="1" owner="Austria"/>
-			<unitPlacement unitType="factory_minor" territory="Bohemia" quantity="1" owner="Austria"/>
+			<unitPlacement unitType="factory2" territory="Bohemia" quantity="1" owner="Austria"/>
 			<unitPlacement unitType="battleship" territory="Sea Zone 62 Adriatic Sea" quantity="1" owner="Austria"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 62 Adriatic Sea" quantity="2" owner="Austria"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 62 Adriatic Sea" quantity="3" owner="Austria"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 62 Adriatic Sea" quantity="1" owner="Austria"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 137 Yellow Sea" quantity="1" owner="Austria"/>
 						<!-- Hungarian Unit Placements -->
-			<unitPlacement unitType="factory_major" territory="Hungary" quantity="1" owner="Hungary"/>
+			<unitPlacement unitType="factory3" territory="Hungary" quantity="1" owner="Hungary"/>
 
 						<!-- Italian Unit Placements -->
 			<unitPlacement unitType="infantry" territory="Rome" quantity="3" owner="Italy"/>
 			<unitPlacement unitType="cavalry" territory="Rome" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="fighter" territory="Rome" quantity="1" owner="Italy"/>
-			<unitPlacement unitType="factory_major" territory="Rome" quantity="1" owner="Italy"/>
-			<unitPlacement unitType="harbour" territory="Rome" quantity="1" owner="Italy"/>
+			<unitPlacement unitType="factory3" territory="Rome" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="train" territory="Rome" quantity="1" owner="Italy"/>
-			<unitPlacement unitType="factory_major" territory="Piedmont" quantity="1" owner="Italy"/>
+			<unitPlacement unitType="factory3" territory="Piedmont" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="infantry" territory="Piedmont" quantity="3" owner="Italy"/>
 			<unitPlacement unitType="field_gun" territory="Piedmont" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="fighter" territory="Piedmont" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="train" territory="Piedmont" quantity="1" owner="Italy"/>
+			<unitPlacement unitType="harbour" territory="Piedmont" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="infantry" territory="Milan" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="field_gun" territory="Milan" quantity="1" owner="Italy"/>
+			<unitPlacement unitType="factory3" territory="Milan" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="infantry" territory="Venice" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="field_gun" territory="Venice" quantity="1" owner="Italy"/>
+			<unitPlacement unitType="harbour" territory="Venice" quantity="1" owner="Italy"/>
+			<unitPlacement unitType="factory2" territory="Venice" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="infantry" territory="Tuscany" quantity="4" owner="Italy"/>
-			<unitPlacement unitType="factory_minor" territory="Latium" quantity="1" owner="Italy"/>
+			<unitPlacement unitType="factory2" territory="Latium" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="infantry" territory="Latium" quantity="2" owner="Italy"/>
 			<unitPlacement unitType="field_gun" territory="Latium" quantity="2" owner="Italy"/>
 			<unitPlacement unitType="infantry" territory="Apulia" quantity="1" owner="Italy"/>
+			<unitPlacement unitType="harbour" territory="Apulia" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="infantry" territory="Naples" quantity="1" owner="Italy"/>
+			<unitPlacement unitType="harbour" territory="Naples" quantity="1" owner="Italy"/>
+			<unitPlacement unitType="factory3" territory="Naples" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="infantry" territory="Sicily" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="infantry" territory="Sardinia" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="infantry" territory="Tripoli" quantity="1" owner="Italy"/>
@@ -11785,9 +11836,11 @@
 			<unitPlacement unitType="cruiser" territory="Sea Zone 61 Ionian Sea" quantity="2" owner="Italy"/>
 			<unitPlacement unitType="battlecruiser" territory="Sea Zone 61 Ionian Sea" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="battleship" territory="Sea Zone 61 Ionian Sea" quantity="1" owner="Italy"/>
+			<unitPlacement unitType="infantry" territory="Eritrea" quantity="1" owner="Italy"/>
+			<unitPlacement unitType="factory1" territory="Eritrea" quantity="1" owner="Italy"/>
 						
 						<!-- UK  Unit Placements -->
-			<unitPlacement unitType="factory_major" territory="London" quantity="1" owner="UK"/>
+			<unitPlacement unitType="factory3" territory="London" quantity="1" owner="UK"/>
 			<unitPlacement unitType="harbour" territory="London" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="London" quantity="5" owner="UK"/>
 			<unitPlacement unitType="field_gun" territory="London" quantity="1" owner="UK"/>
@@ -11798,8 +11851,8 @@
 			<unitPlacement unitType="fighter" territory="England" quantity="2" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Ulster" quantity="2" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Leinster" quantity="1" owner="UK"/>
-			<unitPlacement unitType="factory_minor" territory="England" quantity="1" owner="UK"/>
-			<unitPlacement unitType="factory_minor" territory="Scotland" quantity="1" owner="UK"/>
+			<unitPlacement unitType="factory2" territory="England" quantity="1" owner="UK"/>
+			<unitPlacement unitType="factory2" territory="Scotland" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Scotland" quantity="3" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Picardy" quantity="2" owner="UK"/>
 			<unitPlacement unitType="field_gun" territory="Picardy" quantity="1" owner="UK"/>
@@ -11886,14 +11939,14 @@
 			<unitPlacement unitType="destroyer" territory="Sea Zone 94 South Atlantic" quantity="1" owner="UK"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 100 Gulf of Guinea" quantity="1" owner="UK"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 100 Gulf of Guinea" quantity="1" owner="UK"/>
-			<unitPlacement unitType="factory_basic" territory="Cairo-Suez" quantity="1" owner="UK"/>
+			<unitPlacement unitType="factory1" territory="Cairo-Suez" quantity="1" owner="UK"/>
 			<unitPlacement unitType="harbour" territory="Cairo-Suez" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Cairo-Suez" quantity="2" owner="UK"/>
 			<unitPlacement unitType="train" territory="Cairo-Suez" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Sinai" quantity="2" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Malta" quantity="2" owner="UK"/>
-			<unitPlacement unitType="infantry" territory="Upper Egypt" quantity="2" owner="UK"/>
-			<unitPlacement unitType="fighter" territory="Upper Egypt" quantity="1" owner="UK"/>
+			<unitPlacement unitType="infantry" territory="Eastern Desert" quantity="2" owner="UK"/>
+			<unitPlacement unitType="fighter" territory="Eastern Desert" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Cyprus" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Gibraltar" quantity="2" owner="UK"/>
 			<unitPlacement unitType="harbour" territory="Gibraltar" quantity="2" owner="UK"/>
@@ -11917,19 +11970,19 @@
 			<unitPlacement unitType="destroyer" territory="Sea Zone 103 South Atlantic" quantity="1" owner="UK"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 104 Southern Ocean" quantity="2" owner="UK"/>
 						<!-- Dominion  Unit Placements -->
-			<unitPlacement unitType="factory_major" territory="Sydney-Canberra" quantity="1" owner="ANZAC"/>
-			<unitPlacement unitType="factory_minor" territory="New Zealand" quantity="1" owner="ANZAC"/>
-			<unitPlacement unitType="factory_minor" territory="Bombay" quantity="1" owner="India"/>
-			<unitPlacement unitType="factory_major" territory="Delhi" quantity="1" owner="India"/>
-			<unitPlacement unitType="factory_major" territory="Calcutta" quantity="1" owner="India"/>
-			<unitPlacement unitType="factory_minor" territory="Cape Town" quantity="1" owner="South_Africa"/>
-			<unitPlacement unitType="factory_minor" territory="Quebec" quantity="1" owner="Canada"/>
-			<unitPlacement unitType="factory_major" territory="Ottawa-Montreal" quantity="1" owner="Canada"/>
-			<unitPlacement unitType="factory_minor" territory="Ontario" quantity="1" owner="Canada"/>
-			<unitPlacement unitType="factory_minor" territory="British Columbia" quantity="1" owner="Canada"/>
+			<unitPlacement unitType="factory3" territory="Sydney-Canberra" quantity="1" owner="ANZAC"/>
+			<unitPlacement unitType="factory2" territory="New Zealand" quantity="1" owner="ANZAC"/>
+			<unitPlacement unitType="factory2" territory="Bombay" quantity="1" owner="India"/>
+			<unitPlacement unitType="factory3" territory="Delhi" quantity="1" owner="India"/>
+			<unitPlacement unitType="factory3" territory="Calcutta" quantity="1" owner="India"/>
+			<unitPlacement unitType="factory2" territory="Cape Town" quantity="1" owner="South_Africa"/>
+			<unitPlacement unitType="factory2" territory="Quebec" quantity="1" owner="Canada"/>
+			<unitPlacement unitType="factory3" territory="Ottawa-Montreal" quantity="1" owner="Canada"/>
+			<unitPlacement unitType="factory2" territory="Ontario" quantity="1" owner="Canada"/>
+			<unitPlacement unitType="factory2" territory="British Columbia" quantity="1" owner="Canada"/>
 			
                         <!-- France Unit Placements -->
-			<unitPlacement unitType="factory_major" territory="Paris" quantity="1" owner="France"/>
+			<unitPlacement unitType="factory3" territory="Paris" quantity="1" owner="France"/>
 			<unitPlacement unitType="infantry" territory="Paris" quantity="4" owner="France"/>
 			<unitPlacement unitType="field_gun" territory="Paris" quantity="2" owner="France"/>
 			<unitPlacement unitType="fighter" territory="Paris" quantity="1" owner="France"/>
@@ -11942,12 +11995,13 @@
 			<unitPlacement unitType="infantry" territory="Franche-Comte" quantity="8" owner="France"/>
 			<unitPlacement unitType="field_gun" territory="Franche-Comte" quantity="2" owner="France"/>
 			<unitPlacement unitType="fighter" territory="Franche-Comte" quantity="1" owner="France"/>
-			<unitPlacement unitType="factory_major" territory="Marseilles" quantity="1" owner="France"/>
+			<unitPlacement unitType="factory3" territory="Marseilles" quantity="1" owner="France"/>
 			<unitPlacement unitType="harbour" territory="Marseilles" quantity="1" owner="France"/>
 			<unitPlacement unitType="infantry" territory="Marseilles" quantity="2" owner="France"/>
 			<unitPlacement unitType="train" territory="Marseilles" quantity="1" owner="France"/>
 			<unitPlacement unitType="infantry" territory="Aquitaine" quantity="1" owner="France"/>
 			<unitPlacement unitType="cavalry" territory="Aquitaine" quantity="1" owner="France"/>
+			<unitPlacement unitType="factory1" territory="Aquitaine" quantity="1" owner="France"/>
 			<unitPlacement unitType="infantry" territory="Toulouse" quantity="1" owner="France"/>
 			<unitPlacement unitType="infantry" territory="Languedoc" quantity="1" owner="France"/>
 			<unitPlacement unitType="infantry" territory="Rhone" quantity="1" owner="France"/>
@@ -11960,11 +12014,11 @@
 			<unitPlacement unitType="harbour" territory="Brittany" quantity="1" owner="France"/>
 			<unitPlacement unitType="infantry" territory="Normandy" quantity="3" owner="France"/>
 			<unitPlacement unitType="field_gun" territory="Normandy" quantity="1" owner="France"/>
-			<unitPlacement unitType="factory_major" territory="Burgundy" quantity="1" owner="France"/>
-			<unitPlacement unitType="factory_minor" territory="Normandy" quantity="1" owner="France"/>
-			<unitPlacement unitType="factory_minor" territory="Brittany" quantity="1" owner="France"/>
-			<unitPlacement unitType="factory_major" territory="Picardy" quantity="1" owner="France"/>
-			<unitPlacement unitType="factory_major" territory="Champagne" quantity="1" owner="France"/>
+			<unitPlacement unitType="factory3" territory="Burgundy" quantity="1" owner="France"/>
+			<unitPlacement unitType="factory2" territory="Normandy" quantity="1" owner="France"/>
+			<unitPlacement unitType="factory2" territory="Brittany" quantity="1" owner="France"/>
+			<unitPlacement unitType="factory3" territory="Picardy" quantity="1" owner="France"/>
+			<unitPlacement unitType="factory3" territory="Champagne" quantity="1" owner="France"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 90 Indian Ocean" quantity="1" owner="France"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 127 Gulf of Thailand" quantity="1" owner="France"/>
 			<unitPlacement unitType="infantry" territory="Chad" quantity="1" owner="France"/>
@@ -11990,7 +12044,7 @@
 			<unitPlacement unitType="transport" territory="Sea Zone 53 Mid Atlantic" quantity="1" owner="France"/>
 			
                         <!-- Germany Unit Placements -->
-			<unitPlacement unitType="factory_major" territory="Berlin" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="factory3" territory="Berlin" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Berlin" quantity="3" owner="Germany"/>
 			<unitPlacement unitType="field_gun" territory="Berlin" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="cavalry" territory="Berlin" quantity="1" owner="Germany"/>
@@ -11999,13 +12053,16 @@
 			<unitPlacement unitType="train" territory="Berlin" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Brandenburg" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="cavalry" territory="Brandenburg" quantity="2" owner="Germany"/>
+			<unitPlacement unitType="factory1" territory="Brandenburg" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Saxony" quantity="6" owner="Germany"/>
 			<unitPlacement unitType="field_gun" territory="Saxony" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="cavalry" territory="Saxony" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="train" territory="Saxony" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Holstein" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="harbour" territory="Holstein" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="factory_major" territory="Hanover" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="factory3" territory="Holstein" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="factory3" territory="Hanover" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="harbour" territory="Hanover" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Hanover" quantity="3" owner="Germany"/>
 			<unitPlacement unitType="field_gun" territory="Hanover" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="fighter" territory="Hanover" quantity="1" owner="Germany"/>
@@ -12016,6 +12073,7 @@
 			<unitPlacement unitType="train" territory="Bavaria" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Munich" quantity="5" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Wurttemburg" quantity="3" owner="Germany"/>
+			<unitPlacement unitType="factory1" territory="Wurttemburg" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Nassau" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="field_gun" territory="Nassau" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Westphalia" quantity="2" owner="Germany"/>
@@ -12030,18 +12088,20 @@
 			<unitPlacement unitType="infantry" territory="Alsace" quantity="5" owner="Germany"/>
 			<unitPlacement unitType="field_gun" territory="Alsace" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="fighter" territory="Alsace" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="factory_basic" territory="Belgium" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="factory_minor" territory="Alsace" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="factory_minor" territory="Bavaria" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="factory_minor" territory="Saxony" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="factory_minor" territory="East Prussia" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="factory_major" territory="Westphalia" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="factory_major" territory="Munich" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="factory1" territory="Belgium" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="factory2" territory="Alsace" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="factory2" territory="Bavaria" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="factory2" territory="Saxony" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="factory2" territory="East Prussia" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="factory3" territory="Westphalia" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="factory3" territory="Munich" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="East Prussia" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="field_gun" territory="East Prussia" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="train" territory="East Prussia" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="West Prussia" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="field_gun" territory="West Prussia" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="harbour" territory="West Prussia" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="factory3" territory="West Prussia" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Posen" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="cavalry" territory="Posen" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Silesia" quantity="1" owner="Germany"/>
@@ -12060,7 +12120,7 @@
 			<unitPlacement unitType="battlecruiser" territory="Sea Zone 14 Helgoland Bight" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 14 Helgoland Bight" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 14 Helgoland Bight" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="factory_minor" territory="Dar es Salaam" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="factory2" territory="Dar es Salaam" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Dar es Salaam" quantity="3" owner="Germany"/>
 			<unitPlacement unitType="train" territory="Dar es Salaam" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="German East Africa" quantity="3" owner="Germany"/>
@@ -12074,14 +12134,14 @@
 			<unitPlacement unitType="field_gun" territory="Kamerun" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="transport" territory="Lake Tanganyika" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 76 Indian Ocean" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="factory_minor" territory="Tsingtao" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="factory2" territory="Tsingtao" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Tsingtao" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="harbour" territory="Tsingtao" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="battlecruiser" territory="Sea Zone 136 East China Sea" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 136 East China Sea" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="harbour" territory="German New Guinea" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="German New Guinea" quantity="4" owner="Germany"/>
-			<unitPlacement unitType="factory_minor" territory="German New Guinea" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="factory2" territory="German New Guinea" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 122 Bismarck Sea" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 122 Bismarck Sea" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="submarine" territory="Sea Zone 122 Bismarck Sea" quantity="2" owner="Germany"/>
@@ -12106,7 +12166,7 @@
 			<unitPlacement unitType="submarine" territory="Sea Zone 52 Mid Atlantic" quantity="2" owner="Germany"/>
 			
                         <!-- Russia Unit Placements -->
-            <unitPlacement unitType="factory_major" territory="St. Petersburg" quantity="1" owner="Russia"/>
+            <unitPlacement unitType="factory3" territory="St. Petersburg" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="harbour" territory="St. Petersburg" quantity="1" owner="Russia"/>
             <unitPlacement unitType="infantry" territory="St. Petersburg" quantity="6" owner="Russia"/>
 			<unitPlacement unitType="field_gun" territory="St. Petersburg" quantity="2" owner="Russia"/>
@@ -12170,17 +12230,17 @@
 			<unitPlacement unitType="infantry" territory="Tver" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Pskov" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Novgorod" quantity="1" owner="Russia"/>
-			<unitPlacement unitType="factory_minor" territory="Warsaw" quantity="1" owner="Russia"/>
-			<unitPlacement unitType="factory_minor" territory="Kiev" quantity="1" owner="Russia"/>
-			<unitPlacement unitType="factory_minor" territory="Crimea" quantity="1" owner="Russia"/>
-			<unitPlacement unitType="factory_minor" territory="Volgograd" quantity="1" owner="Russia"/>
-			<unitPlacement unitType="factory_major" territory="Moscow" quantity="1" owner="Russia"/>
-			<unitPlacement unitType="factory_minor" territory="Minsk" quantity="1" owner="Russia"/>
-			<unitPlacement unitType="factory_minor" territory="Nizhni-Novgorod" quantity="1" owner="Russia"/>
-			<unitPlacement unitType="factory_minor" territory="Omsk" quantity="1" owner="Russia"/>
-			<unitPlacement unitType="factory_basic" territory="Irkutsk" quantity="1" owner="Russia"/>
-			<unitPlacement unitType="factory_basic" territory="Yakutsk" quantity="1" owner="Russia"/>
-			<unitPlacement unitType="factory_minor" territory="Vladivostok" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="factory2" territory="Warsaw" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="factory2" territory="Kiev" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="factory2" territory="Crimea" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="factory2" territory="Volgograd" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="factory3" territory="Moscow" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="factory2" territory="Minsk" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="factory2" territory="Nizhni-Novgorod" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="factory2" territory="Omsk" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="factory1" territory="Irkutsk" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="factory1" territory="Yakutsk" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="factory2" territory="Vladivostok" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Vladivostok" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="train" territory="Vladivostok" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="train" territory="Yakutsk" quantity="1" owner="Russia"/>
@@ -12200,16 +12260,16 @@
 			<unitPlacement unitType="transport" territory="Sea Zone 65 Caspian Sea" quantity="1" owner="Russia"/>
 
                         <!-- Ottoman Unit Placements -->
-			<unitPlacement unitType="factory_major" territory="Constantinople" quantity="1" owner="Ottoman"/>
+			<unitPlacement unitType="factory3" territory="Constantinople" quantity="1" owner="Ottoman"/>
 			<unitPlacement unitType="harbour" territory="Constantinople" quantity="1" owner="Ottoman"/>
 			<unitPlacement unitType="infantry" territory="Constantinople" quantity="4" owner="Ottoman"/>
 			<unitPlacement unitType="field_gun" territory="Constantinople" quantity="1" owner="Ottoman"/>
 			<unitPlacement unitType="fighter" territory="Constantinople" quantity="2" owner="Ottoman"/>
 			<unitPlacement unitType="train" territory="Constantinople" quantity="1" owner="Ottoman"/>
-			<unitPlacement unitType="factory_basic" territory="Damascus" quantity="1" owner="Ottoman"/>
-			<unitPlacement unitType="factory_basic" territory="Baghdad" quantity="1" owner="Ottoman"/>
-			<unitPlacement unitType="factory_basic" territory="Basra" quantity="1" owner="Ottoman"/>
-			<unitPlacement unitType="factory_minor" territory="Anatolia" quantity="1" owner="Ottoman"/>
+			<unitPlacement unitType="factory1" territory="Damascus" quantity="1" owner="Ottoman"/>
+			<unitPlacement unitType="factory1" territory="Baghdad" quantity="1" owner="Ottoman"/>
+			<unitPlacement unitType="factory1" territory="Basra" quantity="1" owner="Ottoman"/>
+			<unitPlacement unitType="factory2" territory="Anatolia" quantity="1" owner="Ottoman"/>
 			<unitPlacement unitType="infantry" territory="Dardanelles" quantity="2" owner="Ottoman"/>
 			<unitPlacement unitType="infantry" territory="Hejaz" quantity="1" owner="Ottoman"/>
 			<unitPlacement unitType="infantry" territory="Palestine" quantity="3" owner="Ottoman"/>
@@ -12242,34 +12302,34 @@
 			<unitPlacement unitType="infantry" territory="Picardy" quantity="3" owner="Belgium"/>
 			<unitPlacement unitType="infantry" territory="Congo" quantity="2" owner="Belgium"/>
 						<!-- Serbia Unit Placements -->
-			<unitPlacement unitType="factory_minor" territory="Belgrade" quantity="1" owner="Serbia"/>
+			<unitPlacement unitType="factory2" territory="Belgrade" quantity="1" owner="Serbia"/>
 			<unitPlacement unitType="infantry" territory="Belgrade" quantity="8" owner="Serbia"/>
 			<unitPlacement unitType="field_gun" territory="Belgrade" quantity="1" owner="Serbia"/>
 			<unitPlacement unitType="infantry" territory="Serbia" quantity="5" owner="Serbia"/>
 			<unitPlacement unitType="field_gun" territory="Serbia" quantity="1" owner="Serbia"/>
 			<unitPlacement unitType="cavalry" territory="Serbia" quantity="1" owner="Serbia"/>
 						<!-- Montenegro Unit Placements -->
-			<unitPlacement unitType="factory_basic" territory="Montenegro" quantity="1" owner="Serbia"/>
+			<unitPlacement unitType="factory1" territory="Montenegro" quantity="1" owner="Serbia"/>
 			<unitPlacement unitType="infantry" territory="Montenegro" quantity="4" owner="Serbia"/>
 			<unitPlacement unitType="field_gun" territory="Montenegro" quantity="1" owner="Serbia"/>
 						<!-- Bulgaria Unit Placements -->
-			<unitPlacement unitType="factory_minor" territory="Bulgaria" quantity="1" owner="Bulgaria"/>
+			<unitPlacement unitType="factory2" territory="Bulgaria" quantity="1" owner="Bulgaria"/>
 			<unitPlacement unitType="infantry" territory="Bulgaria" quantity="8" owner="Bulgaria"/>
 			<unitPlacement unitType="cavalry" territory="Bulgaria" quantity="1" owner="Bulgaria"/>
 			<unitPlacement unitType="field_gun" territory="Bulgaria" quantity="1" owner="Bulgaria"/>
 						<!-- Romania Unit Placements -->
-			<unitPlacement unitType="factory_minor" territory="Romania" quantity="1" owner="Romania"/>
+			<unitPlacement unitType="factory2" territory="Romania" quantity="1" owner="Romania"/>
 			<unitPlacement unitType="infantry" territory="Moldavia" quantity="3" owner="Romania"/>
 			<unitPlacement unitType="infantry" territory="Romania" quantity="2" owner="Romania"/>
 						<!-- Greece Unit Placements -->
-			<unitPlacement unitType="factory_minor" territory="Greece" quantity="1" owner="Neutral_CP"/>
+			<unitPlacement unitType="factory2" territory="Greece" quantity="1" owner="Neutral_CP"/>
 			<unitPlacement unitType="infantry" territory="Greece" quantity="5" owner="Neutral_CP"/>
-			<unitPlacement unitType="factory_minor" territory="Macedonia" quantity="1" owner="Greece"/>
+			<unitPlacement unitType="factory2" territory="Macedonia" quantity="1" owner="Greece"/>
 			<unitPlacement unitType="infantry" territory="Macedonia" quantity="5" owner="Greece"/>
 			<unitPlacement unitType="field_gun" territory="Macedonia" quantity="2" owner="Greece"/>
 			<unitPlacement unitType="infantry" territory="Crete" quantity="1" owner="Greece"/>
 						<!-- Portugal  Unit Placements -->
-            <unitPlacement unitType="factory_minor" territory="Lisbon" quantity="1" owner="Portugal"/>
+            <unitPlacement unitType="factory2" territory="Lisbon" quantity="1" owner="Portugal"/>
             <unitPlacement unitType="infantry" territory="Lisbon" quantity="3" owner="Portugal"/>
 			<unitPlacement unitType="infantry" territory="Norte" quantity="1" owner="Portugal"/>
 			<unitPlacement unitType="infantry" territory="Algarve" quantity="1" owner="Portugal"/>
@@ -12280,7 +12340,7 @@
 			<unitPlacement unitType="infantry" territory="Inhambane" quantity="2" owner="Portugal"/>
 						<!-- Siam Unit Placements -->
 			<unitPlacement unitType="infantry" territory="Siam" quantity="3" owner="Neutral_Allies"/>
-			<unitPlacement unitType="factory_minor" territory="Siam" quantity="1" owner="Neutral_Allies"/>
+			<unitPlacement unitType="factory2" territory="Siam" quantity="1" owner="Neutral_Allies"/>
 						<!-- Brazil  Unit Placements -->
 			<unitPlacement unitType="infantry" territory="Amazon" quantity="1" owner="Brazil"/>
 			<unitPlacement unitType="infantry" territory="Brasilia" quantity="2" owner="Brazil"/>
@@ -12288,7 +12348,7 @@
 			<unitPlacement unitType="infantry" territory="Natal-Salvador" quantity="2" owner="Brazil"/>
 			<unitPlacement unitType="infantry" territory="Rio de Janeiro" quantity="5" owner="Brazil"/>
 			<unitPlacement unitType="train" territory="Rio de Janeiro" quantity="1" owner="Brazil"/>
-			<unitPlacement unitType="factory_minor" territory="Rio de Janeiro" quantity="1" owner="Brazil"/>
+			<unitPlacement unitType="factory2" territory="Rio de Janeiro" quantity="1" owner="Brazil"/>
 			<unitPlacement unitType="infantry" territory="Sao Paulo" quantity="2" owner="Brazil"/>
 						<!-- Liberia Unit Placements -->
 			<unitPlacement unitType="infantry" territory="Liberia" quantity="2" owner="Neutral_Allies"/>
@@ -12312,7 +12372,7 @@
 			<unitPlacement unitType="cavalry" territory="Chihuahua" quantity="2" owner="Conventionist"/>
 			<unitPlacement unitType="train" territory="Chihuahua" quantity="2" owner="Conventionist"/>
 			<unitPlacement unitType="field_gun" territory="Chihuahua" quantity="1" owner="Conventionist"/>
-			<unitPlacement unitType="factory_basic" territory="Chihuahua" quantity="1" owner="Conventionist"/>
+			<unitPlacement unitType="factory1" territory="Chihuahua" quantity="1" owner="Conventionist"/>
 			<unitPlacement unitType="infantry" territory="Durango" quantity="2" owner="Conventionist"/>
 			<unitPlacement unitType="cavalry" territory="Durango" quantity="2" owner="Conventionist"/>
 			<unitPlacement unitType="field_gun" territory="Durango" quantity="1" owner="Conventionist"/>
@@ -12320,8 +12380,8 @@
 			<unitPlacement unitType="cavalry" territory="Coahuila" quantity="1" owner="Conventionist"/>
 			<unitPlacement unitType="infantry" territory="Veracruz" quantity="2" owner="Constitutionalist"/>
 			<unitPlacement unitType="cavalry" territory="Veracruz" quantity="1" owner="Constitutionalist"/>
-			<unitPlacement unitType="factory_minor" territory="Veracruz" quantity="1" owner="Constitutionalist"/>
-			<unitPlacement unitType="factory_minor" territory="Mexico City" quantity="1" owner="Constitutionalist"/>
+			<unitPlacement unitType="factory2" territory="Veracruz" quantity="1" owner="Constitutionalist"/>
+			<unitPlacement unitType="factory2" territory="Mexico City" quantity="1" owner="Constitutionalist"/>
 			<unitPlacement unitType="infantry" territory="Mexico City" quantity="2" owner="Constitutionalist"/>
 			<unitPlacement unitType="train" territory="Mexico City" quantity="1" owner="Constitutionalist"/>
 			<unitPlacement unitType="infantry" territory="Sinaloa" quantity="2" owner="Constitutionalist"/>
@@ -12337,19 +12397,19 @@
 						<!-- China Unit Placements -->
 			<unitPlacement unitType="infantry" territory="Peking" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="train" territory="Peking" quantity="1" owner="Beiyang"/>
-			<unitPlacement unitType="factory_minor" territory="Peking" quantity="1" owner="Beiyang"/>
+			<unitPlacement unitType="factory2" territory="Peking" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="infantry" territory="Inner Mongolia" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="infantry" territory="Shaanxi" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="infantry" territory="Yan'an" quantity="1" owner="Beiyang"/>
-			<unitPlacement unitType="factory_basic" territory="Yan'an" quantity="1" owner="Beiyang"/>
+			<unitPlacement unitType="factory1" territory="Yan'an" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="infantry" territory="Fukien" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="infantry" territory="Henan-Anhui" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="infantry" territory="Jiangsu" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="infantry" territory="Jiangxi" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="infantry" territory="Hankow" quantity="1" owner="Beiyang"/>
-			<unitPlacement unitType="factory_basic" territory="Hankow" quantity="1" owner="Beiyang"/>
+			<unitPlacement unitType="factory1" territory="Hankow" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="infantry" territory="Shantung" quantity="1" owner="Beiyang"/>
-			<unitPlacement unitType="factory_basic" territory="Shanghai" quantity="1" owner="Beiyang"/>
+			<unitPlacement unitType="factory1" territory="Shanghai" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="infantry" territory="Anshan" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="infantry" territory="Changchun" quantity="1" owner="Beiyang"/>
 			<unitPlacement unitType="infantry" territory="Fushun" quantity="1" owner="Beiyang"/>
@@ -12360,8 +12420,8 @@
 			<unitPlacement unitType="infantry" territory="Guizhou" quantity="6" owner="KMT"/>
 			<unitPlacement unitType="infantry" territory="Hunan" quantity="4" owner="KMT"/>
 			<unitPlacement unitType="infantry" territory="Yunnan" quantity="6" owner="KMT"/>
-			<unitPlacement unitType="factory_minor" territory="Canton" quantity="1" owner="KMT"/>
-			<unitPlacement unitType="factory_basic" territory="Chungking" quantity="1" owner="KMT"/>
+			<unitPlacement unitType="factory2" territory="Canton" quantity="1" owner="KMT"/>
+			<unitPlacement unitType="factory1" territory="Chungking" quantity="1" owner="KMT"/>
 			<unitPlacement unitType="infantry" territory="Chungking" quantity="1" owner="China"/>
 			<unitPlacement unitType="infantry" territory="Sichuan" quantity="1" owner="China"/>
 			<unitPlacement unitType="infantry" territory="Shanxi" quantity="2" owner="China"/>
@@ -12374,11 +12434,11 @@
 			<unitPlacement unitType="infantry" territory="Lurs" quantity="2" owner="Persia"/>
 			<unitPlacement unitType="infantry" territory="Sistan" quantity="2" owner="Persia"/>
 			<unitPlacement unitType="infantry" territory="Tehran" quantity="5" owner="Persia"/>
-			<unitPlacement unitType="factory_minor" territory="Tehran" quantity="1" owner="Persia"/>
+			<unitPlacement unitType="factory2" territory="Tehran" quantity="1" owner="Persia"/>
 			
 						<!-- Dutch Unit Placements -->
 			<unitPlacement unitType="infantry" territory="Amsterdam" quantity="6" owner="Neutral_Allies"/>
-			<unitPlacement unitType="factory_minor" territory="Amsterdam" quantity="1" owner="Neutral_Allies"/>
+			<unitPlacement unitType="factory2" territory="Amsterdam" quantity="1" owner="Neutral_Allies"/>
 			<unitPlacement unitType="infantry" territory="Holland" quantity="4" owner="Neutral_Allies"/>
 			<unitPlacement unitType="infantry" territory="Sumatra" quantity="3" owner="Neutral_Allies"/>
 			<unitPlacement unitType="infantry" territory="Java" quantity="2" owner="Neutral_Allies"/>
@@ -12389,7 +12449,7 @@
 			<unitPlacement unitType="infantry" territory="Epirus" quantity="1" owner="Albania"/>
 						<!-- Abyssinia Unit Placements -->
 			<unitPlacement unitType="infantry" territory="Abyssinia" quantity="8" owner="Neutral_CP"/>
-			<unitPlacement unitType="factory_minor" territory="Abyssinia" quantity="1" owner="Neutral_CP"/>
+			<unitPlacement unitType="factory2" territory="Abyssinia" quantity="1" owner="Neutral_CP"/>
 						<!-- Afghanistan Unit Placements -->
 			<unitPlacement unitType="infantry" territory="Afghanistan" quantity="5" owner="Neutral_CP"/>
 						<!-- Mongolia Unit Placements -->
@@ -12399,7 +12459,7 @@
 						<!-- Scandinavia Unit Placements -->
 			<unitPlacement unitType="infantry" territory="Stockholm" quantity="5" owner="Neutral_CP"/>
 			<unitPlacement unitType="infantry" territory="Sweden" quantity="5" owner="Neutral_CP"/>
-			<unitPlacement unitType="factory_minor" territory="Stockholm" quantity="1" owner="Neutral_CP"/>
+			<unitPlacement unitType="factory2" territory="Stockholm" quantity="1" owner="Neutral_CP"/>
 			<unitPlacement unitType="infantry" territory="Denmark" quantity="8" owner="Neutral_CP"/>
 			<unitPlacement unitType="infantry" territory="Norway" quantity="3" owner="Neutral_Allies"/>
 			<unitPlacement unitType="infantry" territory="Oslo" quantity="3" owner="Neutral_Allies"/>
@@ -12411,10 +12471,10 @@
 			<unitPlacement unitType="infantry" territory="Santo Domingo" quantity="1" owner="Neutral_CP"/>
 			<unitPlacement unitType="infantry" territory="Colombia" quantity="3" owner="Neutral_CP"/>
 			<unitPlacement unitType="infantry" territory="Chile" quantity="8" owner="Neutral_CP"/>
-			<unitPlacement unitType="factory_minor" territory="Chile" quantity="1" owner="Neutral_CP"/>
+			<unitPlacement unitType="factory2" territory="Chile" quantity="1" owner="Neutral_CP"/>
 			<unitPlacement unitType="infantry" territory="Argentina" quantity="4" owner="Neutral_Allies"/>
 			<unitPlacement unitType="infantry" territory="Buenos Aires" quantity="4" owner="Neutral_Allies"/>
-			<unitPlacement unitType="factory_minor" territory="Buenos Aires" quantity="1" owner="Neutral_Allies"/>
+			<unitPlacement unitType="factory2" territory="Buenos Aires" quantity="1" owner="Neutral_Allies"/>
 
                 </unitInitialize>
                 <resourceInitialize>
@@ -12425,7 +12485,7 @@
 						<resourceGiven player="ANZAC" resource="PUs" quantity="11"/>
                         <resourceGiven player="France" resource="PUs" quantity="72"/>
                         <resourceGiven player="Russia" resource="PUs" quantity="69"/>
-                        <resourceGiven player="Italy" resource="PUs" quantity="37"/>
+                        <resourceGiven player="Italy" resource="PUs" quantity="36"/>
 						<resourceGiven player="Germany" resource="PUs" quantity="116"/>
 						<resourceGiven player="Austria" resource="PUs" quantity="34"/>
 						<resourceGiven player="Hungary" resource="PUs" quantity="19"/>
@@ -13556,7 +13616,7 @@
 <br>by Surtur
 
 <br>
-<br><span style="font-size:120%;000000"colspan="2"><b>Version 1.3.0</b></span>
+<br><span style="font-size:120%;000000"colspan="2"><b>Version 1.3.1</b></span>
 <br><br>
 <i>"Wir wollen niemand in den Schatten stellen, aber wir verlangen auch unseren Platz an der Sonne"</i>
 <br><i>--Bernhard von Bulow, 6 December 1897</i>
@@ -13657,7 +13717,14 @@ Central Powers:
 <td>Danish Straits</td>
 <td>Sea Zone 12 Baltic Sea</td>
 <td>Sea Zone 13 Skagerrak</td>
-<td>Denmark:Sweden</td>
+<td>Denmark</td>
+</tr>
+
+<tr bgcolor="BDBDBD">
+<td>Oresund</td>
+<td>Sea Zone 12 Baltic Sea</td>
+<td>Sea Zone 13 Skagerrak</td>
+<td>Sweden</td>
 </tr>
 
 <tr bgcolor="BDBDBD">
@@ -13942,7 +14009,7 @@ Central Powers:
 	<td>3</td>
 	<td>2</td>
 	<td>10</td>
-	<td></td>
+	<td>Requires harbour to build</td>
 	</tr>
 	
 	<tr bgcolor="BDBDBD">
@@ -13951,7 +14018,7 @@ Central Powers:
 	<td>4</td>
 	<td>2</td>
 	<td>16</td>
-	<td></td>
+	<td>Requires harbour to build</td>
 	</tr>
 	
 	<tr bgcolor="BDBDBD">
@@ -13969,7 +14036,7 @@ Central Powers:
 	<td>3</td>
 	<td>2</td>
 	<td>12</td>
-	<td>2 hit;<br>Repairs with harbor;<br>Cannot be produced with a factory_minor;Unlockable by Aircraft Carrier tech</td>
+	<td>2 hit;<br>Repairs with harbor;<br>Unlockable by Aircraft Carrier tech;<br>Requires harbour to build</td>
 	</tr>
 	
 	<tr bgcolor="BDBDBD">
@@ -13978,7 +14045,7 @@ Central Powers:
 	<td>4</td>
 	<td>2</td>
 	<td>22</td>
-	<td>Bombard;<br>2 hit;<br>Repairs with harbor;<br>Cannot be produced with a factory_minor</td>
+	<td>Bombard;<br>2 hit;<br>Repairs with harbor;<br>Requires factory3, harbour to build</td>
 	</tr>
 
 </table>
@@ -14012,7 +14079,7 @@ Central Powers:
 	<td>1</td>
 	<td>6</td>
 	<td>14</td>
-	<td>Strategic Bomber;<br>Air Combat;<br>Cannot be produced with a factory_minor</td>
+	<td>Strategic Bomber;<br>Air Combat</td>
 	</tr>
 	
 	<tr bgcolor="BDBDBD">
@@ -14050,7 +14117,7 @@ Central Powers:
 	</tr>
 	
 	<tr bgcolor="BDBDBD">
-	<td>factory_basic</td>
+	<td>factory1</td>
 	<td>0</td>
 	<td>0</td>
 	<td>0</td>
@@ -14059,7 +14126,7 @@ Central Powers:
 	</tr>
 	
 	<tr bgcolor="BDBDBD">
-	<td>factory_minor</td>
+	<td>factory2</td>
 	<td>0</td>
 	<td>0</td>
 	<td>0</td>
@@ -14068,7 +14135,7 @@ Central Powers:
 	</tr>
 	
 	<tr bgcolor="BDBDBD">
-	<td>factory_major</td>
+	<td>factory3</td>
 	<td>0</td>
 	<td>0</td>
 	<td>0</td>
@@ -14082,7 +14149,7 @@ Central Powers:
 	<td>0</td>
 	<td>0</td>
 	<td>15</td>
-	<td>Repairs battleships, carriers;<br>Gives 1 movement to naval units;<br>Can be strategically bombed</td>
+	<td>Repairs battleships, carriers;<br>Gives 1 movement to naval units;<br>Can be strategically bombed;<br>Required to build cruisers, battlecruisers, carriers, battleships</td>
 	</tr>
 	
 	<tr bgcolor="BDBDBD">
@@ -14147,7 +14214,7 @@ Central Powers:
 	<tr>
 	<td>Land</td>
 	<td>Factory Electrification</td>
-	<td>Grants +1 bonus production to factory_basic, factory_minor, factory_major</td>
+	<td>Grants +1 bonus production to factory1, factory2, factory3</td>
 	</tr>
 	
 	<tr>
@@ -15138,6 +15205,41 @@ Central Powers:
 <br><br>
 
 <div style="text-align: center;">
+<br>==========================================================
+<br><span style="font-size:200%"><b>Changelog 1.3.1</b></span>
+<br>==========================================================
+<br><b>Map Changes</b>
+<br>Rename Western Sahara to El Djouf
+<br>Rename Central Sahara to Grand Erg Oriental
+<br>Rename Eastern Sahara to Tibesti
+<br>Rename Lower Egypt to Western Desert
+<br>Rename Upper Egypt to Eastern Desert
+<br>Rename Western Sudan to Kordofan
+<br>New connection between Atlas, Algeria
+<br>New territory Ifni from El Djouf
+<br>New territory Great Sand Sea from Kufra
+<br>New territory Erg of Bilma from Niger
+<br>New territories in Lower Algeria: Grand Erg Occidental, Tademait, Tanezrouft
+<br>Decrease Italian Somaliland production to 0 from 1 <i>(Suggestion from Cernel)</i>
+<br>Made Danish Straits traversible by submarines <i>(Suggestion from Cernel)</i>
+<br>Added new Oresund canal to make Danish Straits traversible if either Denmark OR Sweden is friendly, instead of both <i>(Suggestion from Cernel)</i>
+<br><b>Production changes</b>
+<br>Rename factory_basic, _minor, _major to factory1, 2, 3 with new unit art <i>(Credit to Cernel for unit art)</i>
+<br>Require harbours to build cruisers, battlecruisers, battleships, carriers <i>(Suggestion from Cernel)</i>
+<br><b>Unit Changes</b>
+<br>Add harbour to Piedmont, Apulia, Naples, Venice <i>(Suggestion from Cernel)</i>
+<br>Remove harbour from Rome <i>(Suggestion from Cernel)</i>
+<br>Add harbour to West Prussia, Hanover <i>(Suggestion from Cernel)</i>
+<br>Add 1 infantry, factory1 to Eritrea <i>(Suggestion from Cernel)</i>
+<br>Add factory1 to Aquitaine <i>(Suggestion from Cernel)</i>
+<br>Add factory1 to Wurttemburg, Brandenburg
+<br>Add factory2 to Venice <i>(Suggestion from Cernel)</i>
+<br>Add factory3 to Milan, Naples <i>(Suggestion from Cernel)</i>
+<br>Add factory3 to West Prussia, Holstein <i>(Suggestion from Cernel)</i>
+<br><b>Diplomacy changes</b>
+<br>Senussi Revolt can now trigger even if Italy joins CP
+<br>Revamp Czechslovak Revolt
+<br>Remove factory triggers for Estonian Independence
 <br>==========================================================
 <br><span style="font-size:200%"><b>Changelog 1.3.0</b></span>
 <br>==========================================================

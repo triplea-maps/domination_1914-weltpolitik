@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-        <info name="Domination 1914-Weltpolitik" version="1.3.1"/>
+        <info name="Domination 1914-Weltpolitik" version="1.3.2"/>
 
         <loader javaClass="games.strategy.triplea.TripleA"/>
 
@@ -334,7 +334,7 @@
                 <territory name="Uzbekistan"/>
                 <territory name="Vladimir"/>
                 <territory name="Vladivostok"/>
-                <territory name="Volgograd"/>
+                <territory name="Saratov"/>
                 <territory name="Vologda"/>
                 <territory name="Warsaw"/>
                 <territory name="Western Poland"/>
@@ -1259,10 +1259,10 @@
 				<connection t1="Caucasus" t2="Astrakhan"/>
 				<connection t1="Caucasus" t2="Kuban"/>
 				<connection t1="Astrakhan" t2="Kazakhstan"/>
-				<connection t1="Astrakhan" t2="Volgograd"/>
+				<connection t1="Astrakhan" t2="Saratov"/>
 				<connection t1="Astrakhan" t2="Kuban"/>
 				<connection t1="Astrakhan" t2="Rostov-on-Don"/>
-				<connection t1="Rostov-on-Don" t2="Volgograd"/>
+				<connection t1="Rostov-on-Don" t2="Saratov"/>
 				<connection t1="Rostov-on-Don" t2="Volga River"/>
 				<connection t1="Rostov-on-Don" t2="Kuban"/>
                 <connection t1="Chita" t2="Amur"/>
@@ -1276,7 +1276,7 @@
                 <connection t1="Dnieper" t2="Crimea"/>
                 <connection t1="Dnieper" t2="Kiev"/>
                 <connection t1="Don" t2="Rostov-on-Don"/>
-                <connection t1="Don" t2="Volgograd"/>
+                <connection t1="Don" t2="Saratov"/>
                 <connection t1="Don" t2="Ryazan"/>
                 <connection t1="Don" t2="Moscow"/>
                 <connection t1="Don" t2="Smolensk"/>
@@ -1300,7 +1300,7 @@
                 <connection t1="Karelia" t2="Archangelsk"/>
                 <connection t1="Karelia" t2="St. Petersburg"/>
                 <connection t1="Kazakhstan" t2="Turkmenistan"/>
-                <connection t1="Kazakhstan" t2="Volgograd"/>
+                <connection t1="Kazakhstan" t2="Saratov"/>
                 <connection t1="Kazakhstan" t2="Uzbekistan"/>
                 <connection t1="Kazakhstan" t2="Sinkiang"/>
                 <connection t1="Kazakhstan" t2="Novosibirsk"/>
@@ -1387,8 +1387,8 @@
                 <connection t1="Vladivostok" t2="Changchun"/>
                 <connection t1="Vladivostok" t2="Fushun"/>
                 <connection t1="Vladivostok" t2="Choson"/>
-                <connection t1="Volgograd" t2="Volga River"/>
-                <connection t1="Volgograd" t2="Ryazan"/>
+                <connection t1="Saratov" t2="Volga River"/>
+                <connection t1="Saratov" t2="Ryazan"/>
                 <connection t1="Vologda" t2="Kazan"/>
                 <connection t1="Vologda" t2="Perm"/>
                 <connection t1="Vologda" t2="Western Siberian Lowlands"/>
@@ -3039,75 +3039,75 @@
         <production>
                 <!-- Unit Production Cost -->
                 <productionRule name="buyaaGun">
-                        <cost resource="PUs" quantity="5"/>
+                        <cost resource="PUs" quantity="10"/>
                         <result resourceOrUnit="aaGun" quantity="1"/>
                 </productionRule>
                 <productionRule name="buybattlecruiser">
-                        <cost resource="PUs" quantity="16"/>
+                        <cost resource="PUs" quantity="32"/>
                         <result resourceOrUnit="battlecruiser" quantity="1"/>
                 </productionRule>
                 <productionRule name="buybattleship">
-                        <cost resource="PUs" quantity="22"/>
+                        <cost resource="PUs" quantity="44"/>
                         <result resourceOrUnit="battleship" quantity="1"/>
                 </productionRule>
                 <productionRule name="buycavalry">
-                        <cost resource="PUs" quantity="5"/>
+                        <cost resource="PUs" quantity="10"/>
                         <result resourceOrUnit="cavalry" quantity="1"/>
                 </productionRule>
                 <productionRule name="buycruiser">
-                        <cost resource="PUs" quantity="10"/>
+                        <cost resource="PUs" quantity="20"/>
                         <result resourceOrUnit="cruiser" quantity="1"/>
                 </productionRule>
                 <productionRule name="buydestroyer">
-                        <cost resource="PUs" quantity="6"/>
+                        <cost resource="PUs" quantity="12"/>
                         <result resourceOrUnit="destroyer" quantity="1"/>
                 </productionRule>
                 <productionRule name="buyadv_destroyer">
-                        <cost resource="PUs" quantity="6"/>
+                        <cost resource="PUs" quantity="12"/>
                         <result resourceOrUnit="adv_destroyer" quantity="1"/>
                 </productionRule>
                 <productionRule name="buyfield_gun">
-                        <cost resource="PUs" quantity="4"/>
+                        <cost resource="PUs" quantity="8"/>
                         <result resourceOrUnit="field_gun" quantity="1"/>
                 </productionRule>
                 <productionRule name="buyfighter">
-                        <cost resource="PUs" quantity="9"/>
+                        <cost resource="PUs" quantity="18"/>
                         <result resourceOrUnit="fighter" quantity="1"/>
                 </productionRule>
                 <productionRule name="buyinfantry">
-                        <cost resource="PUs" quantity="3"/>
+                        <cost resource="PUs" quantity="6"/>
                         <result resourceOrUnit="infantry" quantity="1"/>
                 </productionRule>
                 <productionRule name="buylate_fighter">
-                        <cost resource="PUs" quantity="10"/>
+                        <cost resource="PUs" quantity="20"/>
                         <result resourceOrUnit="late_fighter" quantity="1"/>
                 </productionRule>
 				<productionRule name="buybomber">
-                        <cost resource="PUs" quantity="14"/>
+                        <cost resource="PUs" quantity="28"/>
                         <result resourceOrUnit="bomber" quantity="1"/>
                 </productionRule>
                 <productionRule name="buysubmarine">
-                        <cost resource="PUs" quantity="7"/>
+                        <cost resource="PUs" quantity="14"/>
                         <result resourceOrUnit="submarine" quantity="1"/>
                 </productionRule>
 				<productionRule name="buynaval_mine">
-                        <cost resource="PUs" quantity="1"/>
+                        <cost resource="PUs" quantity="2"/>
                         <result resourceOrUnit="naval_mine" quantity="1"/>
                 </productionRule>
                 <productionRule name="buytank">
-                        <cost resource="PUs" quantity="6"/>
+                        <cost resource="PUs" quantity="12"/>
                         <result resourceOrUnit="tank" quantity="1"/>
                 </productionRule>
                 <productionRule name="buytransport">
-                        <cost resource="PUs" quantity="7"/>
+                        <cost resource="PUs" quantity="14"/>
                         <result resourceOrUnit="transport" quantity="1"/>
                 </productionRule>
                 <productionRule name="buyzeppelin">
-                        <cost resource="PUs" quantity="14"/>
+                        <cost resource="PUs" quantity="28"/>
                         <result resourceOrUnit="zeppelin" quantity="1"/>
                 </productionRule>
                 <productionRule name="buycarrier">
-                        <cost resource="PUs" quantity="12"/>
+                        <cost resource="PUs" quantity="36"/>
                         <result resourceOrUnit="carrier" quantity="1"/>
                 </productionRule>
 				<productionRule name="buyHarbour">
@@ -3115,7 +3115,7 @@
                         <result resourceOrUnit="harbour" quantity="1"/>
                 </productionRule>
 				<productionRule name="buyTrain">
-                        <cost resource="PUs" quantity="7"/>
+                        <cost resource="PUs" quantity="14"/>
                         <result resourceOrUnit="train" quantity="1"/>
                 </productionRule>
 				
@@ -3125,43 +3125,43 @@
                 </productionRule>
 				
 				<productionRule name="buyFactory1">
-                        <cost resource="PUs" quantity="8"/>
+                        <cost resource="PUs" quantity="16"/>
                         <result resourceOrUnit="factory1" quantity="1"/>
                 </productionRule>
                 
                 <productionRule name="buyFactory2">
-                        <cost resource="PUs" quantity="6"/>
+                        <cost resource="PUs" quantity="12"/>
                         <result resourceOrUnit="factory2" quantity="1"/>
                 </productionRule>
                 
                 <productionRule name="buyFactory3">
-                        <cost resource="PUs" quantity="4"/>
+                        <cost resource="PUs" quantity="8"/>
                         <result resourceOrUnit="factory3" quantity="1"/>
                 </productionRule>
 				
 				<!-- SHIPYARD PRICES -->
 				<productionRule name="buybattlecruiserShipyards">
-                        <cost resource="PUs" quantity="14"/>
+                        <cost resource="PUs" quantity="28"/>
                         <result resourceOrUnit="battlecruiser" quantity="1"/>
                 </productionRule>
                 <productionRule name="buybattleshipShipyards">
-                        <cost resource="PUs" quantity="19"/>
+                        <cost resource="PUs" quantity="38"/>
                         <result resourceOrUnit="battleship" quantity="1"/>
                 </productionRule>
 				<productionRule name="buycruiserShipyards">
-                        <cost resource="PUs" quantity="9"/>
+                        <cost resource="PUs" quantity="18"/>
                         <result resourceOrUnit="cruiser" quantity="1"/>
                 </productionRule>
 				<productionRule name="buydestroyerShipyards">
-                        <cost resource="PUs" quantity="5"/>
+                        <cost resource="PUs" quantity="10"/>
                         <result resourceOrUnit="destroyer" quantity="1"/>
                 </productionRule>
 				<productionRule name="buysubmarineShipyards">
-                        <cost resource="PUs" quantity="6"/>
+                        <cost resource="PUs" quantity="12"/>
                         <result resourceOrUnit="submarine" quantity="1"/>
                 </productionRule>
 				<productionRule name="buytransportShipyards">
-                        <cost resource="PUs" quantity="6"/>
+                        <cost resource="PUs" quantity="12"/>
                         <result resourceOrUnit="transport" quantity="1"/>
                 </productionRule>
 				
@@ -3967,111 +3967,111 @@
 	<!--  tech Attachments -->
 					<!-- Need mechanizedInfantry for trains to work -->
 					<attachment name="techAttachment" attachTo="Germany" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Austria" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Hungary" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="France" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Russia" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="UK" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Canada" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="South_Africa" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="India" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="ANZAC" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Italy" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Japan" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="USA" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Bolshevik" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Belgium" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Serbia" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Bulgaria" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Romania" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Greece" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Portugal" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Brazil" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Arabia" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Constitutionalist" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Conventionist" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="KMT" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 					<attachment name="techAttachment" attachTo="Beiyang" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-						<option name="techCost" value="5"/>
+						<option name="techCost" value="10"/>
 						<option name="mechanizedInfantry" value="true"/>
 					</attachment>
 	<!--  unit Attachments -->
@@ -4355,7 +4355,6 @@
 						 <option name="givesMovement" value="1:carrier"/>
 						 <option name="givesMovement" value="1:battleship"/>
 						 <option name="isAAforBombingThisUnitOnly" value="false"/>
-						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="airfield" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4378,7 +4377,6 @@
 						 <option name="isRocket" value="true"/>
 						 <option name="bombingMaxDieSides" value="6"/>
 						 <option name="bombingBonus" value="0"/>
-						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                 </attachment>
 				
                     <attachment name="territoryAttachment" attachTo="Abyssinia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -6633,7 +6631,7 @@
 						<option name="whenCapturedByGoesTo" value="Austria:Hungary"/>
                     </attachment>
 
-                    <attachment name="territoryAttachment" attachTo="Volgograd" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                    <attachment name="territoryAttachment" attachTo="Saratov" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="2"/>
                     </attachment>
 
@@ -7230,7 +7228,7 @@
 						<option name="alliedPresenceTerritories" value="Sea Zone 136 East China Sea" count="1"/>
 						<option name="invert" value="true"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Amoy_UK" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_UK_01_Amoy" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="1"/>
 						<option name="conditions" value="conditionAttachment_Fukien_Not_CP:conditionAttachment_SZ_136_Not_Interdicted_Allies"/>
 					</attachment>
@@ -7244,11 +7242,11 @@
 						<option name="alliedPresenceTerritories" value="Sea Zone 129 South China Sea" count="1"/>
 						<option name="invert" value="true"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Canton_UK" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_UK_02_Canton" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="2"/>
 						<option name="conditions" value="conditionAttachment_Canton_Not_CP:conditionAttachment_SZ_129_Not_Interdicted"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Canton_France" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_France_01_Canton" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="1"/>
 						<option name="conditions" value="conditionAttachment_Canton_Not_CP:conditionAttachment_SZ_129_Not_Interdicted"/>
 					</attachment>
@@ -7269,24 +7267,24 @@
 					<attachment name="conditionAttachment_Tientsin_Allied_Italy_Income" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_Italy_Allies:conditionAttachment_Tientsin_Allied_Income"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Tientsin_UK" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_UK_03_Tientsin" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="1"/>
 						<option name="conditions" value="conditionAttachment_Tientsin_Allied_Income"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Tientsin_France" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_France_02_Tientsin" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="1"/>
 						<option name="conditions" value="conditionAttachment_Tientsin_Allied_Income"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Tientsin_Russia" attachTo="Russia" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_Russia_01_Tientsin" attachTo="Russia" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="1"/>
 						<option name="conditions" value="conditionAttachment_Tientsin_Allied_Income"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Tientsin_Japan" attachTo="Japan" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_Japan_01_Tientsin" attachTo="Japan" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="1"/>
 						<option name="conditions" value="conditionAttachment_Tientsin_Allied_Income:conditionAttachment_Germany_Not_Yet_At_War_With_Japan"/>
 						<option name="conditionType" value="OR"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Tientsin_Belgium" attachTo="Belgium" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_Belgium_01_Tientsin" attachTo="Belgium" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="1"/>
 						<option name="conditions" value="conditionAttachment_Tientsin_Allied_Income"/>
 					</attachment>
@@ -7305,16 +7303,16 @@
 					<attachment name="conditionAttachment_Tientsin_CP_Italy_Income" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_Italy_CP:conditionAttachment_Tientsin_CP_Income"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Tientsin_Germany" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_Germany_01_Tientsin" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="3"/>
 						<option name="conditions" value="conditionAttachment_Tientsin_CP_Income"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Tientsin_Austria" attachTo="Austria" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_Austria_01_Tientsin" attachTo="Austria" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="2"/>
 						<option name="conditions" value="conditionAttachment_Tientsin_CP_Income"/>
 					</attachment>
 					<!-- Italy -->
-					<attachment name="objectiveAttachment_Tientsin_Italy" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_Italy_01_Tientsin" attachTo="Italy" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="1"/>
 						<option name="conditions" value="conditionAttachment_Tientsin_Allied_Italy_Income:conditionAttachment_Tientsin_CP_Italy_Income:conditionAttachment_Italy_At_Peace"/>
 						<option name="conditionType" value="OR"/>
@@ -7332,15 +7330,15 @@
 					<attachment name="conditionAttachment_Shanghai_Allied_Income" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_Shanghai_Not_CP:conditionAttachment_Shanghai_Not_Interdicted_Allies"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Shanghai_UK" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_UK_04_Shanghai" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="2"/>
 						<option name="conditions" value="conditionAttachment_Shanghai_Allied_Income"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Shanghai_France" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_France_03_Shanghai" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="2"/>
 						<option name="conditions" value="conditionAttachment_Shanghai_Allied_Income"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Shanghai_USA" attachTo="USA" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_USA_01_Shanghai" attachTo="USA" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="2"/>
 						<option name="conditions" value="conditionAttachment_Shanghai_Allied_Income:conditionAttachment_USA_At_Peace"/>
 						<option name="conditionType" value="OR"/>
@@ -7355,19 +7353,19 @@
 					<attachment name="conditionAttachment_Hankow_Allied_Income" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_Hankow_Not_CP:conditionAttachment_Shanghai_Not_Interdicted_Allies"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Hankow_UK" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_UK_05_Hankow" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="1"/>
 						<option name="conditions" value="conditionAttachment_Hankow_Allied_Income"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Hankow_France" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_France_04_Hankow" attachTo="France" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="1"/>
 						<option name="conditions" value="conditionAttachment_Hankow_Allied_Income"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Hankow_Russia" attachTo="Russia" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_Russia_02_Hankow" attachTo="Russia" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="1"/>
 						<option name="conditions" value="conditionAttachment_Hankow_Allied_Income"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Hankow_Japan" attachTo="Japan" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_Japan_02_Hankow" attachTo="Japan" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="1"/>
 						<option name="conditions" value="conditionAttachment_Hankow_Allied_Income:conditionAttachment_Germany_Not_Yet_At_War_With_Japan"/>
 						<option name="conditionType" value="OR"/>
@@ -7381,11 +7379,11 @@
 						<option name="conditions" value="conditionAttachment_SZ_136_Not_Interdicted_CP:conditionAttachment_SZ_137_Not_Interdicted_CP"/>
 						<option name="conditionType" value="OR"/>
 					</attachment>
-					<attachment name="objectiveAttachment_Hankow_Germany" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<attachment name="objectiveAttachment_Germany_02_Hankow" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="objectiveValue" value="3"/>
 						<option name="conditions" value="conditionAttachment_Hankow_Not_Allied:conditionAttachment_Shanghai_Not_Interdicted_CP"/>
 					</attachment>
-			
+				
 			<!-- Support Attachments -->
 				<attachment name="supportAttachmentCounterBatteryFire" attachTo="field_gun" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 					<option name="unitType" value="infantry:cavalry"/>
@@ -8509,6 +8507,8 @@
 					<option name="changeOwnership" value="Estonia:any:Bolshevik:true"/>
 					<option name="placement" value="Pskov:infantry:infantry:infantry:infantry:infantry:infantry:infantry:infantry:infantry:infantry"/>
 					<option name="placement" value="Estonia:infantry:infantry:infantry:infantry:infantry:infantry:infantry:infantry:infantry:infantry"/>
+					<option name="placement" value="Moscow:infantry:infantry:infantry:infantry:infantry:infantry:infantry:infantry:infantry:infantry"/>
+					<option name="placement" value="Saratov:infantry:infantry:infantry:infantry:infantry"/>
 					<option name="uses" value="1"/>
 				</attachment>
 				<attachment name="triggerAttachment_Finland_Independence_Bolshevik" attachTo="Bolshevik" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
@@ -8627,7 +8627,7 @@
 				<!-- Belgium triggers -->
 				<attachment name="triggerAttachmentBelgiumAid" attachTo="Belgium" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="resource" value="PUs"/>
-					<option name="resourceCount" value="3"/>
+					<option name="resourceCount" value="5"/>
 				</attachment>
 				<attachment name="triggerAttachment_Belgium_Infantry" attachTo="Belgium" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="placement" value="Normandy:infantry"/>
@@ -8636,25 +8636,25 @@
 				<!-- Serbia triggers -->
 				<attachment name="triggerAttachmentSerbiaAid" attachTo="Serbia" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="resource" value="PUs"/>
-					<option name="resourceCount" value="3"/>
+					<option name="resourceCount" value="5"/>
 				</attachment>
 				
 				<!-- Bulgaria triggers -->
 				<attachment name="triggerAttachmentBulgariaAid" attachTo="Bulgaria" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="resource" value="PUs"/>
-					<option name="resourceCount" value="3"/>
+					<option name="resourceCount" value="5"/>
 				</attachment>
 				
 				<!-- Romania triggers -->
 				<attachment name="triggerAttachmentRomaniaAid" attachTo="Romania" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="resource" value="PUs"/>
-					<option name="resourceCount" value="3"/>
+					<option name="resourceCount" value="5"/>
 				</attachment>
 				
 				<!-- Greece triggers -->
 				<attachment name="triggerAttachmentGreeceAid" attachTo="Greece" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="resource" value="PUs"/>
-					<option name="resourceCount" value="3"/>
+					<option name="resourceCount" value="5"/>
 				</attachment>
 				<attachment name="triggerAttachment_Greece_Coup" attachTo="Greece" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="resource" value="PUs"/>
@@ -8667,13 +8667,13 @@
 				<!-- Portugal triggers -->
 				<attachment name="triggerAttachmentPortugalAid" attachTo="Portugal" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="resource" value="PUs"/>
-					<option name="resourceCount" value="3"/>
+					<option name="resourceCount" value="5"/>
 				</attachment>
 				
 				<!-- Arabia triggers -->
 				<attachment name="triggerAttachmentArabiaAid" attachTo="Arabia" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="resource" value="PUs"/>
-					<option name="resourceCount" value="3"/>
+					<option name="resourceCount" value="5"/>
 				</attachment>
 				<attachment name="triggerAttachment_Arabia_Cavalry" attachTo="Arabia" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="placement" value="Najd:cavalry"/>
@@ -8779,7 +8779,7 @@
 				<!-- Mexico triggers -->
 				<attachment name="triggerAttachmentConstitutionalistAid" attachTo="Constitutionalist" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="resource" value="PUs"/>
-					<option name="resourceCount" value="3"/>
+					<option name="resourceCount" value="5"/>
 				</attachment>
 				<attachment name="triggerAttachment_Constitutionalist_IPC_Cleanup" attachTo="Constitutionalist" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Constitutionalist_Does_Not_Exist"/>
@@ -8790,7 +8790,7 @@
 				
 				<attachment name="triggerAttachmentConventionistAid" attachTo="Conventionist" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="resource" value="PUs"/>
-					<option name="resourceCount" value="3"/>
+					<option name="resourceCount" value="5"/>
 				</attachment>
 				<attachment name="triggerAttachment_Create_Villa_Notification_Constitutionalist" attachTo="Conventionist" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="notification" value="Villa_Raid"/>
@@ -8930,11 +8930,11 @@
 				</attachment>
 				<attachment name="triggerAttachment_KMT_Aid" attachTo="KMT" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="resource" value="PUs"/>
-					<option name="resourceCount" value="3"/>
+					<option name="resourceCount" value="5"/>
 				</attachment>
 				<attachment name="triggerAttachment_Beiyang_Aid" attachTo="Beiyang" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="resource" value="PUs"/>
-					<option name="resourceCount" value="3"/>
+					<option name="resourceCount" value="5"/>
 				</attachment>
 				<attachment name="triggerAttachment_KMT_IPC_Cleanup" attachTo="KMT" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Beiyang_Victorious"/>
@@ -9118,14 +9118,14 @@
 				
 				<attachment name="userActionAttachment_BulgariaAid" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Bulgaria_At_War:conditionAttachmentBulgariaControlsBulgaria"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentBulgariaAid:1:false:false:false:false"/>
 					<option name="text" value="Bulgaria_Aid"/>
 				</attachment>
 				<attachment name="userActionAttachment_RomaniaAid" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Romania_CP:conditionAttachment_Romania_Controls_Romania"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentRomaniaAid:1:false:false:false:false"/>
 					<option name="text" value="Romania_Aid"/>
@@ -9141,7 +9141,7 @@
 				
 				<attachment name="userActionAttachment_Maritz_Rebellion" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Maritz_Rebellion_Switch:conditionAttachmentTurn2"/>
-					<option name="costPU" value="5"/>
+					<option name="costPU" value="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Maritz_Rebellion:1:false:false:false:false"/>
 					<option name="text" value="Maritz_Rebellion"/>
@@ -9149,21 +9149,21 @@
 				
 				<attachment name="userActionAttachment_Ghadar_Conspiracy" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Ghadar_Conspiracy_Switch:conditionAttachmentTurn3"/>
-					<option name="costPU" value="5"/>
+					<option name="costPU" value="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Ghadar_Conspiracy:1:false:false:false:false"/>
 					<option name="text" value="Ghadar_Conspiracy"/>
 				</attachment>
 				<attachment name="userActionAttachment_Ghadar_Conspiracy_Boosted" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Ghadar_Conspiracy_Switch:conditionAttachment_Chinese_Smuggling:conditionAttachmentTurn3"/>
-					<option name="costPU" value="5"/>
+					<option name="costPU" value="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Ghadar_Conspiracy_Boosted:1:false:false:false:false"/>
 					<option name="text" value="Ghadar_Conspiracy_Boosted"/>
 				</attachment>
 				<attachment name="userActionAttachment_Niedermayer_Hentig_Expedition" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Niedermayer_Hentig:conditionAttachment_Afghanistan_Neutral"/>
-					<option name="costPU" value="5"/>
+					<option name="costPU" value="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Niedermayer_Hentig:1:false:false:false:false"/>
 					<option name="text" value="Niedermayer_Hentig_Expedition"/>
@@ -9179,7 +9179,7 @@
 				
 				<attachment name="userActionAttachment_ConstitutionalistAid" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Constitutionalist_Exists"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentConstitutionalistAid:1:false:false:false:false"/>
 					<option name="text" value="Constitutionalist_Aid"/>
@@ -9187,7 +9187,7 @@
 				
 				<attachment name="userActionAttachment_Qing_Restoration" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Qing_Restoration_Switch:conditionAttachment_Beiyang_Controls_Peking:conditionAttachmentTurn7"/>
-					<option name="costPU" value="5"/>
+					<option name="costPU" value="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Remove_KMT_Units:1:false:false:false:false"/>
 					<option name="activateTrigger" value="triggerAttachment_Create_China:1:false:false:false:false"/>
@@ -9196,7 +9196,7 @@
 				</attachment>
 				<attachment name="userActionAttachment_KMT_Aid" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_China_Civil_War:conditionAttachment_KMT_Exists"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_KMT_Aid:1:false:false:false:false"/>
 					<option name="text" value="KMT_Aid"/>
@@ -9204,21 +9204,21 @@
 				
 				<attachment name="userActionAttachment_Sweden_Alliance" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Sweden_Neutral:conditionAttachment_CP_Control_Finland:conditionAttachment_USA_At_Peace:conditionAttachment_Bolsheviks_Do_Not_Exist"/>
-					<option name="costPU" value="5"/>
+					<option name="costPU" value="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Sweden_Alliance:1:false:false:false:false"/>
 					<option name="text" value="Sweden_Alliance"/>
 				</attachment>
 				<attachment name="userActionAttachment_Colombia_CP" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_War:conditionAttachment_Constitutionalist_At_War:conditionAttachment_Colombia_Neutral"/>
-					<option name="costPU" value="5"/>
+					<option name="costPU" value="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Colombia_CP:1:false:false:false:false"/>
 					<option name="text" value="Colombia_CP"/>
 				</attachment>
 				<attachment name="userActionAttachment_Chile_CP" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_War:conditionAttachment_Constitutionalist_At_War:conditionAttachment_Colombia_CP:conditionAttachment_Argentina_Not_Allies:conditionAttachment_Chile_Neutral"/>
-					<option name="costPU" value="10"/>
+					<option name="costPU" value="20"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Chile_CP:1:false:false:false:false"/>
 					<option name="text" value="Chile_CP"/>
@@ -9227,7 +9227,7 @@
 			<!-- France Actions -->
 				<attachment name="userActionAttachment_GreeceAid" attachTo="France" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Greece_At_War:conditionAttachmentGreeceControlsGreece"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentGreeceAid:1:false:false:false:false"/>
 					<option name="text" value="Greece_Aid"/>
@@ -9247,13 +9247,14 @@
 				</attachment>
 				<attachment name="userActionAttachment_Czechoslovak_Aid" attachTo="France" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Bolsheviks_Control_Capital:conditionAttachment_Allies_Control_Vladivostok:conditionAttachment_Czechoslovak_Revolt_Switch"/>
+					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="3"/>
 					<option name="activateTrigger" value="triggerAttachment_Czechoslovak_Aid:1:false:false:false:false"/>
 					<option name="text" value="Czechoslovak_Aid"/>
 				</attachment>
 				<attachment name="userActionAttachment_Dutch_Seizure_France" attachTo="France" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachmentTurn9:conditionAttachment_Netherlands_Neutral"/>
-					<option name="costPU" value="10"/>
+					<option name="costPU" value="20"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Netherlands_Allies:1:false:false:false:false"/>
 					<option name="text" value="Dutch_Seizure"/>
@@ -9262,14 +9263,14 @@
 			<!-- Japan Actions -->
 				<attachment name="userActionAttachment_Beiyang_Aid" attachTo="Japan" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_China_Civil_War:conditionAttachment_Beiyang_Exists:conditionAttachment_Beiyang_At_Peace"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Beiyang_Aid:1:false:false:false:false"/>
 					<option name="text" value="Beiyang_Aid"/>
 				</attachment>
 				<attachment name="userActionAttachment_Beiyang_Aid" attachTo="Japan" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Beiyang_Exists:conditionAttachment_Japan_At_War:conditionAttachment_Beiyang_At_War"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Beiyang_Aid:1:false:false:false:false"/>
 					<option name="text" value="Beiyang_Aid"/>
@@ -9278,168 +9279,168 @@
 			<!-- USA Actions -->
 				<attachment name="userActionAttachment_USA_France_Naval_Aid_SF" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="7"/>
+					<option name="costPU" value="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_France_Naval_Aid_SF:1:false:false:false:false"/>
 					<option name="text" value="USA_France_Naval_Aid_SF"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_France_Aid_SF" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_France_Aid_SF:1:false:false:false:false"/>
 					<option name="text" value="USA_France_Aid_SF"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_France_Naval_Aid_NY" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="7"/>
+					<option name="costPU" value="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_France_Naval_Aid_NY:1:false:false:false:false"/>
 					<option name="text" value="USA_France_Naval_Aid_NY"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_France_Aid_NY" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_France_Aid_NY:1:false:false:false:false"/>
 					<option name="text" value="USA_France_Aid_NY"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_France_Naval_Aid_SC" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="7"/>
+					<option name="costPU" value="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_France_Naval_Aid_SC:1:false:false:false:false"/>
 					<option name="text" value="USA_France_Naval_Aid_SC"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_France_Aid_SC" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_France_Aid_SC:1:false:false:false:false"/>
 					<option name="text" value="USA_France_Aid_SC"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_France_Naval_Aid_NO" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="7"/>
+					<option name="costPU" value="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_France_Naval_Aid_NO:1:false:false:false:false"/>
 					<option name="text" value="USA_France_Naval_Aid_NO"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_France_Aid_NO" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_France_Aid_NO:1:false:false:false:false"/>
 					<option name="text" value="USA_France_Aid_NO"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_UK_Naval_Aid_SF" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="7"/>
+					<option name="costPU" value="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_UK_Naval_Aid_SF:1:false:false:false:false"/>
 					<option name="text" value="USA_UK_Naval_Aid_SF"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_UK_Aid_SF" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_UK_Aid_SF:1:false:false:false:false"/>
 					<option name="text" value="USA_UK_Aid_SF"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_UK_Naval_Aid_NY" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="7"/>
+					<option name="costPU" value="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_UK_Naval_Aid_NY:1:false:false:false:false"/>
 					<option name="text" value="USA_UK_Naval_Aid_NY"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_UK_Aid_NY" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_UK_Aid_NY:1:false:false:false:false"/>
 					<option name="text" value="USA_UK_Aid_NY"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_UK_Naval_Aid_SC" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="7"/>
+					<option name="costPU" value="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_UK_Naval_Aid_SC:1:false:false:false:false"/>
 					<option name="text" value="USA_UK_Naval_Aid_SC"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_UK_Aid_SC" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_UK_Aid_SC:1:false:false:false:false"/>
 					<option name="text" value="USA_UK_Aid_SC"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_UK_Naval_Aid_NO" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="7"/>
+					<option name="costPU" value="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_UK_Naval_Aid_NO:1:false:false:false:false"/>
 					<option name="text" value="USA_UK_Naval_Aid_NO"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_UK_Aid_NO" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_UK_Aid_NO:1:false:false:false:false"/>
 					<option name="text" value="USA_UK_Aid_NO"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_Russia_Naval_Aid_SF" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="7"/>
+					<option name="costPU" value="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_Russia_Naval_Aid_SF:1:false:false:false:false"/>
 					<option name="text" value="USA_Russia_Naval_Aid_SF"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_Russia_Aid_SF" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_Russia_Aid_SF:1:false:false:false:false"/>
 					<option name="text" value="USA_Russia_Aid_SF"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_Russia_Naval_Aid_NY" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="7"/>
+					<option name="costPU" value="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_Russia_Naval_Aid_NY:1:false:false:false:false"/>
 					<option name="text" value="USA_Russia_Naval_Aid_NY"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_Russia_Aid_NY" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_Russia_Aid_NY:1:false:false:false:false"/>
 					<option name="text" value="USA_Russia_Aid_NY"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_Russia_Naval_Aid_SC" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="7"/>
+					<option name="costPU" value="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_Russia_Naval_Aid_SC:1:false:false:false:false"/>
 					<option name="text" value="USA_Russia_Naval_Aid_SC"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_Russia_Aid_SC" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_Russia_Aid_SC:1:false:false:false:false"/>
 					<option name="text" value="USA_Russia_Aid_SC"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_Russia_Naval_Aid_NO" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="7"/>
+					<option name="costPU" value="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_Russia_Naval_Aid_NO:1:false:false:false:false"/>
 					<option name="text" value="USA_Russia_Naval_Aid_NO"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_Russia_Aid_NO" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_Russia_Aid_NO:1:false:false:false:false"/>
 					<option name="text" value="USA_Russia_Aid_NO"/>
 					<option name="attemptsPerTurn" value="999"/>
@@ -9460,7 +9461,7 @@
 				</attachment>
 				<attachment name="userActionAttachment_ConventionistAid" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Conventionist_Controls_Chihuahua"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentConventionistAid:1:false:false:false:false"/>
 					<option name="text" value="Villa_Aid"/>
@@ -9468,14 +9469,14 @@
 				
 				<attachment name="userActionAttachment_Argentina_Allies" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_War:conditionAttachment_Luxburg_Affair_Switch:conditionAttachment_Chile_Not_CP:conditionAttachment_Argentina_Neutral"/>
-					<option name="costPU" value="10"/>
+					<option name="costPU" value="20"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Argentina_Allies:1:false:false:false:false"/>
 					<option name="text" value="Argentina_Allies"/>
 				</attachment>
 				<attachment name="userActionAttachment_El_Salvador_Allies" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_War:conditionAttachment_Allies_Control_Buenos_Aires:conditionAttachment_El_Salvador_Neutral"/>
-					<option name="costPU" value="5"/>
+					<option name="costPU" value="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_El_Salvador_Allies:1:false:false:false:false"/>
 					<option name="text" value="El_Salvador_Allies"/>
@@ -9484,21 +9485,21 @@
 			<!-- Ottoman Actions -->
 				<attachment name="userActionAttachment_Darfur_Revolt" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Darfur_Switch:conditionAttachmentTurn3:conditionAttachment_Ottoman_At_War"/>
-					<option name="costPU" value="5"/>
+					<option name="costPU" value="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Darfur_Revolt:1:false:false:false:false"/>
 					<option name="text" value="Darfur_Revolt"/>
 				</attachment>
 				<attachment name="userActionAttachment_Senussi_Revolt" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Senussi_Switch:conditionAttachmentTurn4:conditionAttachment_Ottoman_At_War"/>
-					<option name="costPU" value="5"/>
+					<option name="costPU" value="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Senussi_Revolt:1:false:false:false:false"/>
 					<option name="text" value="Senussi_Revolt"/>
 				</attachment>
 				<attachment name="userActionAttachment_Kaocen_Revolt" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Kaocen_Switch:conditionAttachmentTurn6:conditionAttachment_Ottoman_At_War"/>
-					<option name="costPU" value="5"/>
+					<option name="costPU" value="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Kaocen_Revolt:1:false:false:false:false"/>
 					<option name="text" value="Kaocen_Revolt"/>
@@ -9506,7 +9507,7 @@
 				
 				<attachment name="userActionAttachment_Niedermayer_Hentig_Expedition_Ottoman" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Ottoman_At_War:conditionAttachment_Niedermayer_Hentig:conditionAttachment_Afghanistan_Neutral"/>
-					<option name="costPU" value="5"/>
+					<option name="costPU" value="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Niedermayer_Hentig:1:false:false:false:false"/>
 					<option name="text" value="Niedermayer_Hentig_Expedition"/>
@@ -9515,14 +9516,14 @@
 			<!-- UK Actions -->
 				<attachment name="userActionAttachment_BelgiumAid" attachTo="UK" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachmentBelgiumControlsBelgium"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentBelgiumAid:1:false:false:false:false"/>
 					<option name="text" value="Belgium_Aid"/>
 				</attachment>
 				<attachment name="userActionAttachment_PortugalAid" attachTo="UK" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Portugal_At_War:conditionAttachmentPortugalControlsLisbon"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentPortugalAid:1:false:false:false:false"/>
 					<option name="text" value="Portugal_Aid"/>
@@ -9530,7 +9531,7 @@
 				
 				<attachment name="userActionAttachment_ArabiaAid" attachTo="UK" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Arabia_At_War:conditionAttachment_ArabiaControlsNajd"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentArabiaAid:1:false:false:false:false"/>
 					<option name="text" value="Arabia_Aid"/>
@@ -9538,7 +9539,7 @@
 				
 				<attachment name="userActionAttachment_Arab_Revolt" attachTo="UK" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachmentTurn5:conditionAttachment_Arab_Revolt_Switch:conditionAttachment_CP_Controls_Hejaz:conditionAttachment_Ottoman_At_War:conditionAttachment_Arabia_At_War"/>
-					<option name="costPU" value="5"/>
+					<option name="costPU" value="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentArabRevolt:1:false:false:false:false"/>
 					<option name="text" value="Arab_Revolt"/>
@@ -9546,7 +9547,7 @@
 				
 				<attachment name="userActionAttachment_Asir_Revolt" attachTo="UK" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Asir_Revolt_Switch:conditionAttachment_Ottoman_At_War:conditionAttachment_CP_Controls_Asir"/>
-					<option name="costPU" value="5"/>
+					<option name="costPU" value="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentAsirRevolt:1:false:false:false:false"/>
 					<option name="text" value="Asir_Revolt"/>
@@ -9554,7 +9555,7 @@
 				
 				<attachment name="userActionAttachment_Dutch_Seizure_UK" attachTo="UK" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachmentTurn9:conditionAttachment_Netherlands_Neutral"/>
-					<option name="costPU" value="10"/>
+					<option name="costPU" value="20"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Netherlands_Allies:1:false:false:false:false"/>
 					<option name="text" value="Dutch_Seizure"/>
@@ -9563,14 +9564,14 @@
 			<!-- Russia Actions -->
 				<attachment name="userActionAttachment_SerbiaAid" attachTo="Russia" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachmentSerbiaControlsBelgrade"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentSerbiaAid:1:false:false:false:false"/>
 					<option name="text" value="Serbia_Aid"/>
 				</attachment>
 				<attachment name="userActionAttachment_RomaniaAid" attachTo="Russia" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Romania_Allies:conditionAttachment_Romania_Controls_Romania"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentRomaniaAid:1:false:false:false:false"/>
 					<option name="text" value="Romania_Aid"/>
@@ -9595,7 +9596,7 @@
 			<!-- Belgium Actions -->
 				<attachment name="userActionAttachment_Belgium_Infantry" attachTo="Belgium" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Belgium_Does_Not_Control_Belgium:conditionAttachment_Allies_Control_Normandy"/>
-					<option name="costPU" value="3"/>
+					<option name="costPU" value="6"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Belgium_Infantry:1:false:false:false:false"/>
 					<option name="text" value="Belgium_Infantry"/>
@@ -9604,7 +9605,7 @@
 			<!-- Arabia Actions -->
 				<attachment name="userActionAttachment_Arabia_Cavalry" attachTo="Arabia" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_ArabiaControlsNajd"/>
-					<option name="costPU" value="5"/>
+					<option name="costPU" value="6"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Arabia_Cavalry:1:false:false:false:false"/>
 					<option name="text" value="Arabia_Cavalry"/>
@@ -11447,7 +11448,7 @@
             		<territoryOwner territory="Crimea" owner="Russia"/>
             		<territoryOwner territory="Dnieper" owner="Russia"/>
             		<territoryOwner territory="Don" owner="Russia"/>
-            		<territoryOwner territory="Volgograd" owner="Russia"/>
+            		<territoryOwner territory="Saratov" owner="Russia"/>
             		<territoryOwner territory="Caucasus" owner="Russia"/>
 					<territoryOwner territory="Astrakhan" owner="Russia"/>
 					<territoryOwner territory="Kuban" owner="Russia"/>
@@ -11887,12 +11888,10 @@
 			<unitPlacement unitType="train" territory="Sydney-Canberra" quantity="1" owner="UK"/>
 			<unitPlacement unitType="cavalry" territory="New South Wales" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Victoria" quantity="1" owner="UK"/>
-			<unitPlacement unitType="harbour" territory="Queensland" quantity="1" owner="UK"/>
 			<unitPlacement unitType="battleship" territory="Sea Zone 116 Great Australian Bight" quantity="1" owner="UK"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 116 Great Australian Bight" quantity="1" owner="UK"/>
 			<unitPlacement unitType="submarine" territory="Sea Zone 116 Great Australian Bight" quantity="1" owner="UK"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 116 Great Australian Bight" quantity="2" owner="UK"/>
-			<unitPlacement unitType="harbour" territory="New Zealand" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="New Zealand" quantity="2" owner="UK"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 114 Pacific Ocean" quantity="1" owner="UK"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 114 Pacific Ocean" quantity="1" owner="UK"/>
@@ -11909,14 +11908,12 @@
 			<unitPlacement unitType="infantry" territory="Nepal" quantity="1" owner="UK"/>
 			<unitPlacement unitType="battlecruiser" territory="Sea Zone 73 Arabian Sea" quantity="1" owner="UK"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 73 Arabian Sea" quantity="1" owner="UK"/>
-			<unitPlacement unitType="harbour" territory="Calcutta" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Calcutta" quantity="2" owner="UK"/>
 			<unitPlacement unitType="train" territory="Calcutta" quantity="1" owner="UK"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 81 Bay of Bengal" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Trucial Coast" quantity="2" owner="UK"/>
 			<unitPlacement unitType="cavalry" territory="Aden" quantity="2" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Kuwait" quantity="1" owner="UK"/>
-			<unitPlacement unitType="harbour" territory="Cape Town" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Cape Town" quantity="1" owner="UK"/>
 			<unitPlacement unitType="field_gun" territory="Cape Town" quantity="1" owner="UK"/>
 			<unitPlacement unitType="cavalry" territory="Cape Town" quantity="1" owner="UK"/>
@@ -11960,7 +11957,6 @@
 			<unitPlacement unitType="transport" territory="Sea Zone 70 Eastern Mediterranean" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Quebec" quantity="2" owner="UK"/>
 			<unitPlacement unitType="train" territory="Quebec" quantity="1" owner="UK"/>
-			<unitPlacement unitType="harbour" territory="Nova Scotia" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Ottawa-Montreal" quantity="2" owner="UK"/>
 			<unitPlacement unitType="cavalry" territory="Ontario" quantity="1" owner="UK"/>
 			<unitPlacement unitType="train" territory="British Columbia" quantity="1" owner="UK"/>
@@ -11971,15 +11967,20 @@
 			<unitPlacement unitType="cruiser" territory="Sea Zone 104 Southern Ocean" quantity="2" owner="UK"/>
 						<!-- Dominion  Unit Placements -->
 			<unitPlacement unitType="factory3" territory="Sydney-Canberra" quantity="1" owner="ANZAC"/>
+			<unitPlacement unitType="harbour" territory="Queensland" quantity="1" owner="ANZAC"/>
 			<unitPlacement unitType="factory2" territory="New Zealand" quantity="1" owner="ANZAC"/>
+			<unitPlacement unitType="harbour" territory="New Zealand" quantity="1" owner="ANZAC"/>
 			<unitPlacement unitType="factory2" territory="Bombay" quantity="1" owner="India"/>
 			<unitPlacement unitType="factory3" territory="Delhi" quantity="1" owner="India"/>
 			<unitPlacement unitType="factory3" territory="Calcutta" quantity="1" owner="India"/>
+			<unitPlacement unitType="harbour" territory="Calcutta" quantity="1" owner="India"/>
 			<unitPlacement unitType="factory2" territory="Cape Town" quantity="1" owner="South_Africa"/>
+			<unitPlacement unitType="harbour" territory="Cape Town" quantity="1" owner="South_Africa"/>
 			<unitPlacement unitType="factory2" territory="Quebec" quantity="1" owner="Canada"/>
 			<unitPlacement unitType="factory3" territory="Ottawa-Montreal" quantity="1" owner="Canada"/>
 			<unitPlacement unitType="factory2" territory="Ontario" quantity="1" owner="Canada"/>
 			<unitPlacement unitType="factory2" territory="British Columbia" quantity="1" owner="Canada"/>
+			<unitPlacement unitType="harbour" territory="Nova Scotia" quantity="1" owner="Canada"/>
 			
                         <!-- France Unit Placements -->
 			<unitPlacement unitType="factory3" territory="Paris" quantity="1" owner="France"/>
@@ -12192,9 +12193,9 @@
 			<unitPlacement unitType="cavalry" territory="Omsk" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="train" territory="Omsk" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Vologda" quantity="1" owner="Russia"/>
-			<unitPlacement unitType="infantry" territory="Volgograd" quantity="2" owner="Russia"/>
-			<unitPlacement unitType="cavalry" territory="Volgograd" quantity="1" owner="Russia"/>
-			<unitPlacement unitType="train" territory="Volgograd" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="infantry" territory="Saratov" quantity="2" owner="Russia"/>
+			<unitPlacement unitType="cavalry" territory="Saratov" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="train" territory="Saratov" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Georgia" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Caucasus" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Ryazan" quantity="1" owner="Russia"/>
@@ -12233,7 +12234,7 @@
 			<unitPlacement unitType="factory2" territory="Warsaw" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="factory2" territory="Kiev" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="factory2" territory="Crimea" quantity="1" owner="Russia"/>
-			<unitPlacement unitType="factory2" territory="Volgograd" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="factory2" territory="Saratov" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="factory3" territory="Moscow" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="factory2" territory="Minsk" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="factory2" territory="Nizhni-Novgorod" quantity="1" owner="Russia"/>
@@ -13513,6 +13514,10 @@
 				<property name="Convoy Blockades Roll Dice For Cost" value="true" editable="true">
 						<boolean/>
 				</property>
+				
+				<property name="Control All Canals Between Territories To Pass" value="false" editable="false">
+						<boolean/>
+				</property>
 
 				<!-- production related -->
 				<property name="Produce fighters on carriers" value="true" editable="false">
@@ -13598,7 +13603,7 @@
 
 				<property name="Neutral Flyover Allowed" value="false" editable="false">
 						<boolean/>
-</property>
+				</property>
                 		<property name="mapName" value="domination_1914-weltpolitik" editable="false"/>
                 			
 				<property name="notes">
@@ -13616,7 +13621,7 @@
 <br>by Surtur
 
 <br>
-<br><span style="font-size:120%;000000"colspan="2"><b>Version 1.3.1</b></span>
+<br><span style="font-size:120%;000000"colspan="2"><b>Version 1.3.2</b></span>
 <br><br>
 <i>"Wir wollen niemand in den Schatten stellen, aber wir verlangen auch unseren Platz an der Sonne"</i>
 <br><i>--Bernhard von Bulow, 6 December 1897</i>
@@ -13896,7 +13901,7 @@ Central Powers:
 	<td>1</td>
 	<td>2</td>
 	<td>1</td>
-	<td>3</td>
+	<td>6</td>
 	<td>2</td>
 	<td>Supportable</td>
 	</tr>
@@ -13906,7 +13911,7 @@ Central Powers:
 	<td>1</td>
 	<td>2</td>
 	<td>2</td>
-	<td>5</td>
+	<td>10</td>
 	<td>3</td>
 	<td>Supportable;<br>Blitz</td>
 	</tr>
@@ -13916,7 +13921,7 @@ Central Powers:
 	<td>2</td>
 	<td>2</td>
 	<td>1</td>
-	<td>4</td>
+	<td>8</td>
 	<td>3</td>
 	<td>Supports</td>
 	</tr>
@@ -13926,7 +13931,7 @@ Central Powers:
 	<td>3</td>
 	<td>3</td>
 	<td>2</td>
-	<td>6</td>
+	<td>12</td>
 	<td>3</td>
 	<td>Blitz;<br>Unlockable by Armour tech</td>
 	</tr>
@@ -13936,7 +13941,7 @@ Central Powers:
 	<td>0</td>
 	<td>0</td>
 	<td>12</td>
-	<td>7</td>
+	<td>14</td>
 	<td>N/A</td>
 	<td>Can transport 1 of infantry, cavalry, field_gun, AAGun, or tank</td>
 	</tr>
@@ -13946,7 +13951,7 @@ Central Powers:
 	<td>0</td>
 	<td>0</td>
 	<td>1</td>
-	<td>5</td>
+	<td>10</td>
 	<td>3</td>
 	<td>1d6 vs each attacking plane;<br>Unlockable by Tracer Rounds tech</td>
 	</tr>
@@ -13972,7 +13977,7 @@ Central Powers:
 	<td>0</td>
 	<td>0</td>
 	<td>2</td>
-	<td>7</td>
+	<td>14</td>
 	<td>5 Transport capacity;<br>Cannot defend and cannot be taken as casualty. </td>
 	</tr>
 	
@@ -13981,7 +13986,7 @@ Central Powers:
 	<td>2</td>
 	<td>1</td>
 	<td>2</td>
-	<td>7</td>
+	<td>14</td>
 	<td>Submerge;<br>First strike</td>
 	</tr>
 
@@ -13990,7 +13995,7 @@ Central Powers:
 	<td>2</td>
 	<td>2</td>
 	<td>2</td>
-	<td>6</td>
+	<td>12</td>
 	<td></td>
 	</tr>
 
@@ -13999,7 +14004,7 @@ Central Powers:
 	<td>2</td>
 	<td>2</td>
 	<td>2</td>
-	<td>6</td>
+	<td>12</td>
 	<td>Anti-submarine warfare;<br>Unlockable by Anti-Submarine Warfare tech</td>
 	</tr>
 	
@@ -14008,7 +14013,7 @@ Central Powers:
 	<td>3</td>
 	<td>3</td>
 	<td>2</td>
-	<td>10</td>
+	<td>20</td>
 	<td>Requires harbour to build</td>
 	</tr>
 	
@@ -14017,7 +14022,7 @@ Central Powers:
 	<td>4</td>
 	<td>4</td>
 	<td>2</td>
-	<td>16</td>
+	<td>32</td>
 	<td>Requires harbour to build</td>
 	</tr>
 	
@@ -14026,7 +14031,7 @@ Central Powers:
 	<td>0</td>
 	<td>1</td>
 	<td>0</td>
-	<td>1</td>
+	<td>2</td>
 	<td>Suicide;<br>Anti-submarine warfare</td>
 	</tr>
 	
@@ -14035,7 +14040,7 @@ Central Powers:
 	<td>2</td>
 	<td>3</td>
 	<td>2</td>
-	<td>12</td>
+	<td>36</td>
 	<td>2 hit;<br>Repairs with harbor;<br>Unlockable by Aircraft Carrier tech;<br>Requires harbour to build</td>
 	</tr>
 	
@@ -14044,7 +14049,7 @@ Central Powers:
 	<td>4</td>
 	<td>4</td>
 	<td>2</td>
-	<td>22</td>
+	<td>44</td>
 	<td>Bombard;<br>2 hit;<br>Repairs with harbor;<br>Requires factory3, harbour to build</td>
 	</tr>
 
@@ -14069,7 +14074,7 @@ Central Powers:
 	<td>2</td>
 	<td>3</td>
 	<td>3</td>
-	<td>9</td>
+	<td>18</td>
 	<td></td>
 	</tr>
 	
@@ -14078,7 +14083,7 @@ Central Powers:
 	<td>1</td>
 	<td>1</td>
 	<td>6</td>
-	<td>14</td>
+	<td>28</td>
 	<td>Strategic Bomber;<br>Air Combat</td>
 	</tr>
 	
@@ -14087,7 +14092,7 @@ Central Powers:
 	<td>3</td>
 	<td>4</td>
 	<td>4</td>
-	<td>10</td>
+	<td>20</td>
 	<td>Unlockable by Cantilevered Wing tech</td>
 	</tr>
 	
@@ -14096,7 +14101,7 @@ Central Powers:
 	<td>3</td>
 	<td>3</td>
 	<td>4</td>
-	<td>14</td>
+	<td>28</td>
 	<td>Strategic Bomber;<br>Unlockable by Cantilevered Wing tech</td>
 	</tr>
 
@@ -14121,7 +14126,7 @@ Central Powers:
 	<td>0</td>
 	<td>0</td>
 	<td>0</td>
-	<td>20</td>
+	<td>16</td>
 	<td>Can be placed on territories with pu 1 or more and allows production of 1 units per turn;<br>Can only produce infantry and cavalry;<br>Can be strategically bombed</td>
 	</tr>
 	
@@ -14139,7 +14144,7 @@ Central Powers:
 	<td>0</td>
 	<td>0</td>
 	<td>0</td>
-	<td>30</td>
+	<td>8</td>
 	<td>Upgrades a minor factory;<br>Can be placed on territories with pu 3 or more and produce 3 units per turn;<br>Can produce all units;<br>Can be strategically bombed</td>
 	</tr>
 	
@@ -14692,7 +14697,7 @@ Central Powers:
 	<td>Action</td>
 	<td>Germany</td>
 	<td>-</td>
-	<td>5</td>
+	<td>10</td>
 	<td>Central Powers control Finland<br>USA not at war<br>October Revolution has not fired</td>
 	<td>Sweden becomes Neutral_CP;<br>Denmark becomes Neutral_CP;<br>Norway becomes Neutral_Allies</td>
 </tr>
@@ -14701,7 +14706,7 @@ Central Powers:
 	<td>Action</td>
 	<td>France;<br>UK</td>
 	<td>9</td>
-	<td>10</td>
+	<td>20</td>
 	<td>-</td>
 	<td>Netherlands becomes Neutral_Allies</td>
 </tr>
@@ -14853,7 +14858,7 @@ Central Powers:
 	<td>Action</td>
 	<td>Germany</td>
 	<td>2</td>
-	<td>5</td>
+	<td>10</td>
 	<td>-</td>
 	<td>Spawn German-backed Boer separatist rebels in South Africa</td>
 </tr>
@@ -14911,7 +14916,7 @@ Central Powers:
 	<td>Action</td>
 	<td>UK</td>
 	<td>-</td>
-	<td>5</td>
+	<td>10</td>
 	<td>Ottomans at war;<br>Arabia at war;<br>Central Powers control Asir</td>
 	<td>The Arabian Emirate of Asir revolts against the Ottoman Empire</td>
 </tr>
@@ -14920,7 +14925,7 @@ Central Powers:
 	<td>Action</td>
 	<td>Germany</td>
 	<td>3</td>
-	<td>5</td>
+	<td>10</td>
 	<td>[Optional] Central Powers control one of Hong Kong, Macau, Canton</td>
 	<td>Spawn German-backed Ghadarite separatist mutineers in India and Singapore;<br>[Optional] Spawn extra infantry and artillery</td>
 </tr>
@@ -14929,7 +14934,7 @@ Central Powers:
 	<td>Action</td>
 	<td>Ottoman</td>
 	<td>3</td>
-	<td>5</td>
+	<td>10</td>
 	<td>Ottomans at war</td>
 	<td>The Sultanate of Darfur switches allegiance from the British to the Ottomans</td>
 </tr>
@@ -14938,7 +14943,7 @@ Central Powers:
 	<td>Action</td>
 	<td>Ottoman</td>
 	<td>4</td>
-	<td>5</td>
+	<td>10</td>
 	<td>Ottomans at war;<br>Allies control Libya</td>
 	<td>Spawn Ottoman-backed Senussi partisans in Libya</td>
 </tr>
@@ -14947,7 +14952,7 @@ Central Powers:
 	<td>Action</td>
 	<td>UK</td>
 	<td>5</td>
-	<td>5</td>
+	<td>10</td>
 	<td>Ottomans at war;<br>Arabia at war;<br>Central Powers control Hejaz</td>
 	<td>The Arab Kingdom of Hejaz revolts against the Ottoman Empire</td>
 </tr>
@@ -14956,7 +14961,7 @@ Central Powers:
 	<td>Action</td>
 	<td>Ottoman</td>
 	<td>6</td>
-	<td>5</td>
+	<td>10</td>
 	<td>Ottomans at war</td>
 	<td>Spawn Ottoman-backed Tuareg anti-colonial rebels in French West Africa</td>
 </tr>
@@ -14974,7 +14979,7 @@ Central Powers:
 	<td>Action</td>
 	<td>Germany;<br>Ottoman</td>
 	<td>-</td>
-	<td>5</td>
+	<td>10</td>
 	<td>Central Powers control either Delhi or Tehran</td>
 	<td>Afghanistan becomes Neutral_CP</td>
 </tr>
@@ -15014,7 +15019,7 @@ Central Powers:
 	<td>Action</td>
 	<td>Germany</td>
 	<td>7</td>
-	<td>5</td>
+	<td>10</td>
 	<td>Beiyang controls Peking</td>
 	<td>Spawn German-backed Qing Loyalist rebels in Peking;<br>Beiyang immediately joins the Allies;<br>KMT becomes neutral and is removed from the game</td>
 </tr>
@@ -15090,7 +15095,7 @@ Central Powers:
 	<td>Action</td>
 	<td>USA</td>
 	<td>8</td>
-	<td>10</td>
+	<td>20</td>
 	<td>Sweden not controlled by Central Powers</td>
 	<td>Argentina becomes Neutral_Allies</td>
 </tr>
@@ -15099,7 +15104,7 @@ Central Powers:
 	<td>Action</td>
 	<td>USA</td>
 	<td>-</td>
-	<td>5</td>
+	<td>10</td>
 	<td>Allies control Argentina</td>
 	<td>El Salvador becomes Neutral_Allies</td>
 </tr>
@@ -15108,7 +15113,7 @@ Central Powers:
 	<td>Action</td>
 	<td>Germany</td>
 	<td>-</td>
-	<td>5</td>
+	<td>10</td>
 	<td>USA at war;<br>Constitutionalists have joined the Central Powers</td>
 	<td>Colombia becomes Neutral_CP</td>
 </tr>
@@ -15117,7 +15122,7 @@ Central Powers:
 	<td>Action</td>
 	<td>Germany</td>
 	<td>-</td>
-	<td>10</td>
+	<td>20</td>
 	<td>USA at war;<br>Constitutionalists have joined the Central Powers;<br>Central Powers control Colombia</td>
 	<td>Chile becomes Neutral_CP</td>
 </tr>
@@ -15205,6 +15210,27 @@ Central Powers:
 <br><br>
 
 <div style="text-align: center;">
+<br>==========================================================
+<br><span style="font-size:200%"><b>Changelog 1.3.2</b></span>
+<br>==========================================================
+<br><b>Production changes</b>
+<br>Double unit costs <i>(Suggestion from Cernel)</i>
+<br>Increase foreign aid to 5
+<br>Double costs of most actions
+<br>Double technology cost to 10
+<br><b>Map changes</b>
+<br>Rename Volgograd to Saratov <i>(Suggestion from Cernel)</i>
+<br><b>Diplomacy changes</b>
+<br>October Revolution spawns an additional 10 infantry in Moscow and 5 infantry in Saratov <i>(Suggestion from lordbevan)</i>
+<br><b>Bugfixes</b>
+<br>Add a cost to Czechoslovak Legion aid action
+<br>Harbours and airfields are no longer given to Austria by Hungary
+<br>Harbours and airfields are no longer given to UK by Dominions <i>(lordbevan)</i>
+<br>Change ownership of harbour in Nova Scotia to Canada <i>(lordbevan)</i>
+<br>Change ownership of harbour in Cape Town to South Africa
+<br>Change ownership of harbour in Calcutta to India
+<br>Change ownership of harbours in New Zealand, Queensland to ANZAC <i>(lordbevan)</i>
+<br>Fix Danish Straits/Oresund
 <br>==========================================================
 <br><span style="font-size:200%"><b>Changelog 1.3.1</b></span>
 <br>==========================================================

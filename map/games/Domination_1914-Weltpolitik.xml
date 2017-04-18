@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-        <info name="Domination 1914-Weltpolitik" version="1.3.2"/>
+        <info name="Domination 1914-Weltpolitik" version="1.3.3"/>
 
         <loader javaClass="games.strategy.triplea.TripleA"/>
 
@@ -4081,6 +4081,7 @@
                          <option name="transportCost" value="3"/>
                          <option name="movement" value="1"/>
 						 <option name="isInfantry" value="true"/>
+						 <option name="maxAAattacks" value="3"/>
 						 <option name="requiresUnits" value="factory3"/>
 						 <option name="canBeGivenByTerritoryTo" value="UK:Austria"/>
                     </attachment>
@@ -4314,14 +4315,14 @@
 						 <option name="canOnlyBePlacedInTerritoryValuedAtX" value="1"/>
 						 <option name="isAAforBombingThisUnitOnly" value="false"/>
 						 <option name="canProduceXUnits" value="1"/>
-						 <option name="maxDamage" value="2"/>
+						 <option name="maxDamage" value="6"/>
 					</attachment>
 					<attachment name="unitAttachment" attachTo="factory2" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
                          <option name="isFactory" value="true"/>
 						 <option name="canOnlyBePlacedInTerritoryValuedAtX" value="2"/>
 						 <option name="isAAforBombingThisUnitOnly" value="false"/>
 						 <option name="canProduceXUnits" value="2"/>
-						 <option name="maxDamage" value="4"/>
+						 <option name="maxDamage" value="12"/>
 						 <option name="consumesUnits" value="1:factory1"/>
 						 <option name="whenCapturedChangesInto" value="any:any:true:factory1:1"/>
 					</attachment>
@@ -4330,7 +4331,7 @@
 						 <option name="canOnlyBePlacedInTerritoryValuedAtX" value="3"/>
 						 <option name="isAAforBombingThisUnitOnly" value="false"/>
 						 <option name="canProduceXUnits" value="3"/>
-						 <option name="maxDamage" value="6"/>
+						 <option name="maxDamage" value="18"/>
 						 <option name="consumesUnits" value="1:factory2"/>
 						 <option name="whenCapturedChangesInto" value="any:any:true:factory2:1"/>
 					</attachment>
@@ -4448,7 +4449,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Amazon" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
+                        <option name="production" value="0"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Amsterdam" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -6176,7 +6177,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Rio de Janeiro" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="2"/>
+                        <option name="production" value="3"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Rio de Oro" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -7606,6 +7607,9 @@
 				</attachment>
 
 			<!-- Political related conditions -->
+				<attachment name="conditionAttachmentTurn1" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<option name="rounds" value="1-+"/>
+				</attachment>
 				<attachment name="conditionAttachmentTurn2" attachTo="Germany" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 					<option name="rounds" value="2-+"/>
 				</attachment>
@@ -7842,8 +7846,8 @@
 					<option name="directOwnershipTerritories" value="St. Petersburg:Moscow" count="1"/>
 				</attachment>
 				
-				<attachment name="conditionAttachment_Allies_Control_Estonia_Pskov" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-                	<option name="alliedOwnershipTerritories" value="Estonia:Pskov" count="1"/>
+				<attachment name="conditionAttachment_Bolsheviks_Can_Spawn" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+                	<option name="alliedOwnershipTerritories" value="Estonia:Pskov:Moscow:Saratov" count="1"/>
                 </attachment>
 				
 				<!-- Russia conditions -->
@@ -8026,7 +8030,142 @@
 				<attachment name="conditionAttachment_Switzerland_Neutral" attachTo="Neutrals" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">					
 					<option name="directOwnershipTerritories" value="Switzerland" count="1"/>
 				</attachment>
-				
+			
+			<!-- Intro triggers -->
+				<!--
+				<attachment name="triggerAttachment_Intro_Germany" attachTo="Germany" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:GermanyUserActions"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Germany"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_Bulgaria" attachTo="Bulgaria" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:bulgariaPolitics"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Bulgaria"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_France" attachTo="France" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:FranceUserActions"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_France"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_Greece" attachTo="Greece" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:greecePolitics"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Greece"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_Austria" attachTo="Austria" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:AustriaUserActions"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Austria"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_KMT" attachTo="KMT" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:KMTUserActions"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_KMT"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_Beiyang" attachTo="Beiyang" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:BeiyangUserActions"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Beiyang"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_Japan" attachTo="Japan" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:JapanUserActions"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Japan"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_Italy" attachTo="Italy" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:ItalyUserActions"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Italy"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_Romania" attachTo="Romania" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:romaniaPolitics"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Romania"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_Brazil" attachTo="Brazil" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:brazilPolitics"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Brazil"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_USA" attachTo="USA" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:USAUserActions"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_USA"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_Conventionist" attachTo="Conventionist" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:ConventionistPolitics"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Conventionist"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_Constitutionalist" attachTo="Constitutionalist" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:ConstitutionalistPolitics"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Constitutionalist"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_Ottoman" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:ottomanUserActions"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Ottoman"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_UK" attachTo="UK" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:UKUserActions"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_UK"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_Belgium" attachTo="Belgium" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:belgiumUserActions"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Belgium"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_Portugal" attachTo="Portugal" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:portugalPolitics"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Portugal"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_Arabia" attachTo="Arabia" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:ArabiaUserActions"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Arabia"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_Bolshevik" attachTo="Bolshevik" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:BolshevikUserActions"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Bolshevik"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_Russia" attachTo="Russia" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:RussiaUserActions"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Russia"/>
+				</attachment>
+				<attachment name="triggerAttachment_Intro_Serbia" attachTo="Serbia" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn1"/>
+					<option name="when" value="before:serbiaPurchase"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Intro_Serbia"/>
+				</attachment>
+				-->
 			<!-- Political related triggers -->
 				<!-- Germany triggers -->
 				<attachment name="triggerAttachment_Zimmermann_Telegram_Notification_UK" attachTo="UK" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
@@ -9110,7 +9249,7 @@
 			
 			<!-- Germany Actions -->
 				<attachment name="userActionAttachment_Support_Lenin" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
-					<option name="conditions" value="conditionAttachment_February_Revolution_Switch:conditionAttachment_Bolsheviks_At_Peace:conditionAttachment_Allies_Control_Estonia_Pskov"/>
+					<option name="conditions" value="conditionAttachment_February_Revolution_Switch:conditionAttachment_Bolsheviks_At_Peace:conditionAttachment_Bolsheviks_Can_Spawn"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_October_Revolution_Bolshevik:1:false:false:false:false"/>
 					<option name="text" value="Support_Lenin"/>
@@ -9485,7 +9624,7 @@
 			<!-- Ottoman Actions -->
 				<attachment name="userActionAttachment_Darfur_Revolt" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Darfur_Switch:conditionAttachmentTurn3:conditionAttachment_Ottoman_At_War"/>
-					<option name="costPU" value="10"/>
+					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Darfur_Revolt:1:false:false:false:false"/>
 					<option name="text" value="Darfur_Revolt"/>
@@ -9499,7 +9638,7 @@
 				</attachment>
 				<attachment name="userActionAttachment_Kaocen_Revolt" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Kaocen_Switch:conditionAttachmentTurn6:conditionAttachment_Ottoman_At_War"/>
-					<option name="costPU" value="10"/>
+					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Kaocen_Revolt:1:false:false:false:false"/>
 					<option name="text" value="Kaocen_Revolt"/>
@@ -9547,7 +9686,7 @@
 				
 				<attachment name="userActionAttachment_Asir_Revolt" attachTo="UK" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Asir_Revolt_Switch:conditionAttachment_Ottoman_At_War:conditionAttachment_CP_Controls_Asir"/>
-					<option name="costPU" value="10"/>
+					<option name="costPU" value="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentAsirRevolt:1:false:false:false:false"/>
 					<option name="text" value="Asir_Revolt"/>
@@ -12015,9 +12154,9 @@
 			<unitPlacement unitType="harbour" territory="Brittany" quantity="1" owner="France"/>
 			<unitPlacement unitType="infantry" territory="Normandy" quantity="3" owner="France"/>
 			<unitPlacement unitType="field_gun" territory="Normandy" quantity="1" owner="France"/>
-			<unitPlacement unitType="factory3" territory="Burgundy" quantity="1" owner="France"/>
+			<unitPlacement unitType="factory1" territory="Burgundy" quantity="1" owner="France"/>
 			<unitPlacement unitType="factory2" territory="Normandy" quantity="1" owner="France"/>
-			<unitPlacement unitType="factory2" territory="Brittany" quantity="1" owner="France"/>
+			<unitPlacement unitType="factory3" territory="Brittany" quantity="1" owner="France"/>
 			<unitPlacement unitType="factory3" territory="Picardy" quantity="1" owner="France"/>
 			<unitPlacement unitType="factory3" territory="Champagne" quantity="1" owner="France"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 90 Indian Ocean" quantity="1" owner="France"/>
@@ -12137,6 +12276,7 @@
 			<unitPlacement unitType="cruiser" territory="Sea Zone 76 Indian Ocean" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="factory2" territory="Tsingtao" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Tsingtao" quantity="2" owner="Germany"/>
+			<unitPlacement unitType="fighter" territory="Tsingtao" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="harbour" territory="Tsingtao" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="battlecruiser" territory="Sea Zone 136 East China Sea" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 136 East China Sea" quantity="1" owner="Germany"/>
@@ -12343,14 +12483,13 @@
 			<unitPlacement unitType="infantry" territory="Siam" quantity="3" owner="Neutral_Allies"/>
 			<unitPlacement unitType="factory2" territory="Siam" quantity="1" owner="Neutral_Allies"/>
 						<!-- Brazil  Unit Placements -->
-			<unitPlacement unitType="infantry" territory="Amazon" quantity="1" owner="Brazil"/>
 			<unitPlacement unitType="infantry" territory="Brasilia" quantity="2" owner="Brazil"/>
 			<unitPlacement unitType="infantry" territory="Central Brazil" quantity="1" owner="Brazil"/>
 			<unitPlacement unitType="infantry" territory="Natal-Salvador" quantity="2" owner="Brazil"/>
-			<unitPlacement unitType="infantry" territory="Rio de Janeiro" quantity="5" owner="Brazil"/>
+			<unitPlacement unitType="infantry" territory="Rio de Janeiro" quantity="3" owner="Brazil"/>
 			<unitPlacement unitType="train" territory="Rio de Janeiro" quantity="1" owner="Brazil"/>
 			<unitPlacement unitType="factory2" territory="Rio de Janeiro" quantity="1" owner="Brazil"/>
-			<unitPlacement unitType="infantry" territory="Sao Paulo" quantity="2" owner="Brazil"/>
+			<unitPlacement unitType="infantry" territory="Sao Paulo" quantity="2" owner="Neutral_CP"/>
 						<!-- Liberia Unit Placements -->
 			<unitPlacement unitType="infantry" territory="Liberia" quantity="2" owner="Neutral_Allies"/>
 			
@@ -13028,7 +13167,7 @@
 						<relationship player1="Brazil" player2="Constitutionalist" type="Neutrality" roundValue="1"/>
 						<relationship player1="Brazil" player2="Conventionist" type="Neutrality" roundValue="1"/>
 						<relationship player1="Brazil" player2="Neutral_Allies" type="Neutrality" roundValue="1"/>
-						<relationship player1="Brazil" player2="Neutral_CP" type="Neutrality" roundValue="1"/>
+						<relationship player1="Brazil" player2="Neutral_CP" type="Unfriendly" roundValue="1"/>
 						<relationship player1="Brazil" player2="Neutrals" type="Neutrality" roundValue="1"/>
 						
 						<relationship player1="Arabia" player2="Persia" type="Neutrality" roundValue="1"/>
@@ -13621,7 +13760,7 @@
 <br>by Surtur
 
 <br>
-<br><span style="font-size:120%;000000"colspan="2"><b>Version 1.3.2</b></span>
+<br><span style="font-size:120%;000000"colspan="2"><b>Version 1.3.3</b></span>
 <br><br>
 <i>"Wir wollen niemand in den Schatten stellen, aber wir verlangen auch unseren Platz an der Sonne"</i>
 <br><i>--Bernhard von Bulow, 6 December 1897</i>
@@ -14334,154 +14473,116 @@ Central Powers:
 <table border="1"bgcolor="ABABAB">
 <tr>
 	<th style="font-size:120%;000000"bgcolor="FEECE2"colspan="4">Great Powers</th>
-	<th style="font-size:120%;000000"bgcolor="FEECE2"colspan="2">Theaters</th>
 </tr>
 <tr>
 	<th>Power</th>
 	<th>Alliance</th>
 	<th>Round</th>
 	<th>Conditions</th>
-	<th>Land</th>
-	<th>Naval</th>
 </tr>
 <tr>
 	<td>Germany</td>
 	<td>Central Powers</td>
 	<td>Start</td>
 	<td>-</td>
-	<td>Western Front;<br>Eastern Front;<br>West Africa;<br>South Africa;<br>East Africa;<br>Far East;<br>Oceania</td>
-	<td>North Sea;<br>Mediterranean;<br>North Atlantic;<br>South Atlantic;<br>Caribbean;<br>Indian Ocean;<br>China Sea;<br>Pacific</td>
 </tr>
 <tr>
 	<td>Austria</td>
 	<td>Central Powers</td>
 	<td>Start</td>
 	<td>-</td>
-	<td>Eastern Front;<br>Alpine Front;<br>Balkans</td>
-	<td>Mediterranean;<br>China Sea</td>
 </tr>
 <tr>
 	<td>Ottoman Empire</td>
 	<td>Central Powers</td>
 	<td>2</td>
 	<td>-</td>
-	<td>Eastern Front;<br>Balkans;<br>North Africa;<br>Middle East;<br>South Asia</td>
-	<td>Mediterranean</td>
 </tr>
 <tr>
 	<td>France</td>
 	<td>Allies</td>
 	<td>Start</td>
 	<td>-</td>
-	<td>Western Front;<br>North Africa;<br>West Africa;<br>South Asia</td>
-	<td>North Sea;<br>Mediterranean;<br>North Atlantic;<br>Indian Ocean;<br>China Sea</td>
 </tr>
 <tr>
 	<td>Russia</td>
 	<td>Allies</td>
 	<td>Start</td>
 	<td>-</td>
-	<td>Eastern Front;<br>Middle East;<br>Far East</td>
-	<td>North Sea;<br>Mediterranean;<br>China Sea</td>
 </tr>
 <tr>
 	<td>UK</td>
 	<td>Allies</td>
 	<td>Start</td>
 	<td>-</td>
-	<td>Western Front;<br>North Africa;<br>West Africa;<br>South Africa;<br>East Africa;<br>South Asia;<br>Far East;<br>Oceania</td>
-	<td>North Sea;<br>Mediterranean;<br>North Atlantic;<br>South Atlantic;<br>Indian Ocean;<br>Pacific Ocean</td>
 </tr>
 <tr>
 	<td>Japan</td>
 	<td>Allies</td>
 	<td>1</td>
 	<td>-</td>
-	<td>Far East;<br>Oceania</td>
-	<td>China Sea;<br>Pacific</td>
 </tr>
 <tr>
 	<td>USA</td>
 	<td>Allies</td>
 	<td>7;<br>Begins unfriendly vs. Neutral_CP</td>
 	<td>At peace with Mexico;<br>Not occupying Mexico;<br>Can declare early if Central Powers control Haiti or Santo Domingo</td>
-	<td>North America;<br>Central America;<br>Far East</td>
-	<td>North Atlantic;<br>Caribbean;<br>China Sea;<br>Pacific</td>
 </tr>
 <tr>
 	<td>Italy</td>
 	<td>???</td>
 	<td>3</td>
 	<td>Can join either alliance</td>
-	<td>Alpine Front;<br>North Africa;<br>East Africa</td>
-	<td>Mediterranean</td>
 </tr>
 <tr>
 	<td>Bolsheviks</td>
 	<td>Comintern</td>
 	<td>8</td>
 	<td>Spawned by German action (see below);<br>Neutral with Central Powers</td>
-	<td>Eastern Front</td>
-	<td>-</td>
 </tr>
 <tr>
 	<th style="font-size:120%;000000"bgcolor="FEECE2"colspan="4">Other Powers</th>
-	<th style="font-size:120%;000000"bgcolor="FEECE2"colspan="2">Theaters</th>
 </tr>
 <tr>
 	<th>Power</th>
 	<th>Alliance</th>
 	<th>Round</th>
 	<th>Conditions</th>
-	<th>Land</th>
-	<th>Naval</th>
 </tr>
 <tr>
 	<td>Hungary</td>
 	<td>Central Powers</td>
 	<td>Start</td>
 	<td>Dual Monarchy with Austria</td>
-	<td>Eastern Front;<br>Alpine Front;<br>Balkans</td>
-	<td>-</td>
 </tr>
 <tr>
 	<td>Canada</td>
 	<td>Allies</td>
 	<td>Start</td>
 	<td>British Dominion</td>
-	<td>North America</td>
-	<td>-</td>
 </tr>
 <tr>
 	<td>South Africa</td>
 	<td>Allies</td>
 	<td>Start</td>
 	<td>British Dominion</td>
-	<td>South Africa</td>
-	<td>-</td>
 </tr>
 <tr>
 	<td>India</td>
 	<td>Allies</td>
 	<td>Start</td>
 	<td>British Raj</td>
-	<td>Middle East;<br>South Asia</td>
-	<td>-</td>
 </tr>
 <tr>
 	<td>ANZAC</td>
 	<td>Allies</td>
 	<td>Start</td>
 	<td>British Dominion</td>
-	<td>Oceania</td>
-	<td>-</td>
 </tr>
 <tr>
 	<td>Serbia</td>
 	<td>Allies</td>
 	<td>Start</td>
-	<td>-</td>
-	<td>Balkans</td>
 	<td>-</td>
 </tr>
 <tr>
@@ -14489,82 +14590,61 @@ Central Powers:
 	<td>Allies</td>
 	<td>Start</td>
 	<td>-</td>
-	<td>Western Front;<br>East Africa</td>
-	<td>-</td>
 </tr>
 <tr>
 	<td>Bulgaria</td>
 	<td>Central Powers</td>
 	<td>4</td>
 	<td>Ottomans start the game able to transit through Bulgarian territory</td>
-	<td>Balkans</td>
-	<td>-</td>
 </tr>
 <tr>
 	<td>Arabia</td>
 	<td>Allies</td>
 	<td>4</td>
 	<td>Ottomans at war</td>
-	<td>Middle East</td>
-	<td>-</td>
 </tr>
 <tr>
 	<td>Portugal</td>
 	<td>Allies</td>
 	<td>5</td>
 	<td>Portugal begins in an undeclared colonial war with Central Powers</td>
-	<td>Western Front;<br>South Africa;<br>East Africa;<br>Far East</td>
-	<td>-</td>
 </tr>
 <tr>
 	<td>Romania</td>
 	<td>???</td>
 	<td>6</td>
 	<td>Romania joins whichever alliance Italy has joined</td>
-	<td>Eastern Front;<br>Balkans</td>
-	<td>-</td>
 </tr>
 <tr>
 	<td>Brazil</td>
 	<td>Allies</td>
 	<td>8</td>
 	<td>USA at war</td>
-	<td>South America</td>
-	<td>-</td>
 </tr>
 <tr>
 	<td>Greece</td>
 	<td>Allies</td>
 	<td>8</td>
 	<td>Victorious in civil war (see below);<br>Allies start the game able to transit Greek territory</td>
-	<td>Balkans</td>
-	<td>-</td>
 </tr>
 <tr>
 	<th style="font-size:120%;000000"bgcolor="FEECE2"colspan="4">Neutral Powers</th>
-	<th style="font-size:120%;000000"bgcolor="FEECE2"colspan="2">Theaters</th>
 </tr>
 <tr>
 	<th>Power</th>
 	<th>Alliance</th>
 	<th>Round</th>
 	<th>Conditions</th>
-	<th>Land</th>
-	<th>Naval</th>
 </tr>
 <tr>
 	<td>Albania</td>
 	<td>-</td>
 	<td>Albania begins unfriendly to everyone</td>
 	<td>-</td>
-	<td>Balkans</td>
-	<td>-</td>
 <tr>
 	<td>Persia</td>
 	<td>Allies</td>
 	<td>-</td>
-	<td>-</td>
-	<td>Middle East;<br>South Asia</td>
 	<td>-</td>
 </tr>
 <tr>
@@ -14572,15 +14652,11 @@ Central Powers:
 	<td>Central Powers</td>
 	<td>-</td>
 	<td>-</td>
-	<td>Middle East</td>
-	<td>-</td>
 </tr>
 <tr>
 	<td>Dervish State</td>
 	<td>Central Powers</td>
 	<td>-</td>
-	<td>-</td>
-	<td>East Africa</td>
 	<td>-</td>
 </tr>
 <tr>
@@ -14588,64 +14664,48 @@ Central Powers:
 	<td>Central Powers</td>
 	<td>-</td>
 	<td>-</td>
-	<td>North Africa</td>
-	<td>-</td>
 </tr>
 <tr>
 	<th style="font-size:120%;000000"bgcolor="FEECE2"colspan="4">Mexican Factions</th>
-	<th style="font-size:120%;000000"bgcolor="FEECE2"colspan="2">Theaters</th>
 </tr>
 <tr>
 	<th>Faction</th>
 	<th>Alliance</th>
 	<th>Round</th>
 	<th>Conditions</th>
-	<th>Land</th>
-	<th>Naval</th>
 </tr>
 <tr>
 	<td>Constitutionalists</td>
 	<td>Central Powers</td>
 	<td>-</td>
 	<td>Mexico not occupied;<br>Conventionists defeated</td>
-	<td>North America;<br>Central America</td>
-	<td>-</td>
 </tr>
 <tr>
 	<td>Conventionists</td>
 	<td>Allies</td>
 	<td>-</td>
 	<td>Mexico not occupied;<br>Constitutionalists defeated</td>
-	<td>North America;<br>Central America</td>
-	<td>-</td>
 </tr>
 <tr>
 	<th style="font-size:120%;000000"bgcolor="FEECE2"colspan="4">Chinese Factions</th>
-	<th style="font-size:120%;000000"bgcolor="FEECE2"colspan="2">Theaters</th>
 </tr>
 <tr>
 	<th>Faction</th>
 	<th>Alliance</th>
 	<th>Round</th>
 	<th>Conditions</th>
-	<th>Land</th>
-	<th>Naval</th>
 </tr>
 <tr>
 	<td>Beiyang</td>
 	<td>Allies</td>
 	<td>-</td>
 	<td>KMT defeated or neutral;<br>USA at war;<br>Japan at war</td>
-	<td>Far East</td>
-	<td>-</td>
 </tr>
 <tr>
 	<td>KMT</td>
 	<td>Central Powers</td>
 	<td>-</td>
 	<td>Beiyang defeated;<br>Japan at war<br>
-	<td>Far East</td>
-	<td>-</td>
 </tr>
 </table>
 <br><br>
@@ -14916,7 +14976,7 @@ Central Powers:
 	<td>Action</td>
 	<td>UK</td>
 	<td>-</td>
-	<td>10</td>
+	<td>5</td>
 	<td>Ottomans at war;<br>Arabia at war;<br>Central Powers control Asir</td>
 	<td>The Arabian Emirate of Asir revolts against the Ottoman Empire</td>
 </tr>
@@ -14934,7 +14994,7 @@ Central Powers:
 	<td>Action</td>
 	<td>Ottoman</td>
 	<td>3</td>
-	<td>10</td>
+	<td>5</td>
 	<td>Ottomans at war</td>
 	<td>The Sultanate of Darfur switches allegiance from the British to the Ottomans</td>
 </tr>
@@ -14961,7 +15021,7 @@ Central Powers:
 	<td>Action</td>
 	<td>Ottoman</td>
 	<td>6</td>
-	<td>10</td>
+	<td>5</td>
 	<td>Ottomans at war</td>
 	<td>Spawn Ottoman-backed Tuareg anti-colonial rebels in French West Africa</td>
 </tr>
@@ -15210,6 +15270,22 @@ Central Powers:
 <br><br>
 
 <div style="text-align: center;">
+<br>==========================================================
+<br><span style="font-size:200%"><b>Changelog 1.3.3</b></span>
+<br>==========================================================
+<br>Decrease some diplomacy costs (Darfur, Kaocen, Asir)
+<br>Fix Bolshevik trigger conditions to include Moscow, Saratov
+<br>Decrease Amazon to 0
+<br>Increase Rio de Janeiro to 3
+<br>Change Brazil to start Unfriendly with Neutral_CP
+<br>Add 2 Neutral_CP Contestado rebels in Sao Paulo
+<br>Remove Brazilian infantry from Sao Paulo, Amazon
+<br>Decrease infantry in Rio de Janeiro from 5 to 3
+<br>Burgundy downgrade to factory1 <i>(suggestion from Cernel)</i>
+<br>Brittany upgrade to factory3
+<br>Increased factory1,2,3 damage caps to 6,12,18 respectively <i>(suggestion from Cernel)</i>
+<br>v5 AA rules, i.e. limit 3 shots instead of infinite <i>(suggestion from Cernel)</i>
+<br>Add fighter to Tsingtao
 <br>==========================================================
 <br><span style="font-size:200%"><b>Changelog 1.3.2</b></span>
 <br>==========================================================

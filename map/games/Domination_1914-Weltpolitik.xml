@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-        <info name="Domination 1914-Weltpolitik" version="1.3.3"/>
+        <info name="Domination 1914-Weltpolitik" version="1.3.4"/>
 
         <loader javaClass="games.strategy.triplea.TripleA"/>
 
@@ -135,7 +135,7 @@
                 <territory name="Tripolitania"/>
                 <territory name="Tuscany"/>
                 <territory name="Venice"/>
-                <territory name="Shammar"/>
+                <territory name="Ha'il"/>
 				<territory name="Al-Haasa"/>
 				<territory name="Najd"/>
 				<territory name="Rub' al Khali"/>
@@ -664,7 +664,6 @@
                 <territory name="Nicaragua"/>
                 <territory name="Norte"/>
                 <territory name="Norway"/>
-                <territory name="Nuevo Leon"/>
                 <territory name="Oaxaca"/>
                 <territory name="Okha"/>
                 <territory name="Oslo"/>
@@ -701,6 +700,7 @@
                 <territory name="Sumatra"/>
                 <territory name="Sweden"/>
                 <territory name="Switzerland"/>
+				<territory name="Tamaulipas"/>
                 <territory name="Tehran"/>
                 <territory name="Tibet"/>
                 <territory name="Tohoku"/>
@@ -986,14 +986,14 @@
                 <connection t1="Venice" t2="Tyrol"/>
                 <connection t1="Venice" t2="Carinthia"/>
                 <connection t1="Venice" t2="Trieste"/>
-                <connection t1="Shammar" t2="Jordan"/>
-				<connection t1="Shammar" t2="Al-Haasa"/>
-				<connection t1="Shammar" t2="Najd"/>
+                <connection t1="Ha'il" t2="Jordan"/>
+				<connection t1="Ha'il" t2="Al-Haasa"/>
+				<connection t1="Ha'il" t2="Najd"/>
                 <connection t1="Najd" t2="Mecca"/>
 				<connection t1="Najd" t2="Al-Haasa"/>
 				<connection t1="Najd" t2="Rub' al Khali"/>
 				<connection t1="Al-Haasa" t2="Rub' al Khali"/>
-				<connection t1="Hejaz" t2="Shammar"/>
+				<connection t1="Hejaz" t2="Ha'il"/>
                 <connection t1="Hejaz" t2="Najd"/>
                 <connection t1="Hejaz" t2="Mecca"/>
                 <connection t1="Hejaz" t2="Jordan"/>
@@ -1009,7 +1009,7 @@
 				<connection t1="Hadramut" t2="Rub' al Khali"/>
                 <connection t1="Al-Dammam" t2="Trucial Coast"/>
                 <connection t1="Al-Dammam" t2="Qatar"/>
-                <connection t1="Al-Dammam" t2="Shammar"/>
+                <connection t1="Al-Dammam" t2="Ha'il"/>
 				<connection t1="Al-Dammam" t2="Al-Haasa"/>
 				<connection t1="Al-Dammam" t2="Rub' al Khali"/>
                 <connection t1="Al-Dammam" t2="Mesopotamia"/>
@@ -1033,7 +1033,7 @@
                 <connection t1="Mesopotamia" t2="Kuwait"/>
                 <connection t1="Mesopotamia" t2="Baghdad"/>
                 <connection t1="Mesopotamia" t2="Basra"/>
-                <connection t1="Mesopotamia" t2="Shammar"/>
+                <connection t1="Mesopotamia" t2="Ha'il"/>
                 <connection t1="Mesopotamia" t2="Jordan"/>
                 <connection t1="Mesopotamia" t2="Damascus"/>
                 <connection t1="Mesopotamia" t2="Syria"/>
@@ -1454,7 +1454,7 @@
                 <connection t1="Texas" t2="Louisiana"/>
                 <connection t1="Texas" t2="Chihuahua"/>
                 <connection t1="Texas" t2="Coahuila"/>
-				<connection t1="Texas" t2="Nuevo Leon"/>
+				<connection t1="Texas" t2="Tamaulipas"/>
                 <connection t1="Virginia" t2="Washington D.C."/>
                 <connection t1="Virginia" t2="Carolinas"/>
                 <connection t1="Sea Zone 1 Hudson Bay" t2="Sea Zone 2 Baffin Bay"/>
@@ -1654,7 +1654,7 @@
                 <connection t1="Sea Zone 37 Gulf of Mexico" t2="Louisiana"/>
                 <connection t1="Sea Zone 38 Gulf of Mexico" t2="Sea Zone 39 Bay of Campeche"/>
                 <connection t1="Sea Zone 38 Gulf of Mexico" t2="Texas"/>
-                <connection t1="Sea Zone 38 Gulf of Mexico" t2="Nuevo Leon"/>
+                <connection t1="Sea Zone 38 Gulf of Mexico" t2="Tamaulipas"/>
                 <connection t1="Sea Zone 38 Gulf of Mexico" t2="Morelos"/>
                 <connection t1="Sea Zone 38 Gulf of Mexico" t2="Veracruz"/>
                 <connection t1="Sea Zone 38 Gulf of Mexico" t2="Oaxaca"/>
@@ -2382,7 +2382,7 @@
 				<connection t1="Durango" t2="Jalisco"/>
 				<connection t1="Durango" t2="Mexico City"/>
 				<connection t1="Durango" t2="Coahuila"/>
-				<connection t1="Durango" t2="Nuevo Leon"/>
+				<connection t1="Durango" t2="Tamaulipas"/>
                 <connection t1="Ecuador" t2="Amazon"/>
                 <connection t1="Ecuador" t2="Peru"/>
                 <connection t1="Extremadura" t2="Toledo"/>
@@ -2495,9 +2495,9 @@
                 <connection t1="Morocco" t2="Ceuta"/>
                 <connection t1="Morocco" t2="Malilla"/>
 				<connection t1="Morocco" t2="Atlas"/>
-				<connection t1="Nuevo Leon" t2="Mexico City"/>
-                <connection t1="Nuevo Leon" t2="Morelos"/>
-				<connection t1="Nuevo Leon" t2="Coahuila"/>
+				<connection t1="Tamaulipas" t2="Mexico City"/>
+                <connection t1="Tamaulipas" t2="Morelos"/>
+				<connection t1="Tamaulipas" t2="Coahuila"/>
 				<connection t1="Atlas" t2="Ifni"/>
                 <connection t1="Natal-Salvador" t2="Central Brazil"/>
                 <connection t1="Natal-Salvador" t2="Brasilia"/>
@@ -4387,6 +4387,8 @@
 
                     <attachment name="territoryAttachment" attachTo="Aden" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
+						<option name="changeUnitOwners" value="UK"/>
+						<option name="whenCapturedByGoesTo" value="UK:India"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Afghanistan" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -4472,6 +4474,8 @@
 
                     <attachment name="territoryAttachment" attachTo="Andaman Islands" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="0"/>
+						<option name="changeUnitOwners" value="UK"/>
+						<option name="whenCapturedByGoesTo" value="UK:India"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Angola" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -4557,6 +4561,8 @@
 
                     <attachment name="territoryAttachment" attachTo="Baghdad" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="3"/>
+						<option name="changeUnitOwners" value="UK"/>
+						<option name="whenCapturedByGoesTo" value="UK:India"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Bahamas" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -4565,7 +4571,6 @@
 
                     <attachment name="territoryAttachment" attachTo="Bahrain" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
-						<option name="whenCapturedByGoesTo" value="UK:India"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Baja-Sonora" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -4591,6 +4596,8 @@
 
                     <attachment name="territoryAttachment" attachTo="Basra" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="3"/>
+						<option name="changeUnitOwners" value="UK"/>
+						<option name="whenCapturedByGoesTo" value="UK:India"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Basutoland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -4729,6 +4736,7 @@
 
                     <attachment name="territoryAttachment" attachTo="Burma" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
+						<option name="changeUnitOwners" value="UK"/>
 						<option name="whenCapturedByGoesTo" value="UK:India"/>
                     </attachment>
 
@@ -4838,8 +4846,6 @@
 
                     <attachment name="territoryAttachment" attachTo="Ceylon" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="0"/>
-						<option name="changeUnitOwners" value="UK"/>
-						<option name="whenCapturedByGoesTo" value="UK:India"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Chad" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5576,6 +5582,7 @@
                     <attachment name="territoryAttachment" attachTo="Lisbon" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="3"/>
 						<option name="capital" value="Portugal"/>
+						<option name="captureUnitOnEnteringBy" value="Germany:Austria:Ottoman:Bulgaria:KMT:Constitutionalist"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Lithuania" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5710,6 +5717,8 @@
 
                     <attachment name="territoryAttachment" attachTo="Mesopotamia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="3"/>
+						<option name="changeUnitOwners" value="UK"/>
+						<option name="whenCapturedByGoesTo" value="UK:India"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Mexico City" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5874,6 +5883,8 @@
 
                     <attachment name="territoryAttachment" attachTo="Nicobar Islands" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="0"/>
+						<option name="changeUnitOwners" value="UK"/>
+						<option name="whenCapturedByGoesTo" value="UK:India"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Niger" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5939,7 +5950,7 @@
                         <option name="production" value="1"/>
                     </attachment>
 					
-					<attachment name="territoryAttachment" attachTo="Nuevo Leon" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+					<attachment name="territoryAttachment" attachTo="Tamaulipas" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="2"/>
                     </attachment>
 
@@ -5971,7 +5982,6 @@
 
                     <attachment name="territoryAttachment" attachTo="Oman" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="0"/>
-						<option name="whenCapturedByGoesTo" value="UK:India"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Omsk" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -6233,6 +6243,8 @@
 
                     <attachment name="territoryAttachment" attachTo="Samoa" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
+						<option name="changeUnitOwners" value="UK"/>
+						<option name="whenCapturedByGoesTo" value="UK:ANZAC"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="San Francisco" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -6281,7 +6293,7 @@
                         <option name="production" value="1"/>
                     </attachment>
 					
-					<attachment name="territoryAttachment" attachTo="Shammar" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+					<attachment name="territoryAttachment" attachTo="Ha'il" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
 						<option name="captureUnitOnEnteringBy" value="Germany:Austria:Ottoman:Bulgaria:KMT:Constitutionalist"/>
                     </attachment>
@@ -6529,6 +6541,7 @@
 
                     <attachment name="territoryAttachment" attachTo="Trucial Coast" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
+						<option name="changeUnitOwners" value="UK"/>
 						<option name="whenCapturedByGoesTo" value="UK:India"/>
                     </attachment>
 
@@ -6844,6 +6857,8 @@
 					<attachment name="territoryAttachment" attachTo="Sea Zone 72 Persian Gulf" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="0"/>
 						<option name="blockadeZone" value="true"/>
+						<option name="changeUnitOwners" value="UK"/>
+						<option name="whenCapturedByGoesTo" value="UK:India"/>
                     </attachment>
 					
 					<attachment name="territoryAttachment" attachTo="Sea Zone 73 Arabian Sea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -6870,6 +6885,8 @@
 					<attachment name="territoryAttachment" attachTo="Sea Zone 84 Andaman Sea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="0"/>
 						<option name="blockadeZone" value="true"/>
+						<option name="changeUnitOwners" value="UK"/>
+						<option name="whenCapturedByGoesTo" value="UK:India"/>
                     </attachment>
 					
 					<attachment name="territoryAttachment" attachTo="Sea Zone 85 Indian Ocean" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -7045,6 +7062,18 @@
 						<option name="whenCapturedByGoesTo" value="UK:Canada"/>
                     </attachment>
 					
+					<attachment name="territoryAttachment" attachTo="Sea Zone 74 Gulf of Aden" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+						<option name="changeUnitOwners" value="UK"/>
+						<option name="whenCapturedByGoesTo" value="UK:India"/>
+                    </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Sea Zone 75 Red Sea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+						<option name="changeUnitOwners" value="UK"/>
+						<option name="whenCapturedByGoesTo" value="UK:India"/>
+                    </attachment>
+					
 					<attachment name="territoryAttachment" attachTo="Sea Zone 79 Arabian Sea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="0"/>
 						<option name="changeUnitOwners" value="UK"/>
@@ -7058,6 +7087,12 @@
                     </attachment>
 					
 					<attachment name="territoryAttachment" attachTo="Sea Zone 82 Bay of Bengal" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+						<option name="changeUnitOwners" value="UK"/>
+						<option name="whenCapturedByGoesTo" value="UK:India"/>
+                    </attachment>
+					
+					<attachment name="territoryAttachment" attachTo="Sea Zone 83 Indian Ocean" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="0"/>
 						<option name="changeUnitOwners" value="UK"/>
 						<option name="whenCapturedByGoesTo" value="UK:India"/>
@@ -7825,11 +7860,21 @@
 				<attachment name="conditionAttachment_Kaocen_Switch" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
                 	<option name="switch" value="true"/>
                 </attachment>
+				<attachment name="conditionAttachment_Moro_Switch" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+                	<option name="switch" value="true"/>
+                </attachment>
 				
 				<!-- UK conditions -->
 				<attachment name="conditionAttachment_Allies_Control_Lagos" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">					
 					<option name="alliedOwnershipTerritories" value="Lagos" count="1"/>
 				</attachment>
+				<attachment name="conditionAttachment_Allies_Control_England" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+					<option name="alliedOwnershipTerritories" value="England" count="1"/>
+				</attachment>
+				
+				<attachment name="conditionAttachment_Almirante_Latorre_Switch" attachTo="UK" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+                	<option name="switch" value="true"/>
+                </attachment>
 				
 				<!-- Bolshevik conditions -->
 				<attachment name="conditionAttachment_Bolsheviks_At_Peace" attachTo="Bolshevik" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -7976,10 +8021,10 @@
 					<option name="relationship" value="Conventionist:Germany:anyNeutral"/>
 				</attachment>
 				<attachment name="conditionAttachment_Conventionist_Victory" attachTo="Conventionist" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-					<option name="alliedOwnershipTerritories" value="Baja-Sonora:Chihuahua:Coahuila:Durango:Nuevo Leon:Sinaloa:Jalisco:Mexico City:Morelos:Veracruz:Oaxaca:Yucatan" count="12"/>
+					<option name="alliedOwnershipTerritories" value="Baja-Sonora:Chihuahua:Coahuila:Durango:Tamaulipas:Sinaloa:Jalisco:Mexico City:Morelos:Veracruz:Oaxaca:Yucatan" count="12"/>
 				</attachment>
 				<attachment name="conditionAttachment_Villa_Defeat" attachTo="Conventionist" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-					<option name="directOwnershipTerritories" value="Baja-Sonora:Chihuahua:Coahuila:Nuevo Leon:Durango:Sinaloa:Jalisco:Mexico City:Veracruz" count="1"/>
+					<option name="directOwnershipTerritories" value="Baja-Sonora:Chihuahua:Coahuila:Tamaulipas:Durango:Sinaloa:Jalisco:Mexico City:Veracruz" count="1"/>
 					<option name="invert" value="true"/>
 				</attachment>
 				<attachment name="conditionAttachment_Conventionist_Does_Not_Exist" attachTo="Conventionist" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -8032,7 +8077,6 @@
 				</attachment>
 			
 			<!-- Intro triggers -->
-				<!--
 				<attachment name="triggerAttachment_Intro_Germany" attachTo="Germany" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="conditions" value="conditionAttachmentTurn1"/>
 					<option name="when" value="before:GermanyUserActions"/>
@@ -8165,7 +8209,6 @@
 					<option name="uses" value="1"/>
 					<option name="notification" value="Intro_Serbia"/>
 				</attachment>
-				-->
 			<!-- Political related triggers -->
 				<!-- Germany triggers -->
 				<attachment name="triggerAttachment_Zimmermann_Telegram_Notification_UK" attachTo="UK" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
@@ -8481,7 +8524,7 @@
 					<option name="conditions" value="conditionAttachment_Italy_CP"/>
 					<option name="when" value="after:ItalyPolitics"/>
 					<option name="uses" value="1"/>
-					<option name="territories" value="Abyssinia:Afghanistan:Atlas:Chihuahua:Chile:Colombia:Denmark:Dervish:Santo Domingo:Greece:Haiti:Iceland:Lagos:Mozambique:Shammar:Stockholm:Sweden:Switzerland:Upper Volta"/>
+					<option name="territories" value="Abyssinia:Afghanistan:Atlas:Chihuahua:Chile:Colombia:Denmark:Dervish:Santo Domingo:Greece:Ha'il:Haiti:Iceland:Lagos:Lisbon:Mozambique:Stockholm:Sweden:Switzerland:Upper Volta"/>
 					<option name="territoryAttachmentName" value="TerritoryAttachment" count="territoryAttachment"/>
 					<option name="territoryProperty" value="captureUnitOnEnteringBy" count="Germany:Austria:Ottoman:Bulgaria:KMT:Constitutionalist:Italy:Romania"/>
 				</attachment>
@@ -8570,6 +8613,13 @@
 					<option name="changeOwnership" value="Argentina:any:Neutral_Allies:false"/>
 					<option name="changeOwnership" value="Buenos Aires:any:Neutral_Allies:false"/>
 				</attachment>
+				<attachment name="triggerAttachment_Rivadavia" attachTo="USA" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="when" value="before:USANonCombatMove"/>
+					<option name="conditions" value="conditionAttachment_Allies_Control_Buenos_Aires"/>
+					<option name="placement" value="Sea Zone 103 South Atlantic:battleship"/>
+					<option name="uses" value="1"/>
+					<option name="notification" value="Rivadavia"/>
+				</attachment>
 				<attachment name="triggerAttachment_El_Salvador_Allies" attachTo="USA" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="changeOwnership" value="El Salvador:any:Neutral_Allies:false"/>
 				</attachment>
@@ -8589,6 +8639,14 @@
 					<option name="placement" value="Caucasus:infantry:infantry"/>
 					<option name="uses" value="1"/>
 					<option name="notification" value="Azerbaijan_Independence"/>
+				</attachment>
+				
+				<attachment name="triggerAttachment_Moro_Revolt" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="players" value="Ottoman"/>
+                	<option name="playerAttachmentName" value="RulesAttachment" count="conditionAttachment_Moro_Switch"/>
+                	<option name="playerProperty" value="switch" count="false"/>
+					<option name="placement" value="Mindanao:infantry"/>
+					<option name="uses" value="1"/>
 				</attachment>
 				
 				<!-- UK triggers -->
@@ -8632,6 +8690,13 @@
 					<option name="placement" value="Armenia:infantry"/>
 					<option name="uses" value="1"/>
 					<option name="notification" value="Armenia_Independence"/>
+				</attachment>
+				<attachment name="triggerAttachment_Almirante_Latorre" attachTo="UK" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="players" value="UK"/>
+                	<option name="playerAttachmentName" value="RulesAttachment" count="conditionAttachment_Almirante_Latorre_Switch"/>
+                	<option name="playerProperty" value="switch" count="false"/>
+					<option name="placement" value="Sea Zone 16 North Sea:battleship"/>
+					<option name="uses" value="1"/>
 				</attachment>
 				
 				<!-- Bolshevik triggers -->
@@ -8902,7 +8967,7 @@
 				<attachment name="triggerAttachment_Makonbe_Uprising_Notification_Germany" attachTo="Germany" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="notification" value="Makonbe_Uprising"/>
 				</attachment>
-				<attachment name="triggerAttachment_Makonbe_Uprising_Notification_Portugal" attachTo="Germany" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+				<attachment name="triggerAttachment_Makonbe_Uprising_Notification_Portugal" attachTo="Portugal" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 					<option name="notification" value="Makonbe_Uprising"/>
 				</attachment>
 				<attachment name="triggerAttachment_Makonbe_Uprising" attachTo="Neutral_CP" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
@@ -8913,6 +8978,29 @@
 					<option name="uses" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Makonbe_Uprising_Notification_Germany:1:false:false:false:false"/>
 					<option name="activateTrigger" value="triggerAttachment_Makonbe_Uprising_Notification_Portugal:1:false:false:false:false"/>
+				</attachment>
+				<attachment name="triggerAttachment_Portugal_Revolt_Notification_Germany" attachTo="Germany" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="notification" value="Portugal_Revolt"/>
+				</attachment>
+				<attachment name="triggerAttachment_Portugal_Revolt_Notification_Portugal" attachTo="Portugal" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="notification" value="Portugal_Revolt"/>
+				</attachment>
+				<attachment name="triggerAttachment_Portugal_Revolt_Notification_UK" attachTo="UK" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="notification" value="Portugal_Revolt"/>
+				</attachment>
+				<attachment name="triggerAttachment_Portugal_Revolt_Notification_France" attachTo="France" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="notification" value="Portugal_Revolt"/>
+				</attachment>
+				<attachment name="triggerAttachment_Portugal_Revolt" attachTo="Neutral_CP" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn3:conditionAttachmentPortugalControlsLisbon"/>
+					<option name="when" value="after:UKPolitics"/>
+                	<option name="placement" value="Lisbon:infantry"/>
+					<option name="changeOwnership" value="Lisbon:any:Neutral_CP:false"/>
+					<option name="uses" value="1"/>
+					<option name="activateTrigger" value="triggerAttachment_Portugal_Revolt_Notification_Germany:1:false:false:false:false"/>
+					<option name="activateTrigger" value="triggerAttachment_Portugal_Revolt_Notification_Portugal:1:false:false:false:false"/>
+					<option name="activateTrigger" value="triggerAttachment_Portugal_Revolt_Notification_UK:1:false:false:false:false"/>
+					<option name="activateTrigger" value="triggerAttachment_Portugal_Revolt_Notification_France:1:false:false:false:false"/>
 				</attachment>
 				
 				<!-- Mexico triggers -->
@@ -8980,7 +9068,7 @@
 					<option name="changeOwnership" value="Baja-Sonora:any:Mexico:false"/>
 					<option name="changeOwnership" value="Chihuahua:any:Mexico:false"/>
 					<option name="changeOwnership" value="Coahuila:any:Mexico:false"/>
-					<option name="changeOwnership" value="Nuevo Leon:any:Mexico:false"/>
+					<option name="changeOwnership" value="Tamaulipas:any:Mexico:false"/>
 					<option name="changeOwnership" value="Durango:any:Mexico:false"/>
 					<option name="changeOwnership" value="Sinaloa:any:Mexico:false"/>
 					<option name="changeOwnership" value="Jalisco:any:Mexico:false"/>
@@ -9643,6 +9731,13 @@
 					<option name="activateTrigger" value="triggerAttachment_Kaocen_Revolt:1:false:false:false:false"/>
 					<option name="text" value="Kaocen_Revolt"/>
 				</attachment>
+				<attachment name="userActionAttachment_Moro_Revolt" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
+					<option name="conditions" value="conditionAttachment_Moro_Switch:conditionAttachment_USA_At_War:conditionAttachment_Ottoman_At_War"/>
+					<option name="costPU" value="5"/>
+	     			<option name="attemptsPerTurn" value="1"/>
+					<option name="activateTrigger" value="triggerAttachment_Moro_Revolt:1:false:false:false:false"/>
+					<option name="text" value="Moro_Revolt"/>
+				</attachment>
 				
 				<attachment name="userActionAttachment_Niedermayer_Hentig_Expedition_Ottoman" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Ottoman_At_War:conditionAttachment_Niedermayer_Hentig:conditionAttachment_Afghanistan_Neutral"/>
@@ -9698,6 +9793,14 @@
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Netherlands_Allies:1:false:false:false:false"/>
 					<option name="text" value="Dutch_Seizure"/>
+				</attachment>
+				
+				<attachment name="userActionAttachment_Almirante_Latorre" attachTo="UK" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
+					<option name="conditions" value="conditionAttachmentTurn4:conditionAttachment_Allies_Control_England:conditionAttachment_Almirante_Latorre_Switch"/>
+					<option name="costPU" value="22"/>
+	     			<option name="attemptsPerTurn" value="1"/>
+					<option name="activateTrigger" value="triggerAttachment_Almirante_Latorre:1:false:false:false:false"/>
+					<option name="text" value="Almirante_Latorre"/>
 				</attachment>
 				
 			<!-- Russia Actions -->
@@ -10106,7 +10209,7 @@
 				</attachment>
 				
 				<attachment name="politicalActionAttachment_CP_To_War_With_Portugal" attachTo="Germany" javaClass="games.strategy.triplea.attachments.PoliticalActionAttachment" type="player">
-					<option name="conditions" value="conditionAttachment_Portugal_At_Peace:conditionAttachmentTurn5"/>
+					<option name="conditions" value="conditionAttachment_Portugal_At_Peace:conditionAttachmentPortugalControlsLisbon:conditionAttachmentTurn5"/>
 					<option name="relationshipChange" value="Portugal:UK:Allied"/>
 					<option name="relationshipChange" value="Portugal:Neutral_CP:Unfriendly"/>
 					<option name="relationshipChange" value="Portugal:Neutral_Allies:Friendly"/>
@@ -10114,7 +10217,7 @@
 					<option name="text" value="CP_War_Portugal"/>
 				</attachment>
 				<attachment name="politicalActionAttachment_CP_To_War_With_Portugal" attachTo="Austria" javaClass="games.strategy.triplea.attachments.PoliticalActionAttachment" type="player">
-					<option name="conditions" value="conditionAttachment_Portugal_At_Peace:conditionAttachmentTurn5"/>
+					<option name="conditions" value="conditionAttachment_Portugal_At_Peace:conditionAttachmentPortugalControlsLisbon:conditionAttachmentTurn5"/>
 					<option name="relationshipChange" value="Portugal:UK:Allied"/>
 					<option name="relationshipChange" value="Portugal:Neutral_CP:Unfriendly"/>
 					<option name="relationshipChange" value="Portugal:Neutral_Allies:Friendly"/>
@@ -10122,7 +10225,7 @@
 					<option name="text" value="CP_War_Portugal"/>
 				</attachment>
 				<attachment name="politicalActionAttachment_Portugal_To_War_With_CP" attachTo="Portugal" javaClass="games.strategy.triplea.attachments.PoliticalActionAttachment" type="player">
-					<option name="conditions" value="conditionAttachment_Portugal_At_Peace:conditionAttachmentTurn5"/>
+					<option name="conditions" value="conditionAttachment_Portugal_At_Peace:conditionAttachmentPortugalControlsLisbon:conditionAttachmentTurn5"/>
 					<option name="relationshipChange" value="Portugal:UK:Allied"/>
 					<option name="relationshipChange" value="Portugal:Neutral_CP:Unfriendly"/>
 					<option name="relationshipChange" value="Portugal:Neutral_Allies:Friendly"/>
@@ -11335,8 +11438,6 @@
             		<territoryOwner territory="Port Sudan" owner="UK"/>
             		<territoryOwner territory="Kordofan" owner="UK"/>
 					<territoryOwner territory="Darfur" owner="UK"/>
-            		<territoryOwner territory="Aden" owner="UK"/>
-					<territoryOwner territory="Hadramut" owner="UK"/>
             		<territoryOwner territory="British Somaliland" owner="UK"/>
             		<territoryOwner territory="Uganda" owner="UK"/>
             		<territoryOwner territory="British East Africa" owner="UK"/>
@@ -11348,9 +11449,9 @@
             		<territoryOwner territory="Kuwait" owner="UK"/>
             		<territoryOwner territory="Christmas Island" owner="UK"/>
             		<territoryOwner territory="Cocos" owner="UK"/>
-            		<territoryOwner territory="Nicobar Islands" owner="UK"/>
             		<territoryOwner territory="Seychelles" owner="UK"/>
             		<territoryOwner territory="Maldives" owner="UK"/>
+					<territoryOwner territory="Ceylon" owner="UK"/>
             		<territoryOwner territory="Malaya" owner="UK"/>
             		<territoryOwner territory="Singapore" owner="UK"/>
             		<territoryOwner territory="Hong Kong" owner="UK"/>
@@ -11369,7 +11470,9 @@
 					<territoryOwner territory="Western Desert" owner="UK"/>
 					<territoryOwner territory="Eastern Desert" owner="UK"/>
             		<territoryOwner territory="Sinai" owner="UK"/>
-					<territoryOwner territory="Andaman Islands" owner="UK"/>
+					<territoryOwner territory="Hadramut" owner="UK"/>
+					<territoryOwner territory="Oman" owner="UK"/>
+					<territoryOwner territory="Bahrain" owner="UK"/>
 			<!-- Canada Owned Territory -->
 					<territoryOwner territory="Vancouver Island" owner="Canada"/>
             		<territoryOwner territory="British Columbia" owner="Canada"/>
@@ -11395,7 +11498,6 @@
             		<territoryOwner territory="Orange River" owner="South_Africa"/>
             		<territoryOwner territory="Transvaal" owner="South_Africa"/>
 			<!-- India Owned Territory -->
-					<territoryOwner territory="Ceylon" owner="India"/>
             		<territoryOwner territory="Baluchistan" owner="India"/>
             		<territoryOwner territory="Sindh" owner="India"/>
             		<territoryOwner territory="Gujarat" owner="India"/>
@@ -11416,9 +11518,10 @@
             		<territoryOwner territory="Calcutta" owner="India"/>
             		<territoryOwner territory="Burma" owner="India"/>
 					<territoryOwner territory="Nepal" owner="India"/>
-            		<territoryOwner territory="Bahrain" owner="India"/>
 					<territoryOwner territory="Trucial Coast" owner="India"/>
-            		<territoryOwner territory="Oman" owner="India"/>
+					<territoryOwner territory="Aden" owner="India"/>
+					<territoryOwner territory="Nicobar Islands" owner="India"/>
+					<territoryOwner territory="Andaman Islands" owner="India"/>
 			<!-- ANZAC Owned Territory -->
 					<territoryOwner territory="Papua" owner="ANZAC"/>
             		<territoryOwner territory="Western Australia" owner="ANZAC"/>
@@ -11705,7 +11808,7 @@
 					<territoryOwner territory="Liberia" owner="Neutrals"/>
 			
 			<!-- Jabal Shammar Owned Territory -->
-					<territoryOwner territory="Shammar" owner="Neutral_CP"/>
+					<territoryOwner territory="Ha'il" owner="Neutral_CP"/>
 			<!-- Arabia Owned Territory -->		
 					<territoryOwner territory="Al-Haasa" owner="Arabia"/>
 					<territoryOwner territory="Najd" owner="Arabia"/>
@@ -11720,7 +11823,7 @@
             		<territoryOwner territory="Chihuahua" owner="Conventionist"/>
             		<territoryOwner territory="Durango" owner="Conventionist"/>
             		<territoryOwner territory="Coahuila" owner="Conventionist"/>
-            		<territoryOwner territory="Nuevo Leon" owner="Constitutionalist"/>
+            		<territoryOwner territory="Tamaulipas" owner="Constitutionalist"/>
 					<territoryOwner territory="Sinaloa" owner="Constitutionalist"/>
 					<territoryOwner territory="Jalisco" owner="Constitutionalist"/>
 					<territoryOwner territory="Mexico City" owner="Constitutionalist"/>
@@ -11830,8 +11933,8 @@
 
                         <!-- American  Unit Placements -->
 			<unitPlacement unitType="infantry" territory="Washington D.C." quantity="1" owner="USA"/>
-			<unitPlacement unitType="field_gun" territory="Washington D.C." quantity="1" owner="USA"/>
             <unitPlacement unitType="factory3" territory="Washington D.C." quantity="1" owner="USA"/>
+			<unitPlacement unitType="harbour" territory="Washington D.C." quantity="1" owner="USA"/>
 			<unitPlacement unitType="train" territory="Washington D.C." quantity="1" owner="USA"/>
 			<unitPlacement unitType="cavalry" territory="Texas" quantity="2" owner="USA"/>
 			<unitPlacement unitType="factory3" territory="San Francisco" quantity="1" owner="USA"/>
@@ -11841,23 +11944,24 @@
 			<unitPlacement unitType="train" territory="San Francisco" quantity="1" owner="USA"/>
 			<unitPlacement unitType="factory3" territory="New York" quantity="1" owner="USA"/>
 			<unitPlacement unitType="harbour" territory="New York" quantity="1" owner="USA"/>
-			<unitPlacement unitType="infantry" territory="New York" quantity="2" owner="USA"/>
-			<unitPlacement unitType="field_gun" territory="New York" quantity="1" owner="USA"/>
 			<unitPlacement unitType="train" territory="New York" quantity="1" owner="USA"/>
+			<unitPlacement unitType="factory3" territory="New England" quantity="1" owner="USA"/>
+			<unitPlacement unitType="harbour" territory="New England" quantity="1" owner="USA"/>
+			<unitPlacement unitType="factory3" territory="Hudson-Delaware" quantity="1" owner="USA"/>
+			<unitPlacement unitType="harbour" territory="Hudson-Delaware" quantity="1" owner="USA"/>
 			<unitPlacement unitType="factory3" territory="Chicago" quantity="1" owner="USA"/>
-			<unitPlacement unitType="infantry" territory="Chicago" quantity="1" owner="USA"/>
 			<unitPlacement unitType="train" territory="Chicago" quantity="1" owner="USA"/>
 			<unitPlacement unitType="factory2" territory="Charleston" quantity="1" owner="USA"/>
 			<unitPlacement unitType="train" territory="Charleston" quantity="1" owner="USA"/>
 			<unitPlacement unitType="factory2" territory="New Orleans" quantity="1" owner="USA"/>
 			<unitPlacement unitType="train" territory="New Orleans" quantity="1" owner="USA"/>
-			<unitPlacement unitType="infantry" territory="Puerto Rico" quantity="1" owner="USA"/>
-			<unitPlacement unitType="cruiser" territory="Sea Zone 135 Pacific Ocean" quantity="1" owner="USA"/>
-			<unitPlacement unitType="cruiser" territory="Sea Zone 29 Mid Atlantic" quantity="1" owner="USA"/>
-			<unitPlacement unitType="transport" territory="Sea Zone 29 Mid Atlantic" quantity="2" owner="USA"/>
-			<unitPlacement unitType="submarine" territory="Sea Zone 29 Mid Atlantic" quantity="1" owner="USA"/>
-			<unitPlacement unitType="destroyer" territory="Sea Zone 37 Gulf of Mexico" quantity="1" owner="USA"/>
-			<unitPlacement unitType="battleship" territory="Sea Zone 145 Pacific Ocean" quantity="1" owner="USA"/>
+			<unitPlacement unitType="cruiser" territory="Sea Zone 130 Philippine Sea" quantity="1" owner="USA"/>
+			<unitPlacement unitType="battleship" territory="Sea Zone 29 Mid Atlantic" quantity="1" owner="USA"/>
+			<unitPlacement unitType="destroyer" territory="Sea Zone 29 Mid Atlantic" quantity="1" owner="USA"/>
+			<unitPlacement unitType="battleship" territory="Sea Zone 30 Mid Atlantic" quantity="1" owner="USA"/>
+			<unitPlacement unitType="destroyer" territory="Sea Zone 30 Mid Atlantic" quantity="1" owner="USA"/>
+			<unitPlacement unitType="transport" territory="Sea Zone 30 Mid Atlantic" quantity="1" owner="USA"/>
+			<unitPlacement unitType="cruiser" territory="Sea Zone 145 Pacific Ocean" quantity="2" owner="USA"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 145 Pacific Ocean" quantity="1" owner="USA"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 153 Pacific Ocean" quantity="1" owner="USA"/>
 			<unitPlacement unitType="harbour" territory="Manila" quantity="1" owner="USA"/>
@@ -11866,13 +11970,13 @@
 			<unitPlacement unitType="infantry" territory="Honolulu" quantity="1" owner="USA"/>
 			<unitPlacement unitType="infantry" territory="Havana" quantity="1" owner="USA"/>
 			<unitPlacement unitType="harbour" territory="Havana" quantity="1" owner="USA"/>
-			<unitPlacement unitType="infantry" territory="Western Cuba" quantity="1" owner="USA"/>
-			<unitPlacement unitType="infantry" territory="Eastern Cuba" quantity="1" owner="USA"/>
-			<unitPlacement unitType="infantry" territory="Panama" quantity="3" owner="USA"/>
+			<unitPlacement unitType="infantry" territory="Panama" quantity="1" owner="USA"/>
 			<unitPlacement unitType="harbour" territory="Panama" quantity="1" owner="USA"/>
-			<unitPlacement unitType="infantry" territory="Nicaragua" quantity="2" owner="USA"/>
+			<unitPlacement unitType="infantry" territory="Nicaragua" quantity="1" owner="USA"/>
 			<unitPlacement unitType="infantry" territory="Veracruz" quantity="2" owner="USA"/>
-			<unitPlacement unitType="destroyer" territory="Sea Zone 38 Gulf of Mexico" quantity="1" owner="USA"/>
+			<unitPlacement unitType="destroyer" territory="Sea Zone 38 Gulf of Mexico" quantity="3" owner="USA"/>
+			<unitPlacement unitType="cruiser" territory="Sea Zone 38 Gulf of Mexico" quantity="1" owner="USA"/>
+			<unitPlacement unitType="battleship" territory="Sea Zone 38 Gulf of Mexico" quantity="3" owner="USA"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 38 Gulf of Mexico" quantity="1" owner="USA"/>
 			
                         <!-- Japanese Unit Placements -->
@@ -11881,8 +11985,15 @@
 			<unitPlacement unitType="factory3" territory="Tokyo" quantity="1" owner="Japan"/>
 			<unitPlacement unitType="harbour" territory="Tokyo" quantity="1" owner="Japan"/>
 			<unitPlacement unitType="train" territory="Tokyo" quantity="1" owner="Japan"/>
+			<unitPlacement unitType="factory3" territory="Chugoku" quantity="1" owner="Japan"/>
+			<unitPlacement unitType="harbour" territory="Chugoku" quantity="1" owner="Japan"/>
+			<unitPlacement unitType="factory3" territory="Kyoto" quantity="1" owner="Japan"/>
+			<unitPlacement unitType="harbour" territory="Kyoto" quantity="1" owner="Japan"/>
+			<unitPlacement unitType="factory3" territory="Kyushu" quantity="1" owner="Japan"/>
+			<unitPlacement unitType="harbour" territory="Kyushu" quantity="1" owner="Japan"/>
 			<unitPlacement unitType="infantry" territory="Port Arthur" quantity="1" owner="Japan"/>
 			<unitPlacement unitType="infantry" territory="Formosa" quantity="1" owner="Japan"/>
+			<unitPlacement unitType="battleship" territory="Sea Zone 142 Pacific Ocean" quantity="1" owner="Japan"/>
 			<unitPlacement unitType="battlecruiser" territory="Sea Zone 142 Pacific Ocean" quantity="2" owner="Japan"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 142 Pacific Ocean" quantity="1" owner="Japan"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 142 Pacific Ocean" quantity="2" owner="Japan"/>
@@ -11928,13 +12039,16 @@
 			<unitPlacement unitType="field_gun" territory="Bohemia" quantity="1" owner="Austria"/>
 			<unitPlacement unitType="cavalry" territory="Bohemia" quantity="1" owner="Austria"/>
 			<unitPlacement unitType="factory2" territory="Bohemia" quantity="1" owner="Austria"/>
-			<unitPlacement unitType="battleship" territory="Sea Zone 62 Adriatic Sea" quantity="1" owner="Austria"/>
+			<unitPlacement unitType="battleship" territory="Sea Zone 62 Adriatic Sea" quantity="2" owner="Austria"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 62 Adriatic Sea" quantity="2" owner="Austria"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 62 Adriatic Sea" quantity="3" owner="Austria"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 62 Adriatic Sea" quantity="1" owner="Austria"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 137 Yellow Sea" quantity="1" owner="Austria"/>
+			<unitPlacement unitType="submarine" territory="Sea Zone 62 Adriatic Sea" quantity="3" owner="Austria"/>
 						<!-- Hungarian Unit Placements -->
 			<unitPlacement unitType="factory3" territory="Hungary" quantity="1" owner="Hungary"/>
+			<unitPlacement unitType="factory3" territory="Croatia" quantity="1" owner="Hungary"/>
+			<unitPlacement unitType="harbour" territory="Croatia" quantity="1" owner="Hungary"/>
 
 						<!-- Italian Unit Placements -->
 			<unitPlacement unitType="infantry" territory="Rome" quantity="3" owner="Italy"/>
@@ -11975,9 +12089,10 @@
 			<unitPlacement unitType="destroyer" territory="Sea Zone 61 Ionian Sea" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 61 Ionian Sea" quantity="2" owner="Italy"/>
 			<unitPlacement unitType="battlecruiser" territory="Sea Zone 61 Ionian Sea" quantity="1" owner="Italy"/>
-			<unitPlacement unitType="battleship" territory="Sea Zone 61 Ionian Sea" quantity="1" owner="Italy"/>
+			<unitPlacement unitType="battleship" territory="Sea Zone 61 Ionian Sea" quantity="2" owner="Italy"/>
 			<unitPlacement unitType="infantry" territory="Eritrea" quantity="1" owner="Italy"/>
 			<unitPlacement unitType="factory1" territory="Eritrea" quantity="1" owner="Italy"/>
+			<unitPlacement unitType="cruiser" territory="Sea Zone 75 Red Sea" quantity="1" owner="Italy"/>
 						
 						<!-- UK  Unit Placements -->
 			<unitPlacement unitType="factory3" territory="London" quantity="1" owner="UK"/>
@@ -11989,34 +12104,39 @@
 			<unitPlacement unitType="infantry" territory="Wales" quantity="2" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="England" quantity="6" owner="UK"/>
 			<unitPlacement unitType="fighter" territory="England" quantity="2" owner="UK"/>
+			<unitPlacement unitType="factory3" territory="England" quantity="1" owner="UK"/>
+			<unitPlacement unitType="harbour" territory="England" quantity="1" owner="UK"/>
+			<unitPlacement unitType="factory3" territory="Cornwall" quantity="1" owner="UK"/>
+			<unitPlacement unitType="harbour" territory="Cornwall" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Ulster" quantity="2" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Leinster" quantity="1" owner="UK"/>
 			<unitPlacement unitType="factory2" territory="England" quantity="1" owner="UK"/>
-			<unitPlacement unitType="factory2" territory="Scotland" quantity="1" owner="UK"/>
+			<unitPlacement unitType="factory3" territory="Scotland" quantity="1" owner="UK"/>
+			<unitPlacement unitType="harbour" territory="Scotland" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Scotland" quantity="3" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Picardy" quantity="2" owner="UK"/>
 			<unitPlacement unitType="field_gun" territory="Picardy" quantity="1" owner="UK"/>
 			<unitPlacement unitType="fighter" territory="Picardy" quantity="1" owner="UK"/>
-			<unitPlacement unitType="battleship" territory="Sea Zone 15 English Channel" quantity="1" owner="UK"/>
+			<unitPlacement unitType="battleship" territory="Sea Zone 15 English Channel" quantity="2" owner="UK"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 15 English Channel" quantity="1" owner="UK"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 15 English Channel" quantity="2" owner="UK"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 15 English Channel" quantity="1" owner="UK"/>
 			<unitPlacement unitType="battlecruiser" territory="Sea Zone 16 North Sea" quantity="1" owner="UK"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 16 North Sea" quantity="2" owner="UK"/>
-			<unitPlacement unitType="battleship" territory="Sea Zone 17 Norwegian Sea" quantity="1" owner="UK"/>
+			<unitPlacement unitType="battleship" territory="Sea Zone 17 Norwegian Sea" quantity="2" owner="UK"/>
 			<unitPlacement unitType="battlecruiser" territory="Sea Zone 17 Norwegian Sea" quantity="2" owner="UK"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 17 Norwegian Sea" quantity="2" owner="UK"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 17 Norwegian Sea" quantity="1" owner="UK"/>
-			<unitPlacement unitType="battleship" territory="Sea Zone 18 North Atlantic" quantity="1" owner="UK"/>
+			<unitPlacement unitType="battleship" territory="Sea Zone 18 North Atlantic" quantity="2" owner="UK"/>
 			<unitPlacement unitType="battlecruiser" territory="Sea Zone 18 North Atlantic" quantity="1" owner="UK"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 18 North Atlantic" quantity="1" owner="UK"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 18 North Atlantic" quantity="1" owner="UK"/>
-			<unitPlacement unitType="battleship" territory="Sea Zone 19 North Atlantic" quantity="1" owner="UK"/>
+			<unitPlacement unitType="battleship" territory="Sea Zone 19 North Atlantic" quantity="2" owner="UK"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 19 North Atlantic" quantity="1" owner="UK"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 19 North Atlantic" quantity="2" owner="UK"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 23 Mid Atlantic" quantity="1" owner="UK"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 24 Irish Sea" quantity="1" owner="UK"/>
-			<unitPlacement unitType="battleship" territory="Sea Zone 25 Mid Atlantic" quantity="1" owner="UK"/>
+			<unitPlacement unitType="battleship" territory="Sea Zone 25 Mid Atlantic" quantity="2" owner="UK"/>
 			<unitPlacement unitType="battlecruiser" territory="Sea Zone 25 Mid Atlantic" quantity="1" owner="UK"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 25 Mid Atlantic" quantity="1" owner="UK"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 25 Mid Atlantic" quantity="1" owner="UK"/>
@@ -12027,8 +12147,8 @@
 			<unitPlacement unitType="train" territory="Sydney-Canberra" quantity="1" owner="UK"/>
 			<unitPlacement unitType="cavalry" territory="New South Wales" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Victoria" quantity="1" owner="UK"/>
-			<unitPlacement unitType="battleship" territory="Sea Zone 116 Great Australian Bight" quantity="1" owner="UK"/>
-			<unitPlacement unitType="destroyer" territory="Sea Zone 116 Great Australian Bight" quantity="1" owner="UK"/>
+			<unitPlacement unitType="cruiser" territory="Sea Zone 116 Great Australian Bight" quantity="1" owner="UK"/>
+			<unitPlacement unitType="destroyer" territory="Sea Zone 116 Great Australian Bight" quantity="2" owner="UK"/>
 			<unitPlacement unitType="submarine" territory="Sea Zone 116 Great Australian Bight" quantity="1" owner="UK"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 116 Great Australian Bight" quantity="2" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="New Zealand" quantity="2" owner="UK"/>
@@ -12045,7 +12165,7 @@
 			<unitPlacement unitType="infantry" territory="Delhi" quantity="1" owner="UK"/>
 			<unitPlacement unitType="train" territory="Delhi" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Nepal" quantity="1" owner="UK"/>
-			<unitPlacement unitType="battlecruiser" territory="Sea Zone 73 Arabian Sea" quantity="1" owner="UK"/>
+			<unitPlacement unitType="cruiser" territory="Sea Zone 73 Arabian Sea" quantity="1" owner="UK"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 73 Arabian Sea" quantity="1" owner="UK"/>
 			<unitPlacement unitType="infantry" territory="Calcutta" quantity="2" owner="UK"/>
 			<unitPlacement unitType="train" territory="Calcutta" quantity="1" owner="UK"/>
@@ -12105,13 +12225,13 @@
 			<unitPlacement unitType="destroyer" territory="Sea Zone 103 South Atlantic" quantity="1" owner="UK"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 104 Southern Ocean" quantity="2" owner="UK"/>
 						<!-- Dominion  Unit Placements -->
-			<unitPlacement unitType="factory3" territory="Sydney-Canberra" quantity="1" owner="ANZAC"/>
+			<unitPlacement unitType="factory2" territory="Sydney-Canberra" quantity="1" owner="ANZAC"/>
 			<unitPlacement unitType="harbour" territory="Queensland" quantity="1" owner="ANZAC"/>
 			<unitPlacement unitType="factory2" territory="New Zealand" quantity="1" owner="ANZAC"/>
 			<unitPlacement unitType="harbour" territory="New Zealand" quantity="1" owner="ANZAC"/>
 			<unitPlacement unitType="factory2" territory="Bombay" quantity="1" owner="India"/>
 			<unitPlacement unitType="factory3" territory="Delhi" quantity="1" owner="India"/>
-			<unitPlacement unitType="factory3" territory="Calcutta" quantity="1" owner="India"/>
+			<unitPlacement unitType="factory2" territory="Calcutta" quantity="1" owner="India"/>
 			<unitPlacement unitType="harbour" territory="Calcutta" quantity="1" owner="India"/>
 			<unitPlacement unitType="factory2" territory="Cape Town" quantity="1" owner="South_Africa"/>
 			<unitPlacement unitType="harbour" territory="Cape Town" quantity="1" owner="South_Africa"/>
@@ -12159,8 +12279,7 @@
 			<unitPlacement unitType="factory3" territory="Brittany" quantity="1" owner="France"/>
 			<unitPlacement unitType="factory3" territory="Picardy" quantity="1" owner="France"/>
 			<unitPlacement unitType="factory3" territory="Champagne" quantity="1" owner="France"/>
-			<unitPlacement unitType="cruiser" territory="Sea Zone 90 Indian Ocean" quantity="1" owner="France"/>
-			<unitPlacement unitType="cruiser" territory="Sea Zone 127 Gulf of Thailand" quantity="1" owner="France"/>
+			<unitPlacement unitType="destroyer" territory="Sea Zone 127 Gulf of Thailand" quantity="1" owner="France"/>
 			<unitPlacement unitType="infantry" territory="Chad" quantity="1" owner="France"/>
 			<unitPlacement unitType="infantry" territory="Morocco" quantity="2" owner="France"/>
 			<unitPlacement unitType="field_gun" territory="Morocco" quantity="1" owner="France"/>
@@ -12176,7 +12295,7 @@
 			<unitPlacement unitType="submarine" territory="Sea Zone 26 Bay of Biscay" quantity="1" owner="France"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 26 Bay of Biscay" quantity="1" owner="France"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 54 Alboran Sea" quantity="1" owner="France"/>
-			<unitPlacement unitType="battleship" territory="Sea Zone 56 Gulf of Lyon" quantity="1" owner="France"/>
+			<unitPlacement unitType="battleship" territory="Sea Zone 56 Gulf of Lyon" quantity="2" owner="France"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 56 Gulf of Lyon" quantity="1" owner="France"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 56 Gulf of Lyon" quantity="2" owner="France"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 56 Gulf of Lyon" quantity="1" owner="France"/>
@@ -12232,12 +12351,13 @@
 			<unitPlacement unitType="factory2" territory="Alsace" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="factory2" territory="Bavaria" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="factory2" territory="Saxony" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="factory2" territory="East Prussia" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="factory3" territory="East Prussia" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="factory3" territory="Westphalia" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="factory3" territory="Munich" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="East Prussia" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="field_gun" territory="East Prussia" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="train" territory="East Prussia" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="harbour" territory="East Prussia" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="West Prussia" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="field_gun" territory="West Prussia" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="harbour" territory="West Prussia" quantity="1" owner="Germany"/>
@@ -12248,18 +12368,21 @@
 			<unitPlacement unitType="field_gun" territory="Silesia" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Pomerania" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Mecklenburg" quantity="2" owner="Germany"/>
-			<unitPlacement unitType="battleship" territory="Sea Zone 12 Baltic Sea" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="destroyer" territory="Sea Zone 11 Baltic Sea" quantity="2" owner="Germany"/>
+			<unitPlacement unitType="battleship" territory="Sea Zone 12 Baltic Sea" quantity="3" owner="Germany"/>
 			<unitPlacement unitType="battlecruiser" territory="Sea Zone 12 Baltic Sea" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 12 Baltic Sea" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 12 Baltic Sea" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 12 Baltic Sea" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="battleship" territory="Sea Zone 13 Skagerrak" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="battleship" territory="Sea Zone 13 Skagerrak" quantity="3" owner="Germany"/>
 			<unitPlacement unitType="battlecruiser" territory="Sea Zone 13 Skagerrak" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="cruiser" territory="Sea Zone 13 Skagerrak" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="battleship" territory="Sea Zone 14 Helgoland Bight" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="cruiser" territory="Sea Zone 13 Skagerrak" quantity="2" owner="Germany"/>
+			<unitPlacement unitType="destroyer" territory="Sea Zone 13 Skagerrak" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="battleship" territory="Sea Zone 14 Helgoland Bight" quantity="3" owner="Germany"/>
 			<unitPlacement unitType="battlecruiser" territory="Sea Zone 14 Helgoland Bight" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="cruiser" territory="Sea Zone 14 Helgoland Bight" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="destroyer" territory="Sea Zone 14 Helgoland Bight" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="cruiser" territory="Sea Zone 14 Helgoland Bight" quantity="2" owner="Germany"/>
+			<unitPlacement unitType="destroyer" territory="Sea Zone 14 Helgoland Bight" quantity="2" owner="Germany"/>
+			<unitPlacement unitType="submarine" territory="Sea Zone 14 Helgoland Bight" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="factory2" territory="Dar es Salaam" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Dar es Salaam" quantity="3" owner="Germany"/>
 			<unitPlacement unitType="train" territory="Dar es Salaam" quantity="1" owner="Germany"/>
@@ -12274,6 +12397,7 @@
 			<unitPlacement unitType="field_gun" territory="Kamerun" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="transport" territory="Lake Tanganyika" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 76 Indian Ocean" quantity="1" owner="Germany"/>
+			<unitPlacement unitType="cruiser" territory="Sea Zone 84 Andaman Sea" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="factory2" territory="Tsingtao" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="infantry" territory="Tsingtao" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="fighter" territory="Tsingtao" quantity="1" owner="Germany"/>
@@ -12286,14 +12410,9 @@
 			<unitPlacement unitType="cruiser" territory="Sea Zone 122 Bismarck Sea" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 122 Bismarck Sea" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="submarine" territory="Sea Zone 122 Bismarck Sea" quantity="2" owner="Germany"/>
-			<unitPlacement unitType="battleship" territory="Sea Zone 55 Western Mediterranean" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="battlecruiser" territory="Sea Zone 55 Western Mediterranean" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="cruiser" territory="Sea Zone 55 Western Mediterranean" quantity="1" owner="Germany"/>
-			<unitPlacement unitType="destroyer" territory="Sea Zone 55 Western Mediterranean" quantity="3" owner="Germany"/>
-			<unitPlacement unitType="submarine" territory="Sea Zone 55 Western Mediterranean" quantity="4" owner="Germany"/>
+			<unitPlacement unitType="submarine" territory="Sea Zone 55 Western Mediterranean" quantity="7" owner="Germany"/>
 			<unitPlacement unitType="submarine" territory="Sea Zone 58 Tyrrhenian Sea" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 68 Aegean Sea" quantity="2" owner="Germany"/>
-			<unitPlacement unitType="transport" territory="Sea Zone 68 Aegean Sea" quantity="1" owner="Germany"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 49 Mid Atlantic" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 106 Pacific Ocean" quantity="2" owner="Germany"/>
 			<unitPlacement unitType="battlecruiser" territory="Sea Zone 106 Pacific Ocean" quantity="1" owner="Germany"/>
@@ -12323,7 +12442,9 @@
 			<unitPlacement unitType="field_gun" territory="Finland" quantity="2" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Karelia" quantity="2" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Murmansk" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="harbour" territory="Murmansk" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Archangelsk" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="harbour" territory="Archangelsk" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Vladimir" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Novosibirsk" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Nizhni-Novgorod" quantity="1" owner="Russia"/>
@@ -12367,13 +12488,15 @@
 			<unitPlacement unitType="field_gun" territory="Lithuania" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Estonia" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Latvia" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="harbour" territory="Latvia" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Smolensk" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Tver" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Pskov" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Novgorod" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="factory2" territory="Warsaw" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="factory2" territory="Kiev" quantity="1" owner="Russia"/>
-			<unitPlacement unitType="factory2" territory="Crimea" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="factory3" territory="Crimea" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="harbour" territory="Crimea" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="factory2" territory="Saratov" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="factory3" territory="Moscow" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="factory2" territory="Minsk" quantity="1" owner="Russia"/>
@@ -12382,16 +12505,19 @@
 			<unitPlacement unitType="factory1" territory="Irkutsk" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="factory1" territory="Yakutsk" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="factory2" territory="Vladivostok" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="harbour" territory="Vladivostok" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="infantry" territory="Vladivostok" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="train" territory="Vladivostok" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="train" territory="Yakutsk" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="train" territory="Irkutsk" quantity="1" owner="Russia"/>
-			<unitPlacement unitType="battleship" territory="Sea Zone 9 Gulf of Bothnia" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="cruiser" territory="Sea Zone 8 Barents Sea" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="destroyer" territory="Sea Zone 8 Barents Sea" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="battlecruiser" territory="Sea Zone 9 Gulf of Bothnia" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 9 Gulf of Bothnia" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 9 Gulf of Bothnia" quantity="2" owner="Russia"/>
 			<unitPlacement unitType="submarine" territory="Sea Zone 9 Gulf of Bothnia" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 9 Gulf of Bothnia" quantity="1" owner="Russia"/>
-			<unitPlacement unitType="battleship" territory="Sea Zone 64 Sea of Azov" quantity="1" owner="Russia"/>
+			<unitPlacement unitType="battlecruiser" territory="Sea Zone 64 Sea of Azov" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="cruiser" territory="Sea Zone 64 Sea of Azov" quantity="1" owner="Russia"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 64 Sea of Azov" quantity="3" owner="Russia"/>
 			<unitPlacement unitType="submarine" territory="Sea Zone 64 Sea of Azov" quantity="1" owner="Russia"/>
@@ -12435,9 +12561,10 @@
 			<unitPlacement unitType="train" territory="Anatolia" quantity="1" owner="Ottoman"/>
 			<unitPlacement unitType="infantry" territory="Mecca" quantity="1" owner="Ottoman"/>
 			<unitPlacement unitType="train" territory="Mecca" quantity="1" owner="Ottoman"/>
-			<unitPlacement unitType="battleship" territory="Sea Zone 67 Black Sea" quantity="1" owner="Ottoman"/>
+			<unitPlacement unitType="battlecruiser" territory="Sea Zone 67 Black Sea" quantity="1" owner="Ottoman"/>
 			<unitPlacement unitType="destroyer" territory="Sea Zone 67 Black Sea" quantity="4" owner="Ottoman"/>
 			<unitPlacement unitType="transport" territory="Sea Zone 67 Black Sea" quantity="1" owner="Ottoman"/>
+			<unitPlacement unitType="destroyer" territory="Sea Zone 71 Eastern Mediterranean" quantity="1" owner="Ottoman"/>
 			
 						<!-- Belgium Unit Placements -->
 			<unitPlacement unitType="infantry" territory="Picardy" quantity="3" owner="Belgium"/>
@@ -12471,7 +12598,7 @@
 			<unitPlacement unitType="infantry" territory="Crete" quantity="1" owner="Greece"/>
 						<!-- Portugal  Unit Placements -->
             <unitPlacement unitType="factory2" territory="Lisbon" quantity="1" owner="Portugal"/>
-            <unitPlacement unitType="infantry" territory="Lisbon" quantity="3" owner="Portugal"/>
+            <unitPlacement unitType="infantry" territory="Lisbon" quantity="1" owner="Portugal"/>
 			<unitPlacement unitType="infantry" territory="Norte" quantity="1" owner="Portugal"/>
 			<unitPlacement unitType="infantry" territory="Algarve" quantity="1" owner="Portugal"/>
 			<unitPlacement unitType="infantry" territory="Azores" quantity="1" owner="Portugal"/>
@@ -12490,12 +12617,13 @@
 			<unitPlacement unitType="train" territory="Rio de Janeiro" quantity="1" owner="Brazil"/>
 			<unitPlacement unitType="factory2" territory="Rio de Janeiro" quantity="1" owner="Brazil"/>
 			<unitPlacement unitType="infantry" territory="Sao Paulo" quantity="2" owner="Neutral_CP"/>
+			<unitPlacement unitType="battleship" territory="Sea Zone 102 South Atlantic" quantity="1" owner="Brazil"/>
 						<!-- Liberia Unit Placements -->
 			<unitPlacement unitType="infantry" territory="Liberia" quantity="2" owner="Neutral_Allies"/>
 			
 						<!-- Jabal Shammar Unit Placements -->
-			<unitPlacement unitType="infantry" territory="Shammar" quantity="1" owner="Neutral_CP"/>
-			<unitPlacement unitType="cavalry" territory="Shammar" quantity="1" owner="Neutral_CP"/>
+			<unitPlacement unitType="infantry" territory="Ha'il" quantity="1" owner="Neutral_CP"/>
+			<unitPlacement unitType="cavalry" territory="Ha'il" quantity="1" owner="Neutral_CP"/>
 						<!-- Arabia Unit Placements -->
 			<unitPlacement unitType="infantry" territory="Al-Haasa" quantity="1" owner="Arabia"/>
 			<unitPlacement unitType="infantry" territory="Najd" quantity="1" owner="Arabia"/>
@@ -12526,12 +12654,13 @@
 			<unitPlacement unitType="train" territory="Mexico City" quantity="1" owner="Constitutionalist"/>
 			<unitPlacement unitType="infantry" territory="Sinaloa" quantity="2" owner="Constitutionalist"/>
 			<unitPlacement unitType="infantry" territory="Jalisco" quantity="2" owner="Constitutionalist"/>
-			<unitPlacement unitType="infantry" territory="Nuevo Leon" quantity="5" owner="Constitutionalist"/>
-			<unitPlacement unitType="cavalry" territory="Nuevo Leon" quantity="2" owner="Constitutionalist"/>
-			<unitPlacement unitType="field_gun" territory="Nuevo Leon" quantity="2" owner="Constitutionalist"/>
-			<unitPlacement unitType="train" territory="Nuevo Leon" quantity="1" owner="Constitutionalist"/>
+			<unitPlacement unitType="infantry" territory="Tamaulipas" quantity="5" owner="Constitutionalist"/>
+			<unitPlacement unitType="cavalry" territory="Tamaulipas" quantity="2" owner="Constitutionalist"/>
+			<unitPlacement unitType="field_gun" territory="Tamaulipas" quantity="2" owner="Constitutionalist"/>
+			<unitPlacement unitType="train" territory="Tamaulipas" quantity="1" owner="Constitutionalist"/>
+			<unitPlacement unitType="factory2" territory="Tamaulipas" quantity="1" owner="Constitutionalist"/>
 			<unitPlacement unitType="infantry" territory="Morelos" quantity="6" owner="Conventionist"/>
-			<unitPlacement unitType="infantry" territory="Oaxaca" quantity="1" owner="Mexico"/>
+			<unitPlacement unitType="factory1" territory="Morelos" quantity="1" owner="Conventionist"/>
 			<unitPlacement unitType="infantry" territory="Yucatan" quantity="2" owner="Mexico"/>
 			
 						<!-- China Unit Placements -->
@@ -13760,7 +13889,7 @@
 <br>by Surtur
 
 <br>
-<br><span style="font-size:120%;000000"colspan="2"><b>Version 1.3.3</b></span>
+<br><span style="font-size:120%;000000"colspan="2"><b>Version 1.3.4</b></span>
 <br><br>
 <i>"Wir wollen niemand in den Schatten stellen, aber wir verlangen auch unseren Platz an der Sonne"</i>
 <br><i>--Bernhard von Bulow, 6 December 1897</i>
@@ -14726,6 +14855,15 @@ Central Powers:
 	<th>Effects</th>
 </tr>
 <tr bgcolor="BDBDBD">
+	<td>Portugese Revolt</td>
+	<td>Event</td>
+	<td>Portugal</td>
+	<td>3</td>
+	<td>-</td>
+	<td>Portugal controls Lisbon</td>
+	<td>Spawn Neutral_CP old regime forces in Lisbon</td>
+</tr>
+<tr bgcolor="BDBDBD">
 	<td>Plan H</td>
 	<td>Action</td>
 	<td>France</td>
@@ -15043,6 +15181,15 @@ Central Powers:
 	<td>Central Powers control either Delhi or Tehran</td>
 	<td>Afghanistan becomes Neutral_CP</td>
 </tr>
+<tr bgcolor="BDBDBD">
+	<td>Moro Revolt</td>
+	<td>Action</td>
+	<td>Ottoman</td>
+	<td>-</td>
+	<td>5</td>
+	<td>Ottomans at war;<br>USA at war</td>
+	<td>Spawn Ottoman-backed Moro anti-colonial rebels in the Philippines</td>
+</tr>
 
 <tr>
 	<th style="font-size:120%;000000"bgcolor="FEECE2"colspan="7">Warlord Era</th>
@@ -15270,6 +15417,71 @@ Central Powers:
 <br><br>
 
 <div style="text-align: center;">
+<br>==========================================================
+<br><span style="font-size:200%"><b>Changelog 1.3.4</b></span>
+<br>==========================================================
+<br><b>General changes</b>
+<br>Turn1 intro notifications <i>(suggestion from hepster)</i>
+<br>Rename Shammar to Ha'il
+<br>Rename Nuevo Leon to Tamaulipas
+<br><b>Germany Changes</b>
+<br>Add factory3/harbour to East Prussia
+<br>Remove transport in SZ 68
+<br>Add cruiser to SZ 84
+<br>Triple the battleships in the Baltic
+<br>Add 2 cruisers, 4 destroyers, 2 submarines to the Baltic
+<br>Replace Mediterranean fleet with submarines
+<br><b>France changes</b>
+<br>Add battleship to SZ 56
+<br>Remove cruiser from SZ 90
+<br>Downgrade cruiser to destroyer in SZ 127
+<br><b>Austria changes</b>
+<br>Add battleship, 3x submarines to SZ 62
+<br>Add Hungarian factory3/habour to Croatia
+<br><b>UK changes</b>
+<br>Replace battleship in SZ 116 with cruiser + destroyer
+<br>Downgrade SZ 73 battlecruiser to cruiser
+<br>Double the number of UK battleships
+<br>Add factory3/harbour to England, Cornwall, Scotland
+<br>Downgrade Sydney-Canberra, Calcutta to factory2
+<br>Bahrain, Ceylon, Oman to UK
+<br>Aden, Andaman, Nicobar to India
+<br>Samoa goes to ANZAC when captured by UK
+<br>Baghdad, Basra, Mesopotamia go to India when captured by UK
+<br>New UK user action to purchase the Chilean dreadnought Almirante Latorre
+<br><b>Russia changes</b>
+<br>Downgrade battleships to battlecruisers
+<br>Add cruiser, destroyer to SZ 8
+<br>Add factory3/harbour to Crimea
+<br>Add harbour to Vladivostok, Murmansk, Archangelsk, Latvia
+<br><b>Japan changes</b>
+<br>Add factory3/harbour to Chugoku, Kyoto, Kyushu
+<br>Add battleship to SZ 142
+<br><b>Ottoman changes</b>
+<br>Downgrade SZ 67 battleship to battlecruiser
+<br>Add 1 destroyer to SZ 71
+<br>New Moro Revolt action for Ottomans against the United States
+<br><b>Italy changes</b>
+<br>Add cruiser to SZ 75
+<br>Add battleship to SZ 61
+<br><b>USA changes</b>
+<br>Remove infantry from Puerto Rico, Eastern Cuba, Western Cuba
+<br>Reduce Nicaragua, Panama infantry to 1
+<br>Reduce mainland U.S. Army to 5 units total
+<br>Change U.S. Navy to 5 battleships, 4 cruisers, 6 destroyers, 3 transports
+<br>Add factory3/harbour to Washington D.C., Hudson-Delaware, New England
+<br><b>Portugal changes</b>
+<br>Bugfix for Makonbe Uprising notifications
+<br>Decrease Lisbon infantry from 3 to 1
+<br>Require Portugal controls Lisbon for official declaration of war
+<br>New May 14 Revolt event for Portugal
+<br><b>Mexico changes</b>
+<br>Remove rebel from Oaxaca
+<br>Add factory2 to Tamaulipas
+<br>Add factory1 to Morelos
+<br><b>South America changes</b>
+<br>Add Brazilian battleship to SZ 102
+<br>Add trigger for Argentina to contribute battleship if Argentina joins Allies
 <br>==========================================================
 <br><span style="font-size:200%"><b>Changelog 1.3.3</b></span>
 <br>==========================================================

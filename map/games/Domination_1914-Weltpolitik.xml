@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-        <info name="Domination 1914-Weltpolitik" version="1.3.4"/>
+        <info name="Domination 1914-Weltpolitik" version="1.3.5"/>
 
         <loader javaClass="games.strategy.triplea.TripleA"/>
 
@@ -4861,7 +4861,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Charleston" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
+                        <option name="production" value="2"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Chicago" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -4944,7 +4944,7 @@
                     </attachment>
 					
 					<attachment name="territoryAttachment" attachTo="Cornwall" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
+                        <option name="production" value="3"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Corsica" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -4961,11 +4961,11 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Crimea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
+                        <option name="production" value="3"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Croatia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="2"/>
+                        <option name="production" value="3"/>
 						<option name="changeUnitOwners" value="Austria"/>
 						<option name="whenCapturedByGoesTo" value="Austria:Hungary"/>
                     </attachment>
@@ -4983,7 +4983,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Dakota" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
+                        <option name="production" value="0"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Damascus" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5092,7 +5092,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="England" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="4"/>
+                        <option name="production" value="3"/>
                     </attachment>
 					
 					<attachment name="territoryAttachment" attachTo="Epirus" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5183,7 +5183,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Galicia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
+                        <option name="production" value="2"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Gambia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5347,7 +5347,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Holstein" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="2"/>
+                        <option name="production" value="3"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Honduras" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5364,7 +5364,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Hudson-Delaware" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
+                        <option name="production" value="3"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Hunan" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5591,7 +5591,7 @@
 
                     <attachment name="territoryAttachment" attachTo="London" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
 						<option name="capital" value="UK"/>
-                        <option name="production" value="8"/>
+                        <option name="production" value="6"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Louisiana" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5607,7 +5607,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Luzon" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
+                        <option name="production" value="0"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Kouang-Theou-Wan" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5738,7 +5738,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Mindanao" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="0"/>
+                        <option name="production" value="1"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Minsk" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5754,7 +5754,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Montana" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
+                        <option name="production" value="0"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Montenegro" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5840,7 +5840,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="New England" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
+                        <option name="production" value="3"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="New Hebrides" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -5852,7 +5852,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="New Orleans" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
+                        <option name="production" value="2"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="New South Wales" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -6274,7 +6274,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Scotland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="2"/>
+                        <option name="production" value="3"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Senegal" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -6516,7 +6516,7 @@
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="Transylvania" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="6"/>
+                        <option name="production" value="5"/>
 						<option name="changeUnitOwners" value="Austria"/>
 						<option name="whenCapturedByGoesTo" value="Austria:Hungary"/>
                     </attachment>
@@ -6667,7 +6667,7 @@
 
                     <attachment name="territoryAttachment" attachTo="Washington D.C." javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
 						<option name="capital" value="USA"/>
-                        <option name="production" value="8"/>
+                        <option name="production" value="4"/>
                     </attachment>
 
                     <attachment name="territoryAttachment" attachTo="West Prussia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -11985,11 +11985,11 @@
 			<unitPlacement unitType="factory3" territory="Tokyo" quantity="1" owner="Japan"/>
 			<unitPlacement unitType="harbour" territory="Tokyo" quantity="1" owner="Japan"/>
 			<unitPlacement unitType="train" territory="Tokyo" quantity="1" owner="Japan"/>
-			<unitPlacement unitType="factory3" territory="Chugoku" quantity="1" owner="Japan"/>
+			<unitPlacement unitType="factory1" territory="Chugoku" quantity="1" owner="Japan"/>
 			<unitPlacement unitType="harbour" territory="Chugoku" quantity="1" owner="Japan"/>
-			<unitPlacement unitType="factory3" territory="Kyoto" quantity="1" owner="Japan"/>
+			<unitPlacement unitType="factory2" territory="Kyoto" quantity="1" owner="Japan"/>
 			<unitPlacement unitType="harbour" territory="Kyoto" quantity="1" owner="Japan"/>
-			<unitPlacement unitType="factory3" territory="Kyushu" quantity="1" owner="Japan"/>
+			<unitPlacement unitType="factory1" territory="Kyushu" quantity="1" owner="Japan"/>
 			<unitPlacement unitType="harbour" territory="Kyushu" quantity="1" owner="Japan"/>
 			<unitPlacement unitType="infantry" territory="Port Arthur" quantity="1" owner="Japan"/>
 			<unitPlacement unitType="infantry" territory="Formosa" quantity="1" owner="Japan"/>
@@ -12753,10 +12753,10 @@
 						<resourceGiven player="India" resource="PUs" quantity="27"/>
 						<resourceGiven player="ANZAC" resource="PUs" quantity="11"/>
                         <resourceGiven player="France" resource="PUs" quantity="72"/>
-                        <resourceGiven player="Russia" resource="PUs" quantity="69"/>
+                        <resourceGiven player="Russia" resource="PUs" quantity="71"/>
                         <resourceGiven player="Italy" resource="PUs" quantity="36"/>
-						<resourceGiven player="Germany" resource="PUs" quantity="116"/>
-						<resourceGiven player="Austria" resource="PUs" quantity="34"/>
+						<resourceGiven player="Germany" resource="PUs" quantity="117"/>
+						<resourceGiven player="Austria" resource="PUs" quantity="35"/>
 						<resourceGiven player="Hungary" resource="PUs" quantity="19"/>
 						<resourceGiven player="Ottoman" resource="PUs" quantity="52"/>
                         <resourceGiven player="USA" resource="PUs" quantity="56"/>
@@ -13889,7 +13889,7 @@
 <br>by Surtur
 
 <br>
-<br><span style="font-size:120%;000000"colspan="2"><b>Version 1.3.4</b></span>
+<br><span style="font-size:120%;000000"colspan="2"><b>Version 1.3.5</b></span>
 <br><br>
 <i>"Wir wollen niemand in den Schatten stellen, aber wir verlangen auch unseren Platz an der Sonne"</i>
 <br><i>--Bernhard von Bulow, 6 December 1897</i>
@@ -15417,6 +15417,19 @@ Central Powers:
 <br><br>
 
 <div style="text-align: center;">
+<br>==========================================================
+<br><span style="font-size:200%"><b>Changelog 1.3.5</b></span>
+<br>==========================================================
+<br>Switch Luzon, Mindanao incomes
+<br>Move 1 production from Transylvania to Croatia
+<br>Move 1 production from England to Scotland
+<br>Move 2 production from London to Cornwall
+<br>Add 1 production to Holstein
+<br>Add 2 production to Crimea
+<br>Add 1 production to Galicia
+<br>Downgrade Chugoku, Kyushu to factory1
+<br>Downgrade Kyoto to factory2
+<br>Rebalance U.S. production
 <br>==========================================================
 <br><span style="font-size:200%"><b>Changelog 1.3.4</b></span>
 <br>==========================================================

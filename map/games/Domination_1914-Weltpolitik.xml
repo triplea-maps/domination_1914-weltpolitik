@@ -9345,14 +9345,14 @@
 				
 				<attachment name="userActionAttachment_BulgariaAid" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Bulgaria_At_War:conditionAttachmentBulgariaControlsBulgaria"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentBulgariaAid:1:false:false:false:false"/>
 					<option name="text" value="Bulgaria_Aid"/>
 				</attachment>
 				<attachment name="userActionAttachment_RomaniaAid" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Romania_CP:conditionAttachment_Romania_Controls_Romania"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentRomaniaAid:1:false:false:false:false"/>
 					<option name="text" value="Romania_Aid"/>
@@ -9360,7 +9360,7 @@
 				
 				<attachment name="userActionAttachment_NicaraguaAid" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Nicaragua_Liberals_Switch:conditionAttachment_USA_At_War:conditionAttachmentTurn3"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Nicaragua_Liberals:1:false:false:false:false"/>
 					<option name="text" value="Nicaragua_Liberals_Aid"/>
@@ -9368,7 +9368,7 @@
 				
 				<attachment name="userActionAttachment_Maritz_Rebellion" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Maritz_Rebellion_Switch:conditionAttachmentTurn2"/>
-					<option name="costPU" value="10"/>
+					<option name="costResources" value="PUs" count="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Maritz_Rebellion:1:false:false:false:false"/>
 					<option name="text" value="Maritz_Rebellion"/>
@@ -9376,21 +9376,21 @@
 				
 				<attachment name="userActionAttachment_Ghadar_Conspiracy" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Ghadar_Conspiracy_Switch:conditionAttachmentTurn3"/>
-					<option name="costPU" value="10"/>
+					<option name="costResources" value="PUs" count="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Ghadar_Conspiracy:1:false:false:false:false"/>
 					<option name="text" value="Ghadar_Conspiracy"/>
 				</attachment>
 				<attachment name="userActionAttachment_Ghadar_Conspiracy_Boosted" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Ghadar_Conspiracy_Switch:conditionAttachment_Chinese_Smuggling:conditionAttachmentTurn3"/>
-					<option name="costPU" value="10"/>
+					<option name="costResources" value="PUs" count="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Ghadar_Conspiracy_Boosted:1:false:false:false:false"/>
 					<option name="text" value="Ghadar_Conspiracy_Boosted"/>
 				</attachment>
 				<attachment name="userActionAttachment_Niedermayer_Hentig_Expedition" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Niedermayer_Hentig:conditionAttachment_Afghanistan_Neutral"/>
-					<option name="costPU" value="10"/>
+					<option name="costResources" value="PUs" count="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Niedermayer_Hentig:1:false:false:false:false"/>
 					<option name="text" value="Niedermayer_Hentig_Expedition"/>
@@ -9398,7 +9398,7 @@
 				
 				<attachment name="userActionAttachment_Easter_Rising" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Easter_Rising_Switch:conditionAttachmentTurn5"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Easter_Rising:1:false:false:false:false"/>
 					<option name="text" value="Easter_Rising"/>
@@ -9406,7 +9406,7 @@
 				
 				<attachment name="userActionAttachment_ConstitutionalistAid" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Constitutionalist_Exists"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentConstitutionalistAid:1:false:false:false:false"/>
 					<option name="text" value="Constitutionalist_Aid"/>
@@ -9414,7 +9414,7 @@
 				
 				<attachment name="userActionAttachment_Qing_Restoration" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Qing_Restoration_Switch:conditionAttachment_Beiyang_Controls_Peking:conditionAttachmentTurn7"/>
-					<option name="costPU" value="10"/>
+					<option name="costResources" value="PUs" count="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Remove_KMT_Units:1:false:false:false:false"/>
 					<option name="activateTrigger" value="triggerAttachment_Create_China:1:false:false:false:false"/>
@@ -9423,7 +9423,7 @@
 				</attachment>
 				<attachment name="userActionAttachment_KMT_Aid" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_China_Civil_War:conditionAttachment_KMT_Exists"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_KMT_Aid:1:false:false:false:false"/>
 					<option name="text" value="KMT_Aid"/>
@@ -9431,21 +9431,21 @@
 				
 				<attachment name="userActionAttachment_Sweden_Alliance" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Sweden_Neutral:conditionAttachment_CP_Control_Finland:conditionAttachment_USA_At_Peace:conditionAttachment_Bolsheviks_Do_Not_Exist"/>
-					<option name="costPU" value="10"/>
+					<option name="costResources" value="PUs" count="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Sweden_Alliance:1:false:false:false:false"/>
 					<option name="text" value="Sweden_Alliance"/>
 				</attachment>
 				<attachment name="userActionAttachment_Colombia_CP" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_War:conditionAttachment_Constitutionalist_At_War:conditionAttachment_Colombia_Neutral"/>
-					<option name="costPU" value="10"/>
+					<option name="costResources" value="PUs" count="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Colombia_CP:1:false:false:false:false"/>
 					<option name="text" value="Colombia_CP"/>
 				</attachment>
 				<attachment name="userActionAttachment_Chile_CP" attachTo="Germany" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_War:conditionAttachment_Constitutionalist_At_War:conditionAttachment_Colombia_CP:conditionAttachment_Argentina_Not_Allies:conditionAttachment_Chile_Neutral"/>
-					<option name="costPU" value="20"/>
+					<option name="costResources" value="PUs" count="20"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Chile_CP:1:false:false:false:false"/>
 					<option name="text" value="Chile_CP"/>
@@ -9454,14 +9454,14 @@
 			<!-- France Actions -->
 				<attachment name="userActionAttachment_GreeceAid" attachTo="France" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Greece_At_War:conditionAttachmentGreeceControlsGreece"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentGreeceAid:1:false:false:false:false"/>
 					<option name="text" value="Greece_Aid"/>
 				</attachment>
 				<attachment name="userActionAttachment_Greece_Coup" attachTo="France" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Greece_At_Peace:conditionAttachment_Greece_Royalist_At_Peace:conditionAttachment_February_Revolution_Switch"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Greece_Coup:1:false:false:false:false"/>
 					<option name="text" value="Venizelos"/>
@@ -9474,14 +9474,14 @@
 				</attachment>
 				<attachment name="userActionAttachment_Czechoslovak_Aid" attachTo="France" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Bolsheviks_Control_Capital:conditionAttachment_Allies_Control_Vladivostok:conditionAttachment_Czechoslovak_Revolt_Switch"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="3"/>
 					<option name="activateTrigger" value="triggerAttachment_Czechoslovak_Aid:1:false:false:false:false"/>
 					<option name="text" value="Czechoslovak_Aid"/>
 				</attachment>
 				<attachment name="userActionAttachment_Dutch_Seizure_France" attachTo="France" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachmentTurn9:conditionAttachment_Netherlands_Neutral"/>
-					<option name="costPU" value="20"/>
+					<option name="costResources" value="PUs" count="20"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Netherlands_Allies:1:false:false:false:false"/>
 					<option name="text" value="Dutch_Seizure"/>
@@ -9490,14 +9490,14 @@
 			<!-- Japan Actions -->
 				<attachment name="userActionAttachment_Beiyang_Aid" attachTo="Japan" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_China_Civil_War:conditionAttachment_Beiyang_Exists:conditionAttachment_Beiyang_At_Peace"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Beiyang_Aid:1:false:false:false:false"/>
 					<option name="text" value="Beiyang_Aid"/>
 				</attachment>
 				<attachment name="userActionAttachment_Beiyang_Aid" attachTo="Japan" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Beiyang_Exists:conditionAttachment_Japan_At_War:conditionAttachment_Beiyang_At_War"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Beiyang_Aid:1:false:false:false:false"/>
 					<option name="text" value="Beiyang_Aid"/>
@@ -9506,168 +9506,168 @@
 			<!-- USA Actions -->
 				<attachment name="userActionAttachment_USA_France_Naval_Aid_SF" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="14"/>
+					<option name="costResources" value="PUs" count="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_France_Naval_Aid_SF:1:false:false:false:false"/>
 					<option name="text" value="USA_France_Naval_Aid_SF"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_France_Aid_SF" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="6"/>
+					<option name="costResources" value="PUs" count="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_France_Aid_SF:1:false:false:false:false"/>
 					<option name="text" value="USA_France_Aid_SF"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_France_Naval_Aid_NY" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="14"/>
+					<option name="costResources" value="PUs" count="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_France_Naval_Aid_NY:1:false:false:false:false"/>
 					<option name="text" value="USA_France_Naval_Aid_NY"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_France_Aid_NY" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="6"/>
+					<option name="costResources" value="PUs" count="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_France_Aid_NY:1:false:false:false:false"/>
 					<option name="text" value="USA_France_Aid_NY"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_France_Naval_Aid_SC" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="14"/>
+					<option name="costResources" value="PUs" count="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_France_Naval_Aid_SC:1:false:false:false:false"/>
 					<option name="text" value="USA_France_Naval_Aid_SC"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_France_Aid_SC" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="6"/>
+					<option name="costResources" value="PUs" count="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_France_Aid_SC:1:false:false:false:false"/>
 					<option name="text" value="USA_France_Aid_SC"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_France_Naval_Aid_NO" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="14"/>
+					<option name="costResources" value="PUs" count="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_France_Naval_Aid_NO:1:false:false:false:false"/>
 					<option name="text" value="USA_France_Naval_Aid_NO"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_France_Aid_NO" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="6"/>
+					<option name="costResources" value="PUs" count="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_France_Aid_NO:1:false:false:false:false"/>
 					<option name="text" value="USA_France_Aid_NO"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_UK_Naval_Aid_SF" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="14"/>
+					<option name="costResources" value="PUs" count="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_UK_Naval_Aid_SF:1:false:false:false:false"/>
 					<option name="text" value="USA_UK_Naval_Aid_SF"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_UK_Aid_SF" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="6"/>
+					<option name="costResources" value="PUs" count="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_UK_Aid_SF:1:false:false:false:false"/>
 					<option name="text" value="USA_UK_Aid_SF"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_UK_Naval_Aid_NY" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="14"/>
+					<option name="costResources" value="PUs" count="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_UK_Naval_Aid_NY:1:false:false:false:false"/>
 					<option name="text" value="USA_UK_Naval_Aid_NY"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_UK_Aid_NY" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="6"/>
+					<option name="costResources" value="PUs" count="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_UK_Aid_NY:1:false:false:false:false"/>
 					<option name="text" value="USA_UK_Aid_NY"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_UK_Naval_Aid_SC" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="14"/>
+					<option name="costResources" value="PUs" count="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_UK_Naval_Aid_SC:1:false:false:false:false"/>
 					<option name="text" value="USA_UK_Naval_Aid_SC"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_UK_Aid_SC" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="6"/>
+					<option name="costResources" value="PUs" count="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_UK_Aid_SC:1:false:false:false:false"/>
 					<option name="text" value="USA_UK_Aid_SC"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_UK_Naval_Aid_NO" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="14"/>
+					<option name="costResources" value="PUs" count="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_UK_Naval_Aid_NO:1:false:false:false:false"/>
 					<option name="text" value="USA_UK_Naval_Aid_NO"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_UK_Aid_NO" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="6"/>
+					<option name="costResources" value="PUs" count="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_UK_Aid_NO:1:false:false:false:false"/>
 					<option name="text" value="USA_UK_Aid_NO"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_Russia_Naval_Aid_SF" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="14"/>
+					<option name="costResources" value="PUs" count="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_Russia_Naval_Aid_SF:1:false:false:false:false"/>
 					<option name="text" value="USA_Russia_Naval_Aid_SF"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_Russia_Aid_SF" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="6"/>
+					<option name="costResources" value="PUs" count="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_Russia_Aid_SF:1:false:false:false:false"/>
 					<option name="text" value="USA_Russia_Aid_SF"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_Russia_Naval_Aid_NY" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="14"/>
+					<option name="costResources" value="PUs" count="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_Russia_Naval_Aid_NY:1:false:false:false:false"/>
 					<option name="text" value="USA_Russia_Naval_Aid_NY"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_Russia_Aid_NY" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="6"/>
+					<option name="costResources" value="PUs" count="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_Russia_Aid_NY:1:false:false:false:false"/>
 					<option name="text" value="USA_Russia_Aid_NY"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_Russia_Naval_Aid_SC" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="14"/>
+					<option name="costResources" value="PUs" count="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_Russia_Naval_Aid_SC:1:false:false:false:false"/>
 					<option name="text" value="USA_Russia_Naval_Aid_SC"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_Russia_Aid_SC" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="6"/>
+					<option name="costResources" value="PUs" count="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_Russia_Aid_SC:1:false:false:false:false"/>
 					<option name="text" value="USA_Russia_Aid_SC"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_Russia_Naval_Aid_NO" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="14"/>
+					<option name="costResources" value="PUs" count="14"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_Russia_Naval_Aid_NO:1:false:false:false:false"/>
 					<option name="text" value="USA_Russia_Naval_Aid_NO"/>
 					<option name="attemptsPerTurn" value="999"/>
 				</attachment>
 				<attachment name="userActionAttachment_USA_Russia_Aid_NO" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_Peace"/>
-					<option name="costPU" value="6"/>
+					<option name="costResources" value="PUs" count="6"/>
 					<option name="activateTrigger" value="triggerAttachment_USA_Russia_Aid_NO:1:false:false:false:false"/>
 					<option name="text" value="USA_Russia_Aid_NO"/>
 					<option name="attemptsPerTurn" value="999"/>
@@ -9688,7 +9688,7 @@
 				</attachment>
 				<attachment name="userActionAttachment_ConventionistAid" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Conventionist_Controls_Chihuahua"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentConventionistAid:1:false:false:false:false"/>
 					<option name="text" value="Villa_Aid"/>
@@ -9696,14 +9696,14 @@
 				
 				<attachment name="userActionAttachment_Argentina_Allies" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_War:conditionAttachment_Luxburg_Affair_Switch:conditionAttachment_Chile_Not_CP:conditionAttachment_Argentina_Neutral"/>
-					<option name="costPU" value="20"/>
+					<option name="costResources" value="PUs" count="20"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Argentina_Allies:1:false:false:false:false"/>
 					<option name="text" value="Argentina_Allies"/>
 				</attachment>
 				<attachment name="userActionAttachment_El_Salvador_Allies" attachTo="USA" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_USA_At_War:conditionAttachment_Allies_Control_Buenos_Aires:conditionAttachment_El_Salvador_Neutral"/>
-					<option name="costPU" value="10"/>
+					<option name="costResources" value="PUs" count="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_El_Salvador_Allies:1:false:false:false:false"/>
 					<option name="text" value="El_Salvador_Allies"/>
@@ -9712,28 +9712,28 @@
 			<!-- Ottoman Actions -->
 				<attachment name="userActionAttachment_Darfur_Revolt" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Darfur_Switch:conditionAttachmentTurn3:conditionAttachment_Ottoman_At_War"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Darfur_Revolt:1:false:false:false:false"/>
 					<option name="text" value="Darfur_Revolt"/>
 				</attachment>
 				<attachment name="userActionAttachment_Senussi_Revolt" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Senussi_Switch:conditionAttachmentTurn4:conditionAttachment_Ottoman_At_War"/>
-					<option name="costPU" value="10"/>
+					<option name="costResources" value="PUs" count="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Senussi_Revolt:1:false:false:false:false"/>
 					<option name="text" value="Senussi_Revolt"/>
 				</attachment>
 				<attachment name="userActionAttachment_Kaocen_Revolt" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Kaocen_Switch:conditionAttachmentTurn6:conditionAttachment_Ottoman_At_War"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Kaocen_Revolt:1:false:false:false:false"/>
 					<option name="text" value="Kaocen_Revolt"/>
 				</attachment>
 				<attachment name="userActionAttachment_Moro_Revolt" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Moro_Switch:conditionAttachment_USA_At_War:conditionAttachment_Ottoman_At_War"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Moro_Revolt:1:false:false:false:false"/>
 					<option name="text" value="Moro_Revolt"/>
@@ -9741,7 +9741,7 @@
 				
 				<attachment name="userActionAttachment_Niedermayer_Hentig_Expedition_Ottoman" attachTo="Ottoman" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Ottoman_At_War:conditionAttachment_Niedermayer_Hentig:conditionAttachment_Afghanistan_Neutral"/>
-					<option name="costPU" value="10"/>
+					<option name="costResources" value="PUs" count="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Niedermayer_Hentig:1:false:false:false:false"/>
 					<option name="text" value="Niedermayer_Hentig_Expedition"/>
@@ -9750,14 +9750,14 @@
 			<!-- UK Actions -->
 				<attachment name="userActionAttachment_BelgiumAid" attachTo="UK" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachmentBelgiumControlsBelgium"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentBelgiumAid:1:false:false:false:false"/>
 					<option name="text" value="Belgium_Aid"/>
 				</attachment>
 				<attachment name="userActionAttachment_PortugalAid" attachTo="UK" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Portugal_At_War:conditionAttachmentPortugalControlsLisbon"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentPortugalAid:1:false:false:false:false"/>
 					<option name="text" value="Portugal_Aid"/>
@@ -9765,7 +9765,7 @@
 				
 				<attachment name="userActionAttachment_ArabiaAid" attachTo="UK" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Arabia_At_War:conditionAttachment_ArabiaControlsNajd"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentArabiaAid:1:false:false:false:false"/>
 					<option name="text" value="Arabia_Aid"/>
@@ -9773,7 +9773,7 @@
 				
 				<attachment name="userActionAttachment_Arab_Revolt" attachTo="UK" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachmentTurn5:conditionAttachment_Arab_Revolt_Switch:conditionAttachment_CP_Controls_Hejaz:conditionAttachment_Ottoman_At_War:conditionAttachment_Arabia_At_War"/>
-					<option name="costPU" value="10"/>
+					<option name="costResources" value="PUs" count="10"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentArabRevolt:1:false:false:false:false"/>
 					<option name="text" value="Arab_Revolt"/>
@@ -9781,7 +9781,7 @@
 				
 				<attachment name="userActionAttachment_Asir_Revolt" attachTo="UK" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Asir_Revolt_Switch:conditionAttachment_Ottoman_At_War:conditionAttachment_CP_Controls_Asir"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentAsirRevolt:1:false:false:false:false"/>
 					<option name="text" value="Asir_Revolt"/>
@@ -9789,7 +9789,7 @@
 				
 				<attachment name="userActionAttachment_Dutch_Seizure_UK" attachTo="UK" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachmentTurn9:conditionAttachment_Netherlands_Neutral"/>
-					<option name="costPU" value="20"/>
+					<option name="costResources" value="PUs" count="20"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Netherlands_Allies:1:false:false:false:false"/>
 					<option name="text" value="Dutch_Seizure"/>
@@ -9797,7 +9797,7 @@
 				
 				<attachment name="userActionAttachment_Almirante_Latorre" attachTo="UK" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachmentTurn4:conditionAttachment_Allies_Control_England:conditionAttachment_Almirante_Latorre_Switch"/>
-					<option name="costPU" value="22"/>
+					<option name="costResources" value="PUs" count="22"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Almirante_Latorre:1:false:false:false:false"/>
 					<option name="text" value="Almirante_Latorre"/>
@@ -9806,14 +9806,14 @@
 			<!-- Russia Actions -->
 				<attachment name="userActionAttachment_SerbiaAid" attachTo="Russia" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachmentSerbiaControlsBelgrade"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentSerbiaAid:1:false:false:false:false"/>
 					<option name="text" value="Serbia_Aid"/>
 				</attachment>
 				<attachment name="userActionAttachment_RomaniaAid" attachTo="Russia" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Romania_Allies:conditionAttachment_Romania_Controls_Romania"/>
-					<option name="costPU" value="5"/>
+					<option name="costResources" value="PUs" count="5"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachmentRomaniaAid:1:false:false:false:false"/>
 					<option name="text" value="Romania_Aid"/>
@@ -9838,7 +9838,7 @@
 			<!-- Belgium Actions -->
 				<attachment name="userActionAttachment_Belgium_Infantry" attachTo="Belgium" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_Belgium_Does_Not_Control_Belgium:conditionAttachment_Allies_Control_Normandy"/>
-					<option name="costPU" value="6"/>
+					<option name="costResources" value="PUs" count="6"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Belgium_Infantry:1:false:false:false:false"/>
 					<option name="text" value="Belgium_Infantry"/>
@@ -9847,7 +9847,7 @@
 			<!-- Arabia Actions -->
 				<attachment name="userActionAttachment_Arabia_Cavalry" attachTo="Arabia" javaClass="games.strategy.triplea.attachments.UserActionAttachment" type="player">
 					<option name="conditions" value="conditionAttachment_ArabiaControlsNajd"/>
-					<option name="costPU" value="6"/>
+					<option name="costResources" value="PUs" count="6"/>
 	     			<option name="attemptsPerTurn" value="1"/>
 					<option name="activateTrigger" value="triggerAttachment_Arabia_Cavalry:1:false:false:false:false"/>
 					<option name="text" value="Arabia_Cavalry"/>
